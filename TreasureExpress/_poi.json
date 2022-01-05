@@ -2,6 +2,7 @@
 	
 	/*WATERLOO*/
 			{
+				"station":"Waterloo",
 				"id":"waterloo_1",
 				"name":"London Dungeon",
 				"image":"",
@@ -20,6 +21,7 @@
 				
 			},
 			{
+				"station":"Waterloo",
 				"id":"waterloo_2",
 				"name":"London Eye",
 				"image":"",
@@ -38,6 +40,7 @@
 				
 			},
 			{
+				"station":"Waterloo",
 				"id":"waterloo_3",
 				"name":"Buckingham Palace",
 				"image":"",
@@ -57,6 +60,7 @@
 	
 	/*WIMBELDON*/
 			{
+				"station":"Wimbeldon",
 				"id":"wimbeldon_1",
 				"name":"Wimbeldon Center Court",
 				"image":"",
@@ -75,6 +79,7 @@
 				
 			},
 			{
+				"station":"Wimbeldon",
 				"id":"wimbeldon_2",
 				"name":"New Wimbeldon Theatre",
 				"image":"",
@@ -92,6 +97,7 @@
 				}
 			},
 			{
+				"station":"Wimbeldon",
 				"id":"wimbeldon_3",
 				"name":"Buddhapadipa Temple",
 				"image":"",
@@ -111,6 +117,7 @@
 	
 	/*WOKING*/
 			{
+				"station":"Woking",
 				"id":"woking_1",
 				"name":"The Lightbox",
 				"image":"",
@@ -129,6 +136,7 @@
 				
 			},
 			{
+				"station":"Woking",
 				"id":"woking_2",
 				"name":"RHS Garden",
 				"image":"",
@@ -146,6 +154,7 @@
 				}
 			},
 			{
+				"station":"Woking",
 				"id":"woking_3",
 				"name":"Mercedes Benz World",
 				"image":"",
@@ -165,6 +174,7 @@
 	
 	/*GUILDFORD*/
 			{
+				"station":"Guildford",
 				"id":"guildford_1",
 				"name":"Guildford Castle",
 				"image":"",
@@ -183,6 +193,7 @@
 				
 			},
 			{
+				"station":"Guildford",
 				"id":"guildford_2",
 				"name":"Guildford Museum",
 				"image":"",
@@ -200,6 +211,7 @@
 				}
 			},
 			{
+				"station":"Guildford",
 				"id":"guildford_3",
 				"name":"Stoke Park",
 				"image":"",
@@ -219,6 +231,7 @@
 	
 	/*PORTSMOUTH*/
 			{
+				"station":"Portsmouth",
 				"id":"portsmouth_1",
 				"name":"Spinnaker Tower",
 				"image":"",
@@ -237,6 +250,7 @@
 				
 			},
 			{
+				"station":"Portsmouth",
 				"id":"portsmouth_2",
 				"name":"South Parade Pier",
 				"image":"",
@@ -254,6 +268,7 @@
 				}
 			},
 			{
+				"station":"Portsmouth",
 				"id":"portsmouth_3",
 				"name":"Historic Dockyard",
 				"image":"",
@@ -269,7 +284,5 @@
 					"rating2":"",
 					"rating3":""
 				}
-			},
-
-
+			}
 ]}

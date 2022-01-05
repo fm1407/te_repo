@@ -6,6 +6,7 @@
 	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
 	<script src="http://code.jquery.com/jquery-1.4.5.min.js"></script>
 	<script src="http://code.jquery.com/mobile/[version]/jquery.mobile-1.4.5.min.js"></script>
+	
 </head>
 
 <body>
@@ -48,6 +49,300 @@
 <div data-role="page" id="te_animDiamond">
 	
 </div>
-<!-------------------------------------------------------------------------------------------------------------------->	
+<!-------------------------------------------------------------------------------------------------------------------->
+
+<script>
+/* JSON data copied & embedded in HTML file*/
+var data = {"poi":[
+	
+	/*WATERLOO*/
+			{
+				"station":"Waterloo",
+				"id":"waterloo_1",
+				"name":"London Dungeon",
+				"image":"",
+				"map_link":"",
+				"description":"",
+				"comments":{
+					"comment1":"",
+					"comment2":"",
+					"comment3":""
+				},
+				"rating":{
+					"rating1":"",
+					"rating2":"",
+					"rating3":""
+				}
+				
+			},
+			{
+				"station":"Waterloo",
+				"id":"waterloo_2",
+				"name":"London Eye",
+				"image":"",
+				"map_link":"",
+				"description":"",
+				"comments":{
+					"comment1":"",
+					"comment2":"",
+					"comment3":""
+				},
+				"rating":{
+					"rating1":"",
+					"rating2":"",
+					"rating3":""
+				}
+				
+			},
+			{
+				"station":"Waterloo",
+				"id":"waterloo_3",
+				"name":"Buckingham Palace",
+				"image":"",
+				"map_link":"",
+				"description":"",
+				"comments":{
+					"comment1":"",
+					"comment2":"",
+					"comment3":""
+				},
+				"rating":{
+					"rating1":"",
+					"rating2":"",
+					"rating3":""
+				}
+			},
+	
+	/*WIMBELDON*/
+			{
+				"station":"Wimbeldon",
+				"id":"wimbeldon_1",
+				"name":"Wimbeldon Center Court",
+				"image":"",
+				"map_link":"",
+				"description":"",
+				"comments":{
+					"comment1":"",
+					"comment2":"",
+					"comment3":""
+				},
+				"rating":{
+					"rating1":"",
+					"rating2":"",
+					"rating3":""
+				}
+				
+			},
+			{
+				"station":"Wimbeldon",
+				"id":"wimbeldon_2",
+				"name":"New Wimbeldon Theatre",
+				"image":"",
+				"map_link":"",
+				"description":"",
+				"comments":{
+					"comment1":"",
+					"comment2":"",
+					"comment3":""
+				},
+				"rating":{
+					"rating1":"",
+					"rating2":"",
+					"rating3":""
+				}
+			},
+			{
+				"station":"Wimbeldon",
+				"id":"wimbeldon_3",
+				"name":"Buddhapadipa Temple",
+				"image":"",
+				"map_link":"",
+				"description":"",
+				"comments":{
+					"comment1":"",
+					"comment2":"",
+					"comment3":""
+				},
+				"rating":{
+					"rating1":"",
+					"rating2":"",
+					"rating3":""
+				}
+			},
+	
+	/*WOKING*/
+			{
+				"station":"Woking",
+				"id":"woking_1",
+				"name":"The Lightbox",
+				"image":"",
+				"map_link":"",
+				"description":"",
+				"comments":{
+					"comment1":"",
+					"comment2":"",
+					"comment3":""
+				},
+				"rating":{
+					"rating1":"",
+					"rating2":"",
+					"rating3":""
+				}
+				
+			},
+			{
+				"station":"Woking",
+				"id":"woking_2",
+				"name":"RHS Garden",
+				"image":"",
+				"map_link":"",
+				"description":"",
+				"comments":{
+					"comment1":"",
+					"comment2":"",
+					"comment3":""
+				},
+				"rating":{
+					"rating1":"",
+					"rating2":"",
+					"rating3":""
+				}
+			},
+			{
+				"station":"Woking",
+				"id":"woking_3",
+				"name":"Mercedes Benz World",
+				"image":"",
+				"map_link":"",
+				"description":"",
+				"comments":{
+					"comment1":"",
+					"comment2":"",
+					"comment3":""
+				},
+				"rating":{
+					"rating1":"",
+					"rating2":"",
+					"rating3":""
+				}
+			},
+	
+	/*GUILDFORD*/
+			{
+				"station":"Guildford",
+				"id":"guildford_1",
+				"name":"Guildford Castle",
+				"image":"",
+				"map_link":"",
+				"description":"",
+				"comments":{
+					"comment1":"",
+					"comment2":"",
+					"comment3":""
+				},
+				"rating":{
+					"rating1":"",
+					"rating2":"",
+					"rating3":""
+				}
+				
+			},
+			{
+				"station":"Guildford",
+				"id":"guildford_2",
+				"name":"Guildford Museum",
+				"image":"",
+				"map_link":"",
+				"description":"",
+				"comments":{
+					"comment1":"",
+					"comment2":"",
+					"comment3":""
+				},
+				"rating":{
+					"rating1":"",
+					"rating2":"",
+					"rating3":""
+				}
+			},
+			{
+				"station":"Guildford",
+				"id":"guildford_3",
+				"name":"Stoke Park",
+				"image":"",
+				"map_link":"",
+				"description":"",
+				"comments":{
+					"comment1":"",
+					"comment2":"",
+					"comment3":""
+				},
+				"rating":{
+					"rating1":"",
+					"rating2":"",
+					"rating3":""
+				}
+			},
+	
+	/*PORTSMOUTH*/
+			{
+				"station":"Portsmouth",
+				"id":"portsmouth_1",
+				"name":"Spinnaker Tower",
+				"image":"",
+				"map_link":"",
+				"description":"",
+				"comments":{
+					"comment1":"",
+					"comment2":"",
+					"comment3":""
+				},
+				"rating":{
+					"rating1":"",
+					"rating2":"",
+					"rating3":""
+				}
+				
+			},
+			{
+				"station":"Portsmouth",
+				"id":"portsmouth_2",
+				"name":"South Parade Pier",
+				"image":"",
+				"map_link":"",
+				"description":"",
+				"comments":{
+					"comment1":"",
+					"comment2":"",
+					"comment3":""
+				},
+				"rating":{
+					"rating1":"",
+					"rating2":"",
+					"rating3":""
+				}
+			},
+			{
+				"station":"Portsmouth",
+				"id":"portsmouth_3",
+				"name":"Historic Dockyard",
+				"image":"",
+				"map_link":"",
+				"description":"",
+				"comments":{
+					"comment1":"",
+					"comment2":"",
+					"comment3":""
+				},
+				"rating":{
+					"rating1":"",
+					"rating2":"",
+					"rating3":""
+				}
+			}
+]}
+
+
+</script>
 </body>
 </html>
