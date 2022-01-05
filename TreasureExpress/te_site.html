@@ -7,11 +7,6 @@
 <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
 <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
 
-	
-<style>
-	.stationmap{}
-	.generatedPoi{display:none;}
-</style>
 </head>
 
 <body>
@@ -50,17 +45,19 @@
 			<a href="#te_animDiamond" class="ui-btn ui-corner-all">DIAMOND</a>
 		</div>
 	</div>
-	
-	<div class="stationmap">
-	<h1>STATION MAP</h1>
-	<p>Here is going to be the list of stations</p>
+	<div role="main" class="ui-content">
+		<div class="stationmap">
+		<h1>STATION MAP</h1>
+		<p>Here is going to be the list of stations</p>
+		</div>
+
+		<div class="poiSection">
+		<h1>POIs</h1>
+		<p>Here is going to be the generated POIs - using JSON the name, img and desc etc. will be displayed</p>
+		</div>
+		
+		<!---Figure out how to make sure POI page is hidden on iPhone and revealed with button and how to display it on tablet --->
 	</div>
-	
-	<div id="poiSection">
-	<h1>POIs</h1>
-	<p>Here is going to be the generated POIs - using JSON the name, img and desc etc. will be displayed</p>
-	</div>
-	
 	
 	<div data-role="navbar">
 		<ul>
