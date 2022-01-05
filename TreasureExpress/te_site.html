@@ -1,12 +1,17 @@
 <!DOCTYPE html> 
 <html>
 <head>
-	<title>Page Title</title>
+	<title>Treasure Express</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
 <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
 <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+
 	
+<style>
+	.stationmap{}
+	.generatedPoi{display:none;}
+</style>
 </head>
 
 <body>
@@ -46,7 +51,16 @@
 		</div>
 	</div>
 	
+	<div class="stationmap">
 	<h1>STATION MAP</h1>
+	<p>Here is going to be the list of stations</p>
+	</div>
+	
+	<div id="poiSection">
+	<h1>POIs</h1>
+	<p>Here is going to be the generated POIs - using JSON the name, img and desc etc. will be displayed</p>
+	</div>
+	
 	
 	<div data-role="navbar">
 		<ul>
@@ -56,33 +70,10 @@
 			<li><a href="#te_scanQR">Scan QR</a></li>
 		</ul>
 	</div>
-	
+
 </div>
 	
-<!-------------------------------------------------------------------------------------------------------------------->	
-<!--------------------------------------------------- POI Section ---------------------------------------------------->
-<div data-role="page" id="te_poi">
-	<div data-role="header">
-		<div data-role="controlgroup" data-type="horizontal">
-			<a href="#te_homepage" class="ui-btn ui-corner-all">LOGO</a>
-			<a href="#" class="ui-btn ui-corner-all">PROFILE</a>
-			<a href="#te_animDiamond" class="ui-btn ui-corner-all">DIAMOND</a>
-		</div>
-	</div>
-	
-	<h1>POI PAGE </h1>
-	<p>Generate content using JSON</p>
-	
-	<div data-role="navbar">
-		<ul>
-			<li><a href="#te_stationmap">Station Map</a></li>
-			<li><a href="#te_favourites">Favourites</a></li>
-			<li><a href="#te_booking">Book Tickets</a></li>
-			<li><a href="#te_scanQR">Scan QR</a></li>
-		</ul>
-	</div>
-	
-</div>	
+
 	
 <!-------------------------------------------------------------------------------------------------------------------->	
 <!------------------------------------------------- Favourites Page -------------------------------------------------->
