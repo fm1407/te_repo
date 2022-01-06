@@ -109,7 +109,46 @@
 	</div>
 	
 	<h1>BOOK TICKETS</h1>
+	<br> 
+
+	<form>
+		<label for="fromDestination">From :</label>
+		<input type="text" id="fromDestination" name="fromDestination" value=""><br>
+		
+		<label for="toDestination">To :</label>
+		<input type="text" id="toDestination" name="toDestination" value=""><br><br>
+
+		
+
+		<fieldset data-role="controlgroup" data-type="horizontal">
+			<input type="radio" name="journeyType" id="optionOneWay" value="on" checked="checked">
+			<label for="optionOneWay">One Way</label>
+			<input type="radio" name="journeyType" id="optionReturn" value="off">
+			<label for="optionReturn">Return</label>
+			<input type="radio" name="journeyType" id="optionOpenReturn" value="other">
+			<label for="optionOpenReturn">Open Return</label>
+		</fieldset>
+		
+		<br><br>
+		<label for="date">OUTBOUND:</label>
+		<input type="date" name="date" id="outboundDate" value=""><br>
+		<label for="outboundTime">Time: </label>
+		<input type="time" data-clear-btn="false" name="outboundTime" id="outboundTime" value=""><br><br>
 	
+		<label for="date">RETURN:</label>
+		<input type="date" name="date" id="returnDate" value=""><br>
+		<label for="returnTime">Time: </label>
+		<input type="time" data-clear-btn="true" name="returnTime" id="returnTime" value="">
+
+		<br>
+		<label for="enterPoints">Enter Points:</label>
+		<input type="text" id="enterPoints" name="enterPoints" value=""><br>
+ 		
+		
+		<!---WHY IS IT TAKUNG US TO THE HOME PAGE????---->
+		<input type="submit" value="GET TICKETS">
+	</form> 
+
 	<div data-role="navbar">
 		<ul>
 			<li><a href="#te_stationmap">Station Map</a></li>
