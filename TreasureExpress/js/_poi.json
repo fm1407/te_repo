@@ -6,7 +6,7 @@
 				"id":"waterloo_1",
 				"name":"London Dungeon",
 				"image":"London_Dungeon.png",
-				"map_link":"",
+				"map_link":"https://goo.gl/maps/tDgZvkzYHbQk8d5P6",
 				"description":"",
 				"comments":{
 					"comment1":"",
@@ -25,7 +25,7 @@
 				"id":"waterloo_2",
 				"name":"London Eye",
 				"image":"London_Eye.png",
-				"map_link":"",
+				"map_link":"https://goo.gl/maps/RHcaEjLMMM3Q7T77A",
 				"description":"",
 				"comments":{
 					"comment1":"",
@@ -44,7 +44,7 @@
 				"id":"waterloo_3",
 				"name":"Buckingham Palace",
 				"image":"Buckingham_Palace.png",
-				"map_link":"",
+				"map_link":"https://goo.gl/maps/2s4bMBiSmtwRCepH7",
 				"description":"",
 				"comments":{
 					"comment1":"",
@@ -60,11 +60,11 @@
 	
 	/*WIMBELDON*/
 			{
-				"station":"Wimbeldon",
-				"id":"wimbeldon_1",
-				"name":"Wimbeldon Centre Court",
-				"image":"Wimbeldon_Centre_Court.png",
-				"map_link":"",
+				"station":"Wimbledon",
+				"id":"wimbledon_1",
+				"name":"Wimbledon Centre Court",
+				"image":"Wimbledon_Centre_Court.png",
+				"map_link":"https://goo.gl/maps/CSvMngnsHmnZ9NwB7",
 				"description":"",
 				"comments":{
 					"comment1":"",
@@ -79,11 +79,11 @@
 				
 			},
 			{
-				"station":"Wimbeldon",
-				"id":"wimbeldon_2",
-				"name":"New Wimbeldon Theatre",
-				"image":"New_Wimbeldon_Theatre.png",
-				"map_link":"",
+				"station":"Wimbledon",
+				"id":"wimbledon_2",
+				"name":"New Wimbledon Theatre",
+				"image":"New_Wimbledon_Theatre.png",
+				"map_link":"https://g.page/NewWimbTheatre?share",
 				"description":"",
 				"comments":{
 					"comment1":"",
@@ -97,11 +97,11 @@
 				}
 			},
 			{
-				"station":"Wimbeldon",
-				"id":"wimbeldon_3",
+				"station":"Wimbledon",
+				"id":"wimbledon_3",
 				"name":"Buddhapadipa Temple",
 				"image":"Buddhapadipa_Temple.png",
-				"map_link":"",
+				"map_link":"https://goo.gl/maps/sM4z2KCn9dYzKtFb8",
 				"description":"",
 				"comments":{
 					"comment1":"",
@@ -121,7 +121,7 @@
 				"id":"woking_1",
 				"name":"The Lightbox",
 				"image":"The_Lightbox.png",
-				"map_link":"",
+				"map_link":"https://g.page/thelightboxwoking?share",
 				"description":"",
 				"comments":{
 					"comment1":"",
@@ -140,7 +140,7 @@
 				"id":"woking_2",
 				"name":"RHS Garden",
 				"image":"RHS_Garden.png",
-				"map_link":"",
+				"map_link":"https://goo.gl/maps/dML37NxustytFqc37",
 				"description":"",
 				"comments":{
 					"comment1":"",
@@ -158,7 +158,7 @@
 				"id":"woking_3",
 				"name":"Mercedes Benz World",
 				"image":"Mercedes_Benz_World.png",
-				"map_link":"",
+				"map_link":"https://goo.gl/maps/FPCiFx6n6WLaThscA",
 				"description":"",
 				"comments":{
 					"comment1":"",
@@ -178,7 +178,7 @@
 				"id":"guildford_1",
 				"name":"Guildford Castle",
 				"image":"Guildford_Castle.png",
-				"map_link":"",
+				"map_link":"https://goo.gl/maps/aVJMZxEi36Z4wRAdA",
 				"description":"",
 				"comments":{
 					"comment1":"",
@@ -197,7 +197,7 @@
 				"id":"guildford_2",
 				"name":"Guildford Museum",
 				"image":"Guildford_Museum.png",
-				"map_link":"",
+				"map_link":"https://goo.gl/maps/g7vfsx3BRmiGcMQS6",
 				"description":"",
 				"comments":{
 					"comment1":"",
@@ -215,7 +215,7 @@
 				"id":"guildford_3",
 				"name":"Stoke Park",
 				"image":"Stoke_Park.png",
-				"map_link":"",
+				"map_link":"https://goo.gl/maps/Nh4rMNThAqt6AKaF6",
 				"description":"",
 				"comments":{
 					"comment1":"",
@@ -235,7 +235,7 @@
 				"id":"portsmouth_1",
 				"name":"Spinnaker Tower",
 				"image":"Spinnaker_Tower.png",
-				"map_link":"",
+				"map_link":"https://goo.gl/maps/2WmCBQir7UTWn4RHA",
 				"description":"",
 				"comments":{
 					"comment1":"",
@@ -254,7 +254,7 @@
 				"id":"portsmouth_2",
 				"name":"South Parade Pier",
 				"image":"South_Parade_Pier.png",
-				"map_link":"",
+				"map_link":"https://goo.gl/maps/UjRjnTbddJHMCkud8",
 				"description":"",
 				"comments":{
 					"comment1":"",
@@ -272,7 +272,7 @@
 				"id":"portsmouth_3",
 				"name":"Historic Dockyard",
 				"image":"Historic_Dockyard.png",
-				"map_link":"",
+				"map_link":"https://g.page/historicdockyard?share",
 				"description":"",
 				"comments":{
 					"comment1":"",
