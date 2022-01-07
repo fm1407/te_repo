@@ -131,7 +131,7 @@
 	<h1>BOOK TICKETS</h1>
 	<br> 
 
-	<form>
+	<form name="bookingForm">
 		<label for="fromDestination">From :</label>
 		<input type="text" id="fromDestination" name="fromDestination" value=""><br>
 		
@@ -167,8 +167,9 @@
 		<input type="text" id="enterPoints" name="enterPoints" value=""><br>
  		
 		
-		<!---WHY IS IT TAKUNG US TO THE HOME PAGE????---->
+		<!---WHY IS IT TAKING US TO THE HOME PAGE????---->
 		<input type="submit" value="GET TICKETS">
+
 	</form> 
 
 	<div data-role="navbar">
@@ -230,6 +231,48 @@
 
 <script>
 /* JSON data copied & embedded in HTML file*/
+
+/*-------------------------HOME PAGE---------------------*/
+/*-------------------------------------------------------*/
+
+
+/*-----------------------FAVOURITES----------------------*/
+/*-------------------------------------------------------*/
+
+
+
+
+
+/*---------------------BOOK TICKETS --------------------*/
+/*     THIS DOESNT WORK HAHA BUT IT'S A STARTING POINT HEHE */
+function validateForm() {
+  let x = document.forms["bookingForm"]["fromDestination"].value;
+  if (x == "") {
+    alert("Origin station must be filled out");
+    return false;
+  }
+}
+
+function validateForm() {
+  let y = document.forms["bookingForm"]["toDestination"].value;
+  if (y == "") {
+    alert("Destination must be filled out");
+    return false;
+  }
+}
+/*-------------------------------------------------------*/
+
+
+
+/*---------------------SCAN QR--------------------------*/
+/*-------------------------------------------------------*/
+
+
+
+
+
+
+
 var data = {"poi":[
 	
 	/*WATERLOO*/
