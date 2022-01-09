@@ -7,8 +7,11 @@
 <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
 <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
 <style>
+	.iphone_poi_links{display: none;}
 	@media screen and (max-width: 768px){
 		.poiSection{display:none;}
+		.poiButtons{display:none;}
+		.iphone_poi_links{display: block;}
 	}
 	
 </style>
@@ -72,31 +75,36 @@
 		</div>
 	</div>
 	
-	<div role="main" class="stationmap_poi_ipad">
+	<div role="main" class="ui-content">
 		<div class="stationmap">
 		<h1>STATION MAP</h1>
 		<p>Here is going to be the list of stations</p>
-		<!--- ipad version= hide poiSection and display these BUTTONS to poi_iphone page--->
-		<div class="poiGenerateButtons">
-			<button></button>
-		</div>
-		</div>
 		
-		<!--- iphone version= hide poiSection and display these LINKS to poi_iphone page--->
-		<a href="#te_poi_iphone" data-role="button">Waterloo</a>
-		<a href="#te_poi_iphone" data-role="button">Wimbeldon</a>
-		<a href="#te_poi_iphone" data-role="button">Woking</a>
-		<a href="#te_poi_iphone" data-role="button">Guildford</a>
-		<a href="#te_poi_iphone" data-role="button">Portsmouth</a>
+		<div class="poiButtons">
+		<p>Click these buttons to generate stations' poi info</p>
+			<button>Waterloo</button>
+			<button>Wimbeldon</button>
+			<button>Woking</button>
+			<button>Guildford</button>
+			<button>Portsmouth</button>
+		</div>
+		</div>
 		
 		<div class="poiSection">
 		<!---Same code for this section and poi_iphone page --->
-		<h1>Clicked Station Name</h1>
+		<h1>IPAD VERSION - Clicked Station Name</h1>
 		<p>Here is going to be the generated POIs - using JSON the name, img and desc etc. will be displayed</p>
 		</div>
 		
+		<div class="iphone_poi_links">
+			<!--- iphone version= hide poiSection and display these LINKS to poi_iphone page--->
+			<a href="#te_poi_iphone" data-role="button">Waterloo</a>
+			<a href="#te_poi_iphone" data-role="button">Wimbeldon</a>
+			<a href="#te_poi_iphone" data-role="button">Woking</a>
+			<a href="#te_poi_iphone" data-role="button">Guildford</a>
+			<a href="#te_poi_iphone" data-role="button">Portsmouth</a>
+		</div>
 	</div>
-	
 	<div data-role="navbar">
 		<ul>
 			<li><a href="#te_stationmap">STATION MAP</a></li>
@@ -116,7 +124,7 @@
 			<a href="#te_animDiamond" class="ui-btn ui-corner-all">DIAMOND</a>
 		</div>
 	</div>
-		<h1>Clicked Station Name</h1>
+		<h1>IPHONE VERSION- Clicked Station Name</h1>
 		<p>Here is going to be the generated POIs - using JSON the name, img and desc etc. will be displayed</p>
 	<div data-role="navbar">
 		<ul>
