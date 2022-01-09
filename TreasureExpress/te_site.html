@@ -151,15 +151,45 @@
 	<br>
 	<div>
 	<form action="/action_page.php">
-		
-		<label for="email">Enter your email:</label>
-		<input type="email" id="email" name="email">
-		<input type="submit" value="Submit">
-		<label for="email">Send List to Email</label>
 
 	</form>
 
 	</div>
+
+	<div class="mail">
+		<label for="email">Enter your email:</label>
+		<form name="email" action="#"> 
+		<li><input type='text' name='text1'/></li>
+		<li>&nbsp;</li>
+		<li class="submit"><input type="submit" name="submit" value="Submit" onclick="ValidateEmail(document.email.text1)"/></li>
+		<label for="email">Send List to Email</label>
+		<li>&nbsp;</li>
+		</form>
+		</div>
+		
+
+	<script>
+
+
+
+function ValidateEmail(inputText)
+{
+     var mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+       if(inputText.value.match(mailformat))
+	   {
+
+		alert("Valid email address!");
+		document.email.text1.focus();
+		return true;
+	  	}
+		else
+		{
+		alert("You have entered an invalid email address!");
+		document.email.text1.focus();
+		return false;
+		}
+}
+	</script>
 	
 
 	
