@@ -57,7 +57,7 @@
 </div>
 	
 <!-------------------------------------------------------------------------------------------------------------------->	
-<!------------------------------------------------ Station Map Page -------------------------------------------------->
+<!------------------------------------------------ Station Map Page (iPAD VERSION) ---------------------------------------------->
 <div data-role="page" id="te_stationmap">
 	<div data-role="header">
 		<div data-role="controlgroup" data-type="horizontal">
@@ -66,7 +66,7 @@
 			<a href="#te_animDiamond" class="ui-btn ui-corner-all">DIAMOND</a>
 		</div>
 	</div>
-	<div role="main" class="ui-content">
+	<div role="main" class="stationmap_poi_ipad">
 		<div class="stationmap">
 		<h1>STATION MAP</h1>
 		<p>Here is going to be the list of stations</p>
@@ -77,7 +77,16 @@
 		<p>Here is going to be the generated POIs - using JSON the name, img and desc etc. will be displayed</p>
 		</div>
 		
-		<!---Figure out how to make sure POI page is hidden on iPhone and revealed with button and how to display it on tablet --->
+	</div>
+	
+	<!---------------------------------------------- Station Map Page (iPHONE VERSION) ------------------------------------------->
+	
+	<div role="main" class="stationmap_poi_iphone">
+		<div class="stationmap">
+		<h1>STATION MAP</h1>
+		<p>Here is going to be the list of stations</p>
+		<a href="#te_poi_iphone" data-role="button">OPEN POI</a>
+		</div>
 	</div>
 	
 	<div data-role="navbar">
@@ -90,7 +99,25 @@
 	</div>
 
 </div>
-	
+<div data-role="page" id="te_poi_iphone">
+	<div data-role="header">
+		<div data-role="controlgroup" data-type="horizontal">
+			<a href="#te_homepage" class="ui-btn ui-corner-all">LOGO</a>
+			<a href="#" class="ui-btn ui-corner-all">PROFILE</a>
+			<a href="#te_animDiamond" class="ui-btn ui-corner-all">DIAMOND</a>
+		</div>
+	</div>
+		<h1>POIs</h1>
+		<p>Here is going to be the generated POIs - using JSON the name, img and desc etc. will be displayed</p>
+	<div data-role="navbar">
+		<ul>
+			<li><a href="#te_stationmap">STATION MAP</a></li>
+			<li><a href="#te_favourites">FAVOURITES</a></li>
+			<li><a href="#te_booking">BOOK TICKETS</a></li>
+			<li><a href="#te_scanQR">SCAN QR</a></li>
+		</ul>
+	</div>
+</div>
 
 	
 <!-------------------------------------------------------------------------------------------------------------------->	
