@@ -11,6 +11,8 @@
 	<script src="https://kit.fontawesome.com/81059cf45b.js" crossorigin="anonymous"></script>
 	<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
 	<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+	<script src="https://checkout.stripe.com/checkout.js"></script>
+
 <style>
 	.iphone_poi_links{display: none;}
 	@media screen and (max-width: 768px){
@@ -94,7 +96,7 @@
 		<div class="poiButtons">
 		<p>Click these buttons to generate stations' poi info</p>
 			<button>Waterloo</button>
-			<button>Wimbeldon</button>
+			<button>Wimbledon</button>
 			<button>Woking</button>
 			<button>Guildford</button>
 			<button>Portsmouth</button>
@@ -110,7 +112,7 @@
 		<div class="iphone_poi_links">
 			<!--- iphone version= hide poiSection and display these LINKS to poi_iphone page--->
 			<a href="#te_poi_iphone" data-role="button">Waterloo</a>
-			<a href="#te_poi_iphone" data-role="button">Wimbeldon</a>
+			<a href="#te_poi_iphone" data-role="button">Wimbledon</a>
 			<a href="#te_poi_iphone" data-role="button">Woking</a>
 			<a href="#te_poi_iphone" data-role="button">Guildford</a>
 			<a href="#te_poi_iphone" data-role="button">Portsmouth</a>
@@ -247,35 +249,56 @@ function ValidateEmail(inputText)
 	<h1>BOOK TICKETS</h1>
 	<br> 
 
-	<form name="bookingForm">
-		<label for="fromDestination">From :</label>
-		<input type="text" id="fromDestination" name="fromDestination" value=""><br>
+	<form id="bookingForm" name="bookingForm">
+		<!-- <input disabled type="date" data-clear-btn="true" name="date" id="returnDate" value=""><br> -->
 		
-		<label for="toDestination">To :</label>
-		<input type="text" id="toDestination" name="toDestination" value=""><br><br>
+		<label for="fromDestination" class="selectDestination">From :</label>
+		<select name="fromDestination" class="selectDestination" id="fromDestination">
+			<option value="Waterloo">Waterloo</option>
+			<option value="Wimbledon">Wimbledon</option>
+			<option value="Woking">Woking</option>
+			<option value="Guildford">Guildford</option>
+			<option value="Portsmouth">Portsmouth</option>
+		</select>
+		
 
+		<label for="toDestination" class="selectDestination">To :</label>
+		<select name="toDestination" class="selectDestination" id="toDestination">
+			<option value="Waterloo">Waterloo</option>
+			<option value="Wimbledon">Wimbledon</option>
+			<option value="Woking">Woking</option>
+			<option value="Guildford">Guildford</option>
+			<option value="Portsmouth">Portsmouth</option>
+		</select> <br><br>
 		
+
+
 
 		<fieldset data-role="controlgroup" data-type="horizontal">
-			<input type="radio" name="journeyType" id="optionOneWay" value="on" checked="checked">
+			<input type="radio" name="journeyType" id="optionOneWay" onclick="hideFunction()" >
 			<label for="optionOneWay">One Way</label>
-			<input type="radio" name="journeyType" id="optionReturn" value="off">
+			<input type="radio" name="journeyType" id="optionReturn" checked="checked" >
 			<label for="optionReturn">Return</label>
-			<input type="radio" name="journeyType" id="optionOpenReturn" value="other">
+			<input type="radio" name="journeyType" id="optionOpenReturn">
 			<label for="optionOpenReturn">Open Return</label>
-		</fieldset>
+		</fieldset> 
+
 		
 		<br><br>
-		<label for="date">OUTBOUND:</label>
-		<input type="date" data-clear-btn="true" name="date" id="outboundDate" value=""><br>
-		<label for="outboundTime">Time: </label>
-		<input type="time" data-clear-btn="true" name="outboundTime" id="outboundTime" value=""><br><br>
-	
-		<label for="date">RETURN:</label>
-		<input type="date" data-clear-btn="true" name="date" id="returnDate" value=""><br>
-		<label for="returnTime">Time:  </label>
-		<input type="time" data-clear-btn="true" name="returnTime" id="returnTime" value=""><br><br>
-		<!-----------------TO FIX THE WEIRD SPACE AFTER ICON ADD FALSE INSTEAD -->
+		<div class="outbound">
+			<label for="date">OUTBOUND:</label>
+			<input type="date" name="date" id="outboundDate" value=""><br>
+			<label for="outboundTime">Time: </label>
+			<input type="time" name="outboundTime" id="outboundTime" value=""><br><br>
+		</div>
+
+		<div class="return">
+			<label for="date">RETURN:</label>
+			<input type="date" name="date" id="returnDate" value=""><br>
+			<label for="returnTime">Time:  </label>
+			<input type="time" name="returnTime" id="returnTime" value=""><br><br>
+		</div>
+
 
 		<!-----------------NEEDS ADD ADULT, CHILD, RAILCARD -->
 
@@ -284,10 +307,47 @@ function ValidateEmail(inputText)
 		<input type="text" id="enterPoints" name="enterPoints" value=""><br>
  		
 		
-		<!---WHY IS IT TAKING US TO THE HOME PAGE????---->
-		<input type="submit" value="GET TICKETS">
+		
+		<input type="submit" id="getTickets" name="submit" value="GET TICKETS"  onclick="validateBookingForm()">
 
 	</form> 
+
+	<div align="center" id="thankyouPayment"></div>
+
+	<script> 
+		jQuery(function($) {
+			 var $form = $('#frmBooking');
+			 var handler = StripeCheckout.configure({
+			   key: 'pk_test_cp21BcECf4kMMUbSlRlZlsMo',
+			   token: function(token) {
+			
+				if(token.id){
+						$("#thankyouPayment").html("Thank you, your payment was successful!");
+						
+				}
+			   }
+			 });
+			 
+	   
+			 $('#getTickets').on('click', function(e) {
+				 
+			   handler.open({
+				 name: 'YOUR JOURNEY',
+				 currency: 'gbp',
+				 description: $('#toDestination').val(),
+				 amount: $('#total_value').val() * 100
+			   });
+			   e.preventDefault();
+			 });
+	   
+			 $(window).on('popstate', function() {
+			   handler.close();
+			 });
+			 });
+
+		</script>
+
+
 	<div data-role="footer" data-position="fixed">
 		<div data-role="navbar">
 			<ul>
@@ -363,52 +423,6 @@ function ValidateEmail(inputText)
 </div>
 <!-------------------------------------------------------------------------------------------------------------------->
 
-<script>
-
-/*-------------------------HOME PAGE---------------------*/
-/*-------------------------------------------------------*/
-
-
-/*-----------------------FAVOURITES----------------------*/
-/*-------------------------------------------------------*/
-
-
-/*---------------------BOOK TICKETS --------------------*/
-/*     THIS DOESNT WORK HAHA BUT IT'S A STARTING POINT HEHE */
-function validateForm() {
-  let x = document.forms["bookingForm"]["fromDestination"].value;
-  if (x == "") {
-    alert("Origin station must be filled out");
-    return false;
-  }
-}
-
-function validateForm() {
-  let y = document.forms["bookingForm"]["toDestination"].value;
-  if (y == "") {
-    alert("Destination must be filled out");
-    return false;
-  }
-}
-/*-------------------------------------------------------*/
-
-
-
-/*---------------------SCAN QR--------------------------*/
-/*-------------------------------------------------------*/
-
-
-
-
-</script>
-	
-	
-	
-	
-	
-	
-	
-	
 	
 	
 <script>
