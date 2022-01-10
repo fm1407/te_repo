@@ -3,15 +3,21 @@
 <head>
 	<title>Treasure Express</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
-<script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
-<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+
+	<link rel="stylesheet" href="themes/TrainApp3.min.css" />
+	<link rel="stylesheet" href="themes/jquery.mobile.icons.min.css" />
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile.structure-1.4.5.min.css" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<script src="https://kit.fontawesome.com/81059cf45b.js" crossorigin="anonymous"></script>
+	<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+	<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
 <style>
 	.iphone_poi_links{display: none;}
 	@media screen and (max-width: 768px){
 		.poiSection{display:none;}
 		.poiButtons{display:none;}
 		.iphone_poi_links{display: block;}
+		.font-size-change{ font-size:10px;}
 	}
 	
 </style>
@@ -22,11 +28,11 @@
 <!---------------------------------------------------- Home Page ----------------------------------------------------->
 <div data-role="page" id="te_homepage">
 	
-	<div data-role="header">
+	<div data-role="header" data-position="fixed">
 		<div data-role="controlgroup" data-type="horizontal">
 			<a href="#te_homepage" class="ui-btn ui-corner-all">LOGO</a>
-			<a href="#" class="ui-btn ui-corner-all">PROFILE</a>
-			<a href="#te_animDiamond" class="ui-btn ui-corner-all">DIAMOND</a>
+			<a href="#" class="ui-btn ui-corner-all"><i class="far fa-user fa-2x"></i><br><br>PROFILE</a>
+			<a href="#te_animDiamond" class="ui-btn ui-corner-all ui-btn-right"><i class="far fa-gem fa-2x"></i><br><br>0</a>
 		</div>
 	</div>
 	
@@ -43,7 +49,7 @@
 	With Treasure Express you can redeem vouchers to your favourite landmarks. <br><br><br>
 	The more landmarks you visit the more points you receive to your favourite vouchers!</p>
 	
-	<a href="#te_stationmap" data-role="button">OPEN MAP</a>
+	<a href="#te_stationmap" style="background-color: #243757; border: #243757;" data-role="button">OPEN MAP</a>
 
 
 	<iframe width="560" height="315" title="YouTube video player" frameborder="0" 
@@ -51,14 +57,19 @@
 		src="https://www.youtube.com/embed/v0-Y6CUl3w4">
 	</iframe>
 
-	
+	<div data-role="footer" data-position="fixed">
 	<div data-role="navbar">
 		<ul>
-			<li><a href="#te_stationmap">STATION MAP</a></li>
-			<li><a href="#te_favourites">FAVOURITES</a></li>
-			<li><a href="#te_booking">BOOK TICKETS</a></li>
-			<li><a href="#te_scanQR">SCAN QR</a></li>
+			<li><a href="#te_stationmap"><i class="far fa-map fa-2x"></i><br><br>
+				<span" class="font-size-change">STATION  MAP</span></a></li>
+			<li><a href="#te_favourites"><i class="far fa-heart fa-2x"></i><br><br>
+				<span" class="font-size-change">FAVORITES</span></a></li>
+			<li><a href="#te_booking"><i class="fas fa-ticket-alt fa-2x"></i><br><br>
+				<span" class="font-size-change">BOOK  TICKETS</span></a></li>
+			<li><a href="#te_scanQR"><i class="fas fa-qrcode fa-2x"></i><br><br>
+				<span" class="font-size-change">SCAN QR</span></a></li>
 		</ul>
+	</div>
 	</div>
 	
 	
@@ -67,11 +78,11 @@
 <!-------------------------------------------------------------------------------------------------------------------->	
 <!------------------------------------------------ Station Map Page (iPAD VERSION) ---------------------------------------------->
 <div data-role="page" id="te_stationmap">
-	<div data-role="header">
+	<div data-role="header" data-position="fixed">
 		<div data-role="controlgroup" data-type="horizontal">
 			<a href="#te_homepage" class="ui-btn ui-corner-all">LOGO</a>
-			<a href="#" class="ui-btn ui-corner-all">PROFILE</a>
-			<a href="#te_animDiamond" class="ui-btn ui-corner-all">DIAMOND</a>
+			<a href="#" class="ui-btn ui-corner-all"><i class="far fa-user fa-2x"></i><br><br>PROFILE</a>
+			<a href="#te_animDiamond" class="ui-btn ui-corner-all ui-btn-right"><i class="far fa-gem fa-2x"></i><br><br>0</a>
 		</div>
 	</div>
 	
@@ -105,45 +116,57 @@
 			<a href="#te_poi_iphone" data-role="button">Portsmouth</a>
 		</div>
 	</div>
-	<div data-role="navbar">
-		<ul>
-			<li><a href="#te_stationmap">STATION MAP</a></li>
-			<li><a href="#te_favourites">FAVOURITES</a></li>
-			<li><a href="#te_booking">BOOK TICKETS</a></li>
-			<li><a href="#te_scanQR">SCAN QR</a></li>
-		</ul>
-	</div>
+	<div data-role="footer" data-position="fixed">
+		<div data-role="navbar">
+			<ul>
+				<li><a href="#te_stationmap" class="ui-btn-active"><i class="far fa-map fa-2x"></i><br><br>
+					<span" class="font-size-change">STATION  MAP</span></a></li>
+				<li><a href="#te_favourites"><i class="far fa-heart fa-2x"></i><br><br>
+					<span" class="font-size-change">FAVORITES</span></a></li>
+				<li><a href="#te_booking"><i class="fas fa-ticket-alt fa-2x"></i><br><br>
+					<span" class="font-size-change">BOOK  TICKETS</span></a></li>
+				<li><a href="#te_scanQR"><i class="fas fa-qrcode fa-2x"></i><br><br>
+					<span" class="font-size-change">SCAN QR</span></a></li>
+			</ul>
+		</div>
+		</div>
 
 </div>
 <!---------------------------------------------- Station Map Page (iPHONE VERSION) ------------------------------------------->
 <div data-role="page" id="te_poi_iphone">
-	<div data-role="header">
+	<div data-role="header" data-position="fixed">
 		<div data-role="controlgroup" data-type="horizontal">
 			<a href="#te_homepage" class="ui-btn ui-corner-all">LOGO</a>
-			<a href="#" class="ui-btn ui-corner-all">PROFILE</a>
-			<a href="#te_animDiamond" class="ui-btn ui-corner-all">DIAMOND</a>
+			<a href="#" class="ui-btn ui-corner-all"><i class="far fa-user fa-2x"></i><br><br>PROFILE</a>
+			<a href="#te_animDiamond" class="ui-btn ui-corner-all ui-btn-right"><i class="far fa-gem fa-2x"></i><br><br>0</a>
 		</div>
 	</div>
 		<h1>IPHONE VERSION- Clicked Station Name</h1>
 		<p>Here is going to be the generated POIs - using JSON the name, img and desc etc. will be displayed</p>
-	<div data-role="navbar">
-		<ul>
-			<li><a href="#te_stationmap">STATION MAP</a></li>
-			<li><a href="#te_favourites">FAVOURITES</a></li>
-			<li><a href="#te_booking">BOOK TICKETS</a></li>
-			<li><a href="#te_scanQR">SCAN QR</a></li>
-		</ul>
-	</div>
+		<div data-role="footer" data-position="fixed">
+			<div data-role="navbar">
+				<ul>
+					<li><a href="#te_stationmap" class="ui-btn-active"><i class="far fa-map fa-2x"></i><br><br>
+						<span" class="font-size-change">STATION  MAP</span></a></li>
+					<li><a href="#te_favourites"><i class="far fa-heart fa-2x"></i><br><br>
+						<span" class="font-size-change">FAVORITES</span></a></li>
+					<li><a href="#te_booking"><i class="fas fa-ticket-alt fa-2x"></i><br><br>
+						<span" class="font-size-change">BOOK  TICKETS</span></a></li>
+					<li><a href="#te_scanQR"><i class="fas fa-qrcode fa-2x"></i><br><br>
+						<span" class="font-size-change">SCAN QR</span></a></li>
+				</ul>
+			</div>
+			</div>
 </div>
 	
 <!-------------------------------------------------------------------------------------------------------------------->	
 <!------------------------------------------------- Favourites Page -------------------------------------------------->
 <div data-role="page" id="te_favourites">
-	<div data-role="header">
+	<div data-role="header" data-position="fixed">
 		<div data-role="controlgroup" data-type="horizontal">
 			<a href="#te_homepage" class="ui-btn ui-corner-all">LOGO</a>
-			<a href="#" class="ui-btn ui-corner-all">PROFILE</a>
-			<a href="#te_animDiamond" class="ui-btn ui-corner-all">DIAMOND</a>
+			<a href="#" class="ui-btn ui-corner-all"><i class="far fa-user fa-2x"></i><br><br>PROFILE</a>
+			<a href="#te_animDiamond" class="ui-btn ui-corner-all ui-btn-right"><i class="far fa-gem fa-2x"></i><br><br>0</a>
 		</div>
 	</div>
 	
@@ -193,25 +216,31 @@ function ValidateEmail(inputText)
 	
 
 	
-	<div data-role="navbar">
-		<ul>
-			<li><a href="#te_stationmap">STATION MAP</a></li>
-			<li><a href="#te_favourites">FAVOURITES</a></li>
-			<li><a href="#te_booking">BOOK TICKETS</a></li>
-			<li><a href="#te_scanQR">Scan QR</a></li>
-		</ul>
-	</div>
+	<div data-role="footer" data-position="fixed">
+		<div data-role="navbar">
+			<ul>
+				<li><a href="#te_stationmap"><i class="far fa-map fa-2x"></i><br><br>
+					<span" class="font-size-change">STATION  MAP</span></a></li>
+				<li><a href="#te_favourites" class="ui-btn-active"><i class="far fa-heart fa-2x"></i><br><br>
+					<span" class="font-size-change">FAVORITES</span></a></li>
+				<li><a href="#te_booking"><i class="fas fa-ticket-alt fa-2x"></i><br><br>
+					<span" class="font-size-change">BOOK  TICKETS</span></a></li>
+				<li><a href="#te_scanQR"><i class="fas fa-qrcode fa-2x"></i><br><br>
+					<span" class="font-size-change">SCAN QR</span></a></li>
+			</ul>
+		</div>
+		</div>
 	
 </div>
 	
 <!-------------------------------------------------------------------------------------------------------------------->	
 <!---------------------------------------------- Booking Ticket Page ------------------------------------------------->
 <div data-role="page" id="te_booking">
-	<div data-role="header">
+	<div data-role="header" data-position="fixed">
 		<div data-role="controlgroup" data-type="horizontal">
 			<a href="#te_homepage" class="ui-btn ui-corner-all">LOGO</a>
-			<a href="#" class="ui-btn ui-corner-all">PROFILE</a>
-			<a href="#te_animDiamond" class="ui-btn ui-corner-all">DIAMOND</a>
+			<a href="#" class="ui-btn ui-corner-all"><i class="far fa-user fa-2x"></i><br><br>PROFILE</a>
+			<a href="#te_animDiamond" class="ui-btn ui-corner-all ui-btn-right"><i class="far fa-gem fa-2x"></i><br><br>0</a>
 		</div>
 	</div>
 	
@@ -259,61 +288,78 @@ function ValidateEmail(inputText)
 		<input type="submit" value="GET TICKETS">
 
 	</form> 
-
-	<div data-role="navbar">
-		<ul>
-			<li><a href="#te_stationmap">STATION MAP</a></li>
-			<li><a href="#te_favourites">FAVOURITES</a></li>
-			<li><a href="#te_booking">BOOK TICKETS</a></li>
-			<li><a href="#te_scanQR">SCAN QR</a></li>
-		</ul>
-	</div>
+	<div data-role="footer" data-position="fixed">
+		<div data-role="navbar">
+			<ul>
+				<li><a href="#te_stationmap"><i class="far fa-map fa-2x"></i><br><br>
+					<span" class="font-size-change">STATION  MAP</span></a></li>
+				<li><a href="#te_favourites"><i class="far fa-heart fa-2x"></i><br><br>
+					<span" class="font-size-change">FAVORITES</span></a></li>
+				<li><a href="#te_booking" class="ui-btn-active"><i class="fas fa-ticket-alt fa-2x"></i><br><br>
+					<span" class="font-size-change">BOOK  TICKETS</span></a></li>
+				<li><a href="#te_scanQR"><i class="fas fa-qrcode fa-2x"></i><br><br>
+					<span" class="font-size-change">SCAN QR</span></a></li>
+			</ul>
+		</div>
+		</div>
 </div>
 	
 <!-------------------------------------------------------------------------------------------------------------------->		
 <!------------------------------------------------- Scan QR code Page ------------------------------------------------>
 <div data-role="page" id="te_scanQR">
-	<div data-role="header">
+	<div data-role="header" data-position="fixed">
 		<div data-role="controlgroup" data-type="horizontal">
 			<a href="#te_homepage" class="ui-btn ui-corner-all">LOGO</a>
-			<a href="#" class="ui-btn ui-corner-all">PROFILE</a>
-			<a href="#te_animDiamond" class="ui-btn ui-corner-all">DIAMOND</a>
+			<a href="#" class="ui-btn ui-corner-all"><i class="far fa-user fa-2x"></i><br><br>PROFILE</a>
+			<a href="#te_animDiamond" class="ui-btn ui-corner-all ui-btn-right"><i class="far fa-gem fa-2x"></i><br><br>0</a>
 		</div>
 	</div>
 	
 	<h1>SCAN QR</h1>
 	
-	<div data-role="navbar">
-		<ul>
-			<li><a href="#te_stationmap">STATION MAP</a></li>
-			<li><a href="#te_favourites">FAVOURITES</a></li>
-			<li><a href="#te_booking">BOOK TICKETS</a></li>
-			<li><a href="#te_scanQR">SCAN QR</a></li>
-		</ul>
-	</div>
+	<div data-role="footer" data-position="fixed">
+		<div data-role="navbar">
+			<ul>
+				<li><a href="#te_stationmap"><i class="far fa-map fa-2x"></i><br><br>
+					<span" class="font-size-change">STATION  MAP</span></a></li>
+				<li><a href="#te_favourites"><i class="far fa-heart fa-2x"></i><br><br>
+					<span" class="font-size-change">FAVORITES</span></a></li>
+				<li><a href="#te_booking"><i class="fas fa-ticket-alt fa-2x"></i><br><br>
+					<span" class="font-size-change">BOOK  TICKETS</span></a></li>
+				<li><a href="#te_scanQR" class="ui-btn-active"><i class="fas fa-qrcode fa-2x"></i><br><br>
+					<span" class="font-size-change">SCAN QR</span></a></li>
+			</ul>
+		</div>
+		</div>
 </div>
 	
 <!-------------------------------------------------------------------------------------------------------------------->	
 <!----------------------------------------------- Animated Diamond Page ---------------------------------------------->
 <div data-role="page" id="te_animDiamond">
-	<div data-role="header">
+	<div data-role="header" data-position="fixed">
 		<div data-role="controlgroup" data-type="horizontal">
 			<a href="#te_homepage" class="ui-btn ui-corner-all">LOGO</a>
-			<a href="#" class="ui-btn ui-corner-all">PROFILE</a>
-			<a href="#te_animDiamond" class="ui-btn ui-corner-all">DIAMOND</a>
+			<a href="#" class="ui-btn ui-corner-all"><i class="far fa-user fa-2x"></i><br><br>PROFILE</a>
+			<a href="#te_animDiamond" class="ui-btn-active ui-btn ui-corner-all ui-btn-right"><i class="far fa-gem fa-2x"></i><br><br>0</a>
 		</div>
 	</div>
 	
 	<h1>DIAMOND</h1>
 	
-	<div data-role="navbar">
-		<ul>
-			<li><a href="#te_stationmap">STATION MAP</a></li>
-			<li><a href="#te_favourites">FAVOURITES</a></li>
-			<li><a href="#te_booking">BBOOK TICKETS</a></li>
-			<li><a href="#te_scanQR">SCAN QR</a></li>
-		</ul>
-	</div>
+	<div data-role="footer" data-position="fixed">
+		<div data-role="navbar">
+			<ul>
+				<li><a href="#te_stationmap"><i class="far fa-map fa-2x"></i><br><br>
+					<span" class="font-size-change">STATION  MAP</span></a></li>
+				<li><a href="#te_favourites"><i class="far fa-heart fa-2x"></i><br><br>
+					<span" class="font-size-change">FAVORITES</span></a></li>
+				<li><a href="#te_booking"><i class="fas fa-ticket-alt fa-2x"></i><br><br>
+					<span" class="font-size-change">BOOK  TICKETS</span></a></li>
+				<li><a href="#te_scanQR"><i class="fas fa-qrcode fa-2x"></i><br><br>
+					<span" class="font-size-change">SCAN QR</span></a></li>
+			</ul>
+		</div>
+		</div>
 </div>
 <!-------------------------------------------------------------------------------------------------------------------->
 
