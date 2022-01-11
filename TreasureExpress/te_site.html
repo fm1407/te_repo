@@ -1387,5 +1387,34 @@ function ValidateEmail(inputText)
 	</div>
 	</div>
 </div>
+<script>
+	
+	var favPoiNames=[];
+	var text="";
+	
+	document.getElementById("fav_london_dungeon").onclick=s
+		function addToFavs(){
+			var poiName="London Dungeon";
+			favPoiNames.push(poiName);
+			showSavedPoiNames()
+		}
+		
+	document.getElementById("fav_london_eye").onclick=
+	function addToFavs(){
+		var poiName="London Eye";
+		favPoiNames.push(poiName);
+		showSavedPoiNames()
+	}
+	
+	function showSavedPoiNames(){
+		var len = favPoiNames.length;
+		for (let i = 0; i < len; i++) {
+			text= text + " ";
+		}
+		alert(text);
+	}
+	
+	
+</script>
 </body>
 </html>
