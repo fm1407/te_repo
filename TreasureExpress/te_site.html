@@ -24,6 +24,71 @@
 		.iphone_stations_buttons{display: block;}
 		.font-size-change{ font-size:10px;}
 	}
+
+
+
+	.diamonds {
+            text-align: center;
+    }
+    .diamonds span {
+        display: inline-block;
+        width: 0px;
+        height: 0px;
+        background: url("assets/images/icon_diamond.png");
+        margin: -334px 40px 55px 0;
+        animation: animate 8s infinite linear;
+    }
+    .diamonds span:nth-child(3n+2){
+        animation-delay: 1.3s;
+    }
+    .diamonds span:nth-child(2n+5){
+        animation-delay: 1.5s;
+    }
+    .diamonds span:nth-child(5n+2){
+        animation-delay: 1.1s;
+    }
+    .diamonds span:nth-child(3n+10){
+        animation-delay: 2.3s;
+    }
+    .diamonds span:nth-child(7n+2){
+        animation-delay: 3.5s;
+    }
+    .diamonds span:nth-child(4n+5){
+        animation-delay: 5s;
+    }
+    .diamonds span:nth-child(3n+7){
+        animation-delay: 7s;
+    }	
+	
+	.centered {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+	}
+
+    @keyframes animate {
+        0%{
+            width: 54px;
+            height: 44px;
+            opacity: 1;
+            transform: translate(0, 0) rotateZ(0deg);
+        }
+        70%{
+            width: 54px;
+            height: 44px;
+            opacity: 1;
+            transform: translate(100px, 500px) rotateZ(270deg);
+        }
+        100%{
+            width: 54px;
+            height: 44px;
+            opacity: 0;
+            transform: translate(120px, 700px) rotateZ(360deg);
+        }
+
+    }
+
 	
 </style>
 
@@ -124,7 +189,7 @@
 						<div id="waterloo_poi1_ipad" class="ui-body-d ui-content">
 							<h2>LONDON DUNGEON</h2>
 
-							<p><img src="assets/images/icon_diamond.png" height="24" width="28">POINTS</p>
+							<p><img src="assets/images/icon_diamond.png" height="24" width="28"> POINTS</p>
 							
 							<img src="assets/images/London_Dungeon.png" alt="London Dungeon">
 							
@@ -366,7 +431,7 @@
 						<div id="waterloo_poi2_ipad" class="ui-body-d ui-content">
 							<h2>LONDON EYE</h2>
 
-							<p><img src="assets/images/icon_diamond.png" height="24" width="28">POINTS</p>
+							<p><img src="assets/images/icon_diamond.png" height="24" width="28"> POINTS</p>
 							
 							<img src="assets/images/London_Eye.png" alt="London Eye">
 							
@@ -383,7 +448,7 @@
 						<div id="waterloo_poi3_ipad" class="ui-body-d ui-content">
 							<h2>BUCKINGHAM PALACE</h2>
 
-							<p><img src="assets/images/icon_diamond.png" height="24" width="28">POINTS</p>
+							<p><img src="assets/images/icon_diamond.png" height="24" width="28"> POINTS</p>
 							
 							<img src="assets/images/Buckingham_Palace.png" alt="Buckingham Palace">
 							
@@ -413,7 +478,7 @@
 						<div id="wimbledon_poi1_ipad" class="ui-body-d ui-content">
 							<h2>Wimbledon Centre Court</h2>
 
-							<p><img src="assets/images/icon_diamond.png" height="24" width="28">POINTS</p>
+							<p><img src="assets/images/icon_diamond.png" height="24" width="28"> POINTS</p>
 							
 							<img src="assets/images/Wimbledon_Centre_Court.png" alt="Wimbledon Centre Court">
 							
@@ -430,7 +495,7 @@
 						<div id="wimbledon_poi2_ipad" class="ui-body-d ui-content">
 							<h2>New Wimbledon Theatre</h2>
 
-							<p><img src="assets/images/icon_diamond.png" height="24" width="28">POINTS</p>
+							<p><img src="assets/images/icon_diamond.png" height="24" width="28"> POINTS</p>
 							
 							<img src="assets/images/New_Wimbledon_Theatre.png" alt="New Wimbledon Theatre">
 							
@@ -447,7 +512,7 @@
 						<div id="wimbledon_poi3_ipad" class="ui-body-d ui-content">
 							<h2>Buddhapadipa Temple</h2>
 
-							<p><img src="assets/images/icon_diamond.png" height="24" width="28">POINTS</p>
+							<p><img src="assets/images/icon_diamond.png" height="24" width="28"> POINTS</p>
 							
 							<img src="assets/images/Buddhapadipa_Temple.png" alt="Buddhapadipa Temple">
 							
@@ -477,7 +542,7 @@
 						<div id="woking_poi1_ipad" class="ui-body-d ui-content">
 							<h2>The Lightbox</h2>
 
-							<p><img src="assets/images/icon_diamond.png" height="24" width="28"><br>POINTS</p>
+							<p><img src="assets/images/icon_diamond.png" height="24" width="28"> POINTS</p>
 							
 							<img src="assets/images/The_Lightbox.png" alt="The Lightbox">
 							
@@ -494,7 +559,7 @@
 						<div id="woking_poi2_ipad" class="ui-body-d ui-content">
 							<h2>RHS Garden</h2>
 
-							<p><img src="assets/images/icon_diamond.png" height="24" width="28">POINTS</p>
+							<p><img src="assets/images/icon_diamond.png" height="24" width="28"> POINTS</p>
 
 							<img src="assets/images/RHS_Garden.png" alt="RHS Garden">
 							
@@ -511,7 +576,7 @@
 						<div id="woking_poi3_ipad" class="ui-body-d ui-content">
 							<h2>Mercedes Benz World </h2>
 
-							<p><img src="assets/images/icon_diamond.png" height="24" width="28">POINTS</p>
+							<p><img src="assets/images/icon_diamond.png" height="24" width="28"> POINTS</p>
 
 							<img src="assets/images/Mercedes_Benz_World.png" alt="Mercedes-Benz World">
 							
@@ -541,7 +606,7 @@
 						<div id="guildford_poi1_ipad" class="ui-body-d ui-content">
 							<h2>Guildford Castle</h2>
 
-							<p><img src="assets/images/icon_diamond.png" height="24" width="28">POINTS</p>
+							<p><img src="assets/images/icon_diamond.png" height="24" width="28"> POINTS</p>
 							
 							<img src="assets/images/Guildford_Castle.png" alt="Guildford Castle">
 							
@@ -558,7 +623,7 @@
 						<div id="guildford_poi2_ipad" class="ui-body-d ui-content">
 							<h2>Guildford Museum</h2>
 
-							<p><img src="assets/images/icon_diamond.png" height="24" width="28">POINTS</p>
+							<p><img src="assets/images/icon_diamond.png" height="24" width="28"> POINTS</p>
 							
 							<img src="assets/images/Guildford_Museum.png" alt="Guildford Museum">
 							
@@ -575,7 +640,7 @@
 						<div id="guildford_poi3_ipad" class="ui-body-d ui-content">
 							<h2>Stoke Park</h2>
 
-							<p><img src="assets/images/icon_diamond.png" height="24" width="28">POINTS</p>
+							<p><img src="assets/images/icon_diamond.png" height="24" width="28"> POINTS</p>
 							
 							<img src="assets/images/Stoke_Park.png" alt="Stoke Park">
 							
@@ -605,7 +670,7 @@
 						<div id="portsmouth_poi1_ipad" class="ui-body-d ui-content">
 							<h2>Spinnaker Tower</h2>
 
-							<p><img src="assets/images/icon_diamond.png" height="24" width="28">POINTS</p>
+							<p><img src="assets/images/icon_diamond.png" height="24" width="28"> POINTS</p>
 							
 							<img src="assets/images/Spinnaker_Tower.png" alt="Spinnaker Tower">
 							
@@ -622,7 +687,7 @@
 						<div id="portsmouth_poi2_ipad" class="ui-body-d ui-content">
 							<h2>South Parade Pier</h2>
 
-							<p><img src="assets/images/icon_diamond.png" height="24" width="28">POINTS</p>
+							<p><img src="assets/images/icon_diamond.png" height="24" width="28"> POINTS</p>
 							
 							<img src="assets/images/South_Parade_Pier.png" alt="South Parade Pier">
 							
@@ -639,7 +704,7 @@
 						<div id="portsmouth_poi3_ipad" class="ui-body-d ui-content">
 							<h2>Historic Dockyard</h2>
 
-							<p><img src="assets/images/icon_diamond.png" height="24" width="28">POINTS</p>
+							<p><img src="assets/images/icon_diamond.png" height="24" width="28"> POINTS</p>
 							
 							<img src="assets/images/Historic_Dockyard.png" alt="Historic Dockyard">
 							
@@ -705,7 +770,7 @@
 			<div id="waterloo_poi1_iphone" class="ui-body-d ui-content">
 				<h2>LONDON DUNGEON</h2>
 
-				<p><img src="assets/images/icon_diamond.png" height="24" width="28">POINTS</p>
+				<p><img src="assets/images/icon_diamond.png" height="24" width="28"> POINTS</p>
 
 				<img src="assets/images/London_Dungeon.png" alt="London Dungeon">
 
@@ -722,7 +787,7 @@
 			<div id="waterloo_poi2_iphone" class="ui-body-d ui-content">
 				<h2>LONDON EYE</h2>
 
-				<p><img src="assets/images/icon_diamond.png" height="24" width="28">POINTS</p>
+				<p><img src="assets/images/icon_diamond.png" height="24" width="28"> POINTS</p>
 
 				<img src="assets/images/London_Eye.png" alt="London Eye">
 
@@ -739,7 +804,7 @@
 			<div id="waterloo_poi3_iphone" class="ui-body-d ui-content">
 				<h2>BUCKINGHAM PALACE</h2>
 
-				<p><img src="assets/images/icon_diamond.png" height="24" width="28">POINTS</p>
+				<p><img src="assets/images/icon_diamond.png" height="24" width="28"> POINTS</p>
 
 				<img src="assets/images/Buckingham_Palace.png" alt="Buckingham Palace">
 
@@ -793,7 +858,7 @@
 			<div id="wimbledon_poi1_iphone" class="ui-body-d ui-content">
 				<h2>Wimbledon Centre Court</h2>
 
-				<p><img src="assets/images/icon_diamond.png" height="24" width="28">POINTS</p>
+				<p><img src="assets/images/icon_diamond.png" height="24" width="28"> POINTS</p>
 
 				<img src="assets/images/Wimbledon_Centre_Court.png" alt="Wimbledon Centre Court">
 
@@ -810,7 +875,7 @@
 			<div id="wimbledon_poi2_iphone" class="ui-body-d ui-content">
 				<h2>New Wimbledon Theatre</h2>
 
-				<p><img src="assets/images/icon_diamond.png" height="24" width="28">POINTS</p>
+				<p><img src="assets/images/icon_diamond.png" height="24" width="28"> POINTS</p>
 
 				<img src="assets/images/New_Wimbledon_Theatre.png" alt="New Wimbledon Theatre">
 
@@ -826,7 +891,7 @@
 			<div id="wimbledon_poi3_iphone" class="ui-body-d ui-content">
 				<h2>Buddhapadipa Temple</h2>
 
-				<p><img src="assets/images/icon_diamond.png" height="24" width="28">POINTS</p>
+				<p><img src="assets/images/icon_diamond.png" height="24" width="28"> POINTS</p>
 
 				<img src="assets/images/Buddhapadipa_Temple.png" alt="Buddhapadipa Temple">
 
@@ -879,7 +944,7 @@
 				<div id="woking_poi1_iphone" class="ui-body-d ui-content">
 					<h2>The Lightbox</h2>
 
-					<p><img src="assets/images/icon_diamond.png" height="24" width="28">POINTS</p>
+					<p><img src="assets/images/icon_diamond.png" height="24" width="28"> POINTS</p>
 
 					<img src="assets/images/The_Lightbox.png" alt="The Lightbox">
 
@@ -896,7 +961,7 @@
 				<div id="woking_poi2_iphone" class="ui-body-d ui-content">
 					<h2>RHS Garden</h2>
 
-					<p><img src="assets/images/icon_diamond.png" height="24" width="28">POINTS</p>
+					<p><img src="assets/images/icon_diamond.png" height="24" width="28"> POINTS</p>
 
 					<img src="assets/images/RHS_Garden.png" alt="RHS Garden">
 
@@ -913,9 +978,9 @@
 				<div id="woking_poi3_iphone" class="ui-body-d ui-content">
 					<h2>Mercedes Benz World </h2>
 
-					<p><img src="assets/images/icon_diamond.png" height="24" width="28">POINTS</p>
+					<p><img src="assets/images/icon_diamond.png" height="24" width="28"> POINTS</p>
 
-					<img src="assets/images/Mercedes_Benz_World.png" alt="Mercedes Benz World">
+					<img src="assets/images/Mercedes_Benz_World.png" alt="Mercedes-Benz World">
 
 					<button class="fav_btn" id="fav_benz_world3">FAVOURITE</button>
 
@@ -967,7 +1032,7 @@
 						<div id="guildford_poi1_iphone" class="ui-body-d ui-content">
 							<h2>Guildford Castle</h2>
 
-							<p><img src="assets/images/icon_diamond.png" height="24" width="28">POINTS</p>
+							<p><img src="assets/images/icon_diamond.png" height="24" width="28"> POINTS</p>
 							
 							<img src="assets/images/Guildford_Castle.png" alt="Guildford Castle">
 							
@@ -984,7 +1049,7 @@
 						<div id="guildford_poi2_iphone" class="ui-body-d ui-content">
 							<h2>Guildford Museum</h2>
 
-							<p><img src="assets/images/icon_diamond.png" height="24" width="28">POINTS</p>
+							<p><img src="assets/images/icon_diamond.png" height="24" width="28"> POINTS</p>
 							
 							<img src="assets/images/Guildford_Museum.png" alt="Guildford Museum">
 							
@@ -1001,7 +1066,7 @@
 						<div id="guildford_poi3_iphone" class="ui-body-d ui-content">
 							<h2>Stoke Park</h2>
 
-							<p><img src="assets/images/icon_diamond.png" height="24" width="28">POINTS</p>
+							<p><img src="assets/images/icon_diamond.png" height="24" width="28"> POINTS</p>
 							
 							<img src="assets/images/Stoke_Park.png" alt="Stoke Park">
 							
@@ -1055,7 +1120,7 @@
 						<div id="portsmouth_poi1_iphone" class="ui-body-d ui-content">
 							<h2>Spinnaker Tower</h2>
 
-							<p><img src="assets/images/icon_diamond.png" height="24" width="28">POINTS</p>
+							<p><img src="assets/images/icon_diamond.png" height="24" width="28"> POINTS</p>
 							
 							<img src="assets/images/Spinnaker_Tower.png" alt="Spinnaker Tower">
 							
@@ -1072,7 +1137,7 @@
 						<div id="portsmouth_poi2_iphone" class="ui-body-d ui-content">
 							<h2>South Parade Pier</h2>
 
-							<p><img src="assets/images/icon_diamond.png" height="24" width="28">POINTS</p>
+							<p><img src="assets/images/icon_diamond.png" height="24" width="28"> POINTS</p>
 							
 							<img src="assets/images/South_Parade_Pier.png" alt="South Parade Pier">
 							
@@ -1089,7 +1154,7 @@
 						<div id="portsmouth_poi3_iphone" class="ui-body-d ui-content">
 							<h2>Historic Dockyard</h2>
 
-							<p><img src="assets/images/icon_diamond.png" height="24" width="28">POINTS</p>
+							<p><img src="assets/images/icon_diamond.png" height="24" width="28"> POINTS</p>
 							
 							<img src="assets/images/Historic_Dockyard.png" alt="Historic Dockyard">
 							
@@ -1272,7 +1337,7 @@ function ValidateEmail(inputText)
 
 	</form> 
 
-	<div align="center" id="thankyouPayment"></div>
+	<div text-align="center" id="thankyouPayment"></div>
 
 	<script> 
 		jQuery(function($) {
@@ -1368,11 +1433,11 @@ function ValidateEmail(inputText)
 						<!-------------------LONDON DUNGEON ------------------>
 						<div id="waterloo_qr1_ipad" class="ui-body-d ui-content">
 							<h2>LONDON DUNGEON</h2>
-							<p><img src="assets/images/icon_diamond.png" height="24" width="28">POINTS</p>
+							<p><img src="assets/images/icon_diamond.png" height="24" width="28"> POINTS</p>
 
 							<img src="assets/images/London_Dungeon.png" alt="London Dungeon">
 							
-							<a href="#" class="ui-btn ui-corner-all">SCAN QR</a>
+							<a href="QR_LINK" class="ui-btn ui-corner-all" id="scan_qr_london_dungeon">SCAN QR</a>
 
 							<p>The London Dungeon is a uniquely thrilling attraction that will whisk you way back to the capital's most perilous past. See, hear, feel and (ahem!) smell the chillingly amusing characters of the 'bad old days' as they come to life before you.</p>
 						
@@ -1382,11 +1447,11 @@ function ValidateEmail(inputText)
 						<!-------------------LONDON EYE ------------------>
 						<div id="waterloo_qr2_ipad" class="ui-body-d ui-content">
 							<h2>LONDON EYE</h2>
-							<p><img src="assets/images/icon_diamond.png" height="24" width="28">POINTS</p>
+							<p><img src="assets/images/icon_diamond.png" height="24" width="28"> POINTS</p>
 
 							<img src="assets/images/London_Eye.png" alt="London Eye">
 
-							<a href="www.google.com" class="ui-btn ui-corner-all" id="scan_qr_london_dungeon">SCAN QR</a>
+							<a href="ARpage_London_Eye.html" class="ui-btn ui-corner-all" id="scan_qr_london_eye">SCAN QR</a>
 
 							<p>The London Eye is a cantilevered observation wheel on the South Bank of the River Thames in London. It is Europe's tallest cantilevered observation wheel, and is the most popular paid tourist attraction in the United Kingdom with over 3 million visitors annually.</p>
 						</div>
@@ -1394,11 +1459,12 @@ function ValidateEmail(inputText)
 						<!-------------------BUCKINGHAM PALACE ------------------>
 						<div id="waterloo_qr3_ipad" class="ui-body-d ui-content">
 							<h2>BUCKINGHAM PALACE</h2>
-							<p><img src="assets/images/icon_diamond.png" height="24" width="28">POINTS</p>
+							<p><img src="assets/images/icon_diamond.png" height="24" width="28"> POINTS</p>
 
 							<img src="assets/images/Buckingham_Palace.png" alt="Buckingham Palace">
 
-							<a href="#" class="ui-btn ui-corner-all">SCAN QR</a>
+							<a href="QR_LINK" class="ui-btn ui-corner-all" id="scan_qr_buckingham_palace">SCAN QR</a>
+
 
 							<p>Buckingham Palace is the London residence and administrative headquarters of the monarch of the United Kingdom. Located in the City of Westminster, the palace is often at the centre of state occasions and royal hospitality. It has been a focal point for the British people at times of national rejoicing and mourning.</p>
 
@@ -1420,16 +1486,46 @@ function ValidateEmail(inputText)
 						<!-------------------Wimbledon Centre Court ------------------>
 						<div id="wimbledon_qr1_ipad" class="ui-body-d ui-content">
 							<h2>Wimbledon Centre Court</h2>
+
+							<p><img src="assets/images/icon_diamond.png" height="24" width="28"> POINTS</p>
+
+							<img src="assets/images/Wimbledon_Centre_Court.png" alt="Wimbledon Centre Court">
+
+							<a href="QR_LINK" class="ui-btn ui-corner-all" id="scan_qr_wimbledon_centre_court">SCAN QR</a>
+
+							<p>Wimbledon Centre Court is the main court at The Championships, Wimbledon, the third annual Grand Slam event of the tennis calendar. It is considered the world's most famous tennis court.It incorporates the clubhouse of the All England Lawn Tennis and Croquet Club. Its only regular use for play is during the two weeks a year that the Championships take place.</p>
+
+
 						</div>
 						
 						<!-------------------New Wimbledon Theatre ------------------>
 						<div id="wimbledon_qr2_ipad" class="ui-body-d ui-content">
 							<h2>New Wimbledon Theatre</h2>
+
+							<p><img src="assets/images/icon_diamond.png" height="24" width="28"> POINTS</p>
+
+							<img src="assets/images/New_Wimbledon_Theatre.png" alt="New Wimbledon Theatre">
+
+							<a href="QR_LINK" class="ui-btn ui-corner-all" id="scan_qr_new_wimbledon_theatre">SCAN QR</a>
+
+
+							<p>A 108 year-old theatre in SW London presenting an eclectic mix of musicals, drama, comedy, dance and pantomime. An Ambassador Theatre Group venue.</p>
+
 						</div>
 						
 						<!-------------------Buddhapadipa Temple ------------------>
 						<div id="wimbledon_qr3_ipad" class="ui-body-d ui-content">
 							<h2>Buddhapadipa Temple</h2>
+
+							<p><img src="assets/images/icon_diamond.png" height="24" width="28"> POINTS</p>
+
+							<img src="assets/images/Buddhapadipa_Temple.png" alt="Buddhapadipa Temple">
+
+							<a href="QR_LINK" class="ui-btn ui-corner-all" id="scan_qr_buddhapadipa_temple">SCAN QR</a>
+
+
+							<p>The Buddhapadipa Temple is the first Thai Theravada Buddhist Temple ever built outside Asia. It is the centre of meditation, Buddhist education and Thai culture.</p>
+
 						</div>
 					</div>
 				</div>
@@ -1448,16 +1544,43 @@ function ValidateEmail(inputText)
 						<!-------------------The Lightbox ------------------>
 						<div id="woking_qr1_ipad" class="ui-body-d ui-content">
 							<h2>The Lightbox</h2>
+
+							<p><img src="assets/images/icon_diamond.png" height="24" width="28"> POINTS</p>
+
+							<img src="assets/images/The_Lightbox.png" alt="The Lightbox">
+
+							<a href="QR_LINK" class="ui-btn ui-corner-all" id="scan_qr_the_lightbox">SCAN QR</a>
+
+
+							<p>The Lightbox is an award-winning charitable arts and heritage organisation with a social purpose to improve the wellbeing and quality of life of its community.</p>
 						</div>
 						
 						<!-------------------RHS Garden ------------------>
 						<div id="woking_qr2_ipad" class="ui-body-d ui-content">
 							<h2>RHS Garden</h2>
+
+							<p><img src="assets/images/icon_diamond.png" height="24" width="28"> POINTS</p>
+
+							<img src="assets/images/RHS_Garden.png" alt="RHS Garden">
+
+							<a href="QR_LINK" class="ui-btn ui-corner-all" id="scan_qr_RHS_garden">SCAN QR</a>
+
+
+							<p>RHS Garden Wisley is a garden run by the Royal Horticultural Society in the English county of Surrey, south of London. It is one of five gardens run by the society, the others being Harlow Carr, Hyde Hall, Rosemoor, and Bridgewater (which opened on 18 May 2021).Wisley is the second most visited paid entry garden in the United Kingdom after the Royal Botanic Gardens.</p>
 						</div>
 						
 						<!-------------------Mercedes Benz World ------------------>
 						<div id="woking_qr3_ipad" class="ui-body-d ui-content">
 							<h2>Mercedes Benz World </h2>
+
+							<p><img src="assets/images/icon_diamond.png" height="24" width="28"> POINTS</p>
+
+							<img src="assets/images/Mercedes_Benz_World.png" alt="Mercedes-Benz World">
+
+							<a href="QR_LINK" class="ui-btn ui-corner-all" id="scan_qr_mercedes_benz_world">SCAN QR</a>
+
+
+							<p>Next to the Brooklands Museum is Mercedes-Benz World, where the luxury car brand owns a series of training tracks and runs the AMG Driving Academy. Some champion drivers have used these courses, like Lewis Hamilton, Mika Häkkinen, Nico Rosberg and Stirling Moss.</p>
 						</div>
 					</div>
 				</div>
@@ -1476,16 +1599,43 @@ function ValidateEmail(inputText)
 						<!-------------------Guildford Castle ------------------>
 						<div id="guildford_qr1_ipad" class="ui-body-d ui-content">
 							<h2>Guildford Castle</h2>
+
+							<p><img src="assets/images/icon_diamond.png" height="24" width="28"> POINTS</p>
+
+							<img src="assets/images/Guildford_Castle.png" alt="Guildford Castle">
+
+							<a href="QR_LINK" class="ui-btn ui-corner-all" id="scan_qr_guildford_castle">SCAN QR</a>
+
+
+							<p>After the Battle of Hastings in 1066 William led his army to Canterbury and then sacked towns along the Pilgrims' Way, including Guildford. Later William, or one of his barons, built Guildford Castle. There is no record of it in the Domesday Book so construction probably started after 1086.</p>
 						</div>
 						
 						<!-------------------Guildford Museum ------------------>
 						<div id="guildford_qr2_ipad" class="ui-body-d ui-content">
 							<h2>Guildford Museum</h2>
+
+							<p><img src="assets/images/icon_diamond.png" height="24" width="28"> POINTS</p>
+
+							<img src="assets/images/Guildford_Museum.png" alt="Guildford Museum">
+
+							<a href="QR_LINK" class="ui-btn ui-corner-all" id="scan_qr_guildford_museum">SCAN QR</a>
+
+
+							<p>Guildford Museum is the main museum is in the town of Guildford, Surrey, England. The museum is on Quarry Street, a narrow road lined by pre-1900 cottages running just off the pedestrianised High Street. This main site of the museum forms the gatehouse and annex of Guildford Castle, which the staff help to run.</p>
 						</div>
 						
 						<!-------------------Stoke Park ------------------>
 						<div id="guildford_qr3_ipad" class="ui-body-d ui-content">
 							<h2>Stoke Park</h2>
+
+							<p><img src="assets/images/icon_diamond.png" height="24" width="28"> POINTS</p>
+
+							<img src="assets/images/Stoke_Park.png" alt="Stoke Park">
+
+							<a href="QR_LINK" class="ui-btn ui-corner-all" id="scan_qr_stoke_park">SCAN QR</a>
+
+
+							<p>Stoke Park is a private sporting and leisure estate in Stoke Poges, Buckinghamshire. The mansion building (designed by James Wyatt in 1788) is located in the middle of 300 acres (1.2 km2) of parkland, lakes, gardens and monuments. In 1908, it became the first country club in the UK.</p>
 						</div>
 					</div>
 				</div>
@@ -1504,16 +1654,43 @@ function ValidateEmail(inputText)
 						<!-------------------Spinnaker Tower----------------->
 						<div id="portsmouth_qr1_ipad" class="ui-body-d ui-content">
 							<h2>Spinnaker Tower</h2>
+
+							<p><img src="assets/images/icon_diamond.png" height="24" width="28"> POINTS</p>
+
+							<img src="assets/images/Spinnaker_Tower.png" alt="Spinnaker Tower">
+
+							<a href="QR_LINK" class="ui-btn ui-corner-all" id="scan_qr_spinnaker_tower">SCAN QR</a>
+
+
+							<p>The Spinnaker Tower is a 170 metres landmark observation tower in Portsmouth, England. It is the centrepiece of the redevelopment of Portsmouth Harbour, which was supported by a National Lottery grant.</p>
 						</div>
 						
 						<!-------------------South Parade Pier ------------------>
 						<div id="portsmouth_qr2_ipad" class="ui-body-d ui-content">
 							<h2>South Parade Pier</h2>
+
+							<p><img src="assets/images/icon_diamond.png" height="24" width="28"> POINTS</p>
+
+							<img src="assets/images/South_Parade_Pier.png" alt="South Parade Pier">
+
+							<a href="QR_LINK" class="ui-btn ui-corner-all" id="scan_qr_south_parade_pier">SCAN QR</a>
+
+
+							<p>The South Parade Pier is a pier in Portsmouth, England. It is one of two piers in the city, the other being Clarence Pier. The pier once had a long hall down its centre which housed a seating area and a small restaurant. The outside of the hall is a promenade which runs the length of the pier.</p>
 						</div>
 						
 						<!-------------------Historic Dockyard<------------------>
 						<div id="portsmouth_qr3_ipad" class="ui-body-d ui-content">
 							<h2>Historic Dockyard</h2>
+
+							<p><img src="assets/images/icon_diamond.png" height="24" width="28"> POINTS</p>
+
+							<img src="assets/images/Historic_Dockyard.png" alt="Historic Dockyard">
+
+							<a href="QR_LINK" class="ui-btn ui-corner-all" id="scan_qr_historic_dockyard">SCAN QR</a>
+
+
+							<p>Portsmouth Historic Dockyard is an area of HM Naval Base Portsmouth which is open to the public; it contains several historic buildings and ships. It is managed by the National Museum of the Royal Navy as an umbrella organization representing many  charities such as: the Portsmouth Naval Base Property Trust, and the HMS Victory Preservation Company.</p>
 						</div>
 					</div>
 				</div>
@@ -1525,7 +1702,6 @@ function ValidateEmail(inputText)
 		<a href="#qr_iphone_waterloo" data-role="button">Waterloo</a>
 		<a href="#qr_iphone_wimbledon" data-role="button">Wimbledon</a>
 		<a href="#qr_iphone_woking" data-role="button">Woking</a>
-
 		<a href="#qr_iphone_guildford" data-role="button">Guildford</a>
 		<a href="#qr_iphone_portsmouth" data-role="button">Portsmouth</a>
 	</div>	
@@ -1570,11 +1746,11 @@ function ValidateEmail(inputText)
 			<!-------------------LONDON DUNGEON ------------------>
 			<div id="waterloo_qr1_iphone" class="ui-body-d ui-content">
 				<h2>LONDON DUNGEON</h2>
-							<p><img src="assets/images/icon_diamond.png" height="24" width="28">POINTS</p>
+							<p><img src="assets/images/icon_diamond.png" height="24" width="28"> POINTS</p>
 
 							<img src="assets/images/London_Dungeon.png" alt="London Dungeon">
 							
-							<a href="#" class="ui-btn ui-corner-all">SCAN QR</a>
+							<a href="QR_LINK" class="ui-btn ui-corner-all" id="scan_qr_london_dungeon">SCAN QR</a>
 
 							<p>The London Dungeon is a uniquely thrilling attraction that will whisk you way back to the capital's most perilous past. See, hear, feel and (ahem!) smell the chillingly amusing characters of the 'bad old days' as they come to life before you.</p>
 			</div>
@@ -1582,11 +1758,11 @@ function ValidateEmail(inputText)
 			<!-------------------LONDON EYE ------------------>
 			<div id="waterloo_qr2_iphone" class="ui-body-d ui-content">
 				<h2>LONDON EYE</h2>
-							<p><img src="assets/images/icon_diamond.png" height="24" width="28">POINTS</p>
+							<p><img src="assets/images/icon_diamond.png" height="24" width="28"> POINTS</p>
 
 							<img src="assets/images/London_Eye.png" alt="London Eye">
 
-							<a href="#" class="ui-btn ui-corner-all">SCAN QR</a>
+							<a href="ARpage_London_Eye.html" class="ui-btn ui-corner-all" id="scan_qr_london_eye">SCAN QR</a>
 
 							<p>The London Eye is a cantilevered observation wheel on the South Bank of the River Thames in London. It is Europe's tallest cantilevered observation wheel, and is the most popular paid tourist attraction in the United Kingdom with over 3 million visitors annually.</p>
 			</div>
@@ -1594,11 +1770,11 @@ function ValidateEmail(inputText)
 			<!-------------------BUCKINGHAM PALACE ------------------>
 			<div id="waterloo_qr3_iphone" class="ui-body-d ui-content">
 				<h2>BUCKINGHAM PALACE</h2>
-				<p><img src="assets/images/icon_diamond.png" height="24" width="28">POINTS</p>
+				<p><img src="assets/images/icon_diamond.png" height="24" width="28"> POINTS</p>
 
 				<img src="assets/images/Buckingham_Palace.png" alt="Buckingham Palace">
 
-				<a href="#" class="ui-btn ui-corner-all">SCAN QR</a>
+				<a href="QR_LINK" class="ui-btn ui-corner-all" id="scan_qr_buckingham_palace">SCAN QR</a>
 
 				<p>Buckingham Palace is the London residence and administrative headquarters of the monarch of the United Kingdom. Located in the City of Westminster, the palace is often at the centre of state occasions and royal hospitality. It has been a focal point for the British people at times of national rejoicing and mourning.</p>
 			</div>
@@ -1643,16 +1819,44 @@ function ValidateEmail(inputText)
 			<!-------------------Wimbledon Centre Court ------------------>
 			<div id="wimbledon_qr1_iphone" class="ui-body-d ui-content">
 				<h2>Wimbledon Centre Court</h2>
+
+				<p><img src="assets/images/icon_diamond.png" height="24" width="28"> POINTS</p>
+
+				<img src="assets/images/Wimbledon_Centre_Court.png" alt="Wimbledon Centre Court">
+
+				<a href="QR_LINK" class="ui-btn ui-corner-all" id="scan_qr_wimbledon_centre_court">SCAN QR</a>
+
+				<p>Wimbledon Centre Court is the main court at The Championships, Wimbledon, the third annual Grand Slam event of the tennis calendar. It is considered the world's most famous tennis court.It incorporates the clubhouse of the All England Lawn Tennis and Croquet Club. Its only regular use for play is during the two weeks a year that the Championships take place.</p>
+
 			</div>
 
 			<!-------------------New Wimbledon Theatre ------------------>
 			<div id="wimbledon_qr2_iphone" class="ui-body-d ui-content">
 				<h2>New Wimbledon Theatre</h2>
+
+				<p><img src="assets/images/icon_diamond.png" height="24" width="28"> POINTS</p>
+
+				<img src="assets/images/New_Wimbledon_Theatre.png" alt="New Wimbledon Theatre">
+
+				<a href="QR_LINK" class="ui-btn ui-corner-all" id="scan_qr_new_wimbledon_theatre">SCAN QR</a>
+
+
+				<p>A 108 year-old theatre in SW London presenting an eclectic mix of musicals, drama, comedy, dance and pantomime. An Ambassador Theatre Group venue.</p>
+
 			</div>
 
 			<!-------------------Buddhapadipa Temple ------------------>
 			<div id="wimbledon_qr3_iphone" class="ui-body-d ui-content">
 				<h2>Buddhapadipa Temple</h2>
+			
+				<p><img src="assets/images/icon_diamond.png" height="24" width="28"> POINTS</p>
+
+				<img src="assets/images/Buddhapadipa_Temple.png" alt="Buddhapadipa Temple">
+
+				<a href="QR_LINK" class="ui-btn ui-corner-all" id="scan_qr_buddhapadipa_temple">SCAN QR</a>
+
+				<p>The Buddhapadipa Temple is the first Thai Theravada Buddhist Temple ever built outside Asia. It is the centre of meditation, Buddhist education and Thai culture.</p>
+
 			</div>
 		</div>
 	</div>
@@ -1694,16 +1898,37 @@ function ValidateEmail(inputText)
 				<!-------------------The Lightbox ------------------>
 				<div id="woking_qr1_iphone" class="ui-body-d ui-content">
 					<h2>The Lightbox</h2>
+
+					<p><img src="assets/images/icon_diamond.png" height="24" width="28"> POINTS</p>
+
+					<img src="assets/images/The_Lightbox.png" alt="NAME OF POI">
+	
+					<a href="QR_LINK" class="ui-btn ui-corner-all" id="scan_qr_the_lightbox">SCAN QR</a>
+
+
 				</div>
 
 				<!-------------------RHS Garden ------------------>
 				<div id="woking_qr2_iphone" class="ui-body-d ui-content">
 					<h2>RHS Garden</h2>
+
+					<p><img src="assets/images/icon_diamond.png" height="24" width="28"> POINTS</p>
+
+					<img src="assets/images/RHS_Garden.png" alt="RHS Garden">
+	
+					<a href="QR_LINK" class="ui-btn ui-corner-all" id="scan_qr_RHS_garden">SCAN QR</a>
+
 				</div>
 
 				<!-------------------Mercedes Benz World ------------------>
 				<div id="woking_qr3_iphone" class="ui-body-d ui-content">
 					<h2>Mercedes Benz World </h2>
+
+					<p><img src="assets/images/icon_diamond.png" height="24" width="28"> POINTS</p>
+
+					<img src="assets/images/Mercedes_Benz_World.png" alt="Mercedes-Benz World">
+	
+					<a href="QR_LINK" class="ui-btn ui-corner-all" id="scan_qr_mercedes_benz_world">SCAN QR</a>
 				</div>
 		</div>
 	</div>
@@ -1746,16 +1971,42 @@ function ValidateEmail(inputText)
 						<!-------------------Guildford Castle ------------------>
 						<div id="guildford_qr1_iphone" class="ui-body-d ui-content">
 							<h2>Guildford Castle</h2>
+
+							<p><img src="assets/images/icon_diamond.png" height="24" width="28"> POINTS</p>
+
+							<img src="assets/images/Guildford_Castle.png" alt="Guildford Castle">
+			
+							<a href="QR_LINK" class="ui-btn ui-corner-all" id="scan_qr_guildford_castle">SCAN QR</a>
+
+							<p>After the Battle of Hastings in 1066 William led his army to Canterbury and then sacked towns along the Pilgrims' Way, including Guildford. Later William, or one of his barons, built Guildford Castle. There is no record of it in the Domesday Book so construction probably started after 1086.</p>
 						</div>
 						
 						<!-------------------Guildford Museum ------------------>
 						<div id="guildford_qr2_iphone" class="ui-body-d ui-content">
 							<h2>Guildford Museum</h2>
+							
+							<p><img src="assets/images/icon_diamond.png" height="24" width="28"> POINTS</p>
+
+							<img src="assets/images/Guildford_Museum.png" alt="Guildford Museum">
+			
+							<a href="QR_LINK" class="ui-btn ui-corner-all" id="scan_qr_guildford_museum">SCAN QR</a>
+
+							<p>Guildford Museum is the main museum is in the town of Guildford, Surrey, England. The museum is on Quarry Street, a narrow road lined by pre-1900 cottages running just off the pedestrianised High Street. This main site of the museum forms the gatehouse and annex of Guildford Castle, which the staff help to run.</p>
+
 						</div>
 						
 						<!-------------------Stoke Park ------------------>
 						<div id="guildford_qr3_iphone" class="ui-body-d ui-content">
 							<h2>Stoke Park</h2>
+
+							
+							<p><img src="assets/images/icon_diamond.png" height="24" width="28"> POINTS</p>
+
+							<img src="assets/images/Stoke_Park.png" alt="Stoke Park">
+			
+							<a href="QR_LINK" class="ui-btn ui-corner-all" id="scan_qr_stoke_park">SCAN QR</a>
+
+							<p>Stoke Park is a private sporting and leisure estate in Stoke Poges, Buckinghamshire. The mansion building (designed by James Wyatt in 1788) is located in the middle of 300 acres (1.2 km2) of parkland, lakes, gardens and monuments. In 1908, it became the first country club in the UK.</p>
 						</div>
 					</div>
 	</div>
@@ -1798,16 +2049,41 @@ function ValidateEmail(inputText)
 						<!-------------------Spinnaker Tower----------------->
 						<div id="portsmouth_qr1_iphone" class="ui-body-d ui-content">
 							<h2>Spinnaker Tower</h2>
+							
+							<p><img src="assets/images/icon_diamond.png" height="24" width="28"> POINTS</p>
+
+							<img src="assets/images/Spinnaker_Tower.png" alt="Spinnaker Tower">
+			
+							<a href="QR_LINK" class="ui-btn ui-corner-all" id="scan_qr_spinnaker_tower">SCAN QR</a>
+
+							<p>The Spinnaker Tower is a 170 metres landmark observation tower in Portsmouth, England. It is the centrepiece of the redevelopment of Portsmouth Harbour, which was supported by a National Lottery grant.</p>
+
 						</div>
 						
 						<!-------------------South Parade Pier ------------------>
 						<div id="portsmouth_qr2_iphone" class="ui-body-d ui-content">
 							<h2>South Parade Pier</h2>
+							
+							<p><img src="assets/images/icon_diamond.png" height="24" width="28"> POINTS</p>
+
+							<img src="assets/images/South_Parade_Pier.png" alt="South Parade Pier">
+			
+							<a href="QR_LINK" class="ui-btn ui-corner-all" id="scan_qr_south_parade_pier">SCAN QR</a>
+
+							<p>The South Parade Pier is a pier in Portsmouth, England. It is one of two piers in the city, the other being Clarence Pier. The pier once had a long hall down its centre which housed a seating area and a small restaurant. The outside of the hall is a promenade which runs the length of the pier.</p>
 						</div>
 						
 						<!-------------------HISTORIC DOCKYARD ------------------>
 						<div id="portsmouth_qr3_iphone" class="ui-body-d ui-content">
 							<h2>Historic Dockyard</h2>
+							
+							<p><img src="assets/images/icon_diamond.png" height="24" width="28"> POINTS</p>
+
+							<img src="assets/images/Historic_Dockyard.png" alt="Historic Dockyard">
+			
+							<a href="QR_LINK" class="ui-btn ui-corner-all" id="scan_qr_historic_dockyard">SCAN QR</a>
+
+							<p>Portsmouth Historic Dockyard is an area of HM Naval Base Portsmouth which is open to the public; it contains several historic buildings and ships. It is managed by the National Museum of the Royal Navy as an umbrella organization representing many  charities such as: the Portsmouth Naval Base Property Trust, and the HMS Victory Preservation Company.</p>
 						</div>
 					</div>
 	</div>
@@ -1843,9 +2119,43 @@ function ValidateEmail(inputText)
 		</div>
 	</div>
 
-	<h3>You have...</H3>
-	<img src="assets/images/Diamond.png" alt="diamond">
-	
+	<div class="wrapper">
+        <div class="diamonds">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </div>
+
+    <div class="DiamondsShow" style="text-align: center;" >
+        <div class="centered">
+			<h1>You Have ... </h1>
+			<h1>0 pts</h1>
+			<img src="assets/images/Diamond.png" alt="Diamond">
+        </div>
+    </div>
+
+
+
 <div data-role="footer" data-position="fixed">
 	<div data-role="navbar">
 		<ul>
