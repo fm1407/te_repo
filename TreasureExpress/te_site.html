@@ -59,7 +59,12 @@
     .diamonds span:nth-child(3n+7){
         animation-delay: 7s;
     }	
-	
+
+	.showDiamonds {
+		position: relative;
+  		text-align: center;
+ 		color: white;
+	}
 	.centered {
 		position: absolute;
 		top: 50%;
@@ -2146,13 +2151,11 @@ function ValidateEmail(inputText)
         </div>
     </div>
 
-    <div class="DiamondsShow" style="text-align: center;" >
-        <div class="centered">
-			<h1>You Have ... </h1>
-			<h1>0 pts</h1>
+    <div class="showDiamonds" style="text-align: center;" >
+        <h1 style="color: #000000;">You Have ... </h1>
+		<div class="centered"><h1>0</h1><h3> pts</h3></div>
 			<img src="assets/images/Diamond.png" alt="Diamond">
-        </div>
-    </div>
+   </div>
 
 
 
