@@ -8,11 +8,12 @@
 	<link rel="stylesheet" href="themes/jquery.mobile.icons.min.css" />
 	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile.structure-1.4.5.min.css" />
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="icon" href="assets/images/te_logo.png" type="image/png" sizes="20x20">
 	<script src="https://kit.fontawesome.com/81059cf45b.js" crossorigin="anonymous"></script>
 	<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
 	<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
 	<script src="https://checkout.stripe.com/checkout.js"></script>
-
+	
 <style>
 	.iphone_stations_buttons{display: none;}
 	.ipad_stations_poi{display:block;}
@@ -34,7 +35,7 @@
 	<div data-role="header" data-position="fixed">
 		<div data-role="controlgroup" data-type="horizontal">
 			<a href="#te_homepage" class="ui-btn ui-corner-all"><img src="assets/images/te_logo.png" height="52" width="42"></a>
-			<a href="#" class="ui-btn ui-corner-all"><i class="far fa-user fa-2x"></i><br><br>PROFILE</a>
+			<a href="#te_animDiamond" class="ui-btn ui-corner-all"><i class="far fa-user fa-2x"></i><br><br>PROFILE</a>
 			<a href="#te_animDiamond" class="ui-btn ui-corner-all ui-btn-right"><i class="far fa-gem fa-2x"></i><br><br>0</a>
 		</div>
 	</div>
@@ -83,7 +84,7 @@
 	<div data-role="header" data-position="fixed">
 		<div data-role="controlgroup" data-type="horizontal">
 			<a href="#te_homepage" class="ui-btn ui-corner-all"><img src="assets/images/te_logo.png" height="52" width="42"></a>
-			<a href="#" class="ui-btn ui-corner-all"><i class="far fa-user fa-2x"></i><br><br>PROFILE</a>
+			<a href="#te_animDiamond" class="ui-btn ui-corner-all"><i class="far fa-user fa-2x"></i><br><br>PROFILE</a>
 			<a href="#te_animDiamond" class="ui-btn ui-corner-all ui-btn-right"><i class="far fa-gem fa-2x"></i><br><br>0</a>
 		</div>
 	</div>
@@ -96,11 +97,11 @@
 				
 			<div class="ipad_stations_buttons ui-block-a">
 				<ul data-role="listview" data-inset="true">
-				  <li><a href="#poi_ipad_waterloo" data-ajax="true">WATERLOO</a><img src="#" alt="waterloo image"></li>
-				  <li><a href="#poi_ipad_wimbledon" data-ajax="false">WIBLEDON</a><img src="#" alt="wimbledon image"></li>
-				  <li><a href="#poi_ipad_woking" data-ajax="false">WOKING</a><img src="#" alt="woking image"></li>
-				  <li><a href="#poi_ipad_guildford" data-ajax="false">GUILDFORD</a><img src="#" alt="guildford image"></li>
-				  <li><a href="#poi_ipad_portsmouth" data-ajax="false">PORTSMOUTH</a><img src="#" alt="portsmouth image"></li>
+				  <li><a href="#poi_ipad_waterloo" data-ajax="true">WATERLOO</a><img src="assets/images/London_Dungeon.png" alt="Waterloo - London Dungeon"></li>
+				  <li><a href="#poi_ipad_wimbledon" data-ajax="false">WIMBLEDON</a><img src="assets/images/Wimbledon_Centre_Court.png" alt="Wimbledon - Wimbledon Centre Court"></li>
+				  <li><a href="#poi_ipad_woking" data-ajax="false">WOKING</a><img src="assets/images/The_Lightbox.png" alt="Woking - The Lightbox"></li>
+				  <li><a href="#poi_ipad_guildford" data-ajax="false">GUILDFORD</a><img src="assets/images/Guildford_Castle.png" alt="Guildford - Guildford Castle"></li>
+				  <li><a href="#poi_ipad_portsmouth" data-ajax="false">PORTSMOUTH</a><img src="assets/images/Spinnaker_Tower.png" alt="Portsmouth - Spinnaker Tower"></li>
 				</ul>
 			</div>
 
@@ -122,51 +123,51 @@
 						<div id="waterloo_poi1_ipad" class="ui-body-d ui-content">
 							<h2>LONDON DUNGEON</h2>
 
-							<p>ICON OF DIAMOND AND POINTS</p>
+							<p><img src="assets/images/icon_diamond.png" height="24" width="28">POINTS</p>
 							
-							<img src="IMAGE LINK" alt="TITLE OF POI">
+							<img src="assets/images/London_Dungeon.png" alt="London Dungeon">
 							
 							<button class="fav_btn" id="fav_london_dungeon">FAVOURITE</button>
 
-							<p>DESCRIPTION OF POI</p>
+							<p>The London Dungeon is a uniquely thrilling attraction that will whisk you way back to the capital's most perilous past. See, hear, feel and (ahem!) smell the chillingly amusing characters of the 'bad old days' as they come to life before you.</p>
 
-							<p>Get the embed location iframe from google</p>
+							<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2483.5834089341956!2d-0.12095148423020245!3d51.50251187963433!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487604c70bc8d293%3A0x39108cb6fa0e39d9!2sThe%20Dungeons%20London!5e0!3m2!1sen!2suk!4v1641865409370!5m2!1sen!2suk" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
 
-							<a href="LOCATION LINK" data-role="button" target="_blank">GET DIRECTIONS</a>
+							<a href="https://goo.gl/maps/tDgZvkzYHbQk8d5P6" data-role="button" target="_blank">GET DIRECTIONS</a>
 						</div>
 						
 						<!-------------------LONDON EYE ------------------>
 						<div id="waterloo_poi2_ipad" class="ui-body-d ui-content">
 							<h2>LONDON EYE</h2>
 
-							<p>ICON OF DIAMOND AND POINTS</p>
+							<p><img src="assets/images/icon_diamond.png" height="24" width="28">POINTS</p>
 							
-							<img src="IMAGE LINK" alt="TITLE OF POI">
+							<img src="assets/images/London_Eye.png" alt="London Eye">
 							
 							<button class="fav_btn" id="fav_london_eye">FAVOURITE</button>
 
-							<p>DESCRIPTION OF POI</p>
+							<p>The London Eye is a cantilevered observation wheel on the South Bank of the River Thames in London. It is Europe's tallest cantilevered observation wheel, and is the most popular paid tourist attraction in the United Kingdom with over 3 million visitors annually.</p>
 
-							<p>Get the embed location iframe from google</p>
-
-							<a href="LOCATION LINK" data-role="button" target="_blank">GET DIRECTIONS</a>
+							<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2483.5404230563613!2d-0.12174238498616705!3d51.503300618825044!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487604b900d26973%3A0x4291f3172409ea92!2slastminute.com%20London%20Eye!5e0!3m2!1sen!2suk!4v1641872290614!5m2!1sen!2suk" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+							
+							<a href="https://goo.gl/maps/RHcaEjLMMM3Q7T77A" data-role="button" target="_blank">GET DIRECTIONS</a>
 						</div>
 						
 						<!-------------------BUCKINGHAM PALACE ------------------>
 						<div id="waterloo_poi3_ipad" class="ui-body-d ui-content">
 							<h2>BUCKINGHAM PALACE</h2>
 
-							<p>ICON OF DIAMOND AND POINTS</p>
+							<p><img src="assets/images/icon_diamond.png" height="24" width="28">POINTS</p>
 							
-							<img src="IMAGE LINK" alt="TITLE OF POI">
+							<img src="assets/images/Buckingham_Palace.png" alt="Buckingham Palace">
 							
 							<button class="fav_btn" id="fav_buckingham_palace">FAVOURITE</button>
 
-							<p>DESCRIPTION OF POI</p>
+							<p>Buckingham Palace is the London residence and administrative headquarters of the monarch of the United Kingdom. Located in the City of Westminster, the palace is often at the centre of state occasions and royal hospitality. It has been a focal point for the British people at times of national rejoicing and mourning.</p>
 
-							<p>Get the embed location iframe from google</p>
+							<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2483.64596804941!2d-0.1440786842302416!3d51.501363979634085!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48760520cd5b5eb5%3A0xa26abf514d902a7!2sBuckingham%20Palace!5e0!3m2!1sen!2suk!4v1641867200356!5m2!1sen!2suk" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
 
-							<a href="LOCATION LINK" data-role="button" target="_blank">GET DIRECTIONS</a>
+							<a href="https://goo.gl/maps/2s4bMBiSmtwRCepH7" data-role="button" target="_blank">GET DIRECTIONS</a>
 						</div>
 					</div>
 				</div>
@@ -186,51 +187,51 @@
 						<div id="wimbledon_poi1_ipad" class="ui-body-d ui-content">
 							<h2>Wimbledon Centre Court</h2>
 
-							<p>ICON OF DIAMOND AND POINTS</p>
+							<p><img src="assets/images/icon_diamond.png" height="24" width="28">POINTS</p>
 							
-							<img src="IMAGE LINK" alt="TITLE OF POI">
+							<img src="assets/images/Wimbledon_Centre_Court.png" alt="Wimbledon Centre Court">
 							
 							<button class="fav_btn" id="fav_wimbledon_court">FAVOURITE</button>
 
-							<p>DESCRIPTION OF POI</p>
+							<p>Wimbledon Centre Court is the main court at The Championships, Wimbledon, the third annual Grand Slam event of the tennis calendar. It is considered the world's most famous tennis court.It incorporates the clubhouse of the All England Lawn Tennis and Croquet Club. Its only regular use for play is during the two weeks a year that the Championships take place.</p>
 
-							<p>Get the embed location iframe from google</p>
+							<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d19901.06929669603!2d-0.2265792!3d51.4281558!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48760f52612050a5%3A0xeaee595f26abedbd!2sCentre%20Court%20%7C%20Wimbledon!5e0!3m2!1sen!2suk!4v1641868869863!5m2!1sen!2suk" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
 
-							<a href="LOCATION LINK" data-role="button" target="_blank">GET DIRECTIONS</a>
+							<a href="https://goo.gl/maps/CSvMngnsHmnZ9NwB7" data-role="button" target="_blank">GET DIRECTIONS</a>
 						</div>
 						
 						<!-------------------New Wimbledon Theatre ------------------>
 						<div id="wimbledon_poi2_ipad" class="ui-body-d ui-content">
 							<h2>New Wimbledon Theatre</h2>
 
-							<p>ICON OF DIAMOND AND POINTS</p>
+							<p><img src="assets/images/icon_diamond.png" height="24" width="28">POINTS</p>
 							
-							<img src="IMAGE LINK" alt="TITLE OF POI">
+							<img src="assets/images/New_Wimbledon_Theatre.png" alt="New Wimbledon Theatre">
 							
 							<button class="fav_btn" id="fav_wimbledon_theatre">FAVOURITE</button>
 
-							<p>DESCRIPTION OF POI</p>
+							<p>A 108 year-old theatre in SW London presenting an eclectic mix of musicals, drama, comedy, dance and pantomime. An Ambassador Theatre Group venue.</p>
 
-							<p>Get the embed location iframe from google</p>
+							<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2488.1203414156685!2d-0.2036700842332582!3d51.419215979620745!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487608ba9818e711%3A0xd7dd5b682dbaa2bc!2sNew%20Wimbledon%20Theatre!5e0!3m2!1sen!2suk!4v1641869002740!5m2!1sen!2suk" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
 
-							<a href="LOCATION LINK" data-role="button" target="_blank">GET DIRECTIONS</a>
+							<a href="https://g.page/NewWimbTheatre?share" data-role="button" target="_blank">GET DIRECTIONS</a>
 						</div>
 						
 						<!-------------------Buddhapadipa Temple ------------------>
 						<div id="wimbledon_poi3_ipad" class="ui-body-d ui-content">
 							<h2>Buddhapadipa Temple</h2>
 
-							<p>ICON OF DIAMOND AND POINTS</p>
+							<p><img src="assets/images/icon_diamond.png" height="24" width="28">POINTS</p>
 							
-							<img src="IMAGE LINK" alt="TITLE OF POI">
+							<img src="assets/images/Buddhapadipa_Temple.png" alt="Buddhapadipa Temple">
 							
 							<button class="fav_btn" id="fav_buddhapadipa">FAVOURITE</button>
 
-							<p>DESCRIPTION OF POI</p>
+							<p>The Buddhapadipa Temple is the first Thai Theravada Buddhist Temple ever built outside Asia. It is the centre of meditation, Buddhist education and Thai culture.</p>
 
-							<p>Get the embed location iframe from google</p>
+							<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d9949.970152557895!2d-0.2205011!3d51.4307479!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xd7af17706959dfab!2sBuddhapadipa%20Temple!5e0!3m2!1sen!2suk!4v1641869075473!5m2!1sen!2suk" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
 
-							<a href="LOCATION LINK" data-role="button" target="_blank">GET DIRECTIONS</a>
+							<a href="https://goo.gl/maps/sM4z2KCn9dYzKtFb8" data-role="button" target="_blank">GET DIRECTIONS</a>
 						</div>
 					</div>
 				</div>
@@ -250,51 +251,51 @@
 						<div id="woking_poi1_ipad" class="ui-body-d ui-content">
 							<h2>The Lightbox</h2>
 
-							<p>ICON OF DIAMOND AND POINTS</p>
+							<p><img src="assets/images/icon_diamond.png" height="24" width="28"><br>POINTS</p>
 							
-							<img src="IMAGE LINK" alt="TITLE OF POI">
+							<img src="assets/images/The_Lightbox.png" alt="The Lightbox">
 							
 							<button class="fav_btn" id="fav_lightbox">FAVOURITE</button>
 
-							<p>DESCRIPTION OF POI</p>
+							<p>The Lightbox is an award-winning charitable arts and heritage organisation with a social purpose to improve the wellbeing and quality of life of its community.</p>
 
-							<p>Get the embed location iframe from google</p>
+							<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2493.4280623981467!2d-0.5609946842368508!3d51.32164597960514!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4875d821058554df%3A0xe6f5e7e07f010c5c!2sThe%20Lightbox!5e0!3m2!1sen!2suk!4v1641869142430!5m2!1sen!2suk" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
 
-							<a href="LOCATION LINK" data-role="button" target="_blank">GET DIRECTIONS</a>
+							<a href="https://g.page/thelightboxwoking?share" data-role="button" target="_blank">GET DIRECTIONS</a>
 						</div>
 						
 						<!-------------------RHS Garden ------------------>
 						<div id="woking_poi2_ipad" class="ui-body-d ui-content">
 							<h2>RHS Garden</h2>
 
-							<p>ICON OF DIAMOND AND POINTS</p>
-							
-							<img src="IMAGE LINK" alt="TITLE OF POI">
+							<p><img src="assets/images/icon_diamond.png" height="24" width="28">POINTS</p>
+
+							<img src="assets/images/RHS_Garden.png" alt="RHS Garden">
 							
 							<button class="fav_btn" id="fav_rhs_garden">FAVOURITE</button>
 
-							<p>DESCRIPTION OF POI</p>
+							<p>RHS Garden Wisley is a garden run by the Royal Horticultural Society in the English county of Surrey, south of London. It is one of five gardens run by the society, the others being Harlow Carr, Hyde Hall, Rosemoor, and Bridgewater (which opened on 18 May 2021).Wisley is the second most visited paid entry garden in the United Kingdom after the Royal Botanic Gardens.</p>
 
-							<p>Get the embed location iframe from google</p>
+							<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d9975.353502017964!2d-0.4784703!3d51.3140978!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4875d8c95f478985%3A0xfaeb103984a2a6a9!2sRHS%20Wisley%20Garden%20Centre!5e0!3m2!1sen!2suk!4v1641868571399!5m2!1sen!2suk" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
 
-							<a href="LOCATION LINK" data-role="button" target="_blank">GET DIRECTIONS</a>
+							<a href="https://goo.gl/maps/dML37NxustytFqc37" data-role="button" target="_blank">GET DIRECTIONS</a>
 						</div>
 						
 						<!-------------------Mercedes Benz World ------------------>
 						<div id="woking_poi3_ipad" class="ui-body-d ui-content">
 							<h2>Mercedes Benz World </h2>
 
-							<p>ICON OF DIAMOND AND POINTS</p>
-							
-							<img src="IMAGE LINK" alt="TITLE OF POI">
+							<p><img src="assets/images/icon_diamond.png" height="24" width="28">POINTS</p>
+
+							<img src="assets/images/Mercedes_Benz_World.png" alt="Mercedes-Benz World">
 							
 							<button class="fav_btn" id="fav_benz_world">FAVOURITE</button>
 
-							<p>DESCRIPTION OF POI</p>
+							<p>Next to the Brooklands Museum is Mercedes-Benz World, where the luxury car brand owns a series of training tracks and runs the AMG Driving Academy. Some champion drivers have used these courses, like Lewis Hamilton, Mika Häkkinen, Nico Rosberg and Stirling Moss.</p>
 
-							<p>Get the embed location iframe from google</p>
+							<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2491.620935598655!2d-0.47023948423561934!3d51.354880679610446!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48767601ba5f4785%3A0xb5d2da6f5ea950de!2sMercedes-Benz%20World!5e0!3m2!1sen!2suk!4v1641868472761!5m2!1sen!2suk" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
 
-							<a href="LOCATION LINK" data-role="button" target="_blank">GET DIRECTIONS</a>
+							<a href="https://goo.gl/maps/FPCiFx6n6WLaThscA" data-role="button" target="_blank">GET DIRECTIONS</a>
 						</div>
 					</div>
 				</div>
@@ -314,51 +315,51 @@
 						<div id="guildford_poi1_ipad" class="ui-body-d ui-content">
 							<h2>Guildford Castle</h2>
 
-							<p>ICON OF DIAMOND AND POINTS</p>
+							<p><img src="assets/images/icon_diamond.png" height="24" width="28">POINTS</p>
 							
-							<img src="IMAGE LINK" alt="TITLE OF POI">
+							<img src="assets/images/Guildford_Castle.png" alt="Guildford Castle">
 							
 							<button class="fav_btn" id="fav_guildford_castle">FAVOURITE</button>
 
-							<p>DESCRIPTION OF POI</p>
+							<p>After the Battle of Hastings in 1066 William led his army to Canterbury and then sacked towns along the Pilgrims' Way, including Guildford. Later William, or one of his barons, built Guildford Castle. There is no record of it in the Domesday Book so construction probably started after 1086.</p>
 
-							<p>Get the embed location iframe from google</p>
+							<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2498.1738806395724!2d-0.5745794842400487!3d51.23429247959115!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4875d09a4f5d7cf5%3A0xaeda5777b4246720!2sGuildford%20Castle!5e0!3m2!1sen!2suk!4v1641868263675!5m2!1sen!2suk" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
 
-							<a href="LOCATION LINK" data-role="button" target="_blank">GET DIRECTIONS</a>
+							<a href="https://goo.gl/maps/aVJMZxEi36Z4wRAdA" data-role="button" target="_blank">GET DIRECTIONS</a>
 						</div>
 						
 						<!-------------------Guildford Museum ------------------>
 						<div id="guildford_poi2_ipad" class="ui-body-d ui-content">
 							<h2>Guildford Museum</h2>
 
-							<p>ICON OF DIAMOND AND POINTS</p>
+							<p><img src="assets/images/icon_diamond.png" height="24" width="28">POINTS</p>
 							
-							<img src="IMAGE LINK" alt="TITLE OF POI">
+							<img src="assets/images/Guildford_Museum.png" alt="Guildford Museum">
 							
 							<button class="fav_btn" id="fav_guildford_museum">FAVOURITE</button>
 
-							<p>DESCRIPTION OF POI</p>
+							<p>Guildford Museum is the main museum is in the town of Guildford, Surrey, England. The museum is on Quarry Street, a narrow road lined by pre-1900 cottages running just off the pedestrianised High Street. This main site of the museum forms the gatehouse and annex of Guildford Castle, which the staff help to run.</p>
 
-							<p>Get the embed location iframe from google</p>
+							<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d39967.30939802454!2d-0.6101798!3d51.2382898!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4875d090906e947f%3A0x43eeea8c8df8cbd5!2sGuildford%20Museum!5e0!3m2!1sen!2suk!4v1641868376994!5m2!1sen!2suk" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
 
-							<a href="LOCATION LINK" data-role="button" target="_blank">GET DIRECTIONS</a>
+							<a href="https://goo.gl/maps/g7vfsx3BRmiGcMQS6" data-role="button" target="_blank">GET DIRECTIONS</a>
 						</div>
 						
 						<!-------------------Stoke Park ------------------>
 						<div id="guildford_poi3_ipad" class="ui-body-d ui-content">
 							<h2>Stoke Park</h2>
 
-							<p>ICON OF DIAMOND AND POINTS</p>
+							<p><img src="assets/images/icon_diamond.png" height="24" width="28">POINTS</p>
 							
-							<img src="IMAGE LINK" alt="TITLE OF POI">
+							<img src="assets/images/Stoke_Park.png" alt="Stoke Park">
 							
 							<button class="fav_btn" id="fav_stoke_park">FAVOURITE</button>
 
-							<p>DESCRIPTION OF POI</p>
+							<p>Stoke Park is a private sporting and leisure estate in Stoke Poges, Buckinghamshire. The mansion building (designed by James Wyatt in 1788) is located in the middle of 300 acres (1.2 km2) of parkland, lakes, gardens and monuments. In 1908, it became the first country club in the UK.</p>
 
-							<p>Get the embed location iframe from google</p>
+							<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2497.585515254846!2d-0.5616976842396485!3d51.24512797959288!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4875da09792f4b5d%3A0x9fd218d64760b341!2sStoke%20Park%2C%20London%20Rd%2C%20Guildford%20GU1%201TU!5e0!3m2!1sen!2suk!4v1641868046980!5m2!1sen!2suk" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
 
-							<a href="LOCATION LINK" data-role="button" target="_blank">GET DIRECTIONS</a>
+							<a href="https://goo.gl/maps/Nh4rMNThAqt6AKaF6" data-role="button" target="_blank">GET DIRECTIONS</a>
 						</div>
 					</div>
 				</div>
@@ -378,51 +379,51 @@
 						<div id="portsmouth_poi1_ipad" class="ui-body-d ui-content">
 							<h2>Spinnaker Tower</h2>
 
-							<p>ICON OF DIAMOND AND POINTS</p>
+							<p><img src="assets/images/icon_diamond.png" height="24" width="28">POINTS</p>
 							
-							<img src="IMAGE LINK" alt="TITLE OF POI">
+							<img src="assets/images/Spinnaker_Tower.png" alt="Spinnaker Tower">
 							
 							<button class="fav_btn" id="fav_spinnaker_tower">FAVOURITE</button>
 
-							<p>DESCRIPTION OF POI</p>
+							<p>The Spinnaker Tower is a 170 metres landmark observation tower in Portsmouth, England. It is the centrepiece of the redevelopment of Portsmouth Harbour, which was supported by a National Lottery grant.</p>
 
-							<p>Get the embed location iframe from google</p>
+							<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2521.92086258008!2d-1.110705784256087!3d50.79557517952439!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48745d81407073e3%3A0x58939dec9d61be4d!2sSpinnaker%20Tower!5e0!3m2!1sen!2suk!4v1641867804568!5m2!1sen!2suk" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
 
-							<a href="LOCATION LINK" data-role="button" target="_blank">GET DIRECTIONS</a>
+							<a href="https://goo.gl/maps/2WmCBQir7UTWn4RHA" data-role="button" target="_blank">GET DIRECTIONS</a>
 						</div>
 						
 						<!-------------------South Parade Pier ------------------>
 						<div id="portsmouth_poi2_ipad" class="ui-body-d ui-content">
 							<h2>South Parade Pier</h2>
 
-							<p>ICON OF DIAMOND AND POINTS</p>
+							<p><img src="assets/images/icon_diamond.png" height="24" width="28">POINTS</p>
 							
-							<img src="IMAGE LINK" alt="TITLE OF POI">
+							<img src="assets/images/South_Parade_Pier.png" alt="South Parade Pier">
 							
 							<button class="fav_btn" id="fav_south_parade_pier">FAVOURITE</button>
 
-							<p>DESCRIPTION OF POI</p>
+							<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2522.8029717483914!2d-1.078566084256685!3d50.7792258795221!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48745d8e4fd4f383%3A0x4f4ba2dd6757bd1e!2sSouth%20Parade%20Pier!5e0!3m2!1sen!2suk!4v1641867650152!5m2!1sen!2suk" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
 
-							<p>Get the embed location iframe from google</p>
+							<p>The South Parade Pier is a pier in Portsmouth, England. It is one of two piers in the city, the other being Clarence Pier. The pier once had a long hall down its centre which housed a seating area and a small restaurant. The outside of the hall is a promenade which runs the length of the pier.</p>
 
-							<a href="LOCATION LINK" data-role="button" target="_blank">GET DIRECTIONS</a>
+							<a href="https://goo.gl/maps/UjRjnTbddJHMCkud8" data-role="button" target="_blank">GET DIRECTIONS</a>
 						</div>
 						
 						<!-------------------Historic Dockyard<------------------>
 						<div id="portsmouth_poi3_ipad" class="ui-body-d ui-content">
 							<h2>Historic Dockyard</h2>
 
-							<p>ICON OF DIAMOND AND POINTS</p>
+							<p><img src="assets/images/icon_diamond.png" height="24" width="28">POINTS</p>
 							
-							<img src="IMAGE LINK" alt="TITLE OF POI">
+							<img src="assets/images/Historic_Dockyard.png" alt="Historic Dockyard">
 							
 							<button class="fav_btn" id="fav_historic_dockyard">FAVOURITE</button>
 
-							<p>DESCRIPTION OF POI</p>
+							<p>Portsmouth Historic Dockyard is an area of HM Naval Base Portsmouth which is open to the public; it contains several historic buildings and ships. It is managed by the National Museum of the Royal Navy as an umbrella organization representing many  charities such as: the Portsmouth Naval Base Property Trust, and the HMS Victory Preservation Company.</p>
 
-							<p>Get the embed location iframe from google</p>
+							<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2521.6534370799063!2d-1.1116545842558934!3d50.80053097952506!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48745d81d4cec0c3%3A0x7bbcaa5658711999!2sPortsmouth%20Historic%20Dockyard!5e0!3m2!1sen!2suk!4v1641867372385!5m2!1sen!2suk" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
 
-							<a href="LOCATION LINK" data-role="button" target="_blank">GET DIRECTIONS</a>
+							<a href="https://g.page/historicdockyard?share" data-role="button" target="_blank">GET DIRECTIONS</a>
 						</div>
 					</div>
 				</div>
@@ -432,7 +433,7 @@
 	<!---------------------------- IPHONE STATION BUTTONS ----------------------------->
 	<div class="iphone_stations_buttons">
 		<a href="#poi_iphone_waterloo" data-role="button">Waterloo</a>
-		<a href="#poi_iphone_wimbledon" data-role="button">wimbledon</a>
+		<a href="#poi_iphone_wimbledon" data-role="button">Wimbledon</a>
 		<a href="#poi_iphone_woking" data-role="button">Woking</a>
 		<a href="#poi_iphone_guildford" data-role="button">Guildford</a>
 		<a href="#poi_iphone_portsmouth" data-role="button">Portsmouth</a>
@@ -459,8 +460,8 @@
 <div data-role="page" id="poi_iphone_waterloo">
 	<div data-role="header">
 		<div data-role="controlgroup" data-type="horizontal">
-			<a href="#te_homepage" class="ui-btn ui-corner-all">LOGO</a>
-			<a href="#" class="ui-btn ui-corner-all">PROFILE</a>
+			<a href="#te_homepage" class="ui-btn ui-corner-all"><img src="assets/images/te_logo.png" height="52" width="42"></a>
+			<a href="#te_animDiamond" class="ui-btn ui-corner-all">PROFILE</a>
 			<a href="#te_animDiamond" class="ui-btn ui-corner-all">DIAMOND</a>
 		</div>
 	</div>
@@ -478,51 +479,51 @@
 			<div id="waterloo_poi1_iphone" class="ui-body-d ui-content">
 				<h2>LONDON DUNGEON</h2>
 
-				<p>ICON OF DIAMOND AND POINTS</p>
+				<p><img src="assets/images/icon_diamond.png" height="24" width="28">POINTS</p>
 
-				<img src="IMAGE LINK" alt="TITLE OF POI">
+				<img src="assets/images/London_Dungeon.png" alt="London Dungeon">
 
 				<button class="fav_btn" id="fav_london_dungeon1">FAVOURITE</button>
 
-				<p>DESCRIPTION OF POI</p>
+				<p>The London Dungeon is a uniquely thrilling attraction that will whisk you way back to the capital's most perilous past. See, hear, feel and (ahem!) smell the chillingly amusing characters of the 'bad old days' as they come to life before you.</p>
 
-				<p>Get the embed location iframe from google</p>
+				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2483.5834089341956!2d-0.12095148423020245!3d51.50251187963433!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487604c70bc8d293%3A0x39108cb6fa0e39d9!2sThe%20Dungeons%20London!5e0!3m2!1sen!2suk!4v1641865409370!5m2!1sen!2suk" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
 
-				<a href="LOCATION LINK" data-role="button" target="_blank">GET DIRECTIONS</a>
+				<a href="https://goo.gl/maps/tDgZvkzYHbQk8d5P6" data-role="button" target="_blank">GET DIRECTIONS</a>
 			</div>
 
 			<!-------------------LONDON EYE ------------------>
 			<div id="waterloo_poi2_iphone" class="ui-body-d ui-content">
 				<h2>LONDON EYE</h2>
 
-				<p>ICON OF DIAMOND AND POINTS</p>
+				<p><img src="assets/images/icon_diamond.png" height="24" width="28">POINTS</p>
 
-				<img src="IMAGE LINK" alt="TITLE OF POI">
+				<img src="assets/images/London_Eye.png" alt="London Eye">
 
 				<button class="fav_btn" id="fav_london_eye2">FAVOURITE</button>
 
-				<p>DESCRIPTION OF POI</p>
+				<p>The London Eye is a cantilevered observation wheel on the South Bank of the River Thames in London. It is Europe's tallest cantilevered observation wheel, and is the most popular paid tourist attraction in the United Kingdom with over 3 million visitors annually.</p>
 
-				<p>Get the embed location iframe from google</p>
+				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2483.5404230563613!2d-0.12174238498616705!3d51.503300618825044!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487604b900d26973%3A0x4291f3172409ea92!2slastminute.com%20London%20Eye!5e0!3m2!1sen!2suk!4v1641872290614!5m2!1sen!2suk" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
 
-				<a href="LOCATION LINK" data-role="button" target="_blank">GET DIRECTIONS</a>
+				<a href="https://goo.gl/maps/RHcaEjLMMM3Q7T77A" data-role="button" target="_blank">GET DIRECTIONS</a>
 			</div>
 
 			<!-------------------BUCKINGHAM PALACE ------------------>
 			<div id="waterloo_poi3_iphone" class="ui-body-d ui-content">
 				<h2>BUCKINGHAM PALACE</h2>
 
-				<p>ICON OF DIAMOND AND POINTS</p>
+				<p><img src="assets/images/icon_diamond.png" height="24" width="28">POINTS</p>
 
-				<img src="IMAGE LINK" alt="TITLE OF POI">
+				<img src="assets/images/Buckingham_Palace.png" alt="Buckingham Palace">
 
 				<button class="fav_btn" id="fav_buckingham_palace3">FAVOURITE</button>
 
-				<p>DESCRIPTION OF POI</p>
+				<p>Buckingham Palace is the London residence and administrative headquarters of the monarch of the United Kingdom. Located in the City of Westminster, the palace is often at the centre of state occasions and royal hospitality. It has been a focal point for the British people at times of national rejoicing and mourning.</p>
 
-				<p>Get the embed location iframe from google</p>
+				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2483.64596804941!2d-0.1440786842302416!3d51.501363979634085!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48760520cd5b5eb5%3A0xa26abf514d902a7!2sBuckingham%20Palace!5e0!3m2!1sen!2suk!4v1641867200356!5m2!1sen!2suk" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
 
-				<a href="LOCATION LINK" data-role="button" target="_blank">GET DIRECTIONS</a>
+				<a href="https://goo.gl/maps/2s4bMBiSmtwRCepH7" data-role="button" target="_blank">GET DIRECTIONS</a>
 			</div>
 		</div>
 	</div>
@@ -546,8 +547,8 @@
 <div data-role="page" id="poi_iphone_wimbledon">
 	<div data-role="header">
 		<div data-role="controlgroup" data-type="horizontal">
-			<a href="#te_homepage" class="ui-btn ui-corner-all">LOGO</a>
-			<a href="#" class="ui-btn ui-corner-all">PROFILE</a>
+			<a href="#te_homepage" class="ui-btn ui-corner-all"><img src="assets/images/te_logo.png" height="52" width="42"></a>
+			<a href="#te_animDiamond" class="ui-btn ui-corner-all">PROFILE</a>
 			<a href="#te_animDiamond" class="ui-btn ui-corner-all">DIAMOND</a>
 		</div>
 	</div>
@@ -566,51 +567,50 @@
 			<div id="wimbledon_poi1_iphone" class="ui-body-d ui-content">
 				<h2>Wimbledon Centre Court</h2>
 
-				<p>ICON OF DIAMOND AND POINTS</p>
+				<p><img src="assets/images/icon_diamond.png" height="24" width="28">POINTS</p>
 
-				<img src="IMAGE LINK" alt="TITLE OF POI">
+				<img src="assets/images/Wimbledon_Centre_Court.png" alt="Wimbledon Centre Court">
 
 				<button class="fav_btn" id="fav_wimbledon_court1">FAVOURITE</button>
 
-				<p>DESCRIPTION OF POI</p>
+				<p>Wimbledon Centre Court is the main court at The Championships, Wimbledon, the third annual Grand Slam event of the tennis calendar. It is considered the world's most famous tennis court.It incorporates the clubhouse of the All England Lawn Tennis and Croquet Club. Its only regular use for play is during the two weeks a year that the Championships take place.</p>
 
-				<p>Get the embed location iframe from google</p>
+				<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d19901.06929669603!2d-0.2265792!3d51.4281558!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48760f52612050a5%3A0xeaee595f26abedbd!2sCentre%20Court%20%7C%20Wimbledon!5e0!3m2!1sen!2suk!4v1641868869863!5m2!1sen!2suk" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
 
-				<a href="LOCATION LINK" data-role="button" target="_blank">GET DIRECTIONS</a>
+				<a href="https://goo.gl/maps/CSvMngnsHmnZ9NwB7" data-role="button" target="_blank">GET DIRECTIONS</a>
 			</div>
 
 			<!-------------------New Wimbledon Theatre ------------------>
 			<div id="wimbledon_poi2_iphone" class="ui-body-d ui-content">
 				<h2>New Wimbledon Theatre</h2>
 
-				<p>ICON OF DIAMOND AND POINTS</p>
+				<p><img src="assets/images/icon_diamond.png" height="24" width="28">POINTS</p>
 
-				<img src="IMAGE LINK" alt="TITLE OF POI">
+				<img src="assets/images/New_Wimbledon_Theatre.png" alt="New Wimbledon Theatre">
 
 				<button class="fav_btn" id="fav_wimbledon_theatre2">FAVOURITE</button>
 
-				<p>DESCRIPTION OF POI</p>
+				<p>A 108 year-old theatre in SW London presenting an eclectic mix of musicals, drama, comedy, dance and pantomime. An Ambassador Theatre Group venue.</p>
 
-				<p>Get the embed location iframe from google</p>
-
-				<a href="LOCATION LINK" data-role="button" target="_blank">GET DIRECTIONS</a>
+				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2488.1203414156685!2d-0.2036700842332582!3d51.419215979620745!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487608ba9818e711%3A0xd7dd5b682dbaa2bc!2sNew%20Wimbledon%20Theatre!5e0!3m2!1sen!2suk!4v1641870113691!5m2!1sen!2suk" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+				<a href="https://g.page/NewWimbTheatre?share" data-role="button" target="_blank">GET DIRECTIONS</a>
 			</div>
 
 			<!-------------------Buddhapadipa Temple ------------------>
 			<div id="wimbledon_poi3_iphone" class="ui-body-d ui-content">
 				<h2>Buddhapadipa Temple</h2>
 
-				<p>ICON OF DIAMOND AND POINTS</p>
+				<p><img src="assets/images/icon_diamond.png" height="24" width="28">POINTS</p>
 
-				<img src="IMAGE LINK" alt="TITLE OF POI">
+				<img src="assets/images/Buddhapadipa_Temple.png" alt="Buddhapadipa Temple">
 
 				<button class="fav_btn" id="fav_buddhapadipa3">FAVOURITE</button>
 
-				<p>DESCRIPTION OF POI</p>
+				<p>The Buddhapadipa Temple is the first Thai Theravada Buddhist Temple ever built outside Asia. It is the centre of meditation, Buddhist education and Thai culture.</p>
 
-				<p>Get the embed location iframe from google</p>
+				<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d9949.970152557895!2d-0.2205011!3d51.4307479!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xd7af17706959dfab!2sBuddhapadipa%20Temple!5e0!3m2!1sen!2suk!4v1641870205252!5m2!1sen!2suk" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
 
-				<a href="LOCATION LINK" data-role="button" target="_blank">GET DIRECTIONS</a>
+				<a href="https://goo.gl/maps/sM4z2KCn9dYzKtFb8" data-role="button" target="_blank">GET DIRECTIONS</a>
 			</div>
 		</div>
 	</div>
@@ -634,8 +634,8 @@
 <div data-role="page" id="poi_iphone_woking">
 	<div data-role="header">
 		<div data-role="controlgroup" data-type="horizontal">
-			<a href="#te_homepage" class="ui-btn ui-corner-all">LOGO</a>
-			<a href="#" class="ui-btn ui-corner-all">PROFILE</a>
+			<a href="#te_homepage" class="ui-btn ui-corner-all"><img src="assets/images/te_logo.png" height="52" width="42"></a>
+			<a href="#te_animDiamond" class="ui-btn ui-corner-all">PROFILE</a>
 			<a href="#te_animDiamond" class="ui-btn ui-corner-all">DIAMOND</a>
 		</div>
 	</div>
@@ -653,51 +653,51 @@
 				<div id="woking_poi1_iphone" class="ui-body-d ui-content">
 					<h2>The Lightbox</h2>
 
-					<p>ICON OF DIAMOND AND POINTS</p>
+					<p><img src="assets/images/icon_diamond.png" height="24" width="28">POINTS</p>
 
-					<img src="IMAGE LINK" alt="TITLE OF POI">
+					<img src="assets/images/The_Lightbox.png" alt="The Lightbox">
 
 					<button class="fav_btn" id="fav_lightbox1">FAVOURITE</button>
 
-					<p>DESCRIPTION OF POI</p>
+					<p>The Lightbox is an award-winning charitable arts and heritage organisation with a social purpose to improve the wellbeing and quality of life of its community.</p>
 
-					<p>Get the embed location iframe from google</p>
+					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2493.4280623981467!2d-0.5609946842368508!3d51.32164597960514!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4875d821058554df%3A0xe6f5e7e07f010c5c!2sThe%20Lightbox!5e0!3m2!1sen!2suk!4v1641869142430!5m2!1sen!2suk" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
 
-					<a href="LOCATION LINK" data-role="button" target="_blank">GET DIRECTIONS</a>
+					<a href="https://g.page/thelightboxwoking?share" data-role="button" target="_blank">GET DIRECTIONS</a>
 				</div>
 
 				<!-------------------RHS Garden ------------------>
 				<div id="woking_poi2_iphone" class="ui-body-d ui-content">
 					<h2>RHS Garden</h2>
 
-					<p>ICON OF DIAMOND AND POINTS</p>
+					<p><img src="assets/images/icon_diamond.png" height="24" width="28">POINTS</p>
 
-					<img src="IMAGE LINK" alt="TITLE OF POI">
+					<img src="assets/images/RHS_Garden.png" alt="RHS Garden">
 
 					<button class="fav_btn" id="fav_rhs_garden2">FAVOURITE</button>
 
-					<p>DESCRIPTION OF POI</p>
+					<p>RHS Garden Wisley is a garden run by the Royal Horticultural Society in the English county of Surrey, south of London. It is one of five gardens run by the society, the others being Harlow Carr, Hyde Hall, Rosemoor, and Bridgewater (which opened on 18 May 2021).Wisley is the second most visited paid entry garden in the United Kingdom after the Royal Botanic Gardens.</p>
 
-					<p>Get the embed location iframe from google</p>
+					<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d9975.353502017964!2d-0.4784703!3d51.3140978!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4875d8c95f478985%3A0xfaeb103984a2a6a9!2sRHS%20Wisley%20Garden%20Centre!5e0!3m2!1sen!2suk!4v1641868571399!5m2!1sen!2suk" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
 
-					<a href="LOCATION LINK" data-role="button" target="_blank">GET DIRECTIONS</a>
+					<a href="https://goo.gl/maps/dML37NxustytFqc37" data-role="button" target="_blank">GET DIRECTIONS</a>
 				</div>
 
 				<!-------------------Mercedes Benz World ------------------>
 				<div id="woking_poi3_iphone" class="ui-body-d ui-content">
 					<h2>Mercedes Benz World </h2>
 
-					<p>ICON OF DIAMOND AND POINTS</p>
+					<p><img src="assets/images/icon_diamond.png" height="24" width="28">POINTS</p>
 
-					<img src="IMAGE LINK" alt="TITLE OF POI">
+					<img src="assets/images/Mercedes_Benz_World.png" alt="Mercedes Benz World">
 
 					<button class="fav_btn" id="fav_benz_world3">FAVOURITE</button>
 
-					<p>DESCRIPTION OF POI</p>
+					<p>Next to the Brooklands Museum is Mercedes-Benz World, where the luxury car brand owns a series of training tracks and runs the AMG Driving Academy. Some champion drivers have used these courses, like Lewis Hamilton, Mika Häkkinen, Nico Rosberg and Stirling Moss.</p>
 
-					<p>Get the embed location iframe from google</p>
+					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2491.620935598655!2d-0.47023948423561934!3d51.354880679610446!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48767601ba5f4785%3A0xb5d2da6f5ea950de!2sMercedes-Benz%20World!5e0!3m2!1sen!2suk!4v1641868472761!5m2!1sen!2suk" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
 
-					<a href="LOCATION LINK" data-role="button" target="_blank">GET DIRECTIONS</a>
+					<a href="https://goo.gl/maps/FPCiFx6n6WLaThscA" data-role="button" target="_blank">GET DIRECTIONS</a>
 				</div>
 		</div>
 	</div>
@@ -721,8 +721,8 @@
 <div data-role="page" id="poi_iphone_guildford">
 	<div data-role="header">
 		<div data-role="controlgroup" data-type="horizontal">
-			<a href="#te_homepage" class="ui-btn ui-corner-all">LOGO</a>
-			<a href="#" class="ui-btn ui-corner-all">PROFILE</a>
+			<a href="#te_homepage" class="ui-btn ui-corner-all"><img src="assets/images/te_logo.png" height="52" width="42"></a>
+			<a href="#te_animDiamond" class="ui-btn ui-corner-all">PROFILE</a>
 			<a href="#te_animDiamond" class="ui-btn ui-corner-all">DIAMOND</a>
 		</div>
 	</div>
@@ -741,51 +741,51 @@
 						<div id="guildford_poi1_iphone" class="ui-body-d ui-content">
 							<h2>Guildford Castle</h2>
 
-							<p>ICON OF DIAMOND AND POINTS</p>
+							<p><img src="assets/images/icon_diamond.png" height="24" width="28">POINTS</p>
 							
-							<img src="IMAGE LINK" alt="TITLE OF POI">
+							<img src="assets/images/Guildford_Castle.png" alt="Guildford Castle">
 							
 							<button class="fav_btn" id="fav_guildford_castle1">FAVOURITE</button>
 
-							<p>DESCRIPTION OF POI</p>
+							<p>After the Battle of Hastings in 1066 William led his army to Canterbury and then sacked towns along the Pilgrims' Way, including Guildford. Later William, or one of his barons, built Guildford Castle. There is no record of it in the Domesday Book so construction probably started after 1086.</p>
 
-							<p>Get the embed location iframe from google</p>
+							<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d110467.20738910705!2d-0.647585217643782!3d51.21847209257998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4875d09a4f5d7cf5%3A0xaeda5777b4246720!2sGuildford%20Castle!5e0!3m2!1sen!2suk!4v1641870435052!5m2!1sen!2suk" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
 
-							<a href="LOCATION LINK" data-role="button" target="_blank">GET DIRECTIONS</a>
+							<a href="https://goo.gl/maps/aVJMZxEi36Z4wRAdA" data-role="button" target="_blank">GET DIRECTIONS</a>
 						</div>
 						
 						<!-------------------Guildford Museum ------------------>
 						<div id="guildford_poi2_iphone" class="ui-body-d ui-content">
 							<h2>Guildford Museum</h2>
 
-							<p>ICON OF DIAMOND AND POINTS</p>
+							<p><img src="assets/images/icon_diamond.png" height="24" width="28">POINTS</p>
 							
-							<img src="IMAGE LINK" alt="TITLE OF POI">
+							<img src="assets/images/Guildford_Museum.png" alt="Guildford Museum">
 							
 							<button class="fav_btn" id="fav_guildford_museum2">FAVOURITE</button>
 
-							<p>DESCRIPTION OF POI</p>
+							<p>Guildford Museum is the main museum is in the town of Guildford, Surrey, England. The museum is on Quarry Street, a narrow road lined by pre-1900 cottages running just off the pedestrianised High Street. This main site of the museum forms the gatehouse and annex of Guildford Castle, which the staff help to run.</p>
 
-							<p>Get the embed location iframe from google</p>
+							<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d39967.30939802454!2d-0.6101798!3d51.2382898!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4875d090906e947f%3A0x43eeea8c8df8cbd5!2sGuildford%20Museum!5e0!3m2!1sen!2suk!4v1641870343394!5m2!1sen!2suk" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
 
-							<a href="LOCATION LINK" data-role="button" target="_blank">GET DIRECTIONS</a>
+							<a href="https://goo.gl/maps/g7vfsx3BRmiGcMQS6" data-role="button" target="_blank">GET DIRECTIONS</a>
 						</div>
 						
 						<!-------------------Stoke Park ------------------>
 						<div id="guildford_poi3_iphone" class="ui-body-d ui-content">
 							<h2>Stoke Park</h2>
 
-							<p>ICON OF DIAMOND AND POINTS</p>
+							<p><img src="assets/images/icon_diamond.png" height="24" width="28">POINTS</p>
 							
-							<img src="IMAGE LINK" alt="TITLE OF POI">
+							<img src="assets/images/Stoke_Park.png" alt="Stoke Park">
 							
 							<button class="fav_btn" id="fav_stoke_park3">FAVOURITE</button>
 
-							<p>DESCRIPTION OF POI</p>
+							<p>Stoke Park is a private sporting and leisure estate in Stoke Poges, Buckinghamshire. The mansion building (designed by James Wyatt in 1788) is located in the middle of 300 acres (1.2 km2) of parkland, lakes, gardens and monuments. In 1908, it became the first country club in the UK.</p>
 
-							<p>Get the embed location iframe from google</p>
+							<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2497.585515254846!2d-0.5616976842396485!3d51.24512797959288!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4875da09792f4b5d%3A0x9fd218d64760b341!2sStoke%20Park%2C%20London%20Rd%2C%20Guildford%20GU1%201TU!5e0!3m2!1sen!2suk!4v1641868046980!5m2!1sen!2suk" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
 
-							<a href="LOCATION LINK" data-role="button" target="_blank">GET DIRECTIONS</a>
+							<a href="https://goo.gl/maps/Nh4rMNThAqt6AKaF6" data-role="button" target="_blank">GET DIRECTIONS</a>
 						</div>
 					</div>
 	</div>
@@ -809,8 +809,8 @@
 <div data-role="page" id="poi_iphone_portsmouth">
 	<div data-role="header">
 		<div data-role="controlgroup" data-type="horizontal">
-			<a href="#te_homepage" class="ui-btn ui-corner-all">LOGO</a>
-			<a href="#" class="ui-btn ui-corner-all">PROFILE</a>
+			<a href="#te_homepage" class="ui-btn ui-corner-all"><img src="assets/images/te_logo.png" height="52" width="42"></a>
+			<a href="#te_animDiamond" class="ui-btn ui-corner-all">PROFILE</a>
 			<a href="#te_animDiamond" class="ui-btn ui-corner-all">DIAMOND</a>
 		</div>
 	</div>
@@ -829,51 +829,51 @@
 						<div id="portsmouth_poi1_iphone" class="ui-body-d ui-content">
 							<h2>Spinnaker Tower</h2>
 
-							<p>ICON OF DIAMOND AND POINTS</p>
+							<p><img src="assets/images/icon_diamond.png" height="24" width="28">POINTS</p>
 							
-							<img src="IMAGE LINK" alt="TITLE OF POI">
+							<img src="assets/images/Spinnaker_Tower.png" alt="Spinnaker Tower">
 							
 							<button class="fav_btn" id="fav_spinnaker_tower1">FAVOURITE</button>
 
-							<p>DESCRIPTION OF POI</p>
+							<p>The Spinnaker Tower is a 170 metres landmark observation tower in Portsmouth, England. It is the centrepiece of the redevelopment of Portsmouth Harbour, which was supported by a National Lottery grant.</p>
 
-							<p>Get the embed location iframe from google</p>
+							<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2521.92086258008!2d-1.110705784256087!3d50.79557517952439!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48745d81407073e3%3A0x58939dec9d61be4d!2sSpinnaker%20Tower!5e0!3m2!1sen!2suk!4v1641867804568!5m2!1sen!2suk" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
 
-							<a href="LOCATION LINK" data-role="button" target="_blank">GET DIRECTIONS</a>
+							<a href="https://goo.gl/maps/2WmCBQir7UTWn4RHA" data-role="button" target="_blank">GET DIRECTIONS</a>
 						</div>
 						
 						<!-------------------South Parade Pier ------------------>
 						<div id="portsmouth_poi2_iphone" class="ui-body-d ui-content">
 							<h2>South Parade Pier</h2>
 
-							<p>ICON OF DIAMOND AND POINTS</p>
+							<p><img src="assets/images/icon_diamond.png" height="24" width="28">POINTS</p>
 							
-							<img src="IMAGE LINK" alt="TITLE OF POI">
+							<img src="assets/images/South_Parade_Pier.png" alt="South Parade Pier">
 							
 							<button class="fav_btn" id="fav_south_parade_pier2">FAVOURITE</button>
 
-							<p>DESCRIPTION OF POI</p>
+							<p>The South Parade Pier is a pier in Portsmouth, England. It is one of two piers in the city, the other being Clarence Pier. The pier once had a long hall down its centre which housed a seating area and a small restaurant. The outside of the hall is a promenade which runs the length of the pier.</p>
 
-							<p>Get the embed location iframe from google</p>
+							<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2522.8029717483914!2d-1.078566084256685!3d50.7792258795221!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48745d8e4fd4f383%3A0x4f4ba2dd6757bd1e!2sSouth%20Parade%20Pier!5e0!3m2!1sen!2suk!4v1641867650152!5m2!1sen!2suk" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
 
-							<a href="LOCATION LINK" data-role="button" target="_blank">GET DIRECTIONS</a>
+							<a href="https://goo.gl/maps/UjRjnTbddJHMCkud8" data-role="button" target="_blank">GET DIRECTIONS</a>
 						</div>
 						
-						<!-------------------BUCKINGHAM PALACE ------------------>
+						<!-------------------HISTORIC DOCKYARD ------------------>
 						<div id="portsmouth_poi3_iphone" class="ui-body-d ui-content">
 							<h2>Historic Dockyard</h2>
 
-							<p>ICON OF DIAMOND AND POINTS</p>
+							<p><img src="assets/images/icon_diamond.png" height="24" width="28">POINTS</p>
 							
-							<img src="IMAGE LINK" alt="TITLE OF POI">
+							<img src="assets/images/Historic_Dockyard.png" alt="Historic Dockyard">
 							
 							<button class="fav_btn" id="fav_historic_dockyard3">FAVOURITE</button>
 
-							<p>DESCRIPTION OF POI</p>
+							<p>Portsmouth Historic Dockyard is an area of HM Naval Base Portsmouth which is open to the public; it contains several historic buildings and ships. It is managed by the National Museum of the Royal Navy as an umbrella organization representing many  charities such as: the Portsmouth Naval Base Property Trust, and the HMS Victory Preservation Company.</p>
 
-							<p>Get the embed location iframe from google</p>
+							<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2521.6534370799063!2d-1.1116545842558934!3d50.80053097952506!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48745d81d4cec0c3%3A0x7bbcaa5658711999!2sPortsmouth%20Historic%20Dockyard!5e0!3m2!1sen!2suk!4v1641867372385!5m2!1sen!2suk" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
 
-							<a href="LOCATION LINK" data-role="button" target="_blank">GET DIRECTIONS</a>
+							<a href="https://g.page/historicdockyard?share" data-role="button" target="_blank">GET DIRECTIONS</a>
 						</div>
 					</div>
 	
@@ -902,7 +902,7 @@
 	<div data-role="header" data-position="fixed">
 		<div data-role="controlgroup" data-type="horizontal">
 			<a href="#te_homepage" class="ui-btn ui-corner-all"><img src="assets/images/te_logo.png" height="52" width="42"></a>
-			<a href="#" class="ui-btn ui-corner-all"><i class="far fa-user fa-2x"></i><br><br>PROFILE</a>
+			<a href="#te_animDiamond" class="ui-btn ui-corner-all"><i class="far fa-user fa-2x"></i><br><br>PROFILE</a>
 			<a href="#te_animDiamond" class="ui-btn ui-corner-all ui-btn-right"><i class="far fa-gem fa-2x"></i><br><br>0</a>
 		</div>
 	</div>
@@ -975,7 +975,7 @@ function ValidateEmail(inputText)
 	<div data-role="header" data-position="fixed">
 		<div data-role="controlgroup" data-type="horizontal">
 			<a href="#te_homepage" class="ui-btn ui-corner-all"><img src="assets/images/te_logo.png" height="52" width="42"></a>
-			<a href="#" class="ui-btn ui-corner-all"><i class="far fa-user fa-2x"></i><br><br>PROFILE</a>
+			<a href="#te_animDiamond" class="ui-btn ui-corner-all"><i class="far fa-user fa-2x"></i><br><br>PROFILE</a>
 			<a href="#te_animDiamond" class="ui-btn ui-corner-all ui-btn-right"><i class="far fa-gem fa-2x"></i><br><br>0</a>
 		</div>
 	</div>
@@ -1104,7 +1104,7 @@ function ValidateEmail(inputText)
 	<div data-role="header" data-position="fixed">
 		<div data-role="controlgroup" data-type="horizontal">
 			<a href="#te_homepage" class="ui-btn ui-corner-all"><img src="assets/images/te_logo.png" height="52" width="42"></a>
-			<a href="#" class="ui-btn ui-corner-all"><i class="far fa-user fa-2x"></i><br><br>PROFILE</a>
+			<a href="#te_animDiamond" class="ui-btn ui-corner-all"><i class="far fa-user fa-2x"></i><br><br>PROFILE</a>
 			<a href="#te_animDiamond" class="ui-btn ui-corner-all ui-btn-right"><i class="far fa-gem fa-2x"></i><br><br>0</a>
 		</div>
 	</div>
@@ -1133,7 +1133,7 @@ function ValidateEmail(inputText)
 	<div data-role="header" data-position="fixed">
 		<div data-role="controlgroup" data-type="horizontal">
 			<a href="#te_homepage" class="ui-btn ui-corner-all"><img src="assets/images/te_logo.png" height="52" width="42"></a>
-			<a href="#" class="ui-btn ui-corner-all"><i class="far fa-user fa-2x"></i><br><br>PROFILE</a>
+			<a href="#te_animDiamond" class="ui-btn ui-corner-all"><i class="far fa-user fa-2x"></i><br><br>PROFILE</a>
 			<a href="#te_animDiamond" class="ui-btn-active ui-btn ui-corner-all ui-btn-right"><i class="far fa-gem fa-2x"></i><br><br>0</a>
 		</div>
 	</div>
