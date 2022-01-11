@@ -136,6 +136,105 @@
 							<a href="https://goo.gl/maps/tDgZvkzYHbQk8d5P6" data-role="button" target="_blank">GET DIRECTIONS</a>
 						</div>
 						
+						<style type="text/css" media="screen">
+	
+							#listBox{
+								  width: 300px;
+								  border: 2px solid blue;
+								  padding: 50px;
+								  margin: 20px;
+								}
+							
+						</style>
+
+						<form id="FormName" action="(EmptyReference!)" method="get" name="FormName">
+							<fieldset data-role="controlgroup">
+							<legend>Do you want to add comments:</legend>
+								<label for="radio-choice-1">Yes</label>
+								<input type="radio" name="radiogroup" id="radio-choice-1">
+								<label for="radio-choice-2">No</label>
+								<input type="radio" name="radiogroup" id="radio-choice-2" checked>
+							</fieldset>
+
+						<!--Adjust your code so the comments are displayed nicely styled. Make sure you overide old comments. See how you can grap the comments from this page and make it appear in the page with the Detailed Point of Intereset Pages-->
+
+
+							<fieldset id="hiddenFieldset">
+								<div class="ui-field-contain">
+									<label for="inputBox">Add your comment:</label>
+									<input type="text" name="inputBox" id="inputBox" placeholder="Text input" value="">
+								</div>	
+								<button id="add" type="button">Add</button>
+								<div id="listBox">Angela 							
+									<span class="fa fa-star checked"></span>
+									<span class="fa fa-star checked"></span>
+									<span class="fa fa-star checked"></span>
+									<span class="fa fa-star"></span>
+									<span class="fa fa-star"></span></div>
+							</fieldset>
+									
+
+							<span class="fa fa-star checked"></span>
+							<span class="fa fa-star checked"></span>
+							<span class="fa fa-star checked"></span>
+							<span class="fa fa-star"></span>
+							<span class="fa fa-star"></span>
+
+						</form>
+
+
+						<style> 
+							.checked {
+							color: orange;
+							}
+						</style>
+
+
+
+
+
+
+						<script type="text/javascript">
+							function addOption() {
+								listBox.appendChild(new Option(inputBox.value,inputBox.value));
+								inputBox.value = "";
+							}
+				
+							function removeOption() {
+								listBox.options[listBox.selectedIndex] = null;
+							}
+				
+							window.onload = function() {
+								hiddenFieldset = document.getElementById("hiddenFieldset");
+								inputBox = document.FormName.inputBox;
+								listBox = document.getElementById("listBox");
+				
+								document.FormName.radiogroup[0].onclick = function() {
+									hiddenFieldset.style.display = "block";
+								}
+								document.FormName.radiogroup[1].onclick = function() {
+									hiddenFieldset.style.display = "none";
+								}
+				
+								hiddenFieldset.style.display = "none";
+								document.getElementById("add").onclick = addOption;
+								document.getElementById("remove").onclick = removeOption;
+							}
+							
+						</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
 						<!-------------------LONDON EYE ------------------>
 						<div id="waterloo_poi2_ipad" class="ui-body-d ui-content">
 							<h2>LONDON EYE</h2>
@@ -152,7 +251,7 @@
 			
 							<a href="https://goo.gl/maps/RHcaEjLMMM3Q7T77A" data-role="button" target="_blank">GET DIRECTIONS</a>
 						</div>
-						
+
 						<!-------------------BUCKINGHAM PALACE ------------------>
 						<div id="waterloo_poi3_ipad" class="ui-body-d ui-content">
 							<h2>BUCKINGHAM PALACE</h2>
