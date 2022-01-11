@@ -95,6 +95,13 @@
 
     }
 
+	.potitles {
+				text-align: center;
+	}
+	.poidiamond {
+			text-align: right;
+	}
+
 	
 </style>
 
@@ -162,14 +169,14 @@
 	</div>
 	
 	<div role="main" class="ui-content">
-		<h1>STATION MAP</h1>
+		<h1 style="text-align: center;">STATION MAP</h1>
 		<!---------------------------- IPAD STATION BUTTONS ------------------------------>
 		<div class="ipad_stations_poi">
 			<div data-role="tabs" class="ui-grid-a">
 				
 			<div class="ipad_stations_buttons ui-block-a">
 				<ul data-role="listview" data-inset="true">
-				  <li><a href="#poi_ipad_waterloo" data-ajax="true">WATERLOO</a><img width ="100%"  src="assets/images/Waterloo_Station.png" alt="Waterloo"></li>
+				  <li><a href="#poi_ipad_waterloo"data-ajax="true">WATERLOO</a><img width ="100%"  src="assets/images/Waterloo_Station.png" alt="Waterloo"></li>
 				  <li><a href="#poi_ipad_wimbledon" data-ajax="false">WIMBLEDON</a><img width ="100%" src="assets/images/Wimbledon_Station.png" alt="Wimbledon"></li>
 				  <li><a href="#poi_ipad_woking" data-ajax="false">WOKING</a><img width ="100%" src="assets/images/Woking_Station.png" alt="Woking"></li>
 				  <li><a href="#poi_ipad_guildford" data-ajax="false">GUILDFORD</a><img width ="100%" src="assets/images/Guilford_Station.png" alt="Guildford"></li>
@@ -182,22 +189,23 @@
 
 				<!----------------------- WATERLOO-------------------------------->
 				<div id="poi_ipad_waterloo" class="ui-body-d tablist-content">
-					<h1>LONDON WATERLOO</h1>
+					<h1 style="text-align: center;">LONDON WATERLOO</h1>
 					<div data-role="tabs">
 						<div data-role="navbar">
 							<ul>
-								<li><a href="#waterloo_poi1_ipad" data-ajax="true">London Dungeon</a></li>
+								<li><a href="#waterloo_poi1_ipad" class="ui-btn-active" data-ajax="true">London Dungeon</a></li>
 								<li><a href="#waterloo_poi2_ipad" data-ajax="false">London Eye</a></li>
 								<li><a href="#waterloo_poi3_ipad" data-ajax="false">Buckingham Palace</a></li>
 							</ul>
 						</div>
 						<!-------------------LONDON DUNGEON ------------------>
 						<div id="waterloo_poi1_ipad" class="ui-body-d ui-content">
-							<h2>LONDON DUNGEON</h2>
-
-							<p><img src="assets/images/icon_diamond.png" height="24" width="28"> 25pts</p>
+							<h2 style="text-align: center;">LONDON DUNGEON</h2>
 							
 							<img src="assets/images/London_Dungeon.png" alt="London Dungeon">
+							
+							<p style="text-align: right;"><img src="assets/images/icon_diamond.png" height="24" width="28"> 25pts</p>
+
 							<p>London Dungeon Favs button</p>
 					  
 							<fieldset data-role="controlgroup" data-type="horizontal">
@@ -296,6 +304,7 @@
 								display: none;
 							}
 							}
+
 							
 						</style>
 
@@ -441,11 +450,11 @@
 
 						<!-------------------LONDON EYE ------------------>
 						<div id="waterloo_poi2_ipad" class="ui-body-d ui-content">
-							<h2>LONDON EYE</h2>
-
-							<p><img src="assets/images/icon_diamond.png" height="24" width="28"> 25pts</p>
+							<h2 class="potitles">LONDON EYE</h2>
 							
 							<img src="assets/images/London_Eye.png" alt="London Eye">
+
+							<p class="poidiamond"><img src="assets/images/icon_diamond.png" height="24" width="28"> 25pts</p>
 
 							<fieldset data-role="controlgroup" data-type="horizontal">
 								<input type="checkbox" name="waterloo_poi2_ipad_fav" id="waterloo_poi2_ipad_fav" class="custom">
@@ -463,11 +472,11 @@
 
 						<!-------------------BUCKINGHAM PALACE ------------------>
 						<div id="waterloo_poi3_ipad" class="ui-body-d ui-content">
-							<h2>BUCKINGHAM PALACE</h2>
-
-							<p><img src="assets/images/icon_diamond.png" height="24" width="28"> 50 pts</p>
+							<h2 class="potitles">BUCKINGHAM PALACE</h2>
 							
 							<img src="assets/images/Buckingham_Palace.png" alt="Buckingham Palace">
+
+							<p class="poidiamond"><img src="assets/images/icon_diamond.png" height="24" width="28"> 50 pts</p>
 
 							<fieldset data-role="controlgroup" data-type="horizontal">
 								<input type="checkbox" name="waterloo_poi3_ipad_fav" id="waterloo_poi3_ipad_fav" class="custom">
@@ -486,7 +495,7 @@
 				</div>
 				<!----------------------- WIMBLEDON-------------------------------->
 				<div id="poi_ipad_wimbledon" class="ui-body-d tablist-content">
-					<h1>WIMBLEDON</h1>
+					<h1 class="potitles">WIMBLEDON</h1>
 
 					<div data-role="tabs">
 						<div data-role="navbar">
@@ -498,11 +507,11 @@
 						</div>
 						<!-------------------Wimbledon Centre Court ------------------>
 						<div id="wimbledon_poi1_ipad" class="ui-body-d ui-content">
-							<h2>Wimbledon Centre Court</h2>
-
-							<p><img src="assets/images/icon_diamond.png" height="24" width="28"> 25pts</p>
+							<h2 class="potitles">Wimbledon Centre Court</h2>
 							
 							<img src="assets/images/Wimbledon_Centre_Court.png" alt="Wimbledon Centre Court">
+
+							<p class="poidiamond"><img src="assets/images/icon_diamond.png" height="24" width="28"> 25pts</p>
 
 							<fieldset data-role="controlgroup" data-type="horizontal">
 								<input type="checkbox" name="wimbledon_poi1_ipad_fav" id="wimbledon_poi1_ipad_fav" class="custom">
@@ -520,11 +529,11 @@
 						
 						<!-------------------New Wimbledon Theatre ------------------>
 						<div id="wimbledon_poi2_ipad" class="ui-body-d ui-content">
-							<h2>New Wimbledon Theatre</h2>
-
-							<p><img src="assets/images/icon_diamond.png" height="24" width="28"> 25pts</p>
+							<h2 class="potitles">New Wimbledon Theatre</h2>
 							
 							<img src="assets/images/New_Wimbledon_Theatre.png" alt="New Wimbledon Theatre">
+
+							<p class="poidiamond"><img src="assets/images/icon_diamond.png" height="24" width="28"> 25pts</p>
 							
 							<button class="fav_btn" id="fav_wimbledon_theatre">FAVOURITE</button>
 
@@ -537,11 +546,11 @@
 						
 						<!-------------------Buddhapadipa Temple ------------------>
 						<div id="wimbledon_poi3_ipad" class="ui-body-d ui-content">
-							<h2>Buddhapadipa Temple</h2>
-
-							<p><img src="assets/images/icon_diamond.png" height="24" width="28"> 50pts</p>
+							<h2 class="potitles">Buddhapadipa Temple</h2>
 							
 							<img src="assets/images/Buddhapadipa_Temple.png" alt="Buddhapadipa Temple">
+
+							<p class="poidiamond"><img src="assets/images/icon_diamond.png" height="24" width="28"> 50pts</p>
 							
 							<button class="fav_btn" id="fav_buddhapadipa">FAVOURITE</button>
 
@@ -776,30 +785,30 @@
 <!---------------------------------------------- iPHONE VERSION - STATION'S POI PAGE ------------------------------------------->
 <!-------------------WATERLOO------------------------->
 <div data-role="page" id="poi_iphone_waterloo">
-	<div data-role="header">
+	<div data-role="header" data-position="fixed">
 		<div data-role="controlgroup" data-type="horizontal">
 			<a href="#te_homepage" class="ui-btn ui-corner-all"><img src="assets/images/te_logo.png" height="52" width="42"></a>
-			<a href="#te_animDiamond" class="ui-btn ui-corner-all">PROFILE</a>
-			<a href="#te_animDiamond" class="ui-btn ui-corner-all">DIAMOND</a>
+			<a href="#te_animDiamond" class="ui-btn ui-corner-all"><i class="far fa-user fa-2x"></i><br><br>PROFILE</a>
+			<a href="#te_animDiamond" class="ui-btn ui-corner-all ui-btn-right"><i class="far fa-gem fa-2x"></i><br><br>0</a>
 		</div>
 	</div>
 	<div role="main" class="ui-content">
-		<h1>LONDON WATERLOO</h1>
+		<h1 style="text-align: center;">LONDON WATERLOO</h1>
 		<div data-role="tabs">
 			<div data-role="navbar">
 				<ul>
-					<li><a href="#waterloo_poi1_iphone" data-ajax="true">London Dungeon</a></li>
+					<li><a href="#waterloo_poi1_iphone" class="ui-btn-active" data-ajax="true">London Dungeon</a></li>
 					<li><a href="#waterloo_poi2_iphone" data-ajax="false">London Eye</a></li>
 					<li><a href="#waterloo_poi3_iphone" data-ajax="false">Buckingham Palace</a></li>
 				</ul>
 			</div>
 			<!-------------------LONDON DUNGEON ------------------>
 			<div id="waterloo_poi1_iphone" class="ui-body-d ui-content">
-				<h2>LONDON DUNGEON</h2>
-
-				<p><img src="assets/images/icon_diamond.png" height="24" width="28"> 25pts</p>
+				<h2 style="text-align: center;">LONDON DUNGEON</h2>
 
 				<img src="assets/images/London_Dungeon.png" alt="London Dungeon">
+
+				<p style="text-align: right;"><img src="assets/images/icon_diamond.png" height="24" width="28"><br> 25pts</p>
 
 				<button class="fav_btn" id="fav_london_dungeon1">FAVOURITE</button>
 
@@ -812,11 +821,11 @@
 
 			<!-------------------LONDON EYE ------------------>
 			<div id="waterloo_poi2_iphone" class="ui-body-d ui-content">
-				<h2>LONDON EYE</h2>
-
-				<p><img src="assets/images/icon_diamond.png" height="24" width="28"> 25pts</p>
+				<h2 style="text-align: center;">LONDON EYE</h2>
 
 				<img src="assets/images/London_Eye.png" alt="London Eye">
+
+				<p style="text-align: right;"><img src="assets/images/icon_diamond.png" height="24" width="28"> 25pts</p>
 
 				<button class="fav_btn" id="fav_london_eye2">FAVOURITE</button>
 
@@ -829,11 +838,11 @@
 
 			<!-------------------BUCKINGHAM PALACE ------------------>
 			<div id="waterloo_poi3_iphone" class="ui-body-d ui-content">
-				<h2>BUCKINGHAM PALACE</h2>
-
-				<p><img src="assets/images/icon_diamond.png" height="24" width="28"> 50pts</p>
+				<h2 style="text-align: center;">BUCKINGHAM PALACE</h2>
 
 				<img src="assets/images/Buckingham_Palace.png" alt="Buckingham Palace">
+
+				<p style="text-align: right;"><img src="assets/images/icon_diamond.png" height="24" width="28"> 50pts</p>
 
 				<button class="fav_btn" id="fav_buckingham_palace3">FAVOURITE</button>
 
@@ -863,31 +872,31 @@
 </div>
 <!-------------------wimbledon------------------------->
 <div data-role="page" id="poi_iphone_wimbledon">
-	<div data-role="header">
+	<div data-role="header" data-position="fixed">
 		<div data-role="controlgroup" data-type="horizontal">
 			<a href="#te_homepage" class="ui-btn ui-corner-all"><img src="assets/images/te_logo.png" height="52" width="42"></a>
-			<a href="#te_animDiamond" class="ui-btn ui-corner-all">PROFILE</a>
-			<a href="#te_animDiamond" class="ui-btn ui-corner-all">DIAMOND</a>
+			<a href="#te_animDiamond" class="ui-btn ui-corner-all"><i class="far fa-user fa-2x"></i><br><br>PROFILE</a>
+			<a href="#te_animDiamond" class="ui-btn ui-corner-all ui-btn-right"><i class="far fa-gem fa-2x"></i><br><br>0</a>
 		</div>
 	</div>
 	<div role="main" class="ui-content">
-		<h1>WIMBLEDON</h1>
+		<h1 style="text-align: center;">WIMBLEDON</h1>
 
 		<div data-role="tabs">
 			<div data-role="navbar">
 				<ul>
-					<li><a href="#wimbledon_poi1_iphone" data-ajax="true">Wimbledon Centre Court</a></li>
+					<li><a href="#wimbledon_poi1_iphone" class="ui-btn-active" data-ajax="true">Wimbledon Centre Court</a></li>
 					<li><a href="#wimbledon_poi2_iphone" data-ajax="false">New Wimbledon Theatre</a></li>
 					<li><a href="#wimbledon_poi3_iphone" data-ajax="false">Buddhapadipa Temple</a></li>
 				</ul>
 			</div>
 			<!-------------------Wimbledon Centre Court ------------------>
 			<div id="wimbledon_poi1_iphone" class="ui-body-d ui-content">
-				<h2>Wimbledon Centre Court</h2>
-
-				<p><img src="assets/images/icon_diamond.png" height="24" width="28"> 25pts</p>
+				<h2 style="text-align: center;">Wimbledon Centre Court</h2>
 
 				<img src="assets/images/Wimbledon_Centre_Court.png" alt="Wimbledon Centre Court">
+
+				<p style="text-align: right;"><img src="assets/images/icon_diamond.png" height="24" width="28"> 25pts</p>
 
 				<button class="fav_btn" id="fav_wimbledon_court1">FAVOURITE</button>
 
@@ -900,11 +909,11 @@
 
 			<!-------------------New Wimbledon Theatre ------------------>
 			<div id="wimbledon_poi2_iphone" class="ui-body-d ui-content">
-				<h2>New Wimbledon Theatre</h2>
-
-				<p><img src="assets/images/icon_diamond.png" height="24" width="28"> 25pts</p>
+				<h2 style="text-align: center;">New Wimbledon Theatre</h2>
 
 				<img src="assets/images/New_Wimbledon_Theatre.png" alt="New Wimbledon Theatre">
+
+				<p style="text-align: right;"><img src="assets/images/icon_diamond.png" height="24" width="28"> 25pts</p>
 
 				<button class="fav_btn" id="fav_wimbledon_theatre2">FAVOURITE</button>
 
@@ -916,11 +925,11 @@
 
 			<!-------------------Buddhapadipa Temple ------------------>
 			<div id="wimbledon_poi3_iphone" class="ui-body-d ui-content">
-				<h2>Buddhapadipa Temple</h2>
-
-				<p><img src="assets/images/icon_diamond.png" height="24" width="28"> 50pts</p>
+				<h2 style="text-align: center;">Buddhapadipa Temple</h2>
 
 				<img src="assets/images/Buddhapadipa_Temple.png" alt="Buddhapadipa Temple">
+
+				<p style="text-align: right;"><img src="assets/images/icon_diamond.png" height="24" width="28"> 50pts</p>
 
 				<button class="fav_btn" id="fav_buddhapadipa3">FAVOURITE</button>
 
@@ -950,30 +959,30 @@
 </div>
 <!-------------------WOKING------------------------->
 <div data-role="page" id="poi_iphone_woking">
-	<div data-role="header">
+	<div data-role="header" data-position="fixed">
 		<div data-role="controlgroup" data-type="horizontal">
 			<a href="#te_homepage" class="ui-btn ui-corner-all"><img src="assets/images/te_logo.png" height="52" width="42"></a>
-			<a href="#te_animDiamond" class="ui-btn ui-corner-all">PROFILE</a>
-			<a href="#te_animDiamond" class="ui-btn ui-corner-all">DIAMOND</a>
+			<a href="#te_animDiamond" class="ui-btn ui-corner-all"><i class="far fa-user fa-2x"></i><br><br>PROFILE</a>
+			<a href="#te_animDiamond" class="ui-btn ui-corner-all ui-btn-right"><i class="far fa-gem fa-2x"></i><br><br>0</a>
 		</div>
 	</div>
 	<div role="main" class="ui-content">
-		<h1>WOKING</h1>
+		<h1 style="text-align: center;">WOKING</h1>
 			<div data-role="tabs">
 				<div data-role="navbar">
 					<ul>
-						<li><a href="#woking_poi1_iphone" data-ajax="true">The Lightbox</a></li>
+						<li><a href="#woking_poi1_iphone" class="ui-btn-active" data-ajax="true">The Lightbox</a></li>
 						<li><a href="#woking_poi2_iphone" data-ajax="false">RHS Garden</a></li>
 						<li><a href="#woking_poi3_iphone" data-ajax="false">Mercedes Benz World</a></li>
 					</ul>
 				</div>
 				<!-------------------The Lightbox ------------------>
 				<div id="woking_poi1_iphone" class="ui-body-d ui-content">
-					<h2>The Lightbox</h2>
-
-					<p><img src="assets/images/icon_diamond.png" height="24" width="28"> 25pts</p>
+					<h2 style="text-align: center;">The Lightbox</h2>
 
 					<img src="assets/images/The_Lightbox.png" alt="The Lightbox">
+
+					<p style="text-align: right;"><img src="assets/images/icon_diamond.png" height="24" width="28"> 25pts</p>
 
 					<button class="fav_btn" id="fav_lightbox1">FAVOURITE</button>
 
@@ -986,11 +995,11 @@
 
 				<!-------------------RHS Garden ------------------>
 				<div id="woking_poi2_iphone" class="ui-body-d ui-content">
-					<h2>RHS Garden</h2>
-
-					<p><img src="assets/images/icon_diamond.png" height="24" width="28"> 25pts</p>
+					<h2 style="text-align: center;">RHS Garden</h2>
 
 					<img src="assets/images/RHS_Garden.png" alt="RHS Garden">
+
+					<p style="text-align: right;"><img src="assets/images/icon_diamond.png" height="24" width="28"> 25pts</p>
 
 					<button class="fav_btn" id="fav_rhs_garden2">FAVOURITE</button>
 
@@ -1003,11 +1012,11 @@
 
 				<!-------------------Mercedes Benz World ------------------>
 				<div id="woking_poi3_iphone" class="ui-body-d ui-content">
-					<h2>Mercedes Benz World </h2>
-
-					<p><img src="assets/images/icon_diamond.png" height="24" width="28"> 50pts</p>
+					<h2 style="text-align: center;">Mercedes Benz World </h2>
 
 					<img src="assets/images/Mercedes_Benz_World.png" alt="Mercedes-Benz World">
+
+					<p style="text-align: right;"><img src="assets/images/icon_diamond.png" height="24" width="28"> 50pts</p>
 
 					<button class="fav_btn" id="fav_benz_world3">FAVOURITE</button>
 
@@ -1037,31 +1046,31 @@
 </div>
 <!-------------------GUILDFORD------------------------->
 <div data-role="page" id="poi_iphone_guildford">
-	<div data-role="header">
+	<div data-role="header" data-position="fixed">
 		<div data-role="controlgroup" data-type="horizontal">
 			<a href="#te_homepage" class="ui-btn ui-corner-all"><img src="assets/images/te_logo.png" height="52" width="42"></a>
-			<a href="#te_animDiamond" class="ui-btn ui-corner-all">PROFILE</a>
-			<a href="#te_animDiamond" class="ui-btn ui-corner-all">DIAMOND</a>
+			<a href="#te_animDiamond" class="ui-btn ui-corner-all"><i class="far fa-user fa-2x"></i><br><br>PROFILE</a>
+			<a href="#te_animDiamond" class="ui-btn ui-corner-all ui-btn-right"><i class="far fa-gem fa-2x"></i><br><br>0</a>
 		</div>
 	</div>
 	<div role="main" class="ui-content">
-		<h1>GUILDFORD</h1>
+		<h1 style="text-align: center;">GUILDFORD</h1>
 
 					<div data-role="tabs">
 						<div data-role="navbar">
 							<ul>
-								<li><a href="#guildford_poi1_iphone" data-ajax="true">Guildford Castle</a></li>
+								<li><a href="#guildford_poi1_iphone" class="ui-btn-active" data-ajax="true">Guildford Castle</a></li>
 								<li><a href="#guildford_poi2_iphone" data-ajax="false">Guildford Museum</a></li>
 								<li><a href="#guildford_poi3_iphone" data-ajax="false">Stoke Park</a></li>
 							</ul>
 						</div>
 						<!-------------------Guildford Castle ------------------>
 						<div id="guildford_poi1_iphone" class="ui-body-d ui-content">
-							<h2>Guildford Castle</h2>
-
-							<p><img src="assets/images/icon_diamond.png" height="24" width="28"> 25pts</p>
+							<h2 style="text-align: center;">Guildford Castle</h2>
 							
 							<img src="assets/images/Guildford_Castle.png" alt="Guildford Castle">
+
+							<p style="text-align: right;"><img src="assets/images/icon_diamond.png" height="24" width="28"> 25pts</p>
 							
 							<button class="fav_btn" id="fav_guildford_castle1">FAVOURITE</button>
 
@@ -1074,11 +1083,11 @@
 						
 						<!-------------------Guildford Museum ------------------>
 						<div id="guildford_poi2_iphone" class="ui-body-d ui-content">
-							<h2>Guildford Museum</h2>
-
-							<p><img src="assets/images/icon_diamond.png" height="24" width="28"> 25pts</p>
+							<h2 style="text-align: center;">Guildford Museum</h2>
 							
 							<img src="assets/images/Guildford_Museum.png" alt="Guildford Museum">
+
+							<p style="text-align: right;"><img src="assets/images/icon_diamond.png" height="24" width="28"> 25pts</p>
 							
 							<button class="fav_btn" id="fav_guildford_museum2">FAVOURITE</button>
 
@@ -1091,11 +1100,11 @@
 						
 						<!-------------------Stoke Park ------------------>
 						<div id="guildford_poi3_iphone" class="ui-body-d ui-content">
-							<h2>Stoke Park</h2>
-
-							<p><img src="assets/images/icon_diamond.png" height="24" width="28"> 50pts</p>
+							<h2 style="text-align: center;">Stoke Park</h2>
 							
 							<img src="assets/images/Stoke_Park.png" alt="Stoke Park">
+
+							<p style="text-align: right;"><img src="assets/images/icon_diamond.png" height="24" width="28"> 50pts</p>
 							
 							<button class="fav_btn" id="fav_stoke_park3">FAVOURITE</button>
 
@@ -1125,31 +1134,31 @@
 </div>
 <!-------------------PORTSMOUTH------------------------->
 <div data-role="page" id="poi_iphone_portsmouth">
-	<div data-role="header">
+	<div data-role="header" data-position="fixed">
 		<div data-role="controlgroup" data-type="horizontal">
 			<a href="#te_homepage" class="ui-btn ui-corner-all"><img src="assets/images/te_logo.png" height="52" width="42"></a>
-			<a href="#te_animDiamond" class="ui-btn ui-corner-all">PROFILE</a>
-			<a href="#te_animDiamond" class="ui-btn ui-corner-all">DIAMOND</a>
+			<a href="#te_animDiamond" class="ui-btn ui-corner-all"><i class="far fa-user fa-2x"></i><br><br>PROFILE</a>
+			<a href="#te_animDiamond" class="ui-btn ui-corner-all ui-btn-right"><i class="far fa-gem fa-2x"></i><br><br>0</a>
 		</div>
 	</div>
 	<div role="main" class="ui-content">
-		<h1>PORTSMOUTH</h1>
+		<h1 style="text-align: center;">PORTSMOUTH</h1>
 
 		<div data-role="tabs">
 						<div data-role="navbar">
 							<ul>
-								<li><a href="#portsmouth_poi1_iphone" data-ajax="true">Spinnaker Tower</a></li>
+								<li><a href="#portsmouth_poi1_iphone" class="ui-btn-active" data-ajax="true">Spinnaker Tower</a></li>
 								<li><a href="#portsmouth_poi2_iphone" data-ajax="false">South Parade Pier</a></li>
 								<li><a href="#portsmouth_poi3_iphone" data-ajax="false">Historic Dockyard</a></li>
 							</ul>
 						</div>
 						<!-------------------Spinnaker Tower----------------->
 						<div id="portsmouth_poi1_iphone" class="ui-body-d ui-content">
-							<h2>Spinnaker Tower</h2>
-
-							<p><img src="assets/images/icon_diamond.png" height="24" width="28"> 25pts</p>
+							<h2 style="text-align: center;">Spinnaker Tower</h2>
 							
 							<img src="assets/images/Spinnaker_Tower.png" alt="Spinnaker Tower">
+
+							<p style="text-align: right;"><img src="assets/images/icon_diamond.png" height="24" width="28"> 25pts</p>
 							
 							<button class="fav_btn" id="fav_spinnaker_tower1">FAVOURITE</button>
 
@@ -1162,12 +1171,12 @@
 						
 						<!-------------------South Parade Pier ------------------>
 						<div id="portsmouth_poi2_iphone" class="ui-body-d ui-content">
-							<h2>South Parade Pier</h2>
-
-							<p><img src="assets/images/icon_diamond.png" height="24" width="28"> 25pts</p>
+							<h2 style="text-align: center;">South Parade Pier</h2>
 							
 							<img src="assets/images/South_Parade_Pier.png" alt="South Parade Pier">
 							
+							<p style="text-align: right;"><img src="assets/images/icon_diamond.png" height="24" width="28"> 25pts</p>
+
 							<button class="fav_btn" id="fav_south_parade_pier2">FAVOURITE</button>
 
 							<p>The South Parade Pier is a pier in Portsmouth, England. It is one of two piers in the city, the other being Clarence Pier. The pier once had a long hall down its centre which housed a seating area and a small restaurant. The outside of the hall is a promenade which runs the length of the pier.</p>
@@ -1179,11 +1188,11 @@
 						
 						<!-------------------HISTORIC DOCKYARD ------------------>
 						<div id="portsmouth_poi3_iphone" class="ui-body-d ui-content">
-							<h2>Historic Dockyard</h2>
-
-							<p><img src="assets/images/icon_diamond.png" height="24" width="28"> 50pts</p>
+							<h2 style="text-align: center;">Historic Dockyard</h2>
 							
 							<img src="assets/images/Historic_Dockyard.png" alt="Historic Dockyard">
+
+							<p style="text-align: right;"><img src="assets/images/icon_diamond.png" height="24" width="28"> 50pts</p>
 							
 							<button class="fav_btn" id="fav_historic_dockyard3">FAVOURITE</button>
 
@@ -1225,7 +1234,7 @@
 		</div>
 	</div>
 	
-	<h1>FAVOURITES </h1>
+	<h1 style="text-align:center;">FAVOURITES </h1>
 	<br>
 	<div>
 	<form action="/action_page.php">
@@ -1354,7 +1363,7 @@ function ValidateEmail(inputText)
 		</div>
 	</div>
 	
-	<h1>BOOK TICKETS</h1>
+	<h1 style="text-align: center;">BOOK TICKETS</h1>
 	<br> 
 
 	<form id="bookingForm" name="bookingForm">
@@ -1484,7 +1493,7 @@ function ValidateEmail(inputText)
 	</div>
 	
 	<div role="main" class="ui-content">
-		<h1>SCAN QR</h1>
+		<h1 style="text-align: center;">SCAN QR</h1>
 		<!---------------------------- IPAD STATION BUTTONS ------------------------------>
 		<div class="ipad_stations_poi">
 			<div data-role="tabs" class="ui-grid-a">
