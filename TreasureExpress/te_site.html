@@ -26,6 +26,18 @@
 		.font-size-change{ font-size:10px;}
 	}
 
+	
+	.imgRating {
+		border: 1px solid #ddd; /* Gray border */
+		border-radius: 4px;  /* Rounded border */
+		padding: 5px; /* Some padding */
+		width: 50%; /* Set a small width */
+	}
+
+		/* Add a hover effect (blue shadow) */
+	.imgRating:hover {
+		box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+	}
 
 
 	.diamonds {
@@ -205,16 +217,13 @@
 							<img src="assets/images/London_Dungeon.png" alt="London Dungeon">
 							
 							<p style="text-align: right;"><img src="assets/images/icon_diamond.png" height="24" width="28"> 25pts</p>
-
-							<p>London Dungeon Favs button</p>
 					  
 							<fieldset data-role="controlgroup" data-type="horizontal">
 									<input type="checkbox" name="waterloo_poi1_ipad_fav" id="waterloo_poi1_ipad_fav" class="custom">
-									<label for="waterloo_poi1_ipad_fav"><span class="ui-icon-star ui-btn-icon-left">Add to favourites</span></label>
+									<label for="waterloo_poi1_ipad_fav"><span class="ui-icon-heart ui-btn-icon-left">Add to favourites</span></label>
 							</fieldset>
 							
-							<button class="fav_btn" id="fav_london_dungeon">FAVOURITE</button>
-
+							
 							<p>The London Dungeon is a uniquely thrilling attraction that will whisk you way back to the capital's most perilous past. See, hear, feel and (ahem!) smell the chillingly amusing characters of the 'bad old days' as they come to life before you.</p>
 
 							<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2483.5834089341956!2d-0.12095148423020245!3d51.50251187963433!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487604c70bc8d293%3A0x39108cb6fa0e39d9!2sThe%20Dungeons%20London!5e0!3m2!1sen!2suk!4v1641865409370!5m2!1sen!2suk" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
@@ -225,7 +234,7 @@
 						<style type="text/css" media="screen">
 	
 							#listBox{
-								  width: 300px;
+								  width: 400px;
 								  border: 2px solid blue;
 								  padding: 50px;
 								  margin: 20px;
@@ -315,7 +324,7 @@
 							<span class="fa fa-star checked"></span>
 							<span class="fa fa-star checked"></span>
 							<span class="fa fa-star"></span>
-							<p>4.1 average based on 254 reviews.</p>
+							<p>4.1 average based on 14, 475 reviews.</p>
 							<hr style="border:3px solid #f1f1f1">
 
 							<div class="row">
@@ -377,17 +386,7 @@
 							</div>
 
 						<form id="FormName" action="(EmptyReference!)" method="get" name="FormName">
-							<fieldset data-role="controlgroup">
-							<legend>Do you want to add comments:</legend>
-								<label for="radio-choice-1">Yes</label>
-								<input type="radio" name="radiogroup" id="radio-choice-1">
-								<label for="radio-choice-2">No</label>
-								<input type="radio" name="radiogroup" id="radio-choice-2" checked>
-							</fieldset>
-
-						<!--Adjust your code so the comments are displayed nicely styled. Make sure you overide old comments. See how you can grap the comments from this page and make it appear in the page with the Detailed Point of Intereset Pages-->
-
-
+	
 							<fieldset id="hiddenFieldset">
 								<div class="ui-field-contain">
 									<label for="inputBox">Add your comment:</label>
@@ -396,10 +395,47 @@
 								<button id="add" type="button">Add</button>
 								
 							</fieldset>
-							<div id="listBox">Angela
-							<div class="rating">
-								<span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span>
-							</div>
+
+
+							<div id="listBox">
+								
+								<i class="far fa-user-circle fa-2x"></i><h2><b>Faye </b></h2><div class="rating">
+								<span class="fa fa-star checked"></span>
+								<span class="fa fa-star checked"></span>
+								<span class="fa fa-star checked"></span>
+								<span class="fa fa-star checked"></span>
+								<span class="fa fa-star"></span>
+							</div>	
+							<br>
+							<p>We had a great time at the London Dungeons, highly recommended. The actors were brilliant, both spooky and comical! Two rides there, one is height restricted. Little gift shop at the end with a bar.</p>
+							<br>
+								<a target="_blank" href="assets/thumbnails/Thumbnail_London_Dungeon_1.jpg">
+								<img class="imgRating" src="assets/thumbnails/Thumbnail_London_Dungeon_1.jpg" alt="London Dungeon"></a>
+
+								<a target="_blank" href="assets/thumbnails/Thumbnail_London_Dungeon_2.jpg">
+								<img class="imgRating" src="assets/thumbnails/Thumbnail_London_Dungeon_2.jpg" alt="London Dungeon"></a>
+							<hr>
+							<br> 
+
+							<i class="far fa-user-circle fa-2x"></i><h2><b>Gracie</b></h2><div class="rating">
+								<span class="fa fa-star checked"></span>
+								<span class="fa fa-star checked"></span>
+								<span class="fa fa-star checked"></span>
+								<span class="fa fa-star checked"></span>
+								<span class="fa fa-star checked"></span>
+							</div> 
+							<p>Excellent attraction you need to book in advance. Small acted out snippets of the grimier side of London history very audience interactive. I have to say the quality of acting is a high standard. My favorite part was  Sweeney Todd whoever was playing Mrs Lovett had an amazing intensity. A pity two of the attractions were not working but didn't really spoil it at all still over an hour and a half long. Gift shop was not over priced and sold good quality items. There is a bar incorporated at the end of the shop would recommend.</p>
+								<br>
+								<a target="_blank" href="assets/thumbnails/Thumbnail_London_Dungeon_3.jpg">
+								<img class="imgRating" src="assets/thumbnails/Thumbnail_London_Dungeon_3.jpg" alt="London Dungeon"></a>
+
+								<a target="_blank" href="assets/thumbnails/Thumbnail_London_Dungeon_4.jpg">
+								<img class="imgRating" src="assets/thumbnails/Thumbnail_London_Dungeon_4.jpg" alt="London Dungeon"></a>
+
+
+
+							<hr>
+
 						</div>
 					
 						</form>
@@ -422,21 +458,11 @@
 								inputBox = document.FormName.inputBox;
 								listBox = document.getElementById("listBox");
 				
-								document.FormName.radiogroup[0].onclick = function() {
-									hiddenFieldset.style.display = "block";
-								}
-								document.FormName.radiogroup[1].onclick = function() {
-									hiddenFieldset.style.display = "none";
-								}
-				
-								hiddenFieldset.style.display = "none";
 								document.getElementById("add").onclick = addOption;
 								document.getElementById("remove").onclick = removeOption;
 							}
 							
 						</script>
-
-
 
 
 
@@ -458,10 +484,9 @@
 
 							<fieldset data-role="controlgroup" data-type="horizontal">
 								<input type="checkbox" name="waterloo_poi2_ipad_fav" id="waterloo_poi2_ipad_fav" class="custom">
-								<label for="waterloo_poi2_ipad_fav"><span class="ui-icon-star ui-btn-icon-left">Add to favourites</span></label>
+								<label for="waterloo_poi2_ipad_fav"><span class="ui-icon-heart ui-btn-icon-left">Add to favourites</span></label>
 						    </fieldset>
 							
-							<button class="fav_btn" id="fav_london_eye">FAVOURITE</button>
 
 							<p>The London Eye is a cantilevered observation wheel on the South Bank of the River Thames in London. It is Europe's tallest cantilevered observation wheel, and is the most popular paid tourist attraction in the United Kingdom with over 3 million visitors annually.</p>
 
@@ -480,10 +505,8 @@
 
 							<fieldset data-role="controlgroup" data-type="horizontal">
 								<input type="checkbox" name="waterloo_poi3_ipad_fav" id="waterloo_poi3_ipad_fav" class="custom">
-								<label for="waterloo_poi3_ipad_fav"><span class="ui-icon-star ui-btn-icon-left">Add to favourites</span></label>
+								<label for="waterloo_poi3_ipad_fav"><span class="ui-icon-heart ui-btn-icon-left">Add to favourites</span></label>
 						    </fieldset>
-							
-							<button class="fav_btn" id="fav_buckingham_palace">FAVOURITE</button>
 
 							<p>Buckingham Palace is the London residence and administrative headquarters of the monarch of the United Kingdom. Located in the City of Westminster, the palace is often at the centre of state occasions and royal hospitality. It has been a focal point for the British people at times of national rejoicing and mourning.</p>
 
@@ -515,10 +538,8 @@
 
 							<fieldset data-role="controlgroup" data-type="horizontal">
 								<input type="checkbox" name="wimbledon_poi1_ipad_fav" id="wimbledon_poi1_ipad_fav" class="custom">
-								<label for="wimbledon_poi1_ipad_fav"><span class="ui-icon-star ui-btn-icon-left">Add to favourites</span></label>
+								<label for="wimbledon_poi1_ipad_fav"><span class="ui-icon-heart ui-btn-icon-left">Add to favourites</span></label>
 						    </fieldset>
-							
-							<button class="fav_btn" id="fav_wimbledon_court">FAVOURITE</button>
 
 							<p>Wimbledon Centre Court is the main court at The Championships, Wimbledon, the third annual Grand Slam event of the tennis calendar. It is considered the world's most famous tennis court.It incorporates the clubhouse of the All England Lawn Tennis and Croquet Club. Its only regular use for play is during the two weeks a year that the Championships take place.</p>
 
@@ -535,7 +556,10 @@
 
 							<p class="poidiamond"><img src="assets/images/icon_diamond.png" height="24" width="28"> 25pts</p>
 							
-							<button class="fav_btn" id="fav_wimbledon_theatre">FAVOURITE</button>
+							<fieldset data-role="controlgroup" data-type="horizontal">
+								<input type="checkbox" name="wimbledon_poi2_ipad_fav" id="wimbledon_poi2_ipad_fav" class="custom">
+								<label for="wimbledon_poi2_ipad_fav"><span class="ui-icon-heart ui-btn-icon-left">Add to favourites</span></label>
+						    </fieldset>
 
 							<p>A 108 year-old theatre in SW London presenting an eclectic mix of musicals, drama, comedy, dance and pantomime. An Ambassador Theatre Group venue.</p>
 
@@ -552,7 +576,10 @@
 
 							<p class="poidiamond"><img src="assets/images/icon_diamond.png" height="24" width="28"> 50pts</p>
 							
-							<button class="fav_btn" id="fav_buddhapadipa">FAVOURITE</button>
+							<fieldset data-role="controlgroup" data-type="horizontal">
+								<input type="checkbox" name="wimbledon_poi3_ipad_fav" id="wimbledon_poi3_ipad_fav" class="custom">
+								<label for="wimbledon_poi3_ipad_fav"><span class="ui-icon-heart ui-btn-icon-left">Add to favourites</span></label>
+						    </fieldset>
 
 							<p>The Buddhapadipa Temple is the first Thai Theravada Buddhist Temple ever built outside Asia. It is the centre of meditation, Buddhist education and Thai culture.</p>
 
@@ -582,7 +609,10 @@
 							
 							<img src="assets/images/The_Lightbox.png" alt="The Lightbox">
 							
-							<button class="fav_btn" id="fav_lightbox">FAVOURITE</button>
+							<fieldset data-role="controlgroup" data-type="horizontal">
+								<input type="checkbox" name="woking_poi1_ipad_fav" id="woking_poi1_ipad_fav" class="custom">
+								<label for="woking_poi1_ipad_fav"><span class="ui-icon-heart ui-btn-icon-left">Add to favourites</span></label>
+						    </fieldset>
 
 							<p>The Lightbox is an award-winning charitable arts and heritage organisation with a social purpose to improve the wellbeing and quality of life of its community.</p>
 
@@ -599,7 +629,11 @@
 
 							<img src="assets/images/RHS_Garden.png" alt="RHS Garden">
 							
-							<button class="fav_btn" id="fav_rhs_garden">FAVOURITE</button>
+							<fieldset data-role="controlgroup" data-type="horizontal">
+								<input type="checkbox" name="woking_poi2_ipad_fav" id="woking_poi2_ipad_fav" class="custom">
+								<label for="woking_poi2_ipad_fav"><span class="ui-icon-heart ui-btn-icon-left">Add to favourites</span></label>
+						    </fieldset>
+
 
 							<p>RHS Garden Wisley is a garden run by the Royal Horticultural Society in the English county of Surrey, south of London. It is one of five gardens run by the society, the others being Harlow Carr, Hyde Hall, Rosemoor, and Bridgewater (which opened on 18 May 2021).Wisley is the second most visited paid entry garden in the United Kingdom after the Royal Botanic Gardens.</p>
 
@@ -616,7 +650,11 @@
 
 							<img src="assets/images/Mercedes_Benz_World.png" alt="Mercedes-Benz World">
 							
-							<button class="fav_btn" id="fav_benz_world">FAVOURITE</button>
+							<fieldset data-role="controlgroup" data-type="horizontal">
+								<input type="checkbox" name="woking_poi3_ipad_fav" id="woking_poi3_ipad_fav" class="custom">
+								<label for="woking_poi3_ipad_fav"><span class="ui-icon-heart ui-btn-icon-left">Add to favourites</span></label>
+						    </fieldset>
+
 
 							<p>Next to the Brooklands Museum is Mercedes-Benz World, where the luxury car brand owns a series of training tracks and runs the AMG Driving Academy. Some champion drivers have used these courses, like Lewis Hamilton, Mika Häkkinen, Nico Rosberg and Stirling Moss.</p>
 
@@ -646,7 +684,10 @@
 							
 							<img src="assets/images/Guildford_Castle.png" alt="Guildford Castle">
 							
-							<button class="fav_btn" id="fav_guildford_castle">FAVOURITE</button>
+							<fieldset data-role="controlgroup" data-type="horizontal">
+								<input type="checkbox" name="guildford_poi1_ipad_fav" id="guildford_poi1_ipad_fav" class="custom">
+								<label for="guildford_poi1_ipad_fav"><span class="ui-icon-heart ui-btn-icon-left">Add to favourites</span></label>
+						    </fieldset>
 
 							<p>After the Battle of Hastings in 1066 William led his army to Canterbury and then sacked towns along the Pilgrims' Way, including Guildford. Later William, or one of his barons, built Guildford Castle. There is no record of it in the Domesday Book so construction probably started after 1086.</p>
 
@@ -663,7 +704,10 @@
 							
 							<img src="assets/images/Guildford_Museum.png" alt="Guildford Museum">
 							
-							<button class="fav_btn" id="fav_guildford_museum">FAVOURITE</button>
+							<fieldset data-role="controlgroup" data-type="horizontal">
+								<input type="checkbox" name="guildford_poi2_ipad_fav" id="guildford_poi2_ipad_fav" class="custom">
+								<label for="guildford_poi2_ipad_fav"><span class="ui-icon-heart ui-btn-icon-left">Add to favourites</span></label>
+						    </fieldset>
 
 							<p>Guildford Museum is the main museum is in the town of Guildford, Surrey, England. The museum is on Quarry Street, a narrow road lined by pre-1900 cottages running just off the pedestrianised High Street. This main site of the museum forms the gatehouse and annex of Guildford Castle, which the staff help to run.</p>
 
@@ -680,7 +724,10 @@
 							
 							<img src="assets/images/Stoke_Park.png" alt="Stoke Park">
 							
-							<button class="fav_btn" id="fav_stoke_park">FAVOURITE</button>
+							<fieldset data-role="controlgroup" data-type="horizontal">
+								<input type="checkbox" name="guildford_poi3_ipad_fav" id="guildford_poi3_ipad_fav" class="custom">
+								<label for="guildford_poi3_ipad_fav"><span class="ui-icon-heart ui-btn-icon-left">Add to favourites</span></label>
+						    </fieldset>
 
 							<p>Stoke Park is a private sporting and leisure estate in Stoke Poges, Buckinghamshire. The mansion building (designed by James Wyatt in 1788) is located in the middle of 300 acres (1.2 km2) of parkland, lakes, gardens and monuments. In 1908, it became the first country club in the UK.</p>
 
@@ -710,7 +757,10 @@
 							
 							<img src="assets/images/Spinnaker_Tower.png" alt="Spinnaker Tower">
 							
-							<button class="fav_btn" id="fav_spinnaker_tower">FAVOURITE</button>
+							<fieldset data-role="controlgroup" data-type="horizontal">
+								<input type="checkbox" name="portsmouth_poi1_ipad_fav" id="portsmouth_poi1_ipad_fav" class="custom">
+								<label for="portsmouth_poi1_ipad_fav"><span class="ui-icon-heart ui-btn-icon-left">Add to favourites</span></label>
+						    </fieldset>
 
 							<p>The Spinnaker Tower is a 170 metres landmark observation tower in Portsmouth, England. It is the centrepiece of the redevelopment of Portsmouth Harbour, which was supported by a National Lottery grant.</p>
 
@@ -727,7 +777,10 @@
 							
 							<img src="assets/images/South_Parade_Pier.png" alt="South Parade Pier">
 							
-							<button class="fav_btn" id="fav_south_parade_pier">FAVOURITE</button>
+							<fieldset data-role="controlgroup" data-type="horizontal">
+								<input type="checkbox" name="portsmouth_poi2_ipad_fav" id="portsmouth_poi2_ipad_fav" class="custom">
+								<label for="portsmouth_poi2_ipad_fav"><span class="ui-icon-heart ui-btn-icon-left">Add to favourites</span></label>
+						    </fieldset>
 
 							<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2522.8029717483914!2d-1.078566084256685!3d50.7792258795221!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48745d8e4fd4f383%3A0x4f4ba2dd6757bd1e!2sSouth%20Parade%20Pier!5e0!3m2!1sen!2suk!4v1641867650152!5m2!1sen!2suk" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
 
@@ -744,8 +797,10 @@
 							
 							<img src="assets/images/Historic_Dockyard.png" alt="Historic Dockyard">
 							
-							<button class="fav_btn" id="fav_historic_dockyard">FAVOURITE</button>
-
+							<fieldset data-role="controlgroup" data-type="horizontal">
+								<input type="checkbox" name="portsmouth_poi3_ipad_fav" id="portsmouth_poi3_ipad_fav" class="custom">
+								<label for="portsmouth_poi3_ipad_fav"><span class="ui-icon-heart ui-btn-icon-left">Add to favourites</span></label>
+						    </fieldset>
 							<p>Portsmouth Historic Dockyard is an area of HM Naval Base Portsmouth which is open to the public; it contains several historic buildings and ships. It is managed by the National Museum of the Royal Navy as an umbrella organization representing many  charities such as: the Portsmouth Naval Base Property Trust, and the HMS Victory Preservation Company.</p>
 
 							<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2521.6534370799063!2d-1.1116545842558934!3d50.80053097952506!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48745d81d4cec0c3%3A0x7bbcaa5658711999!2sPortsmouth%20Historic%20Dockyard!5e0!3m2!1sen!2suk!4v1641867372385!5m2!1sen!2suk" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
@@ -810,7 +865,10 @@
 
 				<p style="text-align: right;"><img src="assets/images/icon_diamond.png" height="24" width="28"><br> 25pts</p>
 
-				<button class="fav_btn" id="fav_london_dungeon1">FAVOURITE</button>
+				<fieldset data-role="controlgroup" data-type="horizontal">
+					<input type="checkbox" name="waterloo_poi1_iphone_fav" id="waterloo_poi1_iphone_fav" class="custom">
+					<label for="waterloo_poi1_iphone_fav"><span class="ui-icon-heart ui-btn-icon-left">Add to favourites</span></label>
+				</fieldset>
 
 				<p>The London Dungeon is a uniquely thrilling attraction that will whisk you way back to the capital's most perilous past. See, hear, feel and (ahem!) smell the chillingly amusing characters of the 'bad old days' as they come to life before you.</p>
 
@@ -827,7 +885,10 @@
 
 				<p style="text-align: right;"><img src="assets/images/icon_diamond.png" height="24" width="28"> 25pts</p>
 
-				<button class="fav_btn" id="fav_london_eye2">FAVOURITE</button>
+				<fieldset data-role="controlgroup" data-type="horizontal">
+					<input type="checkbox" name="waterloo_poi2_iphone_fav" id="waterloo_poi2_iphone_fav" class="custom">
+					<label for="waterloo_poi2_iphone_fav"><span class="ui-icon-heart ui-btn-icon-left">Add to favourites</span></label>
+				</fieldset>
 
 				<p>The London Eye is a cantilevered observation wheel on the South Bank of the River Thames in London. It is Europe's tallest cantilevered observation wheel, and is the most popular paid tourist attraction in the United Kingdom with over 3 million visitors annually.</p>
 
@@ -844,7 +905,10 @@
 
 				<p style="text-align: right;"><img src="assets/images/icon_diamond.png" height="24" width="28"> 50pts</p>
 
-				<button class="fav_btn" id="fav_buckingham_palace3">FAVOURITE</button>
+				<fieldset data-role="controlgroup" data-type="horizontal">
+					<input type="checkbox" name="waterloo_poi3_iphone_fav" id="waterloo_poi3_iphone_fav" class="custom">
+					<label for="waterloo_poi3_iphone_fav"><span class="ui-icon-heart ui-btn-icon-left">Add to favourites</span></label>
+				</fieldset>
 
 				<p>Buckingham Palace is the London residence and administrative headquarters of the monarch of the United Kingdom. Located in the City of Westminster, the palace is often at the centre of state occasions and royal hospitality. It has been a focal point for the British people at times of national rejoicing and mourning.</p>
 
@@ -898,7 +962,10 @@
 
 				<p style="text-align: right;"><img src="assets/images/icon_diamond.png" height="24" width="28"> 25pts</p>
 
-				<button class="fav_btn" id="fav_wimbledon_court1">FAVOURITE</button>
+				<fieldset data-role="controlgroup" data-type="horizontal">
+					<input type="checkbox" name="wimbledon_poi1_iphone_fav" id="wimbledon_poi1_iphone_fav" class="custom">
+					<label for="wimbledon_poi1_iphone_fav"><span class="ui-icon-heart ui-btn-icon-left">Add to favourites</span></label>
+				</fieldset>
 
 				<p>Wimbledon Centre Court is the main court at The Championships, Wimbledon, the third annual Grand Slam event of the tennis calendar. It is considered the world's most famous tennis court.It incorporates the clubhouse of the All England Lawn Tennis and Croquet Club. Its only regular use for play is during the two weeks a year that the Championships take place.</p>
 
@@ -915,7 +982,10 @@
 
 				<p style="text-align: right;"><img src="assets/images/icon_diamond.png" height="24" width="28"> 25pts</p>
 
-				<button class="fav_btn" id="fav_wimbledon_theatre2">FAVOURITE</button>
+				<fieldset data-role="controlgroup" data-type="horizontal">
+					<input type="checkbox" name="wimbledon_poi2_iphone_fav" id="wimbledon_poi2_iphone_fav" class="custom">
+					<label for="wimbledon_poi2_iphone_fav"><span class="ui-icon-heart ui-btn-icon-left">Add to favourites</span></label>
+				</fieldset>
 
 				<p>A 108 year-old theatre in SW London presenting an eclectic mix of musicals, drama, comedy, dance and pantomime. An Ambassador Theatre Group venue.</p>
 
@@ -931,7 +1001,10 @@
 
 				<p style="text-align: right;"><img src="assets/images/icon_diamond.png" height="24" width="28"> 50pts</p>
 
-				<button class="fav_btn" id="fav_buddhapadipa3">FAVOURITE</button>
+				<fieldset data-role="controlgroup" data-type="horizontal">
+					<input type="checkbox" name="wimbledon_poi3_iphone_fav" id="wimbledon_poi3_iphone_fav" class="custom">
+					<label for="wimbledon_poi3_iphone_fav"><span class="ui-icon-heart ui-btn-icon-left">Add to favourites</span></label>
+				</fieldset>
 
 				<p>The Buddhapadipa Temple is the first Thai Theravada Buddhist Temple ever built outside Asia. It is the centre of meditation, Buddhist education and Thai culture.</p>
 
@@ -984,7 +1057,10 @@
 
 					<p style="text-align: right;"><img src="assets/images/icon_diamond.png" height="24" width="28"> 25pts</p>
 
-					<button class="fav_btn" id="fav_lightbox1">FAVOURITE</button>
+					<fieldset data-role="controlgroup" data-type="horizontal">
+						<input type="checkbox" name="woking_poi1_iphone_fav" id="woking_poi1_iphone_fav" class="custom">
+						<label for="woking_poi1_iphone_fav"><span class="ui-icon-heart ui-btn-icon-left">Add to favourites</span></label>
+					</fieldset>
 
 					<p>The Lightbox is an award-winning charitable arts and heritage organisation with a social purpose to improve the wellbeing and quality of life of its community.</p>
 
@@ -1001,7 +1077,10 @@
 
 					<p style="text-align: right;"><img src="assets/images/icon_diamond.png" height="24" width="28"> 25pts</p>
 
-					<button class="fav_btn" id="fav_rhs_garden2">FAVOURITE</button>
+					<fieldset data-role="controlgroup" data-type="horizontal">
+						<input type="checkbox" name="woking_poi2_iphone_fav" id="woking_poi2_iphone_fav" class="custom">
+						<label for="woking_poi2_iphone_fav"><span class="ui-icon-heart ui-btn-icon-left">Add to favourites</span></label>
+					</fieldset>
 
 					<p>RHS Garden Wisley is a garden run by the Royal Horticultural Society in the English county of Surrey, south of London. It is one of five gardens run by the society, the others being Harlow Carr, Hyde Hall, Rosemoor, and Bridgewater (which opened on 18 May 2021).Wisley is the second most visited paid entry garden in the United Kingdom after the Royal Botanic Gardens.</p>
 
@@ -1018,7 +1097,10 @@
 
 					<p style="text-align: right;"><img src="assets/images/icon_diamond.png" height="24" width="28"> 50pts</p>
 
-					<button class="fav_btn" id="fav_benz_world3">FAVOURITE</button>
+					<fieldset data-role="controlgroup" data-type="horizontal">
+						<input type="checkbox" name="woking_poi3_iphone_fav" id="woking_poi3_iphone_fav" class="custom">
+						<label for="woking_poi3_iphone_fav"><span class="ui-icon-heart ui-btn-icon-left">Add to favourites</span></label>
+					</fieldset>
 
 					<p>Next to the Brooklands Museum is Mercedes-Benz World, where the luxury car brand owns a series of training tracks and runs the AMG Driving Academy. Some champion drivers have used these courses, like Lewis Hamilton, Mika Häkkinen, Nico Rosberg and Stirling Moss.</p>
 
@@ -1072,7 +1154,10 @@
 
 							<p style="text-align: right;"><img src="assets/images/icon_diamond.png" height="24" width="28"> 25pts</p>
 							
-							<button class="fav_btn" id="fav_guildford_castle1">FAVOURITE</button>
+							<fieldset data-role="controlgroup" data-type="horizontal">
+								<input type="checkbox" name="guildford_poi1_iphone_fav" id="guildford_poi1_iphone_fav" class="custom">
+								<label for="guildford_poi1_iphone_fav"><span class="ui-icon-heart ui-btn-icon-left">Add to favourites</span></label>
+						    </fieldset>
 
 							<p>After the Battle of Hastings in 1066 William led his army to Canterbury and then sacked towns along the Pilgrims' Way, including Guildford. Later William, or one of his barons, built Guildford Castle. There is no record of it in the Domesday Book so construction probably started after 1086.</p>
 
@@ -1089,7 +1174,10 @@
 
 							<p style="text-align: right;"><img src="assets/images/icon_diamond.png" height="24" width="28"> 25pts</p>
 							
-							<button class="fav_btn" id="fav_guildford_museum2">FAVOURITE</button>
+							<fieldset data-role="controlgroup" data-type="horizontal">
+								<input type="checkbox" name="guildford_poi2_iphone_fav" id="guildford_poi2_iphone_fav" class="custom">
+								<label for="guildford_poi2_iphone_fav"><span class="ui-icon-heart ui-btn-icon-left">Add to favourites</span></label>
+						    </fieldset>
 
 							<p>Guildford Museum is the main museum is in the town of Guildford, Surrey, England. The museum is on Quarry Street, a narrow road lined by pre-1900 cottages running just off the pedestrianised High Street. This main site of the museum forms the gatehouse and annex of Guildford Castle, which the staff help to run.</p>
 
@@ -1106,7 +1194,10 @@
 
 							<p style="text-align: right;"><img src="assets/images/icon_diamond.png" height="24" width="28"> 50pts</p>
 							
-							<button class="fav_btn" id="fav_stoke_park3">FAVOURITE</button>
+							<fieldset data-role="controlgroup" data-type="horizontal">
+								<input type="checkbox" name="guildford_poi3_iphone_fav" id="guildford_poi3_iphone_fav" class="custom">
+								<label for="guildford_poi3_iphone_fav"><span class="ui-icon-heart ui-btn-icon-left">Add to favourites</span></label>
+						    </fieldset>
 
 							<p>Stoke Park is a private sporting and leisure estate in Stoke Poges, Buckinghamshire. The mansion building (designed by James Wyatt in 1788) is located in the middle of 300 acres (1.2 km2) of parkland, lakes, gardens and monuments. In 1908, it became the first country club in the UK.</p>
 
@@ -1160,7 +1251,10 @@
 
 							<p style="text-align: right;"><img src="assets/images/icon_diamond.png" height="24" width="28"> 25pts</p>
 							
-							<button class="fav_btn" id="fav_spinnaker_tower1">FAVOURITE</button>
+							<fieldset data-role="controlgroup" data-type="horizontal">
+								<input type="checkbox" name="portsmouth_poi1_iphone_fav" id="portsmouth_poi1_iphone_fav" class="custom">
+								<label for="portsmouth_poi1_iphone_fav"><span class="ui-icon-heart ui-btn-icon-left">Add to favourites</span></label>
+						    </fieldset>
 
 							<p>The Spinnaker Tower is a 170 metres landmark observation tower in Portsmouth, England. It is the centrepiece of the redevelopment of Portsmouth Harbour, which was supported by a National Lottery grant.</p>
 
@@ -1177,7 +1271,10 @@
 							
 							<p style="text-align: right;"><img src="assets/images/icon_diamond.png" height="24" width="28"> 25pts</p>
 
-							<button class="fav_btn" id="fav_south_parade_pier2">FAVOURITE</button>
+							<fieldset data-role="controlgroup" data-type="horizontal">
+								<input type="checkbox" name="portsmouth_poi2_iphone_fav" id="portsmouth_poi1_iphone_fav" class="custom">
+								<label for="portsmouth_poi1_iphone_fav"><span class="ui-icon-heart ui-btn-icon-left">Add to favourites</span></label>
+						    </fieldset>
 
 							<p>The South Parade Pier is a pier in Portsmouth, England. It is one of two piers in the city, the other being Clarence Pier. The pier once had a long hall down its centre which housed a seating area and a small restaurant. The outside of the hall is a promenade which runs the length of the pier.</p>
 
@@ -1194,7 +1291,10 @@
 
 							<p style="text-align: right;"><img src="assets/images/icon_diamond.png" height="24" width="28"> 50pts</p>
 							
-							<button class="fav_btn" id="fav_historic_dockyard3">FAVOURITE</button>
+							<fieldset data-role="controlgroup" data-type="horizontal">
+								<input type="checkbox" name="portsmouth_poi3_iphone_fav" id="portsmouth_poi3_iphone_fav" class="custom">
+								<label for="portsmouth_poi3_iphone_fav"><span class="ui-icon-heart ui-btn-icon-left">Add to favourites</span></label>
+						    </fieldset>
 
 							<p>Portsmouth Historic Dockyard is an area of HM Naval Base Portsmouth which is open to the public; it contains several historic buildings and ships. It is managed by the National Museum of the Royal Navy as an umbrella organization representing many  charities such as: the Portsmouth Naval Base Property Trust, and the HMS Victory Preservation Company.</p>
 
@@ -1304,24 +1404,129 @@ function ValidateEmail(inputText)
 		<!-- in progress-------------------------------FavButton------------------------------------------------------------------------------------------------------>
 	
 		<div id="favourite-content"><p>My favourites: </p></div>
-	
+
 		<script>
 			$(document).on( 'pagecontainerbeforehide', 'body', function( event, ui){
 			  //do something
 			  if ( ui.nextPage.attr('id')== "te_favourites") {
 				  $("#favourite-content").html ("");
 				   if ($( "#waterloo_poi1_ipad_fav" ).is( ":checked" )) {
-					   $("#favourite-content").append("<p>London Dungeon</p>");
-				   }
+				
+						var poi_fav_name = "<h3><b>London Dungeon</b></h3>";
+						var star_rating = "<span class='fa fa-star checked'>";
+						var poi_img = "<img src='assets/images/London_Dungeon.png' alt='London Dungeon' width=40%>";
+						$("#favourite-content").append(poi_fav_name + '<br>' +  star_rating + star_rating + star_rating + star_rating + poi_img);
+					}
+				   
 				   if ($( "#waterloo_poi2_ipad_fav" ).is( ":checked" )) {
-					   $("#favourite-content").append("<p>London Eye</p>");
+
+						var poi_fav_name = "<h3><b>London Eye</b></h3>";
+						var star_rating = "<span class='fa fa-star checked'>";
+						var poi_img = "<img src='assets/images/London_Eye.png' alt='London Eye' width=40%>";
+					   	$("#favourite-content").append(poi_fav_name + '<br>' + star_rating + star_rating + star_rating + star_rating + poi_img);
 				   }
+
 				   if ($( "#waterloo_poi3_ipad_fav" ).is( ":checked" )) {
-					   $("#favourite-content").append("<p>Buckingham Palace</p>");
+						var poi_fav_name = "<h3><b>Buckingham Palace</b></h3>";
+						var star_rating = "<span class='fa fa-star checked'>";
+						var poi_img = "<img src='assets/images/Buckingham_Palace.png' alt='Buckingham Palace' width=40%>";
+					   $("#favourite-content").append(poi_fav_name + '<br>' + star_rating + star_rating + star_rating + star_rating + poi_img);
 				   }
-				   if ($( "#wimbledon_poi1_ipad" ).is( ":checked" )) {
-					   $("#favourite-content").append("<p>Wimbeldon Centre court</p>");
+
+
+				   if ($( "#wimbledon_poi1_ipad_fav" ).is( ":checked" )) {
+					   var poi_fav_name = "<h3><b>Wimbeldon Centre Court</b></h3>";
+						var star_rating = "<span class='fa fa-star checked'>";
+						var poi_img = "<img src='assets/images/Wimbledon_Centre_Court.png' alt='Wimbeldon Centre Court' width=40%>";
+					   $("#favourite-content").append(poi_fav_name + '<br>' + star_rating + star_rating + star_rating + star_rating + poi_img);
+				   } 
+				   
+				   if ($( "#wimbledon_poi2_ipad_fav" ).is( ":checked" )) {
+					   var poi_fav_name = "<h3><b>New Wimbledon Theatre</b></h3>";
+						var star_rating = "<span class='fa fa-star checked'>";
+						var poi_img = "<img src='assets/images/New_Wimbledon_Theatre.png' alt='New Wimbledon Theatre' width=40%>";
+					   $("#favourite-content").append(poi_fav_name + '<br>' + star_rating + star_rating + star_rating + star_rating + poi_img);
+				   } 
+				   
+				   if ($( "#wimbledon_poi3_ipad_fav" ).is( ":checked" )) {
+					   var poi_fav_name = "<h3><b>Buddhapadipa Temple</b></h3>";
+						var star_rating = "<span class='fa fa-star checked'>";
+						var poi_img = "<img src='assets/images/Buddhapadipa_Temple.png' alt='Buddhapadipa Temple' width=40%>";
+					   $("#favourite-content").append(poi_fav_name + '<br>' + star_rating + star_rating + star_rating + star_rating + poi_img);
+				   } 
+
+				   if ($( "#woking_poi1_ipad_fav" ).is( ":checked" )) {
+					   $("#favourite-content").append("<p>The Lightbox</p>");
+
+					   var poi_fav_name = "<h3><b>The Lightbox</b></h3>";
+						var star_rating = "<span class='fa fa-star checked'>";
+						var poi_img = "<img src='assets/images/The_Lightbox.png' alt='The Lightbox' width=40%>";
+					   $("#favourite-content").append(poi_fav_name + '<br>' + star_rating + star_rating + star_rating + star_rating + poi_img);
 				   }
+
+
+				   if ($( "#woking_poi2_ipad_fav" ).is( ":checked" )) {
+					   $("#favourite-content").append("<p>RHS Garden</p>");
+
+					   var poi_fav_name = "<h3><b>RHS Garden</b></h3>";
+						var star_rating = "<span class='fa fa-star checked'>";
+						var poi_img = "<img src='assets/images/RHS_Garden.png' alt='RHS Garden' width=40%>";
+					   $("#favourite-content").append(poi_fav_name + '<br>' + star_rating + star_rating + star_rating + star_rating + poi_img);
+				   }
+
+
+				   if ($( "#woking_poi3_ipad_fav" ).is( ":checked" )) {
+					   var poi_fav_name = "<h3><b>Mercedes-Benz World</b></h3>";
+						var star_rating = "<span class='fa fa-star checked'>";
+						var poi_img = "<img src='assets/images/Mercedes_Benz_World.png' alt='Mercedes Benz World' width=40%>";
+					   $("#favourite-content").append(poi_fav_name + '<br>' + star_rating + star_rating + star_rating + star_rating + poi_img);
+				   }
+
+
+				   if ($( "#guildford_poi1_ipad_fav" ).is( ":checked" )) {
+					   var poi_fav_name = "<h3><b>Guildford Castle</b></h3>";
+						var star_rating = "<span class='fa fa-star checked'>";
+						var poi_img = "<img src='assets/images/Guildford_Castle.png' alt='Guildford Castle' width=40%>";
+					   $("#favourite-content").append(poi_fav_name + '<br>' + star_rating + star_rating + star_rating + star_rating + poi_img);
+				   }
+
+				   if ($( "#guildford_poi2_ipad_fav" ).is( ":checked" )) {
+					   var poi_fav_name = "<h3><b>Guildford Museum</b></h3>";
+						var star_rating = "<span class='fa fa-star checked'>";
+						var poi_img = "<img src='assets/images/Guildford_Museum.png' alt='Guildford Museum' width=40%>";
+					   $("#favourite-content").append(poi_fav_name + '<br>' + star_rating + star_rating + star_rating + star_rating + poi_img);
+				   }
+
+
+				   if ($( "#guildford_poi3_ipad_fav" ).is( ":checked" )) {
+					   var poi_fav_name = "<h3><b>Stoke Park</b></h3>";
+						var star_rating = "<span class='fa fa-star checked'>";
+						var poi_img = "<img src='assets/images/Stoke_Park.png' alt='Stoke Park' width=40%>";
+					   $("#favourite-content").append(poi_fav_name + '<br>' + star_rating + star_rating + star_rating + star_rating + poi_img);
+				   }
+
+
+				   if ($( "#portsmouth_poi1_ipad_fav" ).is( ":checked" )) {
+					   var poi_fav_name = "<h3><b>Spinnaker Tower</b></h3>";
+						var star_rating = "<span class='fa fa-star checked'>";
+						var poi_img = "<img src='assets/images/Spinnaker_Tower.png' alt='pinnaker Tower' width=40%>";
+					   $("#favourite-content").append(poi_fav_name + '<br>' + star_rating + star_rating + star_rating + star_rating + poi_img);
+				   }
+
+				   if ($( "#portsmouth_poi2_ipad_fav" ).is( ":checked" )) {
+					   var poi_fav_name = "<h3><b>South Parade Pier</b></h3>";
+						var star_rating = "<span class='fa fa-star checked'>";
+						var poi_img = "<img src='assets/images/South_Parade_Pier.png' alt='South Parade Pier' width=40%>";
+					   $("#favourite-content").append(poi_fav_name + '<br>' + star_rating + star_rating + star_rating + star_rating + poi_img);
+				   }
+
+
+				   if ($( "#portsmouth_poi3_ipad_fav" ).is( ":checked" )) {
+					   var poi_fav_name = "<h3><b>Historic Dockyard</b></h3>";
+						var star_rating = "<span class='fa fa-star checked'>";
+						var poi_img = "<img src='assets/images/Historic_Dockyard.png' alt='Historic Dockyard' width=40%>";
+					   $("#favourite-content").append(poi_fav_name + '<br>' + star_rating + star_rating + star_rating + star_rating + poi_img);					}
+
 				
 				  
 				 }
