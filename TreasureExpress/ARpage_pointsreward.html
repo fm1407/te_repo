@@ -10,7 +10,14 @@
 
 <body style='margin : 0px; overflow: hidden;'>
 	<a-scene embedded arjs='sourceType: webcam;'>
-		<a-box position='0 0.5 0' material='opacity: .7;' color="red"></a-box>
+		<!-- <a-box position='0 0.5 0' material='opacity: .8;' color="red"></a-box> -->
+		<a-entity
+			  geometry="primitive: plane; width: 4; height: auto" rotation="-90 0 0"
+			  material="color: blue"
+			  text="value: You have won 50pts!">
+		</a-entity>
+  
+  
 		<a-marker-camera preset='hiro'></a-marker-camera>
 	</a-scene>
 </body>
