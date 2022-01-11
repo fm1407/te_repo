@@ -14,11 +14,12 @@
 	<script src="https://checkout.stripe.com/checkout.js"></script>
 
 <style>
-	.iphone_poi_links{display: none;}
-	@media screen and (max-width: 768px){
-		.poiSection{display:none;}
-		.poiButtons{display:none;}
-		.iphone_poi_links{display: block;}
+	.iphone_stations_buttons{display: none;}
+	.ipad_stations_poi{display:block;}
+	
+	@media screen and (max-width: 600px){
+		.ipad_stations_poi{display:none;}
+		.iphone_stations_buttons{display: block;}
 		.font-size-change{ font-size:10px;}
 	}
 	
@@ -88,52 +89,811 @@
 	</div>
 	
 	<div role="main" class="ui-content">
-		<div class="stationmap">
 		<h1>STATION MAP</h1>
-		<p>Here is going to be the list of stations</p>
-		
-		<div class="poiButtons">
-		<p>Click these buttons to generate stations' poi info</p>
-			<button>Waterloo</button>
-			<button>Wimbledon</button>
-			<button>Woking</button>
-			<button>Guildford</button>
-			<button>Portsmouth</button>
-		</div>
-		</div>
-		
-		<div class="poiSection">
-		<!---Same code for this section and poi_iphone page --->
-		<h1>IPAD VERSION - Clicked Station Name</h1>
-		<p>Here is going to be the generated POIs - using JSON the name, img and desc etc. will be displayed</p>
-		</div>
-		
-		<div class="iphone_poi_links">
-			<!--- iphone version= hide poiSection and display these LINKS to poi_iphone page--->
-			<a href="#te_poi_iphone" data-role="button">Waterloo</a>
-			<a href="#te_poi_iphone" data-role="button">Wimbledon</a>
-			<a href="#te_poi_iphone" data-role="button">Woking</a>
-			<a href="#te_poi_iphone" data-role="button">Guildford</a>
-			<a href="#te_poi_iphone" data-role="button">Portsmouth</a>
-		</div>
-	</div>
-	<div data-role="footer" data-position="fixed">
-	<div data-role="navbar">
-		<ul>
-			<li><a href="#te_stationmap" class="ui-btn-active"><i class="far fa-map fa-2x"></i><br><br>
-				<span class="font-size-change">STATION  MAP</span></a></li>
-			<li><a href="#te_favourites"><i class="far fa-heart fa-2x"></i><br><br>
-				<span class="font-size-change">FAVOURITES</span></a></li>
-			<li><a href="#te_booking"><i class="fas fa-ticket-alt fa-2x"></i><br><br>
-				<span class="font-size-change">BOOK  TICKETS</span></a></li>
-			<li><a href="#te_scanQR"><i class="fas fa-qrcode fa-2x"></i><br><br>
-				<span class="font-size-change">SCAN QR</span></a></li>
-		</ul>
-	</div>
-	</div>
+		<!---------------------------- IPAD STATION BUTTONS ------------------------------>
+		<div class="ipad_stations_poi">
+			<div data-role="tabs" class="ui-grid-a">
+				
+			<div class="ipad_stations_buttons ui-block-a">
+				<ul data-role="listview" data-inset="true">
+				  <li><a href="#poi_ipad_waterloo" data-ajax="true">WATERLOO</a><img src="#" alt="waterloo image"></li>
+				  <li><a href="#poi_ipad_wimbledon" data-ajax="false">WIBLEDON</a><img src="#" alt="wimbledon image"></li>
+				  <li><a href="#poi_ipad_woking" data-ajax="false">WOKING</a><img src="#" alt="woking image"></li>
+				  <li><a href="#poi_ipad_guildford" data-ajax="false">GUILDFORD</a><img src="#" alt="guildford image"></li>
+				  <li><a href="#poi_ipad_portsmouth" data-ajax="false">PORTSMOUTH</a><img src="#" alt="portsmouth image"></li>
+				</ul>
+			</div>
 
+			<!---------------------------- IPAD POI "GENERATED" CONTENT ------------------------------>
+			<div class="ipad_poi_generated ui-block-b">
+
+				<!----------------------- WATERLOO-------------------------------->
+				<div id="poi_ipad_waterloo" class="ui-body-d tablist-content">
+					<h1>LONDON WATERLOO</h1>
+					<div data-role="tabs">
+						<div data-role="navbar">
+							<ul>
+								<li><a href="#waterloo_poi1_ipad" data-ajax="true">London Dungeon</a></li>
+								<li><a href="#waterloo_poi2_ipad" data-ajax="false">London Eye</a></li>
+								<li><a href="#waterloo_poi3_ipad" data-ajax="false">Buckingham Palace</a></li>
+							</ul>
+						</div>
+						<!-------------------LONDON DUNGEON ------------------>
+						<div id="waterloo_poi1_ipad" class="ui-body-d ui-content">
+							<h2>LONDON DUNGEON</h2>
+
+							<p>ICON OF DIAMOND AND POINTS</p>
+							
+							<img src="IMAGE LINK" alt="TITLE OF POI">
+							
+							<button class="fav_btn" id="fav_london_dungeon">FAVOURITE</button>
+
+							<p>DESCRIPTION OF POI</p>
+
+							<p>Get the embed location iframe from google</p>
+
+							<a href="LOCATION LINK" data-role="button" target="_blank">GET DIRECTIONS</a>
+						</div>
+						
+						<!-------------------LONDON EYE ------------------>
+						<div id="waterloo_poi2_ipad" class="ui-body-d ui-content">
+							<h2>LONDON EYE</h2>
+
+							<p>ICON OF DIAMOND AND POINTS</p>
+							
+							<img src="IMAGE LINK" alt="TITLE OF POI">
+							
+							<button class="fav_btn" id="fav_london_eye">FAVOURITE</button>
+
+							<p>DESCRIPTION OF POI</p>
+
+							<p>Get the embed location iframe from google</p>
+
+							<a href="LOCATION LINK" data-role="button" target="_blank">GET DIRECTIONS</a>
+						</div>
+						
+						<!-------------------BUCKINGHAM PALACE ------------------>
+						<div id="waterloo_poi3_ipad" class="ui-body-d ui-content">
+							<h2>BUCKINGHAM PALACE</h2>
+
+							<p>ICON OF DIAMOND AND POINTS</p>
+							
+							<img src="IMAGE LINK" alt="TITLE OF POI">
+							
+							<button class="fav_btn" id="fav_buckingham_palace">FAVOURITE</button>
+
+							<p>DESCRIPTION OF POI</p>
+
+							<p>Get the embed location iframe from google</p>
+
+							<a href="LOCATION LINK" data-role="button" target="_blank">GET DIRECTIONS</a>
+						</div>
+					</div>
+				</div>
+				<!----------------------- WIMBLEDON-------------------------------->
+				<div id="poi_ipad_wimbledon" class="ui-body-d tablist-content">
+					<h1>WIMBLEDON</h1>
+
+					<div data-role="tabs">
+						<div data-role="navbar">
+							<ul>
+								<li><a href="#wimbledon_poi1_ipad" data-ajax="true">Wimbledon Centre Court</a></li>
+								<li><a href="#wimbledon_poi2_ipad" data-ajax="false">New Wimbledon Theatre</a></li>
+								<li><a href="#wimbledon_poi3_ipad" data-ajax="false">Buddhapadipa Temple</a></li>
+							</ul>
+						</div>
+						<!-------------------Wimbledon Centre Court ------------------>
+						<div id="wimbledon_poi1_ipad" class="ui-body-d ui-content">
+							<h2>Wimbledon Centre Court</h2>
+
+							<p>ICON OF DIAMOND AND POINTS</p>
+							
+							<img src="IMAGE LINK" alt="TITLE OF POI">
+							
+							<button class="fav_btn" id="fav_wimbledon_court">FAVOURITE</button>
+
+							<p>DESCRIPTION OF POI</p>
+
+							<p>Get the embed location iframe from google</p>
+
+							<a href="LOCATION LINK" data-role="button" target="_blank">GET DIRECTIONS</a>
+						</div>
+						
+						<!-------------------New Wimbledon Theatre ------------------>
+						<div id="wimbledon_poi2_ipad" class="ui-body-d ui-content">
+							<h2>New Wimbledon Theatre</h2>
+
+							<p>ICON OF DIAMOND AND POINTS</p>
+							
+							<img src="IMAGE LINK" alt="TITLE OF POI">
+							
+							<button class="fav_btn" id="fav_wimbledon_theatre">FAVOURITE</button>
+
+							<p>DESCRIPTION OF POI</p>
+
+							<p>Get the embed location iframe from google</p>
+
+							<a href="LOCATION LINK" data-role="button" target="_blank">GET DIRECTIONS</a>
+						</div>
+						
+						<!-------------------Buddhapadipa Temple ------------------>
+						<div id="wimbledon_poi3_ipad" class="ui-body-d ui-content">
+							<h2>Buddhapadipa Temple</h2>
+
+							<p>ICON OF DIAMOND AND POINTS</p>
+							
+							<img src="IMAGE LINK" alt="TITLE OF POI">
+							
+							<button class="fav_btn" id="fav_buddhapadipa">FAVOURITE</button>
+
+							<p>DESCRIPTION OF POI</p>
+
+							<p>Get the embed location iframe from google</p>
+
+							<a href="LOCATION LINK" data-role="button" target="_blank">GET DIRECTIONS</a>
+						</div>
+					</div>
+				</div>
+				<!----------------------- WOKING -------------------------------->
+				<div id="poi_ipad_woking" class="ui-body-d tablist-content">
+					<h1>WOKING</h1>
+
+					<div data-role="tabs">
+						<div data-role="navbar">
+							<ul>
+								<li><a href="#woking_poi1_ipad" data-ajax="true">The Lightbox</a></li>
+								<li><a href="#woking_poi2_ipad" data-ajax="false">RHS Garden</a></li>
+								<li><a href="#woking_poi3_ipad" data-ajax="false">Mercedes Benz World</a></li>
+							</ul>
+						</div>
+						<!-------------------The Lightbox ------------------>
+						<div id="woking_poi1_ipad" class="ui-body-d ui-content">
+							<h2>The Lightbox</h2>
+
+							<p>ICON OF DIAMOND AND POINTS</p>
+							
+							<img src="IMAGE LINK" alt="TITLE OF POI">
+							
+							<button class="fav_btn" id="fav_lightbox">FAVOURITE</button>
+
+							<p>DESCRIPTION OF POI</p>
+
+							<p>Get the embed location iframe from google</p>
+
+							<a href="LOCATION LINK" data-role="button" target="_blank">GET DIRECTIONS</a>
+						</div>
+						
+						<!-------------------RHS Garden ------------------>
+						<div id="woking_poi2_ipad" class="ui-body-d ui-content">
+							<h2>RHS Garden</h2>
+
+							<p>ICON OF DIAMOND AND POINTS</p>
+							
+							<img src="IMAGE LINK" alt="TITLE OF POI">
+							
+							<button class="fav_btn" id="fav_rhs_garden">FAVOURITE</button>
+
+							<p>DESCRIPTION OF POI</p>
+
+							<p>Get the embed location iframe from google</p>
+
+							<a href="LOCATION LINK" data-role="button" target="_blank">GET DIRECTIONS</a>
+						</div>
+						
+						<!-------------------Mercedes Benz World ------------------>
+						<div id="woking_poi3_ipad" class="ui-body-d ui-content">
+							<h2>Mercedes Benz World </h2>
+
+							<p>ICON OF DIAMOND AND POINTS</p>
+							
+							<img src="IMAGE LINK" alt="TITLE OF POI">
+							
+							<button class="fav_btn" id="fav_benz_world">FAVOURITE</button>
+
+							<p>DESCRIPTION OF POI</p>
+
+							<p>Get the embed location iframe from google</p>
+
+							<a href="LOCATION LINK" data-role="button" target="_blank">GET DIRECTIONS</a>
+						</div>
+					</div>
+				</div>
+				<!----------------------- GUILDFORD-------------------------------->
+				<div id="poi_ipad_guildford" class="ui-body-d tablist-content">
+					<h1>GUILDFORD</h1>
+
+					<div data-role="tabs">
+						<div data-role="navbar">
+							<ul>
+								<li><a href="#guildford_poi1_ipad" data-ajax="true">Guildford Castle</a></li>
+								<li><a href="#guildford_poi2_ipad" data-ajax="false">Guildford Museum</a></li>
+								<li><a href="#guildford_poi3_ipad" data-ajax="false">Stoke Park</a></li>
+							</ul>
+						</div>
+						<!-------------------Guildford Castle ------------------>
+						<div id="guildford_poi1_ipad" class="ui-body-d ui-content">
+							<h2>Guildford Castle</h2>
+
+							<p>ICON OF DIAMOND AND POINTS</p>
+							
+							<img src="IMAGE LINK" alt="TITLE OF POI">
+							
+							<button class="fav_btn" id="fav_guildford_castle">FAVOURITE</button>
+
+							<p>DESCRIPTION OF POI</p>
+
+							<p>Get the embed location iframe from google</p>
+
+							<a href="LOCATION LINK" data-role="button" target="_blank">GET DIRECTIONS</a>
+						</div>
+						
+						<!-------------------Guildford Museum ------------------>
+						<div id="guildford_poi2_ipad" class="ui-body-d ui-content">
+							<h2>Guildford Museum</h2>
+
+							<p>ICON OF DIAMOND AND POINTS</p>
+							
+							<img src="IMAGE LINK" alt="TITLE OF POI">
+							
+							<button class="fav_btn" id="fav_guildford_museum">FAVOURITE</button>
+
+							<p>DESCRIPTION OF POI</p>
+
+							<p>Get the embed location iframe from google</p>
+
+							<a href="LOCATION LINK" data-role="button" target="_blank">GET DIRECTIONS</a>
+						</div>
+						
+						<!-------------------Stoke Park ------------------>
+						<div id="guildford_poi3_ipad" class="ui-body-d ui-content">
+							<h2>Stoke Park</h2>
+
+							<p>ICON OF DIAMOND AND POINTS</p>
+							
+							<img src="IMAGE LINK" alt="TITLE OF POI">
+							
+							<button class="fav_btn" id="fav_stoke_park">FAVOURITE</button>
+
+							<p>DESCRIPTION OF POI</p>
+
+							<p>Get the embed location iframe from google</p>
+
+							<a href="LOCATION LINK" data-role="button" target="_blank">GET DIRECTIONS</a>
+						</div>
+					</div>
+				</div>
+				<!----------------------- PORTSMOUTH-------------------------------->
+				<div id="poi_ipad_portsmouth" class="ui-body-d tablist-content">
+					<h1>PORTSMOUTH</h1>
+
+					<div data-role="tabs">
+						<div data-role="navbar">
+							<ul>
+								<li><a href="#portsmouth_poi1_ipad" data-ajax="true">Spinnaker Tower</a></li>
+								<li><a href="#portsmouth_poi2_ipad" data-ajax="false">South Parade Pier</a></li>
+								<li><a href="#portsmouth_poi3_ipad" data-ajax="false">Historic Dockyard</a></li>
+							</ul>
+						</div>
+						<!-------------------Spinnaker Tower----------------->
+						<div id="portsmouth_poi1_ipad" class="ui-body-d ui-content">
+							<h2>Spinnaker Tower</h2>
+
+							<p>ICON OF DIAMOND AND POINTS</p>
+							
+							<img src="IMAGE LINK" alt="TITLE OF POI">
+							
+							<button class="fav_btn" id="fav_spinnaker_tower">FAVOURITE</button>
+
+							<p>DESCRIPTION OF POI</p>
+
+							<p>Get the embed location iframe from google</p>
+
+							<a href="LOCATION LINK" data-role="button" target="_blank">GET DIRECTIONS</a>
+						</div>
+						
+						<!-------------------South Parade Pier ------------------>
+						<div id="portsmouth_poi2_ipad" class="ui-body-d ui-content">
+							<h2>South Parade Pier</h2>
+
+							<p>ICON OF DIAMOND AND POINTS</p>
+							
+							<img src="IMAGE LINK" alt="TITLE OF POI">
+							
+							<button class="fav_btn" id="fav_south_parade_pier">FAVOURITE</button>
+
+							<p>DESCRIPTION OF POI</p>
+
+							<p>Get the embed location iframe from google</p>
+
+							<a href="LOCATION LINK" data-role="button" target="_blank">GET DIRECTIONS</a>
+						</div>
+						
+						<!-------------------Historic Dockyard<------------------>
+						<div id="portsmouth_poi3_ipad" class="ui-body-d ui-content">
+							<h2>Historic Dockyard</h2>
+
+							<p>ICON OF DIAMOND AND POINTS</p>
+							
+							<img src="IMAGE LINK" alt="TITLE OF POI">
+							
+							<button class="fav_btn" id="fav_historic_dockyard">FAVOURITE</button>
+
+							<p>DESCRIPTION OF POI</p>
+
+							<p>Get the embed location iframe from google</p>
+
+							<a href="LOCATION LINK" data-role="button" target="_blank">GET DIRECTIONS</a>
+						</div>
+					</div>
+				</div>
+			 </div>			
+		</div>
+	</div>
+	<!---------------------------- IPHONE STATION BUTTONS ----------------------------->
+	<div class="iphone_stations_buttons">
+		<a href="#poi_iphone_waterloo" data-role="button">Waterloo</a>
+		<a href="#poi_iphone_wimbledon" data-role="button">wimbledon</a>
+		<a href="#poi_iphone_woking" data-role="button">Woking</a>
+		<a href="#poi_iphone_guildford" data-role="button">Guildford</a>
+		<a href="#poi_iphone_portsmouth" data-role="button">Portsmouth</a>
+	</div>	
+	
+	<div data-role="footer" data-position="fixed">
+		<div data-role="navbar">
+			<ul>
+				<li><a href="#te_stationmap" class="ui-btn-active"><i class="far fa-map fa-2x"></i><br><br>
+					<span class="font-size-change">STATION  MAP</span></a></li>
+				<li><a href="#te_favourites"><i class="far fa-heart fa-2x"></i><br><br>
+					<span class="font-size-change">FAVOURITES</span></a></li>
+				<li><a href="#te_booking"><i class="fas fa-ticket-alt fa-2x"></i><br><br>
+					<span class="font-size-change">BOOK  TICKETS</span></a></li>
+				<li><a href="#te_scanQR"><i class="fas fa-qrcode fa-2x"></i><br><br>
+					<span class="font-size-change">SCAN QR</span></a></li>
+			</ul>
+		</div>
+	</div>
 </div>
-<!---------------------------------------------- Station Map Page (iPHONE VERSION) ------------------------------------------->
+</div>
+<!---------------------------------------------- iPHONE VERSION - STATION'S POI PAGE ------------------------------------------->
+<!-------------------WATERLOO------------------------->
+<div data-role="page" id="poi_iphone_waterloo">
+	<div data-role="header">
+		<div data-role="controlgroup" data-type="horizontal">
+			<a href="#te_homepage" class="ui-btn ui-corner-all">LOGO</a>
+			<a href="#" class="ui-btn ui-corner-all">PROFILE</a>
+			<a href="#te_animDiamond" class="ui-btn ui-corner-all">DIAMOND</a>
+		</div>
+	</div>
+	<div role="main" class="ui-content">
+		<h1>LONDON WATERLOO</h1>
+		<div data-role="tabs">
+			<div data-role="navbar">
+				<ul>
+					<li><a href="#waterloo_poi1_iphone" data-ajax="true">London Dungeon</a></li>
+					<li><a href="#waterloo_poi2_iphone" data-ajax="false">London Eye</a></li>
+					<li><a href="#waterloo_poi3_iphone" data-ajax="false">Buckingham Palace</a></li>
+				</ul>
+			</div>
+			<!-------------------LONDON DUNGEON ------------------>
+			<div id="waterloo_poi1_iphone" class="ui-body-d ui-content">
+				<h2>LONDON DUNGEON</h2>
+
+				<p>ICON OF DIAMOND AND POINTS</p>
+
+				<img src="IMAGE LINK" alt="TITLE OF POI">
+
+				<button class="fav_btn" id="fav_london_dungeon1">FAVOURITE</button>
+
+				<p>DESCRIPTION OF POI</p>
+
+				<p>Get the embed location iframe from google</p>
+
+				<a href="LOCATION LINK" data-role="button" target="_blank">GET DIRECTIONS</a>
+			</div>
+
+			<!-------------------LONDON EYE ------------------>
+			<div id="waterloo_poi2_iphone" class="ui-body-d ui-content">
+				<h2>LONDON EYE</h2>
+
+				<p>ICON OF DIAMOND AND POINTS</p>
+
+				<img src="IMAGE LINK" alt="TITLE OF POI">
+
+				<button class="fav_btn" id="fav_london_eye2">FAVOURITE</button>
+
+				<p>DESCRIPTION OF POI</p>
+
+				<p>Get the embed location iframe from google</p>
+
+				<a href="LOCATION LINK" data-role="button" target="_blank">GET DIRECTIONS</a>
+			</div>
+
+			<!-------------------BUCKINGHAM PALACE ------------------>
+			<div id="waterloo_poi3_iphone" class="ui-body-d ui-content">
+				<h2>BUCKINGHAM PALACE</h2>
+
+				<p>ICON OF DIAMOND AND POINTS</p>
+
+				<img src="IMAGE LINK" alt="TITLE OF POI">
+
+				<button class="fav_btn" id="fav_buckingham_palace3">FAVOURITE</button>
+
+				<p>DESCRIPTION OF POI</p>
+
+				<p>Get the embed location iframe from google</p>
+
+				<a href="LOCATION LINK" data-role="button" target="_blank">GET DIRECTIONS</a>
+			</div>
+		</div>
+	</div>
+	
+<div data-role="footer" data-position="fixed">
+		<div data-role="navbar">
+			<ul>
+				<li><a href="#te_stationmap" class="ui-btn-active"><i class="far fa-map fa-2x"></i><br><br>
+					<span class="font-size-change">STATION  MAP</span></a></li>
+				<li><a href="#te_favourites"><i class="far fa-heart fa-2x"></i><br><br>
+					<span class="font-size-change">FAVOURITES</span></a></li>
+				<li><a href="#te_booking"><i class="fas fa-ticket-alt fa-2x"></i><br><br>
+					<span class="font-size-change">BOOK  TICKETS</span></a></li>
+				<li><a href="#te_scanQR"><i class="fas fa-qrcode fa-2x"></i><br><br>
+					<span class="font-size-change">SCAN QR</span></a></li>
+			</ul>
+		</div>
+	</div>
+</div>
+<!-------------------wimbledon------------------------->
+<div data-role="page" id="poi_iphone_wimbledon">
+	<div data-role="header">
+		<div data-role="controlgroup" data-type="horizontal">
+			<a href="#te_homepage" class="ui-btn ui-corner-all">LOGO</a>
+			<a href="#" class="ui-btn ui-corner-all">PROFILE</a>
+			<a href="#te_animDiamond" class="ui-btn ui-corner-all">DIAMOND</a>
+		</div>
+	</div>
+	<div role="main" class="ui-content">
+		<h1>WIMBLEDON</h1>
+
+		<div data-role="tabs">
+			<div data-role="navbar">
+				<ul>
+					<li><a href="#wimbledon_poi1_iphone" data-ajax="true">Wimbledon Centre Court</a></li>
+					<li><a href="#wimbledon_poi2_iphone" data-ajax="false">New Wimbledon Theatre</a></li>
+					<li><a href="#wimbledon_poi3_iphone" data-ajax="false">Buddhapadipa Temple</a></li>
+				</ul>
+			</div>
+			<!-------------------Wimbledon Centre Court ------------------>
+			<div id="wimbledon_poi1_iphone" class="ui-body-d ui-content">
+				<h2>Wimbledon Centre Court</h2>
+
+				<p>ICON OF DIAMOND AND POINTS</p>
+
+				<img src="IMAGE LINK" alt="TITLE OF POI">
+
+				<button class="fav_btn" id="fav_wimbledon_court1">FAVOURITE</button>
+
+				<p>DESCRIPTION OF POI</p>
+
+				<p>Get the embed location iframe from google</p>
+
+				<a href="LOCATION LINK" data-role="button" target="_blank">GET DIRECTIONS</a>
+			</div>
+
+			<!-------------------New Wimbledon Theatre ------------------>
+			<div id="wimbledon_poi2_iphone" class="ui-body-d ui-content">
+				<h2>New Wimbledon Theatre</h2>
+
+				<p>ICON OF DIAMOND AND POINTS</p>
+
+				<img src="IMAGE LINK" alt="TITLE OF POI">
+
+				<button class="fav_btn" id="fav_wimbledon_theatre2">FAVOURITE</button>
+
+				<p>DESCRIPTION OF POI</p>
+
+				<p>Get the embed location iframe from google</p>
+
+				<a href="LOCATION LINK" data-role="button" target="_blank">GET DIRECTIONS</a>
+			</div>
+
+			<!-------------------Buddhapadipa Temple ------------------>
+			<div id="wimbledon_poi3_iphone" class="ui-body-d ui-content">
+				<h2>Buddhapadipa Temple</h2>
+
+				<p>ICON OF DIAMOND AND POINTS</p>
+
+				<img src="IMAGE LINK" alt="TITLE OF POI">
+
+				<button class="fav_btn" id="fav_buddhapadipa3">FAVOURITE</button>
+
+				<p>DESCRIPTION OF POI</p>
+
+				<p>Get the embed location iframe from google</p>
+
+				<a href="LOCATION LINK" data-role="button" target="_blank">GET DIRECTIONS</a>
+			</div>
+		</div>
+	</div>
+	
+	<div data-role="footer" data-position="fixed">
+		<div data-role="navbar">
+			<ul>
+				<li><a href="#te_stationmap" class="ui-btn-active"><i class="far fa-map fa-2x"></i><br><br>
+					<span class="font-size-change">STATION  MAP</span></a></li>
+				<li><a href="#te_favourites"><i class="far fa-heart fa-2x"></i><br><br>
+					<span class="font-size-change">FAVOURITES</span></a></li>
+				<li><a href="#te_booking"><i class="fas fa-ticket-alt fa-2x"></i><br><br>
+					<span class="font-size-change">BOOK  TICKETS</span></a></li>
+				<li><a href="#te_scanQR"><i class="fas fa-qrcode fa-2x"></i><br><br>
+					<span class="font-size-change">SCAN QR</span></a></li>
+			</ul>
+		</div>
+	</div>
+</div>
+<!-------------------WOKING------------------------->
+<div data-role="page" id="poi_iphone_woking">
+	<div data-role="header">
+		<div data-role="controlgroup" data-type="horizontal">
+			<a href="#te_homepage" class="ui-btn ui-corner-all">LOGO</a>
+			<a href="#" class="ui-btn ui-corner-all">PROFILE</a>
+			<a href="#te_animDiamond" class="ui-btn ui-corner-all">DIAMOND</a>
+		</div>
+	</div>
+	<div role="main" class="ui-content">
+		<h1>WOKING</h1>
+			<div data-role="tabs">
+				<div data-role="navbar">
+					<ul>
+						<li><a href="#woking_poi1_iphone" data-ajax="true">The Lightbox</a></li>
+						<li><a href="#woking_poi2_iphone" data-ajax="false">RHS Garden</a></li>
+						<li><a href="#woking_poi3_iphone" data-ajax="false">Mercedes Benz World</a></li>
+					</ul>
+				</div>
+				<!-------------------The Lightbox ------------------>
+				<div id="woking_poi1_iphone" class="ui-body-d ui-content">
+					<h2>The Lightbox</h2>
+
+					<p>ICON OF DIAMOND AND POINTS</p>
+
+					<img src="IMAGE LINK" alt="TITLE OF POI">
+
+					<button class="fav_btn" id="fav_lightbox1">FAVOURITE</button>
+
+					<p>DESCRIPTION OF POI</p>
+
+					<p>Get the embed location iframe from google</p>
+
+					<a href="LOCATION LINK" data-role="button" target="_blank">GET DIRECTIONS</a>
+				</div>
+
+				<!-------------------RHS Garden ------------------>
+				<div id="woking_poi2_iphone" class="ui-body-d ui-content">
+					<h2>RHS Garden</h2>
+
+					<p>ICON OF DIAMOND AND POINTS</p>
+
+					<img src="IMAGE LINK" alt="TITLE OF POI">
+
+					<button class="fav_btn" id="fav_rhs_garden2">FAVOURITE</button>
+
+					<p>DESCRIPTION OF POI</p>
+
+					<p>Get the embed location iframe from google</p>
+
+					<a href="LOCATION LINK" data-role="button" target="_blank">GET DIRECTIONS</a>
+				</div>
+
+				<!-------------------Mercedes Benz World ------------------>
+				<div id="woking_poi3_iphone" class="ui-body-d ui-content">
+					<h2>Mercedes Benz World </h2>
+
+					<p>ICON OF DIAMOND AND POINTS</p>
+
+					<img src="IMAGE LINK" alt="TITLE OF POI">
+
+					<button class="fav_btn" id="fav_benz_world3">FAVOURITE</button>
+
+					<p>DESCRIPTION OF POI</p>
+
+					<p>Get the embed location iframe from google</p>
+
+					<a href="LOCATION LINK" data-role="button" target="_blank">GET DIRECTIONS</a>
+				</div>
+		</div>
+	</div>
+	
+	<div data-role="footer" data-position="fixed">
+		<div data-role="navbar">
+			<ul>
+				<li><a href="#te_stationmap" class="ui-btn-active"><i class="far fa-map fa-2x"></i><br><br>
+					<span class="font-size-change">STATION  MAP</span></a></li>
+				<li><a href="#te_favourites"><i class="far fa-heart fa-2x"></i><br><br>
+					<span class="font-size-change">FAVOURITES</span></a></li>
+				<li><a href="#te_booking"><i class="fas fa-ticket-alt fa-2x"></i><br><br>
+					<span class="font-size-change">BOOK  TICKETS</span></a></li>
+				<li><a href="#te_scanQR"><i class="fas fa-qrcode fa-2x"></i><br><br>
+					<span class="font-size-change">SCAN QR</span></a></li>
+			</ul>
+		</div>
+	</div>
+</div>
+<!-------------------GUILDFORD------------------------->
+<div data-role="page" id="poi_iphone_guildford">
+	<div data-role="header">
+		<div data-role="controlgroup" data-type="horizontal">
+			<a href="#te_homepage" class="ui-btn ui-corner-all">LOGO</a>
+			<a href="#" class="ui-btn ui-corner-all">PROFILE</a>
+			<a href="#te_animDiamond" class="ui-btn ui-corner-all">DIAMOND</a>
+		</div>
+	</div>
+	<div role="main" class="ui-content">
+		<h1>GUILDFORD</h1>
+
+					<div data-role="tabs">
+						<div data-role="navbar">
+							<ul>
+								<li><a href="#guildford_poi1_iphone" data-ajax="true">Guildford Castle</a></li>
+								<li><a href="#guildford_poi2_iphone" data-ajax="false">Guildford Museum</a></li>
+								<li><a href="#guildford_poi3_iphone" data-ajax="false">Stoke Park</a></li>
+							</ul>
+						</div>
+						<!-------------------Guildford Castle ------------------>
+						<div id="guildford_poi1_iphone" class="ui-body-d ui-content">
+							<h2>Guildford Castle</h2>
+
+							<p>ICON OF DIAMOND AND POINTS</p>
+							
+							<img src="IMAGE LINK" alt="TITLE OF POI">
+							
+							<button class="fav_btn" id="fav_guildford_castle1">FAVOURITE</button>
+
+							<p>DESCRIPTION OF POI</p>
+
+							<p>Get the embed location iframe from google</p>
+
+							<a href="LOCATION LINK" data-role="button" target="_blank">GET DIRECTIONS</a>
+						</div>
+						
+						<!-------------------Guildford Museum ------------------>
+						<div id="guildford_poi2_iphone" class="ui-body-d ui-content">
+							<h2>Guildford Museum</h2>
+
+							<p>ICON OF DIAMOND AND POINTS</p>
+							
+							<img src="IMAGE LINK" alt="TITLE OF POI">
+							
+							<button class="fav_btn" id="fav_guildford_museum2">FAVOURITE</button>
+
+							<p>DESCRIPTION OF POI</p>
+
+							<p>Get the embed location iframe from google</p>
+
+							<a href="LOCATION LINK" data-role="button" target="_blank">GET DIRECTIONS</a>
+						</div>
+						
+						<!-------------------Stoke Park ------------------>
+						<div id="guildford_poi3_iphone" class="ui-body-d ui-content">
+							<h2>Stoke Park</h2>
+
+							<p>ICON OF DIAMOND AND POINTS</p>
+							
+							<img src="IMAGE LINK" alt="TITLE OF POI">
+							
+							<button class="fav_btn" id="fav_stoke_park3">FAVOURITE</button>
+
+							<p>DESCRIPTION OF POI</p>
+
+							<p>Get the embed location iframe from google</p>
+
+							<a href="LOCATION LINK" data-role="button" target="_blank">GET DIRECTIONS</a>
+						</div>
+					</div>
+	</div>
+	
+	<div data-role="footer" data-position="fixed">
+		<div data-role="navbar">
+			<ul>
+				<li><a href="#te_stationmap" class="ui-btn-active"><i class="far fa-map fa-2x"></i><br><br>
+					<span class="font-size-change">STATION  MAP</span></a></li>
+				<li><a href="#te_favourites"><i class="far fa-heart fa-2x"></i><br><br>
+					<span class="font-size-change">FAVOURITES</span></a></li>
+				<li><a href="#te_booking"><i class="fas fa-ticket-alt fa-2x"></i><br><br>
+					<span class="font-size-change">BOOK  TICKETS</span></a></li>
+				<li><a href="#te_scanQR"><i class="fas fa-qrcode fa-2x"></i><br><br>
+					<span class="font-size-change">SCAN QR</span></a></li>
+			</ul>
+		</div>
+	</div>
+</div>
+<!-------------------PORTSMOUTH------------------------->
+<div data-role="page" id="poi_iphone_portsmouth">
+	<div data-role="header">
+		<div data-role="controlgroup" data-type="horizontal">
+			<a href="#te_homepage" class="ui-btn ui-corner-all">LOGO</a>
+			<a href="#" class="ui-btn ui-corner-all">PROFILE</a>
+			<a href="#te_animDiamond" class="ui-btn ui-corner-all">DIAMOND</a>
+		</div>
+	</div>
+	<div role="main" class="ui-content">
+		<h1>PORTSMOUTH</h1>
+
+		<div data-role="tabs">
+						<div data-role="navbar">
+							<ul>
+								<li><a href="#portsmouth_poi1_iphone" data-ajax="true">Spinnaker Tower</a></li>
+								<li><a href="#portsmouth_poi2_iphone" data-ajax="false">South Parade Pier</a></li>
+								<li><a href="#portsmouth_poi3_iphone" data-ajax="false">Historic Dockyard</a></li>
+							</ul>
+						</div>
+						<!-------------------Spinnaker Tower----------------->
+						<div id="portsmouth_poi1_iphone" class="ui-body-d ui-content">
+							<h2>Spinnaker Tower</h2>
+
+							<p>ICON OF DIAMOND AND POINTS</p>
+							
+							<img src="IMAGE LINK" alt="TITLE OF POI">
+							
+							<button class="fav_btn" id="fav_spinnaker_tower1">FAVOURITE</button>
+
+							<p>DESCRIPTION OF POI</p>
+
+							<p>Get the embed location iframe from google</p>
+
+							<a href="LOCATION LINK" data-role="button" target="_blank">GET DIRECTIONS</a>
+						</div>
+						
+						<!-------------------South Parade Pier ------------------>
+						<div id="portsmouth_poi2_iphone" class="ui-body-d ui-content">
+							<h2>South Parade Pier</h2>
+
+							<p>ICON OF DIAMOND AND POINTS</p>
+							
+							<img src="IMAGE LINK" alt="TITLE OF POI">
+							
+							<button class="fav_btn" id="fav_south_parade_pier2">FAVOURITE</button>
+
+							<p>DESCRIPTION OF POI</p>
+
+							<p>Get the embed location iframe from google</p>
+
+							<a href="LOCATION LINK" data-role="button" target="_blank">GET DIRECTIONS</a>
+						</div>
+						
+						<!-------------------BUCKINGHAM PALACE ------------------>
+						<div id="portsmouth_poi3_iphone" class="ui-body-d ui-content">
+							<h2>Historic Dockyard</h2>
+
+							<p>ICON OF DIAMOND AND POINTS</p>
+							
+							<img src="IMAGE LINK" alt="TITLE OF POI">
+							
+							<button class="fav_btn" id="fav_historic_dockyard3">FAVOURITE</button>
+
+							<p>DESCRIPTION OF POI</p>
+
+							<p>Get the embed location iframe from google</p>
+
+							<a href="LOCATION LINK" data-role="button" target="_blank">GET DIRECTIONS</a>
+						</div>
+					</div>
+	
+	</div>
+	
+	<div data-role="footer" data-position="fixed">
+		<div data-role="navbar">
+			<ul>
+				<li><a href="#te_stationmap" class="ui-btn-active"><i class="far fa-map fa-2x"></i><br><br>
+					<span class="font-size-change">STATION  MAP</span></a></li>
+				<li><a href="#te_favourites"><i class="far fa-heart fa-2x"></i><br><br>
+					<span class="font-size-change">FAVOURITES</span></a></li>
+				<li><a href="#te_booking"><i class="fas fa-ticket-alt fa-2x"></i><br><br>
+					<span class="font-size-change">BOOK  TICKETS</span></a></li>
+				<li><a href="#te_scanQR"><i class="fas fa-qrcode fa-2x"></i><br><br>
+					<span class="font-size-change">SCAN QR</span></a></li>
+			</ul>
+		</div>
+	</div>
+</div>
 
 	
 <!-------------------------------------------------------------------------------------------------------------------->	
@@ -378,7 +1138,7 @@ function ValidateEmail(inputText)
 		</div>
 	</div>
 
-	<h3>You have...</h3>
+	<h3>You have...</H3>
 	<img src="assets/images/Diamond.png" alt="diamond">
 	
 <div data-role="footer" data-position="fixed">
