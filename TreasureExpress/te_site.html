@@ -1582,10 +1582,10 @@ function ValidateEmail(inputText)
 	
 	<h1 style="text-align: center;">BOOK TICKETS</h1>
 	<br> 
-	<div text-align="center" id="thankyouPayment"></div>
+	
 	<form id="bookingForm" name="bookingForm">
-		<!-- <input disabled type="date" data-clear-btn="true" name="date" id="returnDate" value=""><br> -->
-		
+		<div text-align="center" id="thankyouPayment"></div>
+				
 		<label for="fromDestination" class="selectDestination">From :</label>
 		<select name="fromDestination" class="selectDestination" id="fromDestination">
 			<option value="Waterloo">Waterloo</option>
@@ -1606,15 +1606,14 @@ function ValidateEmail(inputText)
 		</select> <br><br>
 		
 
-
-
-		<fieldset data-role="controlgroup" data-type="horizontal">
-			<input type="radio" name="journeyType" id="optionOneWay" onclick="hideFunction()" >
+		<fieldset class="journeyType" data-role="controlgroup" data-type="horizontal">
+			<input type="radio" name="journeyType" id="optionOneWay" value="one way">
 			<label for="optionOneWay">One Way</label>
-			<input type="radio" name="journeyType" id="optionReturn" checked="checked" >
+			<input type="radio" name="journeyType" id="optionReturn" value="return">
 			<label for="optionReturn">Return</label>
-			<input type="radio" name="journeyType" id="optionOpenReturn">
+			<input type="radio" name="journeyType" id="optionOpenReturn" value="open return">
 			<label for="optionOpenReturn">Open Return</label>
+
 		</fieldset> 
 
 		
@@ -1632,9 +1631,6 @@ function ValidateEmail(inputText)
 			<label for="returnTime">Time:  </label>
 			<input type="time" name="returnTime" id="returnTime" value=""><br><br>
 		</div>
-
-
-		<!-----------------NEEDS ADD ADULT, CHILD, RAILCARD -->
 
 		
 		<label for="enterPoints">Enter Points:</label>
