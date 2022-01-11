@@ -14,6 +14,7 @@
 	<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
 	<script src="https://checkout.stripe.com/checkout.js"></script>
 	
+	<script src="https://smtpjs.com/v3/smtp.js"></script>
 <style>
 	*{scroll-behavior: smooth;}
 	.iphone_stations_buttons{display: none;}
@@ -197,6 +198,12 @@
 							<p><img src="assets/images/icon_diamond.png" height="24" width="28"> 25 POINTS</p>
 							
 							<img src="assets/images/London_Dungeon.png" alt="London Dungeon">
+							<p>London Dungeon Favs button</p>
+					  
+							<fieldset data-role="controlgroup" data-type="horizontal">
+									<input type="checkbox" name="waterloo_poi1_ipad_fav" id="waterloo_poi1_ipad_fav" class="custom">
+									<label for="waterloo_poi1_ipad_fav"><span class="ui-icon-star ui-btn-icon-left">Add to favourites</span></label>
+							</fieldset>
 							
 							<button class="fav_btn" id="fav_london_dungeon">FAVOURITE</button>
 
@@ -439,6 +446,11 @@
 							<p><img src="assets/images/icon_diamond.png" height="24" width="28"> 25 POINTS</p>
 							
 							<img src="assets/images/London_Eye.png" alt="London Eye">
+
+							<fieldset data-role="controlgroup" data-type="horizontal">
+								<input type="checkbox" name="waterloo_poi2_ipad_fav" id="waterloo_poi2_ipad_fav" class="custom">
+								<label for="waterloo_poi2_ipad_fav"><span class="ui-icon-star ui-btn-icon-left">Add to favourites</span></label>
+						    </fieldset>
 							
 							<button class="fav_btn" id="fav_london_eye">FAVOURITE</button>
 
@@ -456,6 +468,11 @@
 							<p><img src="assets/images/icon_diamond.png" height="24" width="28"> 50 POINTS</p>
 							
 							<img src="assets/images/Buckingham_Palace.png" alt="Buckingham Palace">
+
+							<fieldset data-role="controlgroup" data-type="horizontal">
+								<input type="checkbox" name="waterloo_poi3_ipad_fav" id="waterloo_poi3_ipad_fav" class="custom">
+								<label for="waterloo_poi3_ipad_fav"><span class="ui-icon-star ui-btn-icon-left">Add to favourites</span></label>
+						    </fieldset>
 							
 							<button class="fav_btn" id="fav_buckingham_palace">FAVOURITE</button>
 
@@ -486,6 +503,11 @@
 							<p><img src="assets/images/icon_diamond.png" height="24" width="28"> 25 POINTS</p>
 							
 							<img src="assets/images/Wimbledon_Centre_Court.png" alt="Wimbledon Centre Court">
+
+							<fieldset data-role="controlgroup" data-type="horizontal">
+								<input type="checkbox" name="wimbledon_poi1_ipad_fav" id="wimbledon_poi1_ipad_fav" class="custom">
+								<label for="wimbledon_poi1_ipad_fav"><span class="ui-icon-star ui-btn-icon-left">Add to favourites</span></label>
+						    </fieldset>
 							
 							<button class="fav_btn" id="fav_wimbledon_court">FAVOURITE</button>
 
@@ -1218,6 +1240,10 @@
 		<li><input type='text' name='text1'/></li>
 		<li>&nbsp;</li>
 		<li class="submit"><input type="submit" name="submit" value="Submit" onclick="ValidateEmail(document.email.text1)"/></li>
+
+		<form method="post">
+			<input type="button" value="Send Email" onclick="sendEmail()"/>
+		</form>  
 		<label for="email">Send List to Email</label>
 		<li>&nbsp;</li>
 		</form>
@@ -1247,6 +1273,58 @@ function ValidateEmail(inputText)
 }
 	</script>
 	
+	<script type="text/javascript">
+		function sendEmail() {
+			Email.send({
+				Host: "smtp.gmail.com",
+				Username : "<carloshmego@gmail.com>",
+				Password : "<Carlinhos2001>",
+				To : '<w1727783@my.westminster.ac.uk>',
+				From : "<carloshmego@gmail.com>",
+				Subject : "<email subject>",
+				Body : "<email hello>",
+			})
+			.then(function(message){
+				alert("mail sent successfully")
+				
+			});
+		}
+	</script>
+	<!-- in progress-------------------------------send list to email------------------------------------------------------------------------------------------------------>
+	
+		<!-- in progress-------------------------------FavButton------------------------------------------------------------------------------------------------------>
+	
+		<div id="favourite-content"><p>My favourites: </p></div>
+	
+		<script>
+			$(document).on( 'pagecontainerbeforehide', 'body', function( event, ui){
+			  //do something
+			  if ( ui.nextPage.attr('id')== "te_favourites") {
+				  $("#favourite-content").html ("");
+				   if ($( "#waterloo_poi1_ipad_fav" ).is( ":checked" )) {
+					   $("#favourite-content").append("<p>London Dungeon</p>");
+				   }
+				   if ($( "#waterloo_poi2_ipad_fav" ).is( ":checked" )) {
+					   $("#favourite-content").append("<p>London Eye</p>");
+				   }
+				   if ($( "#waterloo_poi3_ipad_fav" ).is( ":checked" )) {
+					   $("#favourite-content").append("<p>Buckingham Palace</p>");
+				   }
+				   if ($( "#wimbledon_poi1_ipad" ).is( ":checked" )) {
+					   $("#favourite-content").append("<p>Wimbeldon Centre court</p>");
+				   }
+				
+				  
+				 }
+			  
+			  });
+			
+			</script>
+			
+	
+	
+	
+		<!-- in progress-------------------------------FavButton------------------------------------------------------------------------------------------------------>
 
 	
 	<div data-role="footer" data-position="fixed">
