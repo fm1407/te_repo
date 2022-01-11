@@ -15,6 +15,7 @@
 	<script src="https://checkout.stripe.com/checkout.js"></script>
 	
 <style>
+	*{scroll-behavior: smooth;}
 	.iphone_stations_buttons{display: none;}
 	.ipad_stations_poi{display:block;}
 	
@@ -97,11 +98,11 @@
 				
 			<div class="ipad_stations_buttons ui-block-a">
 				<ul data-role="listview" data-inset="true">
-				  <li><a href="#poi_ipad_waterloo" data-ajax="true">WATERLOO</a><img src="assets/images/London_Dungeon.png" alt="Waterloo - London Dungeon"></li>
-				  <li><a href="#poi_ipad_wimbledon" data-ajax="false">WIMBLEDON</a><img src="assets/images/Wimbledon_Centre_Court.png" alt="Wimbledon - Wimbledon Centre Court"></li>
-				  <li><a href="#poi_ipad_woking" data-ajax="false">WOKING</a><img src="assets/images/The_Lightbox.png" alt="Woking - The Lightbox"></li>
-				  <li><a href="#poi_ipad_guildford" data-ajax="false">GUILDFORD</a><img src="assets/images/Guildford_Castle.png" alt="Guildford - Guildford Castle"></li>
-				  <li><a href="#poi_ipad_portsmouth" data-ajax="false">PORTSMOUTH</a><img src="assets/images/Spinnaker_Tower.png" alt="Portsmouth - Spinnaker Tower"></li>
+				  <li><a href="#poi_ipad_waterloo" data-ajax="true">WATERLOO</a><img width ="100%"  src="assets/images/Waterloo_Station.png" alt="Waterloo"></li>
+				  <li><a href="#poi_ipad_wimbledon" data-ajax="false">WIMBLEDON</a><img width ="100%" src="assets/images/Wimbledon_Station.png" alt="Wimbledon"></li>
+				  <li><a href="#poi_ipad_woking" data-ajax="false">WOKING</a><img width ="100%" src="assets/images/Woking_Station.png" alt="Woking"></li>
+				  <li><a href="#poi_ipad_guildford" data-ajax="false">GUILDFORD</a><img width ="100%" src="assets/images/Guilford_Station.png" alt="Guildford"></li>
+				  <li><a href="#poi_ipad_portsmouth" data-ajax="false">PORTSMOUTH</a><img width ="100%" src="assets/images/Portsmouth_Station.png" alt="Portsmouth"></li>
 				</ul>
 			</div>
 
@@ -1342,11 +1343,11 @@ function ValidateEmail(inputText)
 				
 			<div class="ipad_stations_buttons ui-block-a">
 				<ul data-role="listview" data-inset="true">
-				  <li><a href="#qr_ipad_waterloo" data-ajax="true">WATERLOO</a><img src="assets/images/Waterloo_Station.png" alt="Waterloo - London Dungeon"></li>
-				  <li><a href="#qr_ipad_wimbledon" data-ajax="false">WIMBLEDON</a><img src="assets/images/Wimbledon_Centre_Court.png" alt="Wimbledon - Wimbledon Centre Court"></li>
-				  <li><a href="#qr_ipad_woking" data-ajax="false">WOKING</a><img src="assets/images/The_Lightbox.png" alt="Woking - The Lightbox"></li>
-				  <li><a href="#qr_ipad_guildford" data-ajax="false">GUILDFORD</a><img src="assets/images/Guildford_Castle.png" alt="Guildford - Guildford Castle"></li>
-				  <li><a href="#qr_ipad_portsmouth" data-ajax="false">PORTSMOUTH</a><img src="assets/images/Spinnaker_Tower.png" alt="Portsmouth - Spinnaker Tower"></li>
+				  <li><a href="#qr_ipad_waterloo" data-ajax="true">WATERLOO</a><img width ="100%" src="assets/images/Waterloo_Station.png" alt="Waterloo"></li>
+				  <li><a href="#qr_ipad_wimbledon" data-ajax="false">WIMBLEDON</a><img width ="100%" src="assets/images/Wimbledon_Station.png" alt="Wimbledon"></li>
+				  <li><a href="#qr_ipad_woking" data-ajax="false">WOKING</a><img width ="100%" src="assets/images/Woking_Station.png" alt="Woking"></li>
+				  <li><a href="#qr_ipad_guildford" data-ajax="false">GUILDFORD</a><img width ="100%" src="assets/images/Guilford_Station.png" alt="Guildford"></li>
+				  <li><a href="#qr_ipad_portsmouth" data-ajax="false">PORTSMOUTH</a><img width ="100%" src="assets/images/Portsmouth_Station.png" alt="Portsmouth"></li>
 				</ul>
 			</div>
 
@@ -1367,7 +1368,14 @@ function ValidateEmail(inputText)
 						<!-------------------LONDON DUNGEON ------------------>
 						<div id="waterloo_qr1_ipad" class="ui-body-d ui-content">
 							<h2>LONDON DUNGEON</h2>
-							<a href="scan_london_dungeon" class="ui-btn ui-corner-all">SCAN QR</a> 
+							<p><img src="assets/images/icon_diamond.png" height="24" width="28">POINTS</p>
+
+							<img src="assets/images/London_Dungeon.png" alt="London Dungeon">
+							
+							<a href="scan_london_dungeon" class="ui-btn ui-corner-all">SCAN QR</a>
+
+							<p>The London Dungeon is a uniquely thrilling attraction that will whisk you way back to the capital's most perilous past. See, hear, feel and (ahem!) smell the chillingly amusing characters of the 'bad old days' as they come to life before you.</p>
+						
 							<!--- Make code to add the points --->
 						</div>
 						
