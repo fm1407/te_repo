@@ -16,10 +16,9 @@
 	<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
 	<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
 	<script src="https://checkout.stripe.com/checkout.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>  
 	
 	
-<script src="https://smtpjs.com/v3/smtp.js"></script>
+	<script src="https://smtpjs.com/v3/smtp.js"></script>
 <style>
 	*{scroll-behavior: smooth; box-sizing: border-box;}
 	.iphone_stations_buttons{display: none;}
@@ -53,6 +52,52 @@
 	
 	.favList li{background-color:#243757; margin-top:2%; margin-right:7.5%; padding:3%; border-radius:1.5%;}
 
+
+	.mainStars {
+			margin-left: 5%;
+			margin-top: 0%;
+		}
+		.rating-star {
+			direction: rtl;
+			font-size: 50px;
+			unicode-bidi: bidi-override;
+			
+		}
+		.rating-star input {
+			opacity: 0;
+			position: relative;
+			left: -50px;
+			z-index: 2;
+			cursor: pointer;
+		}
+		.rating-star span.star:before {
+			color: #777777;
+		}
+		.rating-star span.star {
+			/* display: inline-block; */
+			font-family: FontAwesome;
+			font-style: normal;
+			font-weight: normal;
+			position: relative;
+			z-index: 1;
+		}
+		.rating-star span {
+			margin-left: -10px;
+		}
+		.rating-star span.star:before {
+			color: #777777;
+			content:"\f006";
+		}
+		.rating-star input:hover + span.star:before, .rating-star input:hover + span.star ~ span.star:before, .rating-star input:checked + span.star:before, .rating-star input:checked + span.star ~ span.star:before {
+			color: #ffd100;
+			content:"\f005";
+		}
+		
+		.selected-rating{
+			color: #ffd100;
+			font-weight: bold;
+			font-size: 22px;
+		}
 	
 	.imgRating {
 		border: 1px solid #ddd; /* Gray border */
@@ -140,22 +185,13 @@
 	.poidiamond {
 			text-align: right;
 	}
-	
-	.reviewLabel{
-		margin:5%;
-		color:#1B9BE8;
-		text-align: center;
-	}
-	
-	.commentSection{
-			width: 100%;
-			border: 3px solid #243757;
-			padding: 2%;
-			margin: 3%;
-	}
+
 	
 	#listBox{
-		width:100%;
+			width: 400px;
+			border: 2px solid blue;
+			padding: 50px;
+			margin: 20px;
 	}
 
 		body {
@@ -227,6 +263,9 @@
 				display: none;
 			}
 		}
+		
+
+
 	
 </style>
 
@@ -414,31 +453,14 @@
 								</div>
 								</div>
 							</div>
-							
-						<!-----------SELECT RATING--------->
-						<form>
-								<fieldset data-role="controlgroup" data-theme="b" data-type="horizontal">
-									<legend class="reviewLabel">Select your rating:</legend>
-									
-									<input type="radio" name="radio-choice-t-6" id="radio-choice-t-6a" value="1" checked="checked">
-									<label for="radio-choice-t-6a">1</label>
-									<input type="radio" name="radio-choice-t-6" id="radio-choice-t-6b" value="2">
-									<label for="radio-choice-t-6b">2</label>
-									<input type="radio" name="radio-choice-t-6" id="radio-choice-t-6c" value="3">
-									<label for="radio-choice-t-6c">3</label>
-									<input type="radio" name="radio-choice-t-6" id="radio-choice-t-6d" value="4">
-									<label for="radio-choice-t-6d">4</label>
-									<input type="radio" name="radio-choice-t-6" id="radio-choice-t-6e" value="5">
-									<label for="radio-choice-t-6e">5</label>
-									
-								</fieldset>
-							</form>
+
+
 						<!-----------ADD COMMENT--------->
 						<form id="FormName" action="(EmptyReference!)" method="get" name="FormName">
 	
 							<fieldset id="hiddenFieldset">
 								<div class="ui-field-contain">
-									<label for="inputBox" class="reviewLabel">Add your comment:</label>
+									<label for="inputBox">Add your comment:</label>
 									<input type="text" name="inputBox" id="inputBox" placeholder="Text input" value="">									
 								</div>	
 								<button id="add" type="button">Add</button>
@@ -447,10 +469,10 @@
 							
 							
 							
-					<!---------- STARS
-							
-							<div class="mainStars">
-							<form id="rating-form">
+							<!---------- STARS ------------->
+							<body>
+								<div class="mainStars">
+								<form id="rating-form">
 							<span class="rating-star">
 							<input type="radio" name="rating" value="5"><span class="star"></span>
 								<input type="radio" name="rating" value="4"><span class="star"></span>
@@ -459,59 +481,21 @@
 								<input type="radio" name="rating" value="1"><span class="star"></span>
 							</span>
 							</form>
+								<p>Thanks For Giving <span id="selected-rating" class="selected-rating" >0</span> Stars.</p>
+								</div>	
 								
-							</div>	
-								<style>
-								.mainStars {
-								margin-left: 0%;
-								margin-top: 0%;
-								}
-								.rating-star {
-								direction: rtl;
-								font-size: 10px;
-								unicode-bidi: bidi-override;
+								<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>  
+								  
+								<script src="function.js" type="text/javascript">
+									$('#rating-form').on('change','[name="rating"]',function(){
+										$('#selected-rating').text($('[name="rating"]:checked').val());
+									});
+								</script>
 
-								}
-								.rating-star input {
-								opacity: 0;
-								position: relative;
-								left: -50px;
-								z-index: 2;
-								cursor: pointer;
-								}
-								.rating-star span.star:before {
-								color: #777777;
-								}
-								.rating-star span.star {
-								display: inline-block; 
-								font-family: FontAwesome;
-								font-style: normal;
-								font-weight: normal;
-								position: relative;
-								z-index: 1;
-								}
-								.rating-star span {
-								margin-left: -10px;
-								}
-								.rating-star span.star:before {
-								color: #777777;
-								content:"\f006";
-								}
-								.rating-star input:hover + span.star:before, .rating-star input:hover + span.star ~ span.star:before, .rating-star input:checked + span.star:before, .rating-star input:checked + span.star ~ span.star:before {
-								color: #ffd100;
-								content:"\f005";
-								}
 
-								.selected-rating{
-								color: #ffd100;
-								font-weight: bold;
-								font-size: 22px;
-								}
-								</style>------------->
-														
-						<!----------SHOWS COMMENTS ------------->
+							<!----------SHOWS COMMENTS ------------->
 
-						<div class="commentSection">
+							<div id="listBox">
 								
 								<i class="far fa-user-circle fa-2x"></i><h2><b>Faye </b></h2><div class="rating">
 								<span class="fa fa-star checked"></span>
@@ -546,10 +530,10 @@
 								<a target="_blank" href="assets/images/Thumbnail_London_Dungeon_4.jpg">
 								<img class="imgRating" src="assets/images/Thumbnail_London_Dungeon_4.jpg" alt="London Dungeon"></a>
 
+
+
 							<hr>
-							<div id="listBox"><b>MY COMMENT:</b></div>
 							</div>
-						
 						</form>
 					</div>
 
@@ -620,7 +604,6 @@
 						</div>
 					</div>
 				</div>
-			
 				<!----------------------- WIMBLEDON-------------------------------->
 				<div id="poi_ipad_wimbledon" class="ui-body-d tablist-content">
 					<h1 class="potitles">WIMBLEDON</h1>
@@ -2211,6 +2194,10 @@
 									</div>
 								</div>
 
+
+
+
+
 								<p>Wimbledon Centre Court is the main court at The Championships, Wimbledon, the third annual Grand Slam event of the tennis calendar. It is considered the world's most famous tennis court.It incorporates the clubhouse of the All England Lawn Tennis and Croquet Club. Its only regular use for play is during the two weeks a year that the Championships take place.</p>
 
 
@@ -2350,6 +2337,9 @@
 
 									</div>
 								</div>
+
+
+
 
 								<p>Next to the Brooklands Museum is Mercedes-Benz World, where the luxury car brand owns a series of training tracks and runs the AMG Driving Academy. Some champion drivers have used these courses, like Lewis Hamilton, Mika Häkkinen, Nico Rosberg and Stirling Moss.</p>
 							</div>
