@@ -20,7 +20,7 @@
 	
 	<script src="https://smtpjs.com/v3/smtp.js"></script>
 <style>
-	*{scroll-behavior: smooth;}
+	*{scroll-behavior: smooth; box-sizing: border-box;}
 	.iphone_stations_buttons{display: none;}
 	.ipad_stations_poi{display:block;}
 	
@@ -41,6 +41,17 @@
 		font-weight: 600;
 		text-align: center;
 	}
+	
+	.favList ul{list-style-type: none;}
+	
+	.favList ul img{width:90%; background-color:white ; padding:2.5%;}
+	
+	.favList ul h3{color:#1B9BE8;}
+	
+	.favList ul p{color:white;}
+	
+	.favList li{background-color:#243757; margin-top:2%; margin-right:7.5%; padding:3%; border-radius:1.5%;}
+
 
 	.mainStars {
 			margin-left: 5%;
@@ -182,9 +193,6 @@
 			padding: 50px;
 			margin: 20px;
 	}
-	* {
-		box-sizing: border-box;
-		}
 
 		body {
 		font-family: Arial;
@@ -373,179 +381,8 @@
 							<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2483.5834089341956!2d-0.12095148423020245!3d51.50251187963433!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487604c70bc8d293%3A0x39108cb6fa0e39d9!2sThe%20Dungeons%20London!5e0!3m2!1sen!2suk!4v1641865409370!5m2!1sen!2suk" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
 
 							<a href="https://goo.gl/maps/tDgZvkzYHbQk8d5P6" data-role="button" target="_blank">GET DIRECTIONS</a>
-							
 
-							<br> 
-							<div class="UserRatings">
-								<span class="heading">The London Dungeon</span>
-								<p>The Queen's Walk, London</p>
-								<span class="fa fa-star checked"></span>
-								<span class="fa fa-star checked"></span>
-								<span class="fa fa-star checked"></span>
-								<span class="fa fa-star checked"></span>
-								<span class="fa fa-star"></span>
-								<p>4.1 average based on 14, 475 reviews.</p>
-								<hr style="border:3px solid #f1f1f1">
-
-								<div class="row">
-								<div class="side">
-									<div>5 star</div>
-								</div>
-								<div class="middle">
-									<div class="bar-container">
-									<div class="bar-5"></div>
-									</div>
-								</div>
-								<div class="side right">
-									<div>150</div>
-								</div>
-								<div class="side">
-									<div>4 star</div>
-								</div>
-								<div class="middle">
-									<div class="bar-container">
-									<div class="bar-4"></div>
-									</div>
-								</div>
-								<div class="side right">
-									<div>63</div>
-								</div>
-								<div class="side">
-									<div>3 star</div>
-								</div>
-								<div class="middle">
-									<div class="bar-container">
-									<div class="bar-3"></div>
-									</div>
-								</div>
-								<div class="side right">
-									<div>15</div>
-								</div>
-								<div class="side">
-									<div>2 star</div>
-								</div>
-								<div class="middle">
-									<div class="bar-container">
-									<div class="bar-2"></div>
-									</div>
-								</div>
-								<div class="side right">
-									<div>6</div>
-								</div>
-								<div class="side">
-									<div>1 star</div>
-								</div>
-								<div class="middle">
-									<div class="bar-container">
-									<div class="bar-1"></div>
-									</div>
-								</div>
-								<div class="side right">
-									<div>20</div>
-								</div>
-								</div>
-							</div>
-
-
-						<!-----------ADD COMMENT--------->
-						<form id="FormName" action="(EmptyReference!)" method="get" name="FormName">
-	
-							<fieldset id="hiddenFieldset">
-								<div class="ui-field-contain">
-									<label for="inputBox">Add your comment:</label>
-									<input type="text" name="inputBox" id="inputBox" placeholder="Text input" value="">									
-								</div>	
-								<button id="add" type="button">Add</button>
-								
-							</fieldset>
-							
-							
-							
-							<!---------- STARS ------------->
-							<body>
-								<div class="mainStars">
-								<form id="rating-form">
-							<span class="rating-star">
-							<input type="radio" name="rating" value="5"><span class="star"></span>
-							
-								<input type="radio" name="rating" value="4"><span class="star"></span>
-							
-								<input type="radio" name="rating" value="3"><span class="star"></span>
-							
-								<input type="radio" name="rating" value="2"><span class="star"></span>
-							
-								<input type="radio" name="rating" value="1"><span class="star"></span>
-							</span>
-							</form>
-								<p>Thanks For Giving <span id="selected-rating" class="selected-rating" >0</span> Stars.</p>
-								</div>	
-								
-								<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>  
-								  
-								<script src="function.js" type="text/javascript">
-									$('#rating-form').on('change','[name="rating"]',function(){
-										$('#selected-rating').text($('[name="rating"]:checked').val());
-									});
-								</script>
-
-
-							<!----------SHOWS COMMENTS ------------->
-
-							<div id="listBox">
-								
-								<i class="far fa-user-circle fa-2x"></i><h2><b>Faye </b></h2><div class="rating">
-								<span class="fa fa-star checked"></span>
-								<span class="fa fa-star checked"></span>
-								<span class="fa fa-star checked"></span>
-								<span class="fa fa-star checked"></span>
-								<span class="fa fa-star"></span>
-							</div>	
-							<br>
-							<p>We had a great time at the London Dungeons, highly recommended. The actors were brilliant, both spooky and comical! Two rides there, one is height restricted. Little gift shop at the end with a bar.</p>
-							<br>
-								<a target="_blank" href="assets/thumbnails/Thumbnail_London_Dungeon_1.jpg">
-								<img class="imgRating" src="assets/thumbnails/Thumbnail_London_Dungeon_1.jpg" alt="London Dungeon"></a>
-
-								<a target="_blank" href="assets/thumbnails/Thumbnail_London_Dungeon_2.jpg">
-								<img class="imgRating" src="assets/thumbnails/Thumbnail_London_Dungeon_2.jpg" alt="London Dungeon"></a>
-							<hr>
-							<br> 
-
-							<i class="far fa-user-circle fa-2x"></i><h2><b>Gracie</b></h2><div class="rating">
-								<span class="fa fa-star checked"></span>
-								<span class="fa fa-star checked"></span>
-								<span class="fa fa-star checked"></span>
-								<span class="fa fa-star checked"></span>
-								<span class="fa fa-star checked"></span>
-							</div> 
-							<p>Excellent attraction you need to book in advance. Small acted out snippets of the grimier side of London history very audience interactive. I have to say the quality of acting is a high standard. My favorite part was  Sweeney Todd whoever was playing Mrs Lovett had an amazing intensity. A pity two of the attractions were not working but didn't really spoil it at all still over an hour and a half long. Gift shop was not over priced and sold good quality items. There is a bar incorporated at the end of the shop would recommend.</p>
-								<br>
-								<a target="_blank" href="assets/thumbnails/Thumbnail_London_Dungeon_3.jpg">
-								<img class="imgRating" src="assets/thumbnails/Thumbnail_London_Dungeon_3.jpg" alt="London Dungeon"></a>
-
-								<a target="_blank" href="assets/thumbnails/Thumbnail_London_Dungeon_4.jpg">
-								<img class="imgRating" src="assets/thumbnails/Thumbnail_London_Dungeon_4.jpg" alt="London Dungeon"></a>
-
-
-
-							<hr>
-							</div>
-						</form>
 						</div>
-					
-
-						
-
-
-
-
-
-
-
-
-
-
-
 						<!-------------------LONDON EYE ------------------>
 						<div id="waterloo_poi2_ipad" class="ui-body-d ui-content">
 							<h2 class="potitles">LONDON EYE</h2>
@@ -1006,7 +843,7 @@
 		</div>
 	</div>
 </div>
-	<!-------------------wimbledon------------------------->
+	<!-------------------WIMBELDON------------------------->
 	<div data-role="page" id="poi_iphone_wimbledon">
 		<div data-role="header" data-position="fixed">
 			<div data-role="controlgroup" data-type="horizontal">
@@ -1344,8 +1181,8 @@
 								<p style="text-align: right;"><img src="assets/images/icon_diamond.png" height="24" width="28"> 25pts</p>
 
 								<fieldset data-role="controlgroup" data-type="horizontal">
-									<input type="checkbox" name="portsmouth_poi2_iphone_fav" id="portsmouth_poi1_iphone_fav" class="custom">
-									<label for="portsmouth_poi1_iphone_fav"><span class="ui-icon-heart ui-btn-icon-left">Add to favourites</span></label>
+									<input type="checkbox" name="portsmouth_poi2_iphone_fav" id="portsmouth_poi2_iphone_fav" class="custom">
+									<label for="portsmouth_poi2_iphone_fav"><span class="ui-icon-heart ui-btn-icon-left">Add to favourites</span></label>
 								</fieldset>
 
 								<p>The South Parade Pier is a pier in Portsmouth, England. It is one of two piers in the city, the other being Clarence Pier. The pier once had a long hall down its centre which housed a seating area and a small restaurant. The outside of the hall is a promenade which runs the length of the pier.</p>
@@ -1405,213 +1242,396 @@
 			<a href="#te_animDiamond" class="ui-btn ui-corner-all ui-btn-right"><i class="far fa-gem fa-2x"></i><br><br><span id="incText8">0</span></a>
 		</div>
 	</div>
+<h1 style="text-align:center;">FAVOURITES </h1>
 	
-	<h1 style="text-align:center;">FAVOURITES </h1>
-	<br>
-	<div>
-	<form action="/action_page.php">
-
-	</form>
+	<div class="mail">	
+		<form name="email"> 
+			<label for="email">Enter your email:</label><input type="text" name="text1">
+			<input type="submit" name="submit" value="Submit" id="favListSubmit" onclick="ValidateEmail(document.email.text1)">
+		</form>
+	</div>
+	<div class="favList">
+		<form class="ui-filterable">
+			<label for="filterBasic-input">Search your Favourites:</label>
+			<input id="filterBasic-input" data-type="search" >
+		</form>
+		<button style="background-color:#EE3939;" onClick="clearAll()">Clear All Favourites</button>
+		<ul data-filter="true" data-input="#filterBasic-input" id="favourite-content">
+			
+		</ul>
 
 	</div>
-
-	<div class="mail">
-		<label for="email">Enter your email:</label>
-		<form name="email" action="#"> 
-		<li><input type='text' name='text1'/></li>
-		<li>&nbsp;</li>
-		<li class="submit"><input type="submit" name="submit" value="Submit" onclick="ValidateEmail(document.email.text1)"/></li>
-
-		<form method="post">
-			<input type="button" value="Send Email" onclick="sendEmail()"/>
-		</form>  
-		<label for="email">Send List to Email</label>
-		<li>&nbsp;</li>
-		</form>
-		</div>
-		
-
-<script>
-
-
-
-function ValidateEmail(inputText)
-{
-     var mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
-       if(inputText.value.match(mailformat))
-	   {
-
-		alert("Valid email address!");
-		document.email.text1.focus();
-		return true;
-	  	}
-		else
-		{
-		alert("You have entered an invalid email address!");
-		document.email.text1.focus();
-		return false;
-		}
-}
-	</script>
 	
-	<script type="text/javascript">
-		function sendEmail() {
-			Email.send({
-				Host: "smtp.gmail.com",
-				Username : "<carloshmego@gmail.com>",
-				Password : "<Carlinhos2001>",
-				To : '<w1727783@my.westminster.ac.uk>',
-				From : "<carloshmego@gmail.com>",
-				Subject : "<email subject>",
-				Body : "<email hello>",
-			})
-			.then(function(message){
-				alert("mail sent successfully")
+	<script>
+			/*----------Validate email ----------*/
+			function ValidateEmail(inputText)
+			{
+				 var mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+				   if(inputText.value.match(mailformat))
+				   {
+
+						alert("Valid email address!");
+						document.email.text1.focus();
+					return true;
+					}
+					else
+					{
+						alert("You have entered an invalid email address!");
+						document.email.text1.focus();
+					return false;
+					}
+			}
 				
-			});
-		}
-	</script>
-	<!-- in progress-------------------------------send list to email------------------------------------------------------------------------------------------------------>
-	
-		<!-- in progress-------------------------------FavButton------------------------------------------------------------------------------------------------------>
-	
-		<div id="favourite-content"><p>My favourites: </p></div>
-
-		<script>
+			/*----------CLEAR FAV LIST-----------*/
+			function clearAll(){
+				var contents = document.getElementById("favourite-content").innerHTML;
+				
+				if(contents==" "||contents=="<h3>Your Favourites List has been cleared.</h3>"){
+					alert("You currently do not have any items in your favourites list");
+				}
+				else{
+					document.getElementById("favourite-content").innerHTML="<h3>Your Favourites List has been cleared.</h3>";
+				}
+			}
+			
+			
 			$(document).on( 'pagecontainerbeforehide', 'body', function( event, ui){
 			  //do something
 			  if ( ui.nextPage.attr('id')== "te_favourites") {
-				  $("#favourite-content").html ("");
-				   if ($( "#waterloo_poi1_ipad_fav" ).is( ":checked" )) {
 				
-						var poi_fav_name = "<h3><b>London Dungeon</b></h3>";
-						var star_rating = "<span class='fa fa-star checked'>";
-						var poi_img = "<img src='assets/images/London_Dungeon.png' alt='London Dungeon' width=40%>";
-						$("#favourite-content").append(poi_fav_name + '<br>' +  star_rating + star_rating + star_rating + star_rating + poi_img);
+				$("#favourite-content").html("");		  
+				  
+				  /*----------IPAD FAV DISPLAY-----------*/
+				  
+				   if ($( "#waterloo_poi1_ipad_fav" ).is( ":checked" )) {
+					
+						var poi_fav_name = "London Dungeon";
+					   
+						var poi_img = "<img src='assets/images/London_Dungeon.png' alt='London Dungeon'>";
+					   
+					    var poi_description="<p>The London Dungeon is a uniquely thrilling attraction that will whisk you way back to the capital's most perilous past. See, hear, feel and (ahem!) smell the chillingly amusing characters of the 'bad old days' as they come to life before you.</p>";
+				
+						$("#favourite-content").append("<li><div class='ui-grid-a'><div class='ui-block-a'>"+poi_img+"<h3>"+poi_fav_name+"</h3></div><div class='ui-block-b'>"+poi_description+"</div></div></li>");
+					  
 					}
+				  
 				   
 				   if ($( "#waterloo_poi2_ipad_fav" ).is( ":checked" )) {
-
-						var poi_fav_name = "<h3><b>London Eye</b></h3>";
-						var star_rating = "<span class='fa fa-star checked'>";
-						var poi_img = "<img src='assets/images/London_Eye.png' alt='London Eye' width=40%>";
-					   	$("#favourite-content").append(poi_fav_name + '<br>' + star_rating + star_rating + star_rating + star_rating + poi_img);
+						var poi_fav_name = "London Eye";
+					   
+						var poi_img = "<img src='assets/images/London_Eye.png' alt='London Eye'>";
+					   
+					    var poi_description="<p>The London Eye is a cantilevered observation wheel on the South Bank of the River Thames in London. It is Europe's tallest cantilevered observation wheel, and is the most popular paid tourist attraction in the United Kingdom with over 3 million visitors annually.</p>";
+				
+						$("#favourite-content").append("<li><div class='ui-grid-a'><div class='ui-block-a'>"+poi_img+"<h3>"+poi_fav_name+"</h3></div><div class='ui-block-b'>"+poi_description+"</div></div></li>");
+					   
 				   }
 
 				   if ($( "#waterloo_poi3_ipad_fav" ).is( ":checked" )) {
-						var poi_fav_name = "<h3><b>Buckingham Palace</b></h3>";
-						var star_rating = "<span class='fa fa-star checked'>";
-						var poi_img = "<img src='assets/images/Buckingham_Palace.png' alt='Buckingham Palace' width=40%>";
-					   $("#favourite-content").append(poi_fav_name + '<br>' + star_rating + star_rating + star_rating + star_rating + poi_img);
+						var poi_fav_name = "Buckingham Palace";
+					   
+						var poi_img = "<img src='assets/images/Buckingham_Palace.png' alt='Buckingham Palace'>";
+					   
+					    var poi_description="<p>Buckingham Palace is the London residence and administrative headquarters of the monarch of the United Kingdom. Located in the City of Westminster, the palace is often at the centre of state occasions and royal hospitality. It has been a focal point for the British people at times of national rejoicing and mourning.</p>";
+				
+						$("#favourite-content").append("<li><div class='ui-grid-a'><div class='ui-block-a'>"+poi_img+"<h3>"+poi_fav_name+"</h3></div><div class='ui-block-b'>"+poi_description+"</div></div></li>");
 				   }
 
 
 				   if ($( "#wimbledon_poi1_ipad_fav" ).is( ":checked" )) {
-					   var poi_fav_name = "<h3><b>Wimbeldon Centre Court</b></h3>";
-						var star_rating = "<span class='fa fa-star checked'>";
-						var poi_img = "<img src='assets/images/Wimbledon_Centre_Court.png' alt='Wimbeldon Centre Court' width=40%>";
-					   $("#favourite-content").append(poi_fav_name + '<br>' + star_rating + star_rating + star_rating + star_rating + poi_img);
+					   var poi_fav_name = "Wimbledon Centre Court";
+					   
+						var poi_img = "<img src='assets/images/Wimbledon_Centre_Court.png' alt='Wimbledon Centre Court'>";
+					   
+					    var poi_description="<p>Wimbledon Centre Court is the main court at The Championships, Wimbledon, the third annual Grand Slam event of the tennis calendar. It is considered the world's most famous tennis court.It incorporates the clubhouse of the All England Lawn Tennis and Croquet Club. Its only regular use for play is during the two weeks a year that the Championships take place.</p>";
+				
+						$("#favourite-content").append("<li><div class='ui-grid-a'><div class='ui-block-a'>"+poi_img+"<h3>"+poi_fav_name+"</h3></div><div class='ui-block-b'>"+poi_description+"</div></div></li>");
 				   } 
 				   
 				   if ($( "#wimbledon_poi2_ipad_fav" ).is( ":checked" )) {
-					   var poi_fav_name = "<h3><b>New Wimbledon Theatre</b></h3>";
-						var star_rating = "<span class='fa fa-star checked'>";
-						var poi_img = "<img src='assets/images/New_Wimbledon_Theatre.png' alt='New Wimbledon Theatre' width=40%>";
-					   $("#favourite-content").append(poi_fav_name + '<br>' + star_rating + star_rating + star_rating + star_rating + poi_img);
+					   var poi_fav_name = "New Wimbledon Theatre";
+					   
+						var poi_img = "<img src='assets/images/New_Wimbledon_Theatre.png' alt='New Wimbledon Theatre'>";
+					   
+					    var poi_description="<p>A 108 year-old theatre in SW London presenting an eclectic mix of musicals, drama, comedy, dance and pantomime. An Ambassador Theatre Group venue.</p>";
+				
+						$("#favourite-content").append("<li><div class='ui-grid-a'><div class='ui-block-a'>"+poi_img+"<h3>"+poi_fav_name+"</h3></div><div class='ui-block-b'>"+poi_description+"</div></div></li>");
 				   } 
 				   
 				   if ($( "#wimbledon_poi3_ipad_fav" ).is( ":checked" )) {
-					   var poi_fav_name = "<h3><b>Buddhapadipa Temple</b></h3>";
-						var star_rating = "<span class='fa fa-star checked'>";
-						var poi_img = "<img src='assets/images/Buddhapadipa_Temple.png' alt='Buddhapadipa Temple' width=40%>";
-					   $("#favourite-content").append(poi_fav_name + '<br>' + star_rating + star_rating + star_rating + star_rating + poi_img);
+					    var poi_fav_name = "Buddhapadipa Temple";
+					   
+						var poi_img = "<img src='assets/images/Buddhapadipa_Temple.png' alt='Buddhapadipa Temple'>";
+					   
+					    var poi_description="<p>The Buddhapadipa Temple is the first Thai Theravada Buddhist Temple ever built outside Asia. It is the centre of meditation, Buddhist education and Thai culture.</p>";
+				
+						$("#favourite-content").append("<li><div class='ui-grid-a'><div class='ui-block-a'>"+poi_img+"<h3>"+poi_fav_name+"</h3></div><div class='ui-block-b'>"+poi_description+"</div></div></li>");
 				   } 
 
 				   if ($( "#woking_poi1_ipad_fav" ).is( ":checked" )) {
-					   $("#favourite-content").append("<p>The Lightbox</p>");
-
-					   var poi_fav_name = "<h3><b>The Lightbox</b></h3>";
-						var star_rating = "<span class='fa fa-star checked'>";
-						var poi_img = "<img src='assets/images/The_Lightbox.png' alt='The Lightbox' width=40%>";
-					   $("#favourite-content").append(poi_fav_name + '<br>' + star_rating + star_rating + star_rating + star_rating + poi_img);
+					   var poi_fav_name = "The Lightbox";
+					   
+						var poi_img = "<img src='assets/images/The_Lightbox.png' alt='The Lightbox'>";
+					   
+					    var poi_description="<p>The Lightbox is an award-winning charitable arts and heritage organisation with a social purpose to improve the wellbeing and quality of life of its community.</p>";
+				
+						$("#favourite-content").append("<li><div class='ui-grid-a'><div class='ui-block-a'>"+poi_img+"<h3>"+poi_fav_name+"</h3></div><div class='ui-block-b'>"+poi_description+"</div></div></li>");
 				   }
 
 
 				   if ($( "#woking_poi2_ipad_fav" ).is( ":checked" )) {
-					   $("#favourite-content").append("<p>RHS Garden</p>");
-
-					   var poi_fav_name = "<h3><b>RHS Garden</b></h3>";
-						var star_rating = "<span class='fa fa-star checked'>";
-						var poi_img = "<img src='assets/images/RHS_Garden.png' alt='RHS Garden' width=40%>";
-					   $("#favourite-content").append(poi_fav_name + '<br>' + star_rating + star_rating + star_rating + star_rating + poi_img);
+					   var poi_fav_name = "RHS Garden";
+					   
+						var poi_img = "<img src='assets/images/The_Lightbox.png' alt='RHS Garden'>";
+					   
+					    var poi_description="<p>RHS Garden Wisley is a garden run by the Royal Horticultural Society in the English county of Surrey, south of London. It is one of five gardens run by the society, the others being Harlow Carr, Hyde Hall, Rosemoor, and Bridgewater (which opened on 18 May 2021).Wisley is the second most visited paid entry garden in the United Kingdom after the Royal Botanic Gardens.</p>";
+				
+						$("#favourite-content").append("<li><div class='ui-grid-a'><div class='ui-block-a'>"+poi_img+"<h3>"+poi_fav_name+"</h3></div><div class='ui-block-b'>"+poi_description+"</div></div></li>");
 				   }
 
 
 				   if ($( "#woking_poi3_ipad_fav" ).is( ":checked" )) {
-					   var poi_fav_name = "<h3><b>Mercedes-Benz World</b></h3>";
-						var star_rating = "<span class='fa fa-star checked'>";
-						var poi_img = "<img src='assets/images/Mercedes_Benz_World.png' alt='Mercedes Benz World' width=40%>";
-					   $("#favourite-content").append(poi_fav_name + '<br>' + star_rating + star_rating + star_rating + star_rating + poi_img);
+					    var poi_fav_name = "Mercedes Benz World";
+					   
+						var poi_img = "<img src='assets/images/Mercedes_Benz_World.png' alt='Mercedes Benz World'>";
+					   
+					    var poi_description="<p>Next to the Brooklands Museum is Mercedes-Benz World, where the luxury car brand owns a series of training tracks and runs the AMG Driving Academy. Some champion drivers have used these courses, like Lewis Hamilton, Mika Häkkinen, Nico Rosberg and Stirling Moss.</p>";
+				
+						$("#favourite-content").append("<li><div class='ui-grid-a'><div class='ui-block-a'>"+poi_img+"<h3>"+poi_fav_name+"</h3></div><div class='ui-block-b'>"+poi_description+"</div></div></li>");
 				   }
 
 
 				   if ($( "#guildford_poi1_ipad_fav" ).is( ":checked" )) {
-					   var poi_fav_name = "<h3><b>Guildford Castle</b></h3>";
-						var star_rating = "<span class='fa fa-star checked'>";
-						var poi_img = "<img src='assets/images/Guildford_Castle.png' alt='Guildford Castle' width=40%>";
-					   $("#favourite-content").append(poi_fav_name + '<br>' + star_rating + star_rating + star_rating + star_rating + poi_img);
+					   var poi_fav_name = "Guildford Castle";
+					   
+						var poi_img = "<img src='assets/images/Guildford_Castle.png' alt='Guildford Castle'>";
+					   
+					    var poi_description="<p>After the Battle of Hastings in 1066 William led his army to Canterbury and then sacked towns along the Pilgrims' Way, including Guildford. Later William, or one of his barons, built Guildford Castle. There is no record of it in the Domesday Book so construction probably started after 1086.</p>";
+				
+						$("#favourite-content").append("<li><div class='ui-grid-a'><div class='ui-block-a'>"+poi_img+"<h3>"+poi_fav_name+"</h3></div><div class='ui-block-b'>"+poi_description+"</div></div></li>");
 				   }
 
 				   if ($( "#guildford_poi2_ipad_fav" ).is( ":checked" )) {
-					   var poi_fav_name = "<h3><b>Guildford Museum</b></h3>";
-						var star_rating = "<span class='fa fa-star checked'>";
-						var poi_img = "<img src='assets/images/Guildford_Museum.png' alt='Guildford Museum' width=40%>";
-					   $("#favourite-content").append(poi_fav_name + '<br>' + star_rating + star_rating + star_rating + star_rating + poi_img);
+					   var poi_fav_name = "Guildford Museum";
+					   
+						var poi_img = "<img src='assets/images/Guildford_Museum.png' alt='Guildford Museum'>";
+					   
+					    var poi_description="<p>Guildford Museum is the main museum is in the town of Guildford, Surrey, England. The museum is on Quarry Street, a narrow road lined by pre-1900 cottages running just off the pedestrianised High Street. This main site of the museum forms the gatehouse and annex of Guildford Castle, which the staff help to run.</p>";
+				
+						$("#favourite-content").append("<li><div class='ui-grid-a'><div class='ui-block-a'>"+poi_img+"<h3>"+poi_fav_name+"</h3></div><div class='ui-block-b'>"+poi_description+"</div></div></li>");
 				   }
 
 
 				   if ($( "#guildford_poi3_ipad_fav" ).is( ":checked" )) {
-					   var poi_fav_name = "<h3><b>Stoke Park</b></h3>";
-						var star_rating = "<span class='fa fa-star checked'>";
-						var poi_img = "<img src='assets/images/Stoke_Park.png' alt='Stoke Park' width=40%>";
-					   $("#favourite-content").append(poi_fav_name + '<br>' + star_rating + star_rating + star_rating + star_rating + poi_img);
+					   var poi_fav_name = "Stoke Park";
+					   
+						var poi_img = "<img src='assets/images/Stoke_Park.png' alt='Stoke Park'>";
+					   
+					    var poi_description="<p>Stoke Park is a private sporting and leisure estate in Stoke Poges, Buckinghamshire. The mansion building (designed by James Wyatt in 1788) is located in the middle of 300 acres (1.2 km2) of parkland, lakes, gardens and monuments. In 1908, it became the first country club in the UK.</p>";
+				
+						$("#favourite-content").append("<li><div class='ui-grid-a'><div class='ui-block-a'>"+poi_img+"<h3>"+poi_fav_name+"</h3></div><div class='ui-block-b'>"+poi_description+"</div></div></li>");
 				   }
 
 
 				   if ($( "#portsmouth_poi1_ipad_fav" ).is( ":checked" )) {
-					   var poi_fav_name = "<h3><b>Spinnaker Tower</b></h3>";
-						var star_rating = "<span class='fa fa-star checked'>";
-						var poi_img = "<img src='assets/images/Spinnaker_Tower.png' alt='pinnaker Tower' width=40%>";
-					   $("#favourite-content").append(poi_fav_name + '<br>' + star_rating + star_rating + star_rating + star_rating + poi_img);
+					   var poi_fav_name = "Spinnaker Tower";
+					   
+						var poi_img = "<img src='assets/images/Spinnaker_Tower.png' alt='Spinnaker Tower'>";
+					   
+					    var poi_description="<p>The Spinnaker Tower is a 170 metres landmark observation tower in Portsmouth, England. It is the centrepiece of the redevelopment of Portsmouth Harbour, which was supported by a National Lottery grant.</p>";
+				
+						$("#favourite-content").append("<li><div class='ui-grid-a'><div class='ui-block-a'>"+poi_img+"<h3>"+poi_fav_name+"</h3></div><div class='ui-block-b'>"+poi_description+"</div></div></li>");
 				   }
 
 				   if ($( "#portsmouth_poi2_ipad_fav" ).is( ":checked" )) {
-					   var poi_fav_name = "<h3><b>South Parade Pier</b></h3>";
-						var star_rating = "<span class='fa fa-star checked'>";
-						var poi_img = "<img src='assets/images/South_Parade_Pier.png' alt='South Parade Pier' width=40%>";
-					   $("#favourite-content").append(poi_fav_name + '<br>' + star_rating + star_rating + star_rating + star_rating + poi_img);
+					   var poi_fav_name = "South Parade Pier";
+					   
+						var poi_img = "<img src='assets/images/South_Parade_Pier.png' alt='South Parade Pier'>";
+					   
+					    var poi_description="<p>The South Parade Pier is a pier in Portsmouth, England. It is one of two piers in the city, the other being Clarence Pier. The pier once had a long hall down its centre which housed a seating area and a small restaurant. The outside of the hall is a promenade which runs the length of the pier.</p>";
+				
+						$("#favourite-content").append("<li><div class='ui-grid-a'><div class='ui-block-a'>"+poi_img+"<h3>"+poi_fav_name+"</h3></div><div class='ui-block-b'>"+poi_description+"</div></div></li>");
 				   }
 
 
 				   if ($( "#portsmouth_poi3_ipad_fav" ).is( ":checked" )) {
-					   var poi_fav_name = "<h3><b>Historic Dockyard</b></h3>";
-						var star_rating = "<span class='fa fa-star checked'>";
-						var poi_img = "<img src='assets/images/Historic_Dockyard.png' alt='Historic Dockyard' width=40%>";
-					   $("#favourite-content").append(poi_fav_name + '<br>' + star_rating + star_rating + star_rating + star_rating + poi_img);					}
-
+					   var poi_fav_name = "Historic Dockyard";
+					   
+						var poi_img = "<img src='assets/images/Historic_Dockyard.png' alt='Historic Dockyard'>";
+					   
+					    var poi_description="<p>Portsmouth Historic Dockyard is an area of HM Naval Base Portsmouth which is open to the public; it contains several historic buildings and ships. It is managed by the National Museum of the Royal Navy as an umbrella organization representing many  charities such as: the Portsmouth Naval Base Property Trust, and the HMS Victory Preservation Company.</p>";
 				
+						$("#favourite-content").append("<li><div class='ui-grid-a'><div class='ui-block-a'>"+poi_img+"<h3>"+poi_fav_name+"</h3></div><div class='ui-block-b'>"+poi_description+"</div></div></li>");
+				   }
 				  
+				  /*----------IPHONE FAV DISPLAY-----------*/
+				  
+				   if ($( "#waterloo_poi1_iphone_fav" ).is( ":checked" )) {
+					
+						var poi_fav_name = "London Dungeon";
+					   
+						var poi_img = "<img src='assets/images/London_Dungeon.png' alt='London Dungeon'>";
+					   
+					    var poi_description="<p>The London Dungeon is a uniquely thrilling attraction that will whisk you way back to the capital's most perilous past. See, hear, feel and (ahem!) smell the chillingly amusing characters of the 'bad old days' as they come to life before you.</p>";
+				
+						$("#favourite-content").append("<li><div class='ui-grid-a'><div class='ui-block-a'>"+poi_img+"<h3>"+poi_fav_name+"</h3></div><div class='ui-block-b'>"+poi_description+"</div></div></li>");
+					  
+					}
+				  
+				   
+				   if ($( "#waterloo_poi2_iphone_fav" ).is( ":checked" )) {
+						var poi_fav_name = "London Eye";
+					   
+						var poi_img = "<img src='assets/images/London_Eye.png' alt='London Eye'>";
+					   
+					    var poi_description="<p>The London Eye is a cantilevered observation wheel on the South Bank of the River Thames in London. It is Europe's tallest cantilevered observation wheel, and is the most popular paid tourist attraction in the United Kingdom with over 3 million visitors annually.</p>";
+				
+						$("#favourite-content").append("<li><div class='ui-grid-a'><div class='ui-block-a'>"+poi_img+"<h3>"+poi_fav_name+"</h3></div><div class='ui-block-b'>"+poi_description+"</div></div></li>");
+					   
+				   }
+
+				   if ($( "#waterloo_poi3_iphone_fav" ).is( ":checked" )) {
+						var poi_fav_name = "Buckingham Palace";
+					   
+						var poi_img = "<img src='assets/images/Buckingham_Palace.png' alt='Buckingham Palace'>";
+					   
+					    var poi_description="<p>Buckingham Palace is the London residence and administrative headquarters of the monarch of the United Kingdom. Located in the City of Westminster, the palace is often at the centre of state occasions and royal hospitality. It has been a focal point for the British people at times of national rejoicing and mourning.</p>";
+				
+						$("#favourite-content").append("<li><div class='ui-grid-a'><div class='ui-block-a'>"+poi_img+"<h3>"+poi_fav_name+"</h3></div><div class='ui-block-b'>"+poi_description+"</div></div></li>");
+				   }
+
+
+				   if ($( "#wimbledon_poi1_iphone_fav" ).is( ":checked" )) {
+					   var poi_fav_name = "Wimbledon Centre Court";
+					   
+						var poi_img = "<img src='assets/images/Wimbledon_Centre_Court.png' alt='Wimbledon Centre Court'>";
+					   
+					    var poi_description="<p>Wimbledon Centre Court is the main court at The Championships, Wimbledon, the third annual Grand Slam event of the tennis calendar. It is considered the world's most famous tennis court.It incorporates the clubhouse of the All England Lawn Tennis and Croquet Club. Its only regular use for play is during the two weeks a year that the Championships take place.</p>";
+				
+						$("#favourite-content").append("<li><div class='ui-grid-a'><div class='ui-block-a'>"+poi_img+"<h3>"+poi_fav_name+"</h3></div><div class='ui-block-b'>"+poi_description+"</div></div></li>");
+				   } 
+				   
+				   if ($( "#wimbledon_poi2_iphone_fav" ).is( ":checked" )) {
+					   var poi_fav_name = "New Wimbledon Theatre";
+					   
+						var poi_img = "<img src='assets/images/New_Wimbledon_Theatre.png' alt='New Wimbledon Theatre'>";
+					   
+					    var poi_description="<p>A 108 year-old theatre in SW London presenting an eclectic mix of musicals, drama, comedy, dance and pantomime. An Ambassador Theatre Group venue.</p>";
+				
+						$("#favourite-content").append("<li><div class='ui-grid-a'><div class='ui-block-a'>"+poi_img+"<h3>"+poi_fav_name+"</h3></div><div class='ui-block-b'>"+poi_description+"</div></div></li>");
+				   } 
+				   
+				   if ($( "#wimbledon_poi3_iphone_fav" ).is( ":checked" )) {
+					    var poi_fav_name = "Buddhapadipa Temple";
+					   
+						var poi_img = "<img src='assets/images/Buddhapadipa_Temple.png' alt='Buddhapadipa Temple'>";
+					   
+					    var poi_description="<p>The Buddhapadipa Temple is the first Thai Theravada Buddhist Temple ever built outside Asia. It is the centre of meditation, Buddhist education and Thai culture.</p>";
+				
+						$("#favourite-content").append("<li><div class='ui-grid-a'><div class='ui-block-a'>"+poi_img+"<h3>"+poi_fav_name+"</h3></div><div class='ui-block-b'>"+poi_description+"</div></div></li>");
+				   } 
+
+				   if ($( "#woking_poi1_iphone_fav" ).is( ":checked" )) {
+					   var poi_fav_name = "The Lightbox";
+					   
+						var poi_img = "<img src='assets/images/The_Lightbox.png' alt='The Lightbox'>";
+					   
+					    var poi_description="<p>The Lightbox is an award-winning charitable arts and heritage organisation with a social purpose to improve the wellbeing and quality of life of its community.</p>";
+				
+						$("#favourite-content").append("<li><div class='ui-grid-a'><div class='ui-block-a'>"+poi_img+"<h3>"+poi_fav_name+"</h3></div><div class='ui-block-b'>"+poi_description+"</div></div></li>");
+				   }
+
+
+				   if ($( "#woking_poi2_iphone_fav" ).is( ":checked" )) {
+					   var poi_fav_name = "RHS Garden";
+					   
+						var poi_img = "<img src='assets/images/The_Lightbox.png' alt='RHS Garden'>";
+					   
+					    var poi_description="<p>RHS Garden Wisley is a garden run by the Royal Horticultural Society in the English county of Surrey, south of London. It is one of five gardens run by the society, the others being Harlow Carr, Hyde Hall, Rosemoor, and Bridgewater (which opened on 18 May 2021).Wisley is the second most visited paid entry garden in the United Kingdom after the Royal Botanic Gardens.</p>";
+				
+						$("#favourite-content").append("<li><div class='ui-grid-a'><div class='ui-block-a'>"+poi_img+"<h3>"+poi_fav_name+"</h3></div><div class='ui-block-b'>"+poi_description+"</div></div></li>");
+				   }
+
+
+				   if ($( "#woking_poi3_iphone_fav" ).is( ":checked" )) {
+					    var poi_fav_name = "Mercedes Benz World";
+					   
+						var poi_img = "<img src='assets/images/Mercedes_Benz_World.png' alt='Mercedes Benz World'>";
+					   
+					    var poi_description="<p>Next to the Brooklands Museum is Mercedes-Benz World, where the luxury car brand owns a series of training tracks and runs the AMG Driving Academy. Some champion drivers have used these courses, like Lewis Hamilton, Mika Häkkinen, Nico Rosberg and Stirling Moss.</p>";
+				
+						$("#favourite-content").append("<li><div class='ui-grid-a'><div class='ui-block-a'>"+poi_img+"<h3>"+poi_fav_name+"</h3></div><div class='ui-block-b'>"+poi_description+"</div></div></li>");
+				   }
+
+
+				   if ($( "#guildford_poi1_iphone_fav" ).is( ":checked" )) {
+					   var poi_fav_name = "Guildford Castle";
+					   
+						var poi_img = "<img src='assets/images/Guildford_Castle.png' alt='Guildford Castle'>";
+					   
+					    var poi_description="<p>After the Battle of Hastings in 1066 William led his army to Canterbury and then sacked towns along the Pilgrims' Way, including Guildford. Later William, or one of his barons, built Guildford Castle. There is no record of it in the Domesday Book so construction probably started after 1086.</p>";
+				
+						$("#favourite-content").append("<li><div class='ui-grid-a'><div class='ui-block-a'>"+poi_img+"<h3>"+poi_fav_name+"</h3></div><div class='ui-block-b'>"+poi_description+"</div></div></li>");
+				   }
+
+				   if ($( "#guildford_poi2_iphone_fav" ).is( ":checked" )) {
+					   var poi_fav_name = "Guildford Museum";
+					   
+						var poi_img = "<img src='assets/images/Guildford_Museum.png' alt='Guildford Museum'>";
+					   
+					    var poi_description="<p>Guildford Museum is the main museum is in the town of Guildford, Surrey, England. The museum is on Quarry Street, a narrow road lined by pre-1900 cottages running just off the pedestrianised High Street. This main site of the museum forms the gatehouse and annex of Guildford Castle, which the staff help to run.</p>";
+				
+						$("#favourite-content").append("<li><div class='ui-grid-a'><div class='ui-block-a'>"+poi_img+"<h3>"+poi_fav_name+"</h3></div><div class='ui-block-b'>"+poi_description+"</div></div></li>");
+				   }
+
+
+				   if ($( "#guildford_poi3_iphone_fav" ).is( ":checked" )) {
+					   var poi_fav_name = "Stoke Park";
+					   
+						var poi_img = "<img src='assets/images/Stoke_Park.png' alt='Stoke Park'>";
+					   
+					    var poi_description="<p>Stoke Park is a private sporting and leisure estate in Stoke Poges, Buckinghamshire. The mansion building (designed by James Wyatt in 1788) is located in the middle of 300 acres (1.2 km2) of parkland, lakes, gardens and monuments. In 1908, it became the first country club in the UK.</p>";
+				
+						$("#favourite-content").append("<li><div class='ui-grid-a'><div class='ui-block-a'>"+poi_img+"<h3>"+poi_fav_name+"</h3></div><div class='ui-block-b'>"+poi_description+"</div></div></li>");
+				   }
+
+
+				   if ($( "#portsmouth_poi1_iphone_fav" ).is( ":checked" )) {
+					   var poi_fav_name = "Spinnaker Tower";
+					   
+						var poi_img = "<img src='assets/images/Spinnaker_Tower.png' alt='Spinnaker Tower'>";
+					   
+					    var poi_description="<p>The Spinnaker Tower is a 170 metres landmark observation tower in Portsmouth, England. It is the centrepiece of the redevelopment of Portsmouth Harbour, which was supported by a National Lottery grant.</p>";
+				
+						$("#favourite-content").append("<li><div class='ui-grid-a'><div class='ui-block-a'>"+poi_img+"<h3>"+poi_fav_name+"</h3></div><div class='ui-block-b'>"+poi_description+"</div></div></li>");
+				   }
+
+				   if ($( "#portsmouth_poi2_iphone_fav" ).is( ":checked" )) {
+					   var poi_fav_name = "South Parade Pier";
+					   
+						var poi_img = "<img src='assets/images/South_Parade_Pier.png' alt='South Parade Pier'>";
+					   
+					    var poi_description="<p>The South Parade Pier is a pier in Portsmouth, England. It is one of two piers in the city, the other being Clarence Pier. The pier once had a long hall down its centre which housed a seating area and a small restaurant. The outside of the hall is a promenade which runs the length of the pier.</p>";
+				
+						$("#favourite-content").append("<li><div class='ui-grid-a'><div class='ui-block-a'>"+poi_img+"<h3>"+poi_fav_name+"</h3></div><div class='ui-block-b'>"+poi_description+"</div></div></li>");
+				   }
+
+
+				   if ($( "#portsmouth_poi3_iphone_fav" ).is( ":checked" )) {
+					   var poi_fav_name = "Historic Dockyard";
+					   
+						var poi_img = "<img src='assets/images/Historic_Dockyard.png' alt='Historic Dockyard'>";
+					   
+					    var poi_description="<p>Portsmouth Historic Dockyard is an area of HM Naval Base Portsmouth which is open to the public; it contains several historic buildings and ships. It is managed by the National Museum of the Royal Navy as an umbrella organization representing many  charities such as: the Portsmouth Naval Base Property Trust, and the HMS Victory Preservation Company.</p>";
+				
+						$("#favourite-content").append("<li><div class='ui-grid-a'><div class='ui-block-a'>"+poi_img+"<h3>"+poi_fav_name+"</h3></div><div class='ui-block-b'>"+poi_description+"</div></div></li>");
+				   }
+
 				 }
 			  
 			  });
 			
 			</script>
-			
-	
-	
-	
-		<!-- in progress-------------------------------FavButton------------------------------------------------------------------------------------------------------>
-
 	
 	<div data-role="footer" data-position="fixed">
 	<div data-role="navbar">
@@ -1810,7 +1830,63 @@ function ValidateEmail(inputText)
 				  <li><a href="#qr_ipad_portsmouth" data-ajax="false">PORTSMOUTH</a><img width ="100%" src="assets/images/Portsmouth_Station.png" alt="Portsmouth"></li>
 				</ul>
 			</div>
+			<script>
+					var totalPoints=0;
 
+						function incrementText25(){
+							var element = document.getElementById('incrementText');
+							var value = element.innerHTML;
+							++value;
+							console.log(value);
+							document.getElementById('incrementText').innerHTML = value+=24;
+							totalPoints = value;
+							alert("total points is" +totalPoints);
+							document.getElementById("incText1").innerHTML=totalPoints;
+							document.getElementById("incText2").innerHTML=totalPoints;
+							document.getElementById("incText3").innerHTML=totalPoints;
+							document.getElementById("incText4").innerHTML=totalPoints;
+							document.getElementById("incText5").innerHTML=totalPoints;
+							document.getElementById("incText6").innerHTML=totalPoints;
+							document.getElementById("incText7").innerHTML=totalPoints;
+							document.getElementById("incText8").innerHTML=totalPoints;
+							document.getElementById("incText9").innerHTML=totalPoints;
+							document.getElementById("incText10").innerHTML=totalPoints;
+							document.getElementById("incText11").innerHTML=totalPoints;
+							document.getElementById("incText12").innerHTML=totalPoints;
+							document.getElementById("incText13").innerHTML=totalPoints;
+							document.getElementById("incText14").innerHTML=totalPoints;
+							document.getElementById("incText15").innerHTML=totalPoints;
+							document.getElementById("incText16").innerHTML=totalPoints;
+							
+						}
+						function incrementText50(){
+							var element = document.getElementById('incrementText');
+							var value = element.innerHTML;
+							++value;
+							console.log(value);
+							document.getElementById('incrementText').innerHTML = value+=49;
+							totalPoints = value;
+							alert("total points is" +totalPoints);
+							document.getElementById("incText1").innerHTML=totalPoints;
+							document.getElementById("incText2").innerHTML=totalPoints;
+							document.getElementById("incText3").innerHTML=totalPoints;
+							document.getElementById("incText4").innerHTML=totalPoints;
+							document.getElementById("incText5").innerHTML=totalPoints;
+							document.getElementById("incText6").innerHTML=totalPoints;
+							document.getElementById("incText7").innerHTML=totalPoints;
+							document.getElementById("incText8").innerHTML=totalPoints;
+							document.getElementById("incText9").innerHTML=totalPoints;
+							document.getElementById("incText10").innerHTML=totalPoints;
+							document.getElementById("incText11").innerHTML=totalPoints;
+							document.getElementById("incText12").innerHTML=totalPoints;
+							document.getElementById("incText13").innerHTML=totalPoints;
+							document.getElementById("incText14").innerHTML=totalPoints;
+							document.getElementById("incText15").innerHTML=totalPoints;
+							document.getElementById("incText16").innerHTML=totalPoints;
+
+						}
+
+				</script>
 			<!---------------------------- IPAD POI "GENERATED" CONTENT ------------------------------>
 			<div class="ipad_poi_generated ui-block-b">
 
@@ -1832,7 +1908,7 @@ function ValidateEmail(inputText)
 							<img src="assets/images/London_Dungeon.png" width="100%" alt="London Dungeon">
 
 							<p class="poidiamond"><img src="assets/images/icon_diamond.png" height="24" width="28"> 25pts</p>
-<!------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+
 							<a href="#popupDialog_qr1" data-rel="popup" data-position-to="window" data-transition="pop" class="ui-btn ui-corner-all" onclick= "incrementText25()">COLLECT POINTS</a>
 							<div data-role="popup" id="popupDialog_qr1" data-overlay-theme="b" data-theme="b" data-dismissible="false" style="max-width:400px;">
 								<div data-role="header" data-theme="a">
@@ -1845,13 +1921,9 @@ function ValidateEmail(inputText)
 		
 								</div>
 							</div>
-<!------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
-							
-
 
 							<p>The London Dungeon is a uniquely thrilling attraction that will whisk you way back to the capital's most perilous past. See, hear, feel and (ahem!) smell the chillingly amusing characters of the 'bad old days' as they come to life before you.</p>
-						
-							<!--- Make code to add the points --->
+												
 						</div>
 						
 						<!-------------------LONDON EYE ------------------>
@@ -1909,633 +1981,577 @@ function ValidateEmail(inputText)
 						</div>
 					</div>
 				</div>
-				<script>
-					var totalPoints=0;
-
-						function incrementText25(){
-							var element = document.getElementById('incrementText');
-							var value = element.innerHTML;
-							++value;
-							console.log(value);
-							document.getElementById('incrementText').innerHTML = value+=24;
-							totalPoints = value;
-							alert("total points is" +totalPoints);
-							document.getElementById("incText1").innerHTML=totalPoints;
-							document.getElementById("incText2").innerHTML=totalPoints;
-							document.getElementById("incText3").innerHTML=totalPoints;
-							document.getElementById("incText4").innerHTML=totalPoints;
-							document.getElementById("incText5").innerHTML=totalPoints;
-							document.getElementById("incText6").innerHTML=totalPoints;
-							document.getElementById("incText7").innerHTML=totalPoints;
-							document.getElementById("incText8").innerHTML=totalPoints;
-							document.getElementById("incText9").innerHTML=totalPoints;
-							document.getElementById("incText10").innerHTML=totalPoints;
-							document.getElementById("incText11").innerHTML=totalPoints;
-							document.getElementById("incText12").innerHTML=totalPoints;
-							document.getElementById("incText13").innerHTML=totalPoints;
-							document.getElementById("incText14").innerHTML=totalPoints;
-							document.getElementById("incText15").innerHTML=totalPoints;
-							document.getElementById("incText16").innerHTML=totalPoints;
-							
-						}
-						function incrementText50(){
-							var element = document.getElementById('incrementText');
-							var value = element.innerHTML;
-							++value;
-							console.log(value);
-							document.getElementById('incrementText').innerHTML = value+=49;
-							totalPoints = value;
-							alert("total points is" +totalPoints);
-							document.getElementById("incText1").innerHTML=totalPoints;
-							document.getElementById("incText2").innerHTML=totalPoints;
-							document.getElementById("incText3").innerHTML=totalPoints;
-							document.getElementById("incText4").innerHTML=totalPoints;
-							document.getElementById("incText5").innerHTML=totalPoints;
-							document.getElementById("incText6").innerHTML=totalPoints;
-							document.getElementById("incText7").innerHTML=totalPoints;
-							document.getElementById("incText8").innerHTML=totalPoints;
-							document.getElementById("incText9").innerHTML=totalPoints;
-							document.getElementById("incText10").innerHTML=totalPoints;
-							document.getElementById("incText11").innerHTML=totalPoints;
-							document.getElementById("incText12").innerHTML=totalPoints;
-							document.getElementById("incText13").innerHTML=totalPoints;
-							document.getElementById("incText14").innerHTML=totalPoints;
-							document.getElementById("incText15").innerHTML=totalPoints;
-							document.getElementById("incText16").innerHTML=totalPoints;
-
-						}
-
-				</script>
+				
 				<!----------------------- WIMBLEDON-------------------------------->
 				<div id="qr_ipad_wimbledon" class="ui-body-d tablist-content">
-					<h1 class="potitles">WIMBLEDON</h1>
+						<h1 class="potitles">WIMBLEDON</h1>
 
-					<div data-role="tabs">
-						<div data-role="navbar">
-							<ul>
-								<li><a href="#wimbledon_qr1_ipad" class="ui-btn-active" data-ajax="true">Wimbledon Centre Court</a></li>
-								<li><a href="#wimbledon_qr2_ipad" data-ajax="false">New Wimbledon Theatre</a></li>
-								<li><a href="#wimbledon_qr3_ipad" data-ajax="false">Buddhapadipa Temple</a></li>
-							</ul>
-						</div>
-						<!-------------------Wimbledon Centre Court ------------------>
-						<div id="wimbledon_qr1_ipad" class="ui-body-d ui-content">
-							<h2 class="potitles">Wimbledon Centre Court</h2>
+						<div data-role="tabs">
+							<div data-role="navbar">
+								<ul>
+									<li><a href="#wimbledon_qr1_ipad" class="ui-btn-active" data-ajax="true">Wimbledon Centre Court</a></li>
+									<li><a href="#wimbledon_qr2_ipad" data-ajax="false">New Wimbledon Theatre</a></li>
+									<li><a href="#wimbledon_qr3_ipad" data-ajax="false">Buddhapadipa Temple</a></li>
+								</ul>
+							</div>
+							<!-------------------Wimbledon Centre Court ------------------>
+							<div id="wimbledon_qr1_ipad" class="ui-body-d ui-content">
+								<h2 class="potitles">Wimbledon Centre Court</h2>
 
-							<img src="assets/images/Wimbledon_Centre_Court.png" width="100%" alt="Wimbledon Centre Court">
+								<img src="assets/images/Wimbledon_Centre_Court.png" width="100%" alt="Wimbledon Centre Court">
 
-							<p class="poidiamond"><img src="assets/images/icon_diamond.png" height="24" width="28"> 25pts</p>
+								<p class="poidiamond"><img src="assets/images/icon_diamond.png" height="24" width="28"> 25pts</p>
 
-							<a href="#popupDialog_qr4" data-rel="popup" data-position-to="window" data-transition="pop" class="ui-btn ui-corner-all" onclick= "incrementText25()">COLLECT POINTS</a>
-							<div data-role="popup" id="popupDialog_qr4" data-overlay-theme="b" data-theme="b" data-dismissible="false" style="max-width:400px;">
-								<div data-role="header" data-theme="a">
-								<h1>Points</h1>
+								<a href="#popupDialog_qr4" data-rel="popup" data-position-to="window" data-transition="pop" class="ui-btn ui-corner-all" onclick= "incrementText25()">COLLECT POINTS</a>
+								<div data-role="popup" id="popupDialog_qr4" data-overlay-theme="b" data-theme="b" data-dismissible="false" style="max-width:400px;">
+									<div data-role="header" data-theme="a">
+									<h1>Points</h1>
+									</div>
+									<div role="main" class="ui-content">
+										<h3 class="ui-title">You have Found Wimbledon Centre Court 25pts</h3>
+									<p>Scan QR To Collect Points </p>
+										<a href="ARpage_Wimbledon_Centre_Court.html" rel="external" class="ui-btn ui-corner-all" id="ARpage_Wimbledon_Centre_Court.html" target="_blank">SCAN QR</a> 
+
+									</div>
 								</div>
-								<div role="main" class="ui-content">
-									<h3 class="ui-title">You have Found Wimbledon Centre Court 25pts</h3>
-								<p>Scan QR To Collect Points </p>
-									<a href="ARpage_Wimbledon_Centre_Court.html" rel="external" class="ui-btn ui-corner-all" id="ARpage_Wimbledon_Centre_Court.html" target="_blank">SCAN QR</a> 
-		
-								</div>
+
+
+
+
+
+								<p>Wimbledon Centre Court is the main court at The Championships, Wimbledon, the third annual Grand Slam event of the tennis calendar. It is considered the world's most famous tennis court.It incorporates the clubhouse of the All England Lawn Tennis and Croquet Club. Its only regular use for play is during the two weeks a year that the Championships take place.</p>
+
+
 							</div>
 
-							
+							<!-------------------New Wimbledon Theatre ------------------>
+							<div id="wimbledon_qr2_ipad" class="ui-body-d ui-content">
+								<h2 class="potitles">New Wimbledon Theatre</h2>
 
-							
+								<img src="assets/images/New_Wimbledon_Theatre.png" width="100%" alt="New Wimbledon Theatre">
 
-							<p>Wimbledon Centre Court is the main court at The Championships, Wimbledon, the third annual Grand Slam event of the tennis calendar. It is considered the world's most famous tennis court.It incorporates the clubhouse of the All England Lawn Tennis and Croquet Club. Its only regular use for play is during the two weeks a year that the Championships take place.</p>
+								<p class="poidiamond"><img src="assets/images/icon_diamond.png" height="24" width="28"> 25pts</p>
 
+								<a href="#popupDialog_qr5" data-rel="popup" data-position-to="window" data-transition="pop" class="ui-btn ui-corner-all" onclick= "incrementText25()">COLLECT POINTS</a>
+								<div data-role="popup" id="popupDialog_qr5" data-overlay-theme="b" data-theme="b" data-dismissible="false" style="max-width:400px;">
+									<div data-role="header" data-theme="a">
+									<h1>Points</h1>
+									</div>
+									<div role="main" class="ui-content">
+										<h3 class="ui-title">You have Found New Wimbledon Theatre 25pts</h3>
+									<p>Scan QR To Collect Points </p>
+										<a href="ARpage_New_Wimbledon_Theatre.html" rel="external" class="ui-btn ui-corner-all" id="ARpage_New_Wimbledon_Theatre.html" target="_blank">SCAN QR</a> 
 
-						</div>
-						
-						<!-------------------New Wimbledon Theatre ------------------>
-						<div id="wimbledon_qr2_ipad" class="ui-body-d ui-content">
-							<h2 class="potitles">New Wimbledon Theatre</h2>
-
-							<img src="assets/images/New_Wimbledon_Theatre.png" width="100%" alt="New Wimbledon Theatre">
-
-							<p class="poidiamond"><img src="assets/images/icon_diamond.png" height="24" width="28"> 25pts</p>
-
-							<a href="#popupDialog_qr5" data-rel="popup" data-position-to="window" data-transition="pop" class="ui-btn ui-corner-all" onclick= "incrementText25()">COLLECT POINTS</a>
-							<div data-role="popup" id="popupDialog_qr5" data-overlay-theme="b" data-theme="b" data-dismissible="false" style="max-width:400px;">
-								<div data-role="header" data-theme="a">
-								<h1>Points</h1>
+									</div>
 								</div>
-								<div role="main" class="ui-content">
-									<h3 class="ui-title">You have Found New Wimbledon Theatre 25pts</h3>
-								<p>Scan QR To Collect Points </p>
-									<a href="ARpage_New_Wimbledon_Theatre.html" rel="external" class="ui-btn ui-corner-all" id="ARpage_New_Wimbledon_Theatre.html" target="_blank">SCAN QR</a> 
-		
-								</div>
+
+
+
+
+								<p>A 108 year-old theatre in SW London presenting an eclectic mix of musicals, drama, comedy, dance and pantomime. An Ambassador Theatre Group venue.</p>
+
 							</div>
 
-						
+							<!-------------------Buddhapadipa Temple ------------------>
+							<div id="wimbledon_qr3_ipad" class="ui-body-d ui-content">
+								<h2 class="potitles">Buddhapadipa Temple</h2>
 
+								<img src="assets/images/Buddhapadipa_Temple.png" width="100%" alt="Buddhapadipa Temple">
 
-							<p>A 108 year-old theatre in SW London presenting an eclectic mix of musicals, drama, comedy, dance and pantomime. An Ambassador Theatre Group venue.</p>
+								<p class="poidiamond"><img src="assets/images/icon_diamond.png" height="24" width="28"> 50pts</p>
 
-						</div>
-						
-						<!-------------------Buddhapadipa Temple ------------------>
-						<div id="wimbledon_qr3_ipad" class="ui-body-d ui-content">
-							<h2 class="potitles">Buddhapadipa Temple</h2>
+								<a href="#popupDialog_qr6" data-rel="popup" data-position-to="window" data-transition="pop" class="ui-btn ui-corner-all" onclick= "incrementText50()">COLLECT POINTS</a>
+								<div data-role="popup" id="popupDialog_qr6" data-overlay-theme="b" data-theme="b" data-dismissible="false" style="max-width:400px;">
+									<div data-role="header" data-theme="a">
+									<h1>Points</h1>
+									</div>
+									<div role="main" class="ui-content">
+										<h3 class="ui-title">You have Found Buddhapadipa Temple 50pts</h3>
+									<p>Scan QR To Collect Points </p>
+										<a href="ARpage_Buddhapadipa_Temple.html" rel="external" class="ui-btn ui-corner-all" id="ARpage_Buddhapadipa_Temple.html" target="_blank">SCAN QR</a> 
 
-							<img src="assets/images/Buddhapadipa_Temple.png" width="100%" alt="Buddhapadipa Temple">
-
-							<p class="poidiamond"><img src="assets/images/icon_diamond.png" height="24" width="28"> 50pts</p>
-							
-							<a href="#popupDialog_qr6" data-rel="popup" data-position-to="window" data-transition="pop" class="ui-btn ui-corner-all" onclick= "incrementText50()">COLLECT POINTS</a>
-							<div data-role="popup" id="popupDialog_qr6" data-overlay-theme="b" data-theme="b" data-dismissible="false" style="max-width:400px;">
-								<div data-role="header" data-theme="a">
-								<h1>Points</h1>
+									</div>
 								</div>
-								<div role="main" class="ui-content">
-									<h3 class="ui-title">You have Found Buddhapadipa Temple 50pts</h3>
-								<p>Scan QR To Collect Points </p>
-									<a href="ARpage_Buddhapadipa_Temple.html" rel="external" class="ui-btn ui-corner-all" id="ARpage_Buddhapadipa_Temple.html" target="_blank">SCAN QR</a> 
-		
-								</div>
+
+
+
+
+								<p>The Buddhapadipa Temple is the first Thai Theravada Buddhist Temple ever built outside Asia. It is the centre of meditation, Buddhist education and Thai culture.</p>
+
 							</div>
-
-							
-
-
-							<p>The Buddhapadipa Temple is the first Thai Theravada Buddhist Temple ever built outside Asia. It is the centre of meditation, Buddhist education and Thai culture.</p>
-
 						</div>
 					</div>
-				</div>
-				<!----------------------- WOKING -------------------------------->
-				<div id="qr_ipad_woking" class="ui-body-d tablist-content">
-					<h1 class="potitles">WOKING</h1>
+					<!----------------------- WOKING -------------------------------->
+					<div id="qr_ipad_woking" class="ui-body-d tablist-content">
+						<h1 class="potitles">WOKING</h1>
 
-					<div data-role="tabs">
-						<div data-role="navbar">
-							<ul>
-								<li><a href="#woking_qr1_ipad" class="ui-btn-active" data-ajax="true">The Lightbox</a></li>
-								<li><a href="#woking_qr2_ipad" data-ajax="false">RHS Garden</a></li>
-								<li><a href="#woking_qr3_ipad" data-ajax="false">Mercedes Benz World</a></li>
-							</ul>
-						</div>
-						<!-------------------The Lightbox ------------------>
-						<div id="woking_qr1_ipad" class="ui-body-d ui-content">
-							<h2 class="potitles">The Lightbox</h2>
+						<div data-role="tabs">
+							<div data-role="navbar">
+								<ul>
+									<li><a href="#woking_qr1_ipad" class="ui-btn-active" data-ajax="true">The Lightbox</a></li>
+									<li><a href="#woking_qr2_ipad" data-ajax="false">RHS Garden</a></li>
+									<li><a href="#woking_qr3_ipad" data-ajax="false">Mercedes Benz World</a></li>
+								</ul>
+							</div>
+							<!-------------------The Lightbox ------------------>
+							<div id="woking_qr1_ipad" class="ui-body-d ui-content">
+								<h2 class="potitles">The Lightbox</h2>
 
-							<img src="assets/images/The_Lightbox.png" width="100%" alt="The Lightbox">
+								<img src="assets/images/The_Lightbox.png" width="100%" alt="The Lightbox">
 
-							<p class="poidiamond"><img src="assets/images/icon_diamond.png" height="24" width="28"> 25pts</p>
+								<p class="poidiamond"><img src="assets/images/icon_diamond.png" height="24" width="28"> 25pts</p>
 
-							<a href="#popupDialog_qr7" data-rel="popup" data-position-to="window" data-transition="pop" class="ui-btn ui-corner-all" onclick= "incrementText25()">COLLECT POINTS</a>
-							<div data-role="popup" id="popupDialog_qr7" data-overlay-theme="b" data-theme="b" data-dismissible="false" style="max-width:400px;">
-								<div data-role="header" data-theme="a">
-								<h1>Points</h1>
+								<a href="#popupDialog_qr7" data-rel="popup" data-position-to="window" data-transition="pop" class="ui-btn ui-corner-all" onclick= "incrementText25()">COLLECT POINTS</a>
+								<div data-role="popup" id="popupDialog_qr7" data-overlay-theme="b" data-theme="b" data-dismissible="false" style="max-width:400px;">
+									<div data-role="header" data-theme="a">
+									<h1>Points</h1>
+									</div>
+									<div role="main" class="ui-content">
+										<h3 class="ui-title">You have Found The Lightbox 25pts</h3>
+									<p>Scan QR To Collect Points </p>
+										<a href="ARpage_The_Lightbox.html" rel="external" class="ui-btn ui-corner-all" id="ARpage_The_Lightbox.html" target="_blank">SCAN QR</a> 
+
+									</div>
 								</div>
-								<div role="main" class="ui-content">
-									<h3 class="ui-title">You have Found The Lightbox 25pts</h3>
-								<p>Scan QR To Collect Points </p>
-									<a href="ARpage_The_Lightbox.html" rel="external" class="ui-btn ui-corner-all" id="ARpage_The_Lightbox.html" target="_blank">SCAN QR</a> 
-		
-								</div>
+
+
+
+
+								<p>The Lightbox is an award-winning charitable arts and heritage organisation with a social purpose to improve the wellbeing and quality of life of its community.</p>
 							</div>
 
-							
+							<!-------------------RHS Garden ------------------>
+							<div id="woking_qr2_ipad" class="ui-body-d ui-content">
+								<h2 class="potitles">RHS Garden</h2>
 
+								<img src="assets/images/RHS_Garden.png" width="100%" alt="RHS Garden">
 
-							<p>The Lightbox is an award-winning charitable arts and heritage organisation with a social purpose to improve the wellbeing and quality of life of its community.</p>
-						</div>
-						
-						<!-------------------RHS Garden ------------------>
-						<div id="woking_qr2_ipad" class="ui-body-d ui-content">
-							<h2 class="potitles">RHS Garden</h2>
+								<p class="poidiamond"><img src="assets/images/icon_diamond.png" height="24" width="28"> 25pts</p>
 
-							<img src="assets/images/RHS_Garden.png" width="100%" alt="RHS Garden">
+								<a href="#popupDialog_qr8" data-rel="popup" data-position-to="window" data-transition="pop" class="ui-btn ui-corner-all" onclick= "incrementText25()">COLLECT POINTS</a>
+								<div data-role="popup" id="popupDialog_qr8" data-overlay-theme="b" data-theme="b" data-dismissible="false" style="max-width:400px;">
+									<div data-role="header" data-theme="a">
+									<h1>Points</h1>
+									</div>
+									<div role="main" class="ui-content">
+										<h3 class="ui-title">You have Found RHS Garden 25pts</h3>
+									<p>Scan QR To Collect Points </p>
+										<a href="ARpage_RHS_Garden.html" rel="external" class="ui-btn ui-corner-all" id="ARpage_RHS_Garden.html" target="_blank">SCAN QR</a> 
 
-							<p class="poidiamond"><img src="assets/images/icon_diamond.png" height="24" width="28"> 25pts</p>
-							
-							<a href="#popupDialog_qr8" data-rel="popup" data-position-to="window" data-transition="pop" class="ui-btn ui-corner-all" onclick= "incrementText25()">COLLECT POINTS</a>
-							<div data-role="popup" id="popupDialog_qr8" data-overlay-theme="b" data-theme="b" data-dismissible="false" style="max-width:400px;">
-								<div data-role="header" data-theme="a">
-								<h1>Points</h1>
+									</div>
 								</div>
-								<div role="main" class="ui-content">
-									<h3 class="ui-title">You have Found RHS Garden 25pts</h3>
-								<p>Scan QR To Collect Points </p>
-									<a href="ARpage_RHS_Garden.html" rel="external" class="ui-btn ui-corner-all" id="ARpage_RHS_Garden.html" target="_blank">SCAN QR</a> 
-		
-								</div>
+
+
+
+
+								<p>RHS Garden Wisley is a garden run by the Royal Horticultural Society in the English county of Surrey, south of London. It is one of five gardens run by the society, the others being Harlow Carr, Hyde Hall, Rosemoor, and Bridgewater (which opened on 18 May 2021).Wisley is the second most visited paid entry garden in the United Kingdom after the Royal Botanic Gardens.</p>
 							</div>
 
-							
+							<!-------------------Mercedes Benz World ------------------>
+							<div id="woking_qr3_ipad" class="ui-body-d ui-content">
+								<h2 class="potitles">Mercedes Benz World </h2>
 
+								<img src="assets/images/Mercedes_Benz_World.png" width="100%" alt="Mercedes-Benz World">
 
-							<p>RHS Garden Wisley is a garden run by the Royal Horticultural Society in the English county of Surrey, south of London. It is one of five gardens run by the society, the others being Harlow Carr, Hyde Hall, Rosemoor, and Bridgewater (which opened on 18 May 2021).Wisley is the second most visited paid entry garden in the United Kingdom after the Royal Botanic Gardens.</p>
-						</div>
-						
-						<!-------------------Mercedes Benz World ------------------>
-						<div id="woking_qr3_ipad" class="ui-body-d ui-content">
-							<h2 class="potitles">Mercedes Benz World </h2>
+								<p class="poidiamond"><img src="assets/images/icon_diamond.png" height="24" width="28"> 50pts</p>
 
-							<img src="assets/images/Mercedes_Benz_World.png" width="100%" alt="Mercedes-Benz World">
+								<a href="#popupDialog_qr9" data-rel="popup" data-position-to="window" data-transition="pop" class="ui-btn ui-corner-all" onclick= "incrementText50()">COLLECT POINTS</a>
+								<div data-role="popup" id="popupDialog_qr9" data-overlay-theme="b" data-theme="b" data-dismissible="false" style="max-width:400px;">
+									<div data-role="header" data-theme="a">
+									<h1>Points</h1>
+									</div>
+									<div role="main" class="ui-content">
+										<h3 class="ui-title">You have Found Mercedes_Benz_World 50pts</h3>
+									<p>Scan QR To Collect Points </p>
+										<a href="ARpage_Mercedes_Benz_World.html" rel="external" class="ui-btn ui-corner-all" id="ARpage_Mercedes_Benz_World.html" target="_blank">SCAN QR</a> 
 
-							<p class="poidiamond"><img src="assets/images/icon_diamond.png" height="24" width="28"> 50pts</p>
-
-							<a href="#popupDialog_qr9" data-rel="popup" data-position-to="window" data-transition="pop" class="ui-btn ui-corner-all" onclick= "incrementText50()">COLLECT POINTS</a>
-							<div data-role="popup" id="popupDialog_qr9" data-overlay-theme="b" data-theme="b" data-dismissible="false" style="max-width:400px;">
-								<div data-role="header" data-theme="a">
-								<h1>Points</h1>
+									</div>
 								</div>
-								<div role="main" class="ui-content">
-									<h3 class="ui-title">You have Found Mercedes_Benz_World 50pts</h3>
-								<p>Scan QR To Collect Points </p>
-									<a href="ARpage_Mercedes_Benz_World.html" rel="external" class="ui-btn ui-corner-all" id="ARpage_Mercedes_Benz_World.html" target="_blank">SCAN QR</a> 
-		
-								</div>
+
+
+
+
+								<p>Next to the Brooklands Museum is Mercedes-Benz World, where the luxury car brand owns a series of training tracks and runs the AMG Driving Academy. Some champion drivers have used these courses, like Lewis Hamilton, Mika Häkkinen, Nico Rosberg and Stirling Moss.</p>
 							</div>
-
-							
-
-
-							<p>Next to the Brooklands Museum is Mercedes-Benz World, where the luxury car brand owns a series of training tracks and runs the AMG Driving Academy. Some champion drivers have used these courses, like Lewis Hamilton, Mika Häkkinen, Nico Rosberg and Stirling Moss.</p>
 						</div>
 					</div>
-				</div>
-				<!----------------------- GUILDFORD-------------------------------->
-				<div id="qr_ipad_guildford" class="ui-body-d tablist-content">
-					<h1 class="potitles">GUILDFORD</h1>
+					<!----------------------- GUILDFORD-------------------------------->
+					<div id="qr_ipad_guildford" class="ui-body-d tablist-content">
+						<h1 class="potitles">GUILDFORD</h1>
 
-					<div data-role="tabs">
-						<div data-role="navbar">
-							<ul>
-								<li><a href="#guildford_qr1_ipad" class="ui-btn-active" data-ajax="true">Guildford Castle</a></li>
-								<li><a href="#guildford_qr2_ipad" data-ajax="false">Guildford Museum</a></li>
-								<li><a href="#guildford_qr3_ipad" data-ajax="false">Stoke Park</a></li>
-							</ul>
-						</div>
-						<!-------------------Guildford Castle ------------------>
-						<div id="guildford_qr1_ipad" class="ui-body-d ui-content">
-							<h2 class="potitles">Guildford Castle</h2>
+						<div data-role="tabs">
+							<div data-role="navbar">
+								<ul>
+									<li><a href="#guildford_qr1_ipad" class="ui-btn-active" data-ajax="true">Guildford Castle</a></li>
+									<li><a href="#guildford_qr2_ipad" data-ajax="false">Guildford Museum</a></li>
+									<li><a href="#guildford_qr3_ipad" data-ajax="false">Stoke Park</a></li>
+								</ul>
+							</div>
+							<!-------------------Guildford Castle ------------------>
+							<div id="guildford_qr1_ipad" class="ui-body-d ui-content">
+								<h2 class="potitles">Guildford Castle</h2>
 
-							<img src="assets/images/Guildford_Castle.png" width="100%" alt="Guildford Castle">
+								<img src="assets/images/Guildford_Castle.png" width="100%" alt="Guildford Castle">
 
-							<p class="poidiamond"><img src="assets/images/icon_diamond.png" height="24" width="28"> 25pts</p>
+								<p class="poidiamond"><img src="assets/images/icon_diamond.png" height="24" width="28"> 25pts</p>
 
-							<a href="#popupDialog_qr10" data-rel="popup" data-position-to="window" data-transition="pop" class="ui-btn ui-corner-all" onclick= "incrementText25()">COLLECT POINTS</a>
-							<div data-role="popup" id="popupDialog_qr10" data-overlay-theme="b" data-theme="b" data-dismissible="false" style="max-width:400px;">
-								<div data-role="header" data-theme="a">
-								<h1>Points</h1>
+								<a href="#popupDialog_qr10" data-rel="popup" data-position-to="window" data-transition="pop" class="ui-btn ui-corner-all" onclick= "incrementText25()">COLLECT POINTS</a>
+								<div data-role="popup" id="popupDialog_qr10" data-overlay-theme="b" data-theme="b" data-dismissible="false" style="max-width:400px;">
+									<div data-role="header" data-theme="a">
+									<h1>Points</h1>
+									</div>
+									<div role="main" class="ui-content">
+										<h3 class="ui-title">You have Found Guildford Castle 25pts</h3>
+									<p>Scan QR To Collect Points </p>
+										<a href="ARpage_Guildford_Castle.html" rel="external" class="ui-btn ui-corner-all" id="ARpage_Guildford_Castle.html" target="_blank">SCAN QR</a> 
+
+									</div>
 								</div>
-								<div role="main" class="ui-content">
-									<h3 class="ui-title">You have Found Guildford Castle 25pts</h3>
-								<p>Scan QR To Collect Points </p>
-									<a href="ARpage_Guildford_Castle.html" rel="external" class="ui-btn ui-corner-all" id="ARpage_Guildford_Castle.html" target="_blank">SCAN QR</a> 
-		
-								</div>
+
+
+
+
+
+								<p>After the Battle of Hastings in 1066 William led his army to Canterbury and then sacked towns along the Pilgrims' Way, including Guildford. Later William, or one of his barons, built Guildford Castle. There is no record of it in the Domesday Book so construction probably started after 1086.</p>
 							</div>
 
+							<!-------------------Guildford Museum ------------------>
+							<div id="guildford_qr2_ipad" class="ui-body-d ui-content">
+								<h2 class="potitles">Guildford Museum</h2>
 
-							
+								<img src="assets/images/Guildford_Museum.png" width="100%" alt="Guildford Museum">
 
+								<p class="poidiamond"><img src="assets/images/icon_diamond.png" height="24" width="28"> 25pts</p>
 
-							<p>After the Battle of Hastings in 1066 William led his army to Canterbury and then sacked towns along the Pilgrims' Way, including Guildford. Later William, or one of his barons, built Guildford Castle. There is no record of it in the Domesday Book so construction probably started after 1086.</p>
-						</div>
-						
-						<!-------------------Guildford Museum ------------------>
-						<div id="guildford_qr2_ipad" class="ui-body-d ui-content">
-							<h2 class="potitles">Guildford Museum</h2>
+								<a href="#popupDialog_qr11" data-rel="popup" data-position-to="window" data-transition="pop" class="ui-btn ui-corner-all" onclick= "incrementText25()">COLLECT POINTS</a>
+								<div data-role="popup" id="popupDialog_qr11" data-overlay-theme="b" data-theme="b" data-dismissible="false" style="max-width:400px;">
+									<div data-role="header" data-theme="a">
+									<h1>Points</h1>
+									</div>
+									<div role="main" class="ui-content">
+										<h3 class="ui-title">You have Found Guildford Museum 25pts</h3>
+									<p>Scan QR To Collect Points </p>
+										<a href="ARpage_Guildford_Museum.html" rel="external" class="ui-btn ui-corner-all" id="ARpage_Guildford_Museum.html" target="_blank">SCAN QR</a> 
 
-							<img src="assets/images/Guildford_Museum.png" width="100%" alt="Guildford Museum">
-
-							<p class="poidiamond"><img src="assets/images/icon_diamond.png" height="24" width="28"> 25pts</p>
-
-							<a href="#popupDialog_qr11" data-rel="popup" data-position-to="window" data-transition="pop" class="ui-btn ui-corner-all" onclick= "incrementText25()">COLLECT POINTS</a>
-							<div data-role="popup" id="popupDialog_qr11" data-overlay-theme="b" data-theme="b" data-dismissible="false" style="max-width:400px;">
-								<div data-role="header" data-theme="a">
-								<h1>Points</h1>
+									</div>
 								</div>
-								<div role="main" class="ui-content">
-									<h3 class="ui-title">You have Found Guildford Museum 25pts</h3>
-								<p>Scan QR To Collect Points </p>
-									<a href="ARpage_Guildford_Museum.html" rel="external" class="ui-btn ui-corner-all" id="ARpage_Guildford_Museum.html" target="_blank">SCAN QR</a> 
-		
-								</div>
+
+
+
+
+								<p>Guildford Museum is the main museum is in the town of Guildford, Surrey, England. The museum is on Quarry Street, a narrow road lined by pre-1900 cottages running just off the pedestrianised High Street. This main site of the museum forms the gatehouse and annex of Guildford Castle, which the staff help to run.</p>
 							</div>
 
-							
+							<!-------------------Stoke Park ------------------>
+							<div id="guildford_qr3_ipad" class="ui-body-d ui-content">
+								<h2 class="potitles">Stoke Park</h2>
 
+								<img src="assets/images/Stoke_Park.png" width="100%" alt="Stoke Park">
 
-							<p>Guildford Museum is the main museum is in the town of Guildford, Surrey, England. The museum is on Quarry Street, a narrow road lined by pre-1900 cottages running just off the pedestrianised High Street. This main site of the museum forms the gatehouse and annex of Guildford Castle, which the staff help to run.</p>
-						</div>
-						
-						<!-------------------Stoke Park ------------------>
-						<div id="guildford_qr3_ipad" class="ui-body-d ui-content">
-							<h2 class="potitles">Stoke Park</h2>
+								<p class="poidiamond"><img src="assets/images/icon_diamond.png" height="24" width="28"> 50pts</p>
 
-							<img src="assets/images/Stoke_Park.png" width="100%" alt="Stoke Park">
+								<a href="#popupDialog_qr12" data-rel="popup" data-position-to="window" data-transition="pop" class="ui-btn ui-corner-all" onclick= "incrementText50()">COLLECT POINTS</a>
+								<div data-role="popup" id="popupDialog_qr12" data-overlay-theme="b" data-theme="b" data-dismissible="false" style="max-width:400px;">
+									<div data-role="header" data-theme="a">
+									<h1>Points</h1>
+									</div>
+									<div role="main" class="ui-content">
+										<h3 class="ui-title">You have Found Stoke Park 50pts</h3>
+									<p>Scan QR To Collect Points </p>
+										<a href="ARpage_Stoke_Park.html" rel="external" class="ui-btn ui-corner-all" id="ARpage_Stoke_Park.html" target="_blank">SCAN QR</a> 
 
-							<p class="poidiamond"><img src="assets/images/icon_diamond.png" height="24" width="28"> 50pts</p>
-
-							<a href="#popupDialog_qr12" data-rel="popup" data-position-to="window" data-transition="pop" class="ui-btn ui-corner-all" onclick= "incrementText50()">COLLECT POINTS</a>
-							<div data-role="popup" id="popupDialog_qr12" data-overlay-theme="b" data-theme="b" data-dismissible="false" style="max-width:400px;">
-								<div data-role="header" data-theme="a">
-								<h1>Points</h1>
+									</div>
 								</div>
-								<div role="main" class="ui-content">
-									<h3 class="ui-title">You have Found Stoke Park 50pts</h3>
-								<p>Scan QR To Collect Points </p>
-									<a href="ARpage_Stoke_Park.html" rel="external" class="ui-btn ui-corner-all" id="ARpage_Stoke_Park.html" target="_blank">SCAN QR</a> 
-		
-								</div>
+
+
+
+
+								<p>Stoke Park is a private sporting and leisure estate in Stoke Poges, Buckinghamshire. The mansion building (designed by James Wyatt in 1788) is located in the middle of 300 acres (1.2 km2) of parkland, lakes, gardens and monuments. In 1908, it became the first country club in the UK.</p>
 							</div>
-
-							
-
-
-							<p>Stoke Park is a private sporting and leisure estate in Stoke Poges, Buckinghamshire. The mansion building (designed by James Wyatt in 1788) is located in the middle of 300 acres (1.2 km2) of parkland, lakes, gardens and monuments. In 1908, it became the first country club in the UK.</p>
 						</div>
 					</div>
-				</div>
-				<!----------------------- PORTSMOUTH-------------------------------->
-				<div id="qr_ipad_portsmouth" class="ui-body-d tablist-content">
-					<h1 class="potitles">PORTSMOUTH</h1>
+					<!----------------------- PORTSMOUTH-------------------------------->
+					<div id="qr_ipad_portsmouth" class="ui-body-d tablist-content">
+						<h1 class="potitles">PORTSMOUTH</h1>
 
-					<div data-role="tabs">
-						<div data-role="navbar">
-							<ul>
-								<li><a href="#portsmouth_qr1_ipad" class="ui-btn-active" data-ajax="true">Spinnaker Tower</a></li>
-								<li><a href="#portsmouth_qr2_ipad" data-ajax="false">South Parade Pier</a></li>
-								<li><a href="#portsmouth_qr3_ipad" data-ajax="false">Historic Dockyard</a></li>
-							</ul>
-						</div>
-						<!-------------------Spinnaker Tower----------------->
-						<div id="portsmouth_qr1_ipad" class="ui-body-d ui-content">
-							<h2 class="potitles">Spinnaker Tower</h2>
+						<div data-role="tabs">
+							<div data-role="navbar">
+								<ul>
+									<li><a href="#portsmouth_qr1_ipad" class="ui-btn-active" data-ajax="true">Spinnaker Tower</a></li>
+									<li><a href="#portsmouth_qr2_ipad" data-ajax="false">South Parade Pier</a></li>
+									<li><a href="#portsmouth_qr3_ipad" data-ajax="false">Historic Dockyard</a></li>
+								</ul>
+							</div>
+							<!-------------------Spinnaker Tower----------------->
+							<div id="portsmouth_qr1_ipad" class="ui-body-d ui-content">
+								<h2 class="potitles">Spinnaker Tower</h2>
 
-							<img src="assets/images/Spinnaker_Tower.png" width="100%" alt="Spinnaker Tower">
+								<img src="assets/images/Spinnaker_Tower.png" width="100%" alt="Spinnaker Tower">
 
-							<p class="poidiamond"><img src="assets/images/icon_diamond.png" height="24" width="28"> 25pts</p>
+								<p class="poidiamond"><img src="assets/images/icon_diamond.png" height="24" width="28"> 25pts</p>
 
-							
-							<a href="#popupDialog_qr13" data-rel="popup" data-position-to="window" data-transition="pop" class="ui-btn ui-corner-all" onclick= "incrementText25()">COLLECT POINTS</a>
-							<div data-role="popup" id="popupDialog_qr13" data-overlay-theme="b" data-theme="b" data-dismissible="false" style="max-width:400px;">
-								<div data-role="header" data-theme="a">
-								<h1>Points</h1>
+
+								<a href="#popupDialog_qr13" data-rel="popup" data-position-to="window" data-transition="pop" class="ui-btn ui-corner-all" onclick= "incrementText25()">COLLECT POINTS</a>
+								<div data-role="popup" id="popupDialog_qr13" data-overlay-theme="b" data-theme="b" data-dismissible="false" style="max-width:400px;">
+									<div data-role="header" data-theme="a">
+									<h1>Points</h1>
+									</div>
+									<div role="main" class="ui-content">
+										<h3 class="ui-title">You have Found Spinnaker Tower 25pts</h3>
+									<p>Scan QR To Collect Points </p>
+										<a href="ARpage_Spinnaker_Tower.html" rel="external" class="ui-btn ui-corner-all" id="ARpage_Spinnaker_Tower.html" target="_blank">SCAN QR</a> 
+
+									</div>
 								</div>
-								<div role="main" class="ui-content">
-									<h3 class="ui-title">You have Found Spinnaker Tower 25pts</h3>
-								<p>Scan QR To Collect Points </p>
-									<a href="ARpage_Spinnaker_Tower.html" rel="external" class="ui-btn ui-corner-all" id="ARpage_Spinnaker_Tower.html" target="_blank">SCAN QR</a> 
-		
-								</div>
+
+
+
+
+
+								<p>The Spinnaker Tower is a 170 metres landmark observation tower in Portsmouth, England. It is the centrepiece of the redevelopment of Portsmouth Harbour, which was supported by a National Lottery grant.</p>
 							</div>
 
+							<!-------------------South Parade Pier ------------------>
+							<div id="portsmouth_qr2_ipad" class="ui-body-d ui-content">
+								<h2 class="potitles">South Parade Pier</h2>
 
-							
+								<img src="assets/images/South_Parade_Pier.png" width="100%" alt="South Parade Pier">
 
+								<p class="poidiamond"><img src="assets/images/icon_diamond.png" height="24" width="28"> 25pts</p>
 
-							<p>The Spinnaker Tower is a 170 metres landmark observation tower in Portsmouth, England. It is the centrepiece of the redevelopment of Portsmouth Harbour, which was supported by a National Lottery grant.</p>
-						</div>
-						
-						<!-------------------South Parade Pier ------------------>
-						<div id="portsmouth_qr2_ipad" class="ui-body-d ui-content">
-							<h2 class="potitles">South Parade Pier</h2>
+								<a href="#popupDialog_qr14" data-rel="popup" data-position-to="window" data-transition="pop" class="ui-btn ui-corner-all" onclick= "incrementText25()">COLLECT POINTS</a>
+								<div data-role="popup" id="popupDialog_qr14" data-overlay-theme="b" data-theme="b" data-dismissible="false" style="max-width:400px;">
+									<div data-role="header" data-theme="a">
+									<h1>Points</h1>
+									</div>
+									<div role="main" class="ui-content">
+										<h3 class="ui-title">You have Found South Parade Pier 25pts</h3>
+									<p>Scan QR To Collect Points </p>
+										<a href="ARpage_South_Parade_Pier.html" rel="external" class="ui-btn ui-corner-all" id="ARpage_South_Parade_Pier.html" target="_blank">SCAN QR</a> 
 
-							<img src="assets/images/South_Parade_Pier.png" width="100%" alt="South Parade Pier">
-
-							<p class="poidiamond"><img src="assets/images/icon_diamond.png" height="24" width="28"> 25pts</p>
-
-							<a href="#popupDialog_qr14" data-rel="popup" data-position-to="window" data-transition="pop" class="ui-btn ui-corner-all" onclick= "incrementText25()">COLLECT POINTS</a>
-							<div data-role="popup" id="popupDialog_qr14" data-overlay-theme="b" data-theme="b" data-dismissible="false" style="max-width:400px;">
-								<div data-role="header" data-theme="a">
-								<h1>Points</h1>
+									</div>
 								</div>
-								<div role="main" class="ui-content">
-									<h3 class="ui-title">You have Found South Parade Pier 25pts</h3>
-								<p>Scan QR To Collect Points </p>
-									<a href="ARpage_South_Parade_Pier.html" rel="external" class="ui-btn ui-corner-all" id="ARpage_South_Parade_Pier.html" target="_blank">SCAN QR</a> 
-		
-								</div>
+
+
+
+
+
+								<p>The South Parade Pier is a pier in Portsmouth, England. It is one of two piers in the city, the other being Clarence Pier. The pier once had a long hall down its centre which housed a seating area and a small restaurant. The outside of the hall is a promenade which runs the length of the pier.</p>
 							</div>
 
+							<!-------------------Historic Dockyard<------------------>
+							<div id="portsmouth_qr3_ipad" class="ui-body-d ui-content">
+								<h2 class="potitles">Historic Dockyard</h2>
 
-							
+								<img src="assets/images/Historic_Dockyard.png" width="100%" alt="Historic Dockyard">
+
+								<p class="poidiamond"><img src="assets/images/icon_diamond.png" height="24" width="28"> 50pts</p>
 
 
-							<p>The South Parade Pier is a pier in Portsmouth, England. It is one of two piers in the city, the other being Clarence Pier. The pier once had a long hall down its centre which housed a seating area and a small restaurant. The outside of the hall is a promenade which runs the length of the pier.</p>
-						</div>
-						
-						<!-------------------Historic Dockyard<------------------>
-						<div id="portsmouth_qr3_ipad" class="ui-body-d ui-content">
-							<h2 class="potitles">Historic Dockyard</h2>
+								<a href="#popupDialog_qr15" data-rel="popup" data-position-to="window" data-transition="pop" class="ui-btn ui-corner-all" onclick= "incrementText50()">COLLECT POINTS</a>
+								<div data-role="popup" id="popupDialog_qr15" data-overlay-theme="b" data-theme="b" data-dismissible="false" style="max-width:400px;">
+									<div data-role="header" data-theme="a">
+									<h1>Points</h1>
+									</div>
+									<div role="main" class="ui-content">
+										<h3 class="ui-title">You have Found Historic Dockyard 50pts</h3>
+									<p>Scan QR To Collect Points </p>
+										<a href="ARpage_Historic_Dockyard.html" rel="external" class="ui-btn ui-corner-all" id="ARpage_Historic_Dockyard.html" target="_blank">SCAN QR</a> 
 
-							<img src="assets/images/Historic_Dockyard.png" width="100%" alt="Historic Dockyard">
-
-							<p class="poidiamond"><img src="assets/images/icon_diamond.png" height="24" width="28"> 50pts</p>
-
-							
-							<a href="#popupDialog_qr15" data-rel="popup" data-position-to="window" data-transition="pop" class="ui-btn ui-corner-all" onclick= "incrementText50()">COLLECT POINTS</a>
-							<div data-role="popup" id="popupDialog_qr15" data-overlay-theme="b" data-theme="b" data-dismissible="false" style="max-width:400px;">
-								<div data-role="header" data-theme="a">
-								<h1>Points</h1>
+									</div>
 								</div>
-								<div role="main" class="ui-content">
-									<h3 class="ui-title">You have Found Historic Dockyard 50pts</h3>
-								<p>Scan QR To Collect Points </p>
-									<a href="ARpage_Historic_Dockyard.html" rel="external" class="ui-btn ui-corner-all" id="ARpage_Historic_Dockyard.html" target="_blank">SCAN QR</a> 
-		
-								</div>
+
+
+
+
+								<p>Portsmouth Historic Dockyard is an area of HM Naval Base Portsmouth which is open to the public; it contains several historic buildings and ships. It is managed by the National Museum of the Royal Navy as an umbrella organization representing many  charities such as: the Portsmouth Naval Base Property Trust, and the HMS Victory Preservation Company.</p>
 							</div>
-
-					   
-
-
-							<p>Portsmouth Historic Dockyard is an area of HM Naval Base Portsmouth which is open to the public; it contains several historic buildings and ships. It is managed by the National Museum of the Royal Navy as an umbrella organization representing many  charities such as: the Portsmouth Naval Base Property Trust, and the HMS Victory Preservation Company.</p>
 						</div>
 					</div>
-				</div>
-			 </div>			
+				 </div>			
+			</div>
 		</div>
-	</div>
-	<!---------------------------- IPHONE STATION BUTTONS ----------------------------->
-	<div class="iphone_stations_buttons">
-		<a href="#qr_iphone_waterloo" data-role="button">Waterloo</a>
-		<a href="#qr_iphone_wimbledon" data-role="button">Wimbledon</a>
-		<a href="#qr_iphone_woking" data-role="button">Woking</a>
-		<a href="#qr_iphone_guildford" data-role="button">Guildford</a>
-		<a href="#qr_iphone_portsmouth" data-role="button">Portsmouth</a>
-	</div>	
-		
-	
-	<div data-role="footer" data-position="fixed">
-		<div data-role="navbar">
-			<ul>
-				<li><a href="#te_stationmap" ><i class="far fa-map fa-2x"></i><br><br>
-					<span class="font-size-change">STATION  MAP</span></a></li>
-				<li><a href="#te_favourites"><i class="far fa-heart fa-2x"></i><br><br>
-					<span class="font-size-change">FAVOURITES</span></a></li>
-				<li><a href="#te_booking"><i class="fas fa-ticket-alt fa-2x"></i><br><br>
-					<span class="font-size-change">BOOK  TICKETS</span></a></li>
-				<li><a href="#te_scanQR" class="ui-btn-active"><i class="fas fa-qrcode fa-2x"></i><br><br>
-					<span class="font-size-change">SCAN QR</span></a></li>
-			</ul>
-		</div>
-	</div>
-</div>
-</div>
-<!---------------------------------------------- iPHONE VERSION - STATION'S POI PAGE ------------------------------------------->
-<!-------------------WATERLOO------------------------->
-<div data-role="page" id="qr_iphone_waterloo">
-	<div data-role="header">
-		<div data-role="controlgroup" data-type="horizontal">
-			<a href="#te_homepage" class="ui-btn ui-corner-all"><img src="assets/images/te_logo.png" height="52" width="42"></a>
-			<a href="#te_animDiamond" class="ui-btn ui-corner-all"><i class="far fa-user fa-2x"></i><br><br>PROFILE</a>
-			<a href="#te_animDiamond" class="ui-btn ui-corner-all ui-btn-right"><i class="far fa-gem fa-2x"></i><br><br><span id="incText11">0</span></a>
-		</div>
-	</div>
-	<div role="main" class="ui-content">
-		<h1>LONDON WATERLOO</h1>
-		<div data-role="tabs">
+		<!---------------------------- IPHONE STATION BUTTONS ----------------------------->
+		<div class="iphone_stations_buttons">
+			<a href="#qr_iphone_waterloo" data-role="button">Waterloo</a>
+			<a href="#qr_iphone_wimbledon" data-role="button">Wimbledon</a>
+			<a href="#qr_iphone_woking" data-role="button">Woking</a>
+			<a href="#qr_iphone_guildford" data-role="button">Guildford</a>
+			<a href="#qr_iphone_portsmouth" data-role="button">Portsmouth</a>
+		</div>	
+
+
+		<div data-role="footer" data-position="fixed">
 			<div data-role="navbar">
 				<ul>
-					<li><a href="#waterloo_qr1_iphone" data-ajax="true">London Dungeon</a></li>
-					<li><a href="#waterloo_qr2_iphone" data-ajax="false">London Eye</a></li>
-					<li><a href="#waterloo_qr3_iphone" data-ajax="false">Buckingham Palace</a></li>
+					<li><a href="#te_stationmap" ><i class="far fa-map fa-2x"></i><br><br>
+						<span class="font-size-change">STATION  MAP</span></a></li>
+					<li><a href="#te_favourites"><i class="far fa-heart fa-2x"></i><br><br>
+						<span class="font-size-change">FAVOURITES</span></a></li>
+					<li><a href="#te_booking"><i class="fas fa-ticket-alt fa-2x"></i><br><br>
+						<span class="font-size-change">BOOK  TICKETS</span></a></li>
+					<li><a href="#te_scanQR" class="ui-btn-active"><i class="fas fa-qrcode fa-2x"></i><br><br>
+						<span class="font-size-change">SCAN QR</span></a></li>
 				</ul>
 			</div>
-			<!-------------------LONDON DUNGEON ------------------>
-			<div id="waterloo_qr1_iphone" class="ui-body-d ui-content">
-				<h2>LONDON DUNGEON</h2>
-							<p><img src="assets/images/icon_diamond.png" height="24" width="28"> 25pts</p>
-
-							<img src="assets/images/London_Dungeon.png" alt="London Dungeon">
-							
-							<a href="ARpage_London_Dungeon.html" rel="external" class="ui-btn ui-corner-all" id="scan_qr_london_dungeon">COLLECT POINTS</a>
-
-							<p>The London Dungeon is a uniquely thrilling attraction that will whisk you way back to the capital's most perilous past. See, hear, feel and (ahem!) smell the chillingly amusing characters of the 'bad old days' as they come to life before you.</p>
-			</div>
-
-			<!-------------------LONDON EYE ------------------>
-			<div id="waterloo_qr2_iphone" class="ui-body-d ui-content">
-				<h2>LONDON EYE</h2>
-							<p><img src="assets/images/icon_diamond.png" height="24" width="28"> 25pts</p>
-
-							<img src="assets/images/London_Eye.png" alt="London Eye">
-
-							<a href="ARpage_London_Eye.html" rel="external" class="ui-btn ui-corner-all" id="scan_qr_london_eye">COLLECT POINTS</a>
-
-							<p>The London Eye is a cantilevered observation wheel on the South Bank of the River Thames in London. It is Europe's tallest cantilevered observation wheel, and is the most popular paid tourist attraction in the United Kingdom with over 3 million visitors annually.</p>
-			</div>
-
-			<!-------------------BUCKINGHAM PALACE ------------------>
-			<div id="waterloo_qr3_iphone" class="ui-body-d ui-content">
-				<h2>BUCKINGHAM PALACE</h2>
-				<p><img src="assets/images/icon_diamond.png" height="24" width="28"> 50pts</p>
-
-				<img src="assets/images/Buckingham_Palace.png" alt="Buckingham Palace">
-
-				<a href="ARpage_Buckingham_Palace.html" rel="external" class="ui-btn ui-corner-all" id="scan_qr_buckingham_palace">COLLECT POINTS</a>
-
-				<p>Buckingham Palace is the London residence and administrative headquarters of the monarch of the United Kingdom. Located in the City of Westminster, the palace is often at the centre of state occasions and royal hospitality. It has been a focal point for the British people at times of national rejoicing and mourning.</p>
-			</div>
 		</div>
 	</div>
-	
-<div data-role="footer" data-position="fixed">
-		<div data-role="navbar">
-			<ul>
-				<li><a href="#te_stationmap" ><i class="far fa-map fa-2x"></i><br><br>
-					<span class="font-size-change">STATION  MAP</span></a></li>
-				<li><a href="#te_favourites"><i class="far fa-heart fa-2x"></i><br><br>
-					<span class="font-size-change">FAVOURITES</span></a></li>
-				<li><a href="#te_booking"><i class="fas fa-ticket-alt fa-2x"></i><br><br>
-					<span class="font-size-change">BOOK  TICKETS</span></a></li>
-				<li><a href="#te_scanQR" class="ui-btn-active"><i class="fas fa-qrcode fa-2x"></i><br><br>
-					<span class="font-size-change" >SCAN QR</span></a></li>
-			</ul>
-		</div>
 	</div>
-</div>
-<!-------------------wimbledon------------------------->
-<div data-role="page" id="qr_iphone_wimbledon">
-	<div data-role="header">
-		<div data-role="controlgroup" data-type="horizontal">
-			<a href="#te_homepage" class="ui-btn ui-corner-all"><img src="assets/images/te_logo.png" height="52" width="42"></a>
-			<a href="#te_animDiamond" class="ui-btn ui-corner-all"><i class="far fa-user fa-2x"></i><br><br>PROFILE</a>
-			<a href="#te_animDiamond" class="ui-btn ui-corner-all ui-btn-right"><i class="far fa-gem fa-2x"></i><br><br><span id="incText12">0</span></a>
+	<!---------------------------------------------- iPHONE VERSION - STATION'S POI PAGE ------------------------------------------->
+	<!-------------------WATERLOO------------------------->
+	<div data-role="page" id="qr_iphone_waterloo">
+		<div data-role="header">
+			<div data-role="controlgroup" data-type="horizontal">
+				<a href="#te_homepage" class="ui-btn ui-corner-all"><img src="assets/images/te_logo.png" height="52" width="42"></a>
+				<a href="#te_animDiamond" class="ui-btn ui-corner-all"><i class="far fa-user fa-2x"></i><br><br>PROFILE</a>
+				<a href="#te_animDiamond" class="ui-btn ui-corner-all ui-btn-right"><i class="far fa-gem fa-2x"></i><br><br><span id="incText11">0</span></a>
+			</div>
 		</div>
-	</div>
-	<div role="main" class="ui-content">
-		<h1>WIMBLEDON</h1>
+		<div role="main" class="ui-content">
+			<h1>LONDON WATERLOO</h1>
+			<div data-role="tabs">
+				<div data-role="navbar">
+					<ul>
+						<li><a href="#waterloo_qr1_iphone" data-ajax="true">London Dungeon</a></li>
+						<li><a href="#waterloo_qr2_iphone" data-ajax="false">London Eye</a></li>
+						<li><a href="#waterloo_qr3_iphone" data-ajax="false">Buckingham Palace</a></li>
+					</ul>
+				</div>
+				<!-------------------LONDON DUNGEON ------------------>
+				<div id="waterloo_qr1_iphone" class="ui-body-d ui-content">
+					<h2>LONDON DUNGEON</h2>
+								<p><img src="assets/images/icon_diamond.png" height="24" width="28"> 25pts</p>
 
-		<div data-role="tabs">
+								<img src="assets/images/London_Dungeon.png" alt="London Dungeon">
+
+								<a href="ARpage_London_Dungeon.html" rel="external" class="ui-btn ui-corner-all" id="scan_qr_london_dungeon">COLLECT POINTS</a>
+
+								<p>The London Dungeon is a uniquely thrilling attraction that will whisk you way back to the capital's most perilous past. See, hear, feel and (ahem!) smell the chillingly amusing characters of the 'bad old days' as they come to life before you.</p>
+				</div>
+
+				<!-------------------LONDON EYE ------------------>
+				<div id="waterloo_qr2_iphone" class="ui-body-d ui-content">
+					<h2>LONDON EYE</h2>
+								<p><img src="assets/images/icon_diamond.png" height="24" width="28"> 25pts</p>
+
+								<img src="assets/images/London_Eye.png" alt="London Eye">
+
+								<a href="ARpage_London_Eye.html" rel="external" class="ui-btn ui-corner-all" id="scan_qr_london_eye">COLLECT POINTS</a>
+
+								<p>The London Eye is a cantilevered observation wheel on the South Bank of the River Thames in London. It is Europe's tallest cantilevered observation wheel, and is the most popular paid tourist attraction in the United Kingdom with over 3 million visitors annually.</p>
+				</div>
+
+				<!-------------------BUCKINGHAM PALACE ------------------>
+				<div id="waterloo_qr3_iphone" class="ui-body-d ui-content">
+					<h2>BUCKINGHAM PALACE</h2>
+					<p><img src="assets/images/icon_diamond.png" height="24" width="28"> 50pts</p>
+
+					<img src="assets/images/Buckingham_Palace.png" alt="Buckingham Palace">
+
+					<a href="ARpage_Buckingham_Palace.html" rel="external" class="ui-btn ui-corner-all" id="scan_qr_buckingham_palace">COLLECT POINTS</a>
+
+					<p>Buckingham Palace is the London residence and administrative headquarters of the monarch of the United Kingdom. Located in the City of Westminster, the palace is often at the centre of state occasions and royal hospitality. It has been a focal point for the British people at times of national rejoicing and mourning.</p>
+				</div>
+			</div>
+		</div>
+
+	<div data-role="footer" data-position="fixed">
 			<div data-role="navbar">
 				<ul>
-					<li><a href="#wimbledon_qr1_iphone" data-ajax="true">Wimbledon Centre Court</a></li>
-					<li><a href="#wimbledon_qr2_iphone" data-ajax="false">New Wimbledon Theatre</a></li>
-					<li><a href="#wimbledon_qr3_iphone" data-ajax="false">Buddhapadipa Temple</a></li>
+					<li><a href="#te_stationmap" ><i class="far fa-map fa-2x"></i><br><br>
+						<span class="font-size-change">STATION  MAP</span></a></li>
+					<li><a href="#te_favourites"><i class="far fa-heart fa-2x"></i><br><br>
+						<span class="font-size-change">FAVOURITES</span></a></li>
+					<li><a href="#te_booking"><i class="fas fa-ticket-alt fa-2x"></i><br><br>
+						<span class="font-size-change">BOOK  TICKETS</span></a></li>
+					<li><a href="#te_scanQR" class="ui-btn-active"><i class="fas fa-qrcode fa-2x"></i><br><br>
+						<span class="font-size-change" >SCAN QR</span></a></li>
 				</ul>
 			</div>
-			<!-------------------Wimbledon Centre Court ------------------>
-			<div id="wimbledon_qr1_iphone" class="ui-body-d ui-content">
-				<h2>Wimbledon Centre Court</h2>
-
-				<p><img src="assets/images/icon_diamond.png" height="24" width="28"> 25pts</p>
-
-				<img src="assets/images/Wimbledon_Centre_Court.png" alt="Wimbledon Centre Court">
-
-				<a href="ARpage_Wimbledon_Centre_Court.html" rel="external" class="ui-btn ui-corner-all" id="scan_qr_wimbledon_centre_court">COLLECT POINTS</a>
-
-				<p>Wimbledon Centre Court is the main court at The Championships, Wimbledon, the third annual Grand Slam event of the tennis calendar. It is considered the world's most famous tennis court.It incorporates the clubhouse of the All England Lawn Tennis and Croquet Club. Its only regular use for play is during the two weeks a year that the Championships take place.</p>
-
+		</div>
+	</div>
+	<!-------------------wimbledon------------------------->
+	<div data-role="page" id="qr_iphone_wimbledon">
+		<div data-role="header">
+			<div data-role="controlgroup" data-type="horizontal">
+				<a href="#te_homepage" class="ui-btn ui-corner-all"><img src="assets/images/te_logo.png" height="52" width="42"></a>
+				<a href="#te_animDiamond" class="ui-btn ui-corner-all"><i class="far fa-user fa-2x"></i><br><br>PROFILE</a>
+				<a href="#te_animDiamond" class="ui-btn ui-corner-all ui-btn-right"><i class="far fa-gem fa-2x"></i><br><br><span id="incText12">0</span></a>
 			</div>
+		</div>
+		<div role="main" class="ui-content">
+			<h1>WIMBLEDON</h1>
 
-			<!-------------------New Wimbledon Theatre ------------------>
-			<div id="wimbledon_qr2_iphone" class="ui-body-d ui-content">
-				<h2>New Wimbledon Theatre</h2>
+			<div data-role="tabs">
+				<div data-role="navbar">
+					<ul>
+						<li><a href="#wimbledon_qr1_iphone" data-ajax="true">Wimbledon Centre Court</a></li>
+						<li><a href="#wimbledon_qr2_iphone" data-ajax="false">New Wimbledon Theatre</a></li>
+						<li><a href="#wimbledon_qr3_iphone" data-ajax="false">Buddhapadipa Temple</a></li>
+					</ul>
+				</div>
+				<!-------------------Wimbledon Centre Court ------------------>
+				<div id="wimbledon_qr1_iphone" class="ui-body-d ui-content">
+					<h2>Wimbledon Centre Court</h2>
 
-				<p><img src="assets/images/icon_diamond.png" height="24" width="28"> 25pts</p>
+					<p><img src="assets/images/icon_diamond.png" height="24" width="28"> 25pts</p>
 
-				<img src="assets/images/New_Wimbledon_Theatre.png" alt="New Wimbledon Theatre">
+					<img src="assets/images/Wimbledon_Centre_Court.png" alt="Wimbledon Centre Court">
 
-				<a href="ARpage_New_Wimbledon_Theatre.html" rel="external" class="ui-btn ui-corner-all" id="scan_qr_new_wimbledon_theatre">COLLECT POINTS</a>
+					<a href="ARpage_Wimbledon_Centre_Court.html" rel="external" class="ui-btn ui-corner-all" id="scan_qr_wimbledon_centre_court">COLLECT POINTS</a>
+
+					<p>Wimbledon Centre Court is the main court at The Championships, Wimbledon, the third annual Grand Slam event of the tennis calendar. It is considered the world's most famous tennis court.It incorporates the clubhouse of the All England Lawn Tennis and Croquet Club. Its only regular use for play is during the two weeks a year that the Championships take place.</p>
+
+				</div>
+
+				<!-------------------New Wimbledon Theatre ------------------>
+				<div id="wimbledon_qr2_iphone" class="ui-body-d ui-content">
+					<h2>New Wimbledon Theatre</h2>
+
+					<p><img src="assets/images/icon_diamond.png" height="24" width="28"> 25pts</p>
+
+					<img src="assets/images/New_Wimbledon_Theatre.png" alt="New Wimbledon Theatre">
+
+					<a href="ARpage_New_Wimbledon_Theatre.html" rel="external" class="ui-btn ui-corner-all" id="scan_qr_new_wimbledon_theatre">COLLECT POINTS</a>
 
 
-				<p>A 108 year-old theatre in SW London presenting an eclectic mix of musicals, drama, comedy, dance and pantomime. An Ambassador Theatre Group venue.</p>
+					<p>A 108 year-old theatre in SW London presenting an eclectic mix of musicals, drama, comedy, dance and pantomime. An Ambassador Theatre Group venue.</p>
 
+				</div>
+
+				<!-------------------Buddhapadipa Temple ------------------>
+				<div id="wimbledon_qr3_iphone" class="ui-body-d ui-content">
+					<h2>Buddhapadipa Temple</h2>
+
+					<p><img src="assets/images/icon_diamond.png" height="24" width="28"> 50pts</p>
+
+					<img src="assets/images/Buddhapadipa_Temple.png" alt="Buddhapadipa Temple">
+
+					<a href="ARpage_Buddhapadipa_Temple.html" rel="external" class="ui-btn ui-corner-all" id="scan_qr_buddhapadipa_temple">COLLECT POINTS</a>
+
+					<p>The Buddhapadipa Temple is the first Thai Theravada Buddhist Temple ever built outside Asia. It is the centre of meditation, Buddhist education and Thai culture.</p>
+
+				</div>
 			</div>
+		</div>
 
-			<!-------------------Buddhapadipa Temple ------------------>
-			<div id="wimbledon_qr3_iphone" class="ui-body-d ui-content">
-				<h2>Buddhapadipa Temple</h2>
-			
-				<p><img src="assets/images/icon_diamond.png" height="24" width="28"> 50pts</p>
-
-				<img src="assets/images/Buddhapadipa_Temple.png" alt="Buddhapadipa Temple">
-
-				<a href="ARpage_Buddhapadipa_Temple.html" rel="external" class="ui-btn ui-corner-all" id="scan_qr_buddhapadipa_temple">COLLECT POINTS</a>
-
-				<p>The Buddhapadipa Temple is the first Thai Theravada Buddhist Temple ever built outside Asia. It is the centre of meditation, Buddhist education and Thai culture.</p>
-
+		<div data-role="footer" data-position="fixed">
+			<div data-role="navbar">
+				<ul>
+					<li><a href="#te_stationmap" ><i class="far fa-map fa-2x"></i><br><br>
+						<span class="font-size-change">STATION  MAP</span></a></li>
+					<li><a href="#te_favourites"><i class="far fa-heart fa-2x"></i><br><br>
+						<span class="font-size-change">FAVOURITES</span></a></li>
+					<li><a href="#te_booking"><i class="fas fa-ticket-alt fa-2x"></i><br><br>
+						<span class="font-size-change">BOOK  TICKETS</span></a></li>
+					<li><a href="#te_scanQR" class="ui-btn-active"><i class="fas fa-qrcode fa-2x"></i><br><br>
+						<span class="font-size-change" >SCAN QR</span></a></li>
+				</ul>
 			</div>
 		</div>
 	</div>
-	
-	<div data-role="footer" data-position="fixed">
-		<div data-role="navbar">
-			<ul>
-				<li><a href="#te_stationmap" ><i class="far fa-map fa-2x"></i><br><br>
-					<span class="font-size-change">STATION  MAP</span></a></li>
-				<li><a href="#te_favourites"><i class="far fa-heart fa-2x"></i><br><br>
-					<span class="font-size-change">FAVOURITES</span></a></li>
-				<li><a href="#te_booking"><i class="fas fa-ticket-alt fa-2x"></i><br><br>
-					<span class="font-size-change">BOOK  TICKETS</span></a></li>
-				<li><a href="#te_scanQR" class="ui-btn-active"><i class="fas fa-qrcode fa-2x"></i><br><br>
-					<span class="font-size-change" >SCAN QR</span></a></li>
-			</ul>
-		</div>
-	</div>
-</div>
-<!-------------------WOKING------------------------->
-<div data-role="page" id="qr_iphone_woking">
+				<!-------------------WOKING------------------------->
+				<div data-role="page" id="qr_iphone_woking">
 	<div data-role="header">
 		<div data-role="controlgroup" data-type="horizontal">
 			<a href="#te_homepage" class="ui-btn ui-corner-all"><img src="assets/images/te_logo.png" height="52" width="42"></a>
@@ -2606,166 +2622,162 @@ function ValidateEmail(inputText)
 		</div>
 	</div>
 </div>
-<!-------------------GUILDFORD------------------------->
-<div data-role="page" id="qr_iphone_guildford">
-	<div data-role="header">
-		<div data-role="controlgroup" data-type="horizontal">
-			<a href="#te_homepage" class="ui-btn ui-corner-all"><img src="assets/images/te_logo.png" height="52" width="42"></a>
-			<a href="#te_animDiamond" class="ui-btn ui-corner-all"><i class="far fa-user fa-2x"></i><br><br>PROFILE</a>
-			<a href="#te_animDiamond" class="ui-btn ui-corner-all ui-btn-right"><i class="far fa-gem fa-2x"></i><br><br><span id="incText14">0</span></a>
-		</div>
-	</div>
-	<div role="main" class="ui-content">
-		<h1>GUILDFORD</h1>
-
-					<div data-role="tabs">
-						<div data-role="navbar">
-							<ul>
-								<li><a href="#guildford_qr1_iphone" data-ajax="true">Guildford Castle</a></li>
-								<li><a href="#guildford_qr2_iphone" data-ajax="false">Guildford Museum</a></li>
-								<li><a href="#guildford_qr3_iphone" data-ajax="false">Stoke Park</a></li>
-							</ul>
-						</div>
-						<!-------------------Guildford Castle ------------------>
-						<div id="guildford_qr1_iphone" class="ui-body-d ui-content">
-							<h2>Guildford Castle</h2>
-
-							<p><img src="assets/images/icon_diamond.png" height="24" width="28"> 25pts</p>
-
-							<img src="assets/images/Guildford_Castle.png" alt="Guildford Castle">
-			
-							<a href="ARpage_Guildford_Castle.html" rel="external" class="ui-btn ui-corner-all" id="scan_qr_guildford_castle">COLLECT POINTS</a>
-
-							<p>After the Battle of Hastings in 1066 William led his army to Canterbury and then sacked towns along the Pilgrims' Way, including Guildford. Later William, or one of his barons, built Guildford Castle. There is no record of it in the Domesday Book so construction probably started after 1086.</p>
-						</div>
-						
-						<!-------------------Guildford Museum ------------------>
-						<div id="guildford_qr2_iphone" class="ui-body-d ui-content">
-							<h2>Guildford Museum</h2>
-							
-							<p><img src="assets/images/icon_diamond.png" height="24" width="28"> 25pts</p>
-
-							<img src="assets/images/Guildford_Museum.png" alt="Guildford Museum">
-			
-							<a href="ARpage_Guildford_Museum.html" rel="external" class="ui-btn ui-corner-all" id="scan_qr_guildford_museum">COLLECT POINTS</a>
-
-							<p>Guildford Museum is the main museum is in the town of Guildford, Surrey, England. The museum is on Quarry Street, a narrow road lined by pre-1900 cottages running just off the pedestrianised High Street. This main site of the museum forms the gatehouse and annex of Guildford Castle, which the staff help to run.</p>
-
-						</div>
-						
-						<!-------------------Stoke Park ------------------>
-						<div id="guildford_qr3_iphone" class="ui-body-d ui-content">
-							<h2>Stoke Park</h2>
-
-							
-							<p><img src="assets/images/icon_diamond.png" height="24" width="28"> 50pts</p>
-
-							<img src="assets/images/Stoke_Park.png" alt="Stoke Park">
-			
-							<a href="ARpage_Stoke_Park.html" rel="external" class="ui-btn ui-corner-all" id="scan_qr_stoke_park">COLLECT POINTS</a>
-
-							<p>Stoke Park is a private sporting and leisure estate in Stoke Poges, Buckinghamshire. The mansion building (designed by James Wyatt in 1788) is located in the middle of 300 acres (1.2 km2) of parkland, lakes, gardens and monuments. In 1908, it became the first country club in the UK.</p>
+				<!-------------------GUILDFORD------------------------->
+				<div data-role="page" id="qr_iphone_guildford">
+					<div data-role="header">
+						<div data-role="controlgroup" data-type="horizontal">
+							<a href="#te_homepage" class="ui-btn ui-corner-all"><img src="assets/images/te_logo.png" height="52" width="42"></a>
+							<a href="#te_animDiamond" class="ui-btn ui-corner-all"><i class="far fa-user fa-2x"></i><br><br>PROFILE</a>
+							<a href="#te_animDiamond" class="ui-btn ui-corner-all ui-btn-right"><i class="far fa-gem fa-2x"></i><br><br><span id="incText14">0</span></a>
 						</div>
 					</div>
-	</div>
-	
-	<div data-role="footer" data-position="fixed">
-		<div data-role="navbar">
-			<ul>
-				<li><a href="#te_stationmap" ><i class="far fa-map fa-2x"></i><br><br>
-					<span class="font-size-change">STATION  MAP</span></a></li>
-				<li><a href="#te_favourites"><i class="far fa-heart fa-2x"></i><br><br>
-					<span class="font-size-change">FAVOURITES</span></a></li>
-				<li><a href="#te_booking"><i class="fas fa-ticket-alt fa-2x"></i><br><br>
-					<span class="font-size-change">BOOK  TICKETS</span></a></li>
-				<li><a href="#te_scanQR" class="ui-btn-active"><i class="fas fa-qrcode fa-2x"></i><br><br>
-					<span class="font-size-change" >SCAN QR</span></a></li>
-			</ul>
-		</div>
-	</div>
-</div>
-<!-------------------PORTSMOUTH------------------------->
-<div data-role="page" id="qr_iphone_portsmouth">
-	<div data-role="header">
-		<div data-role="controlgroup" data-type="horizontal">
-			<a href="#te_homepage" class="ui-btn ui-corner-all"><img src="assets/images/te_logo.png" height="52" width="42"></a>
-			<a href="#te_animDiamond" class="ui-btn ui-corner-all"><i class="far fa-user fa-2x"></i><br><br>PROFILE</a>
-			<a href="#te_animDiamond" class="ui-btn ui-corner-all ui-btn-right"><i class="far fa-gem fa-2x"></i><br><br><span id="incText15">0</span></a>
-		</div>
-	</div>
-	<div role="main" class="ui-content">
-		<h1>PORTSMOUTH</h1>
+					<div role="main" class="ui-content">
+						<h1>GUILDFORD</h1>
 
-		<div data-role="tabs">
+									<div data-role="tabs">
+										<div data-role="navbar">
+											<ul>
+												<li><a href="#guildford_qr1_iphone" data-ajax="true">Guildford Castle</a></li>
+												<li><a href="#guildford_qr2_iphone" data-ajax="false">Guildford Museum</a></li>
+												<li><a href="#guildford_qr3_iphone" data-ajax="false">Stoke Park</a></li>
+											</ul>
+										</div>
+										<!-------------------Guildford Castle ------------------>
+										<div id="guildford_qr1_iphone" class="ui-body-d ui-content">
+											<h2>Guildford Castle</h2>
+
+											<p><img src="assets/images/icon_diamond.png" height="24" width="28"> 25pts</p>
+
+											<img src="assets/images/Guildford_Castle.png" alt="Guildford Castle">
+
+											<a href="ARpage_Guildford_Castle.html" rel="external" class="ui-btn ui-corner-all" id="scan_qr_guildford_castle">COLLECT POINTS</a>
+
+											<p>After the Battle of Hastings in 1066 William led his army to Canterbury and then sacked towns along the Pilgrims' Way, including Guildford. Later William, or one of his barons, built Guildford Castle. There is no record of it in the Domesday Book so construction probably started after 1086.</p>
+										</div>
+
+										<!-------------------Guildford Museum ------------------>
+										<div id="guildford_qr2_iphone" class="ui-body-d ui-content">
+											<h2>Guildford Museum</h2>
+
+											<p><img src="assets/images/icon_diamond.png" height="24" width="28"> 25pts</p>
+
+											<img src="assets/images/Guildford_Museum.png" alt="Guildford Museum">
+
+											<a href="ARpage_Guildford_Museum.html" rel="external" class="ui-btn ui-corner-all" id="scan_qr_guildford_museum">COLLECT POINTS</a>
+
+											<p>Guildford Museum is the main museum is in the town of Guildford, Surrey, England. The museum is on Quarry Street, a narrow road lined by pre-1900 cottages running just off the pedestrianised High Street. This main site of the museum forms the gatehouse and annex of Guildford Castle, which the staff help to run.</p>
+
+										</div>
+
+										<!-------------------Stoke Park ------------------>
+										<div id="guildford_qr3_iphone" class="ui-body-d ui-content">
+											<h2>Stoke Park</h2>
+
+
+											<p><img src="assets/images/icon_diamond.png" height="24" width="28"> 50pts</p>
+
+											<img src="assets/images/Stoke_Park.png" alt="Stoke Park">
+
+											<a href="ARpage_Stoke_Park.html" rel="external" class="ui-btn ui-corner-all" id="scan_qr_stoke_park">COLLECT POINTS</a>
+
+											<p>Stoke Park is a private sporting and leisure estate in Stoke Poges, Buckinghamshire. The mansion building (designed by James Wyatt in 1788) is located in the middle of 300 acres (1.2 km2) of parkland, lakes, gardens and monuments. In 1908, it became the first country club in the UK.</p>
+										</div>
+									</div>
+					</div>
+
+					<div data-role="footer" data-position="fixed">
 						<div data-role="navbar">
 							<ul>
-								<li><a href="#portsmouth_qr1_iphone" data-ajax="true">Spinnaker Tower</a></li>
-								<li><a href="#portsmouth_qr2_iphone" data-ajax="false">South Parade Pier</a></li>
-								<li><a href="#portsmouth_qr3_iphone" data-ajax="false">Historic Dockyard</a></li>
+								<li><a href="#te_stationmap" ><i class="far fa-map fa-2x"></i><br><br>
+									<span class="font-size-change">STATION  MAP</span></a></li>
+								<li><a href="#te_favourites"><i class="far fa-heart fa-2x"></i><br><br>
+									<span class="font-size-change">FAVOURITES</span></a></li>
+								<li><a href="#te_booking"><i class="fas fa-ticket-alt fa-2x"></i><br><br>
+									<span class="font-size-change">BOOK  TICKETS</span></a></li>
+								<li><a href="#te_scanQR" class="ui-btn-active"><i class="fas fa-qrcode fa-2x"></i><br><br>
+									<span class="font-size-change" >SCAN QR</span></a></li>
 							</ul>
 						</div>
-						<!-------------------Spinnaker Tower----------------->
-						<div id="portsmouth_qr1_iphone" class="ui-body-d ui-content">
-							<h2>Spinnaker Tower</h2>
-							
-							<p><img src="assets/images/icon_diamond.png" height="24" width="28"> 25pts</p>
-
-							<img src="assets/images/Spinnaker_Tower.png" alt="Spinnaker Tower">
-			
-							<a href="ARpage_Spinnaker_Tower.html" rel="external" class="ui-btn ui-corner-all" id="scan_qr_spinnaker_tower">COLLECT POINTS</a>
-
-							<p>The Spinnaker Tower is a 170 metres landmark observation tower in Portsmouth, England. It is the centrepiece of the redevelopment of Portsmouth Harbour, which was supported by a National Lottery grant.</p>
-
-						</div>
-						
-						<!-------------------South Parade Pier ------------------>
-						<div id="portsmouth_qr2_iphone" class="ui-body-d ui-content">
-							<h2>South Parade Pier</h2>
-							
-							<p><img src="assets/images/icon_diamond.png" height="24" width="28"> 25pts</p>
-
-							<img src="assets/images/South_Parade_Pier.png" alt="South Parade Pier">
-			
-							<a href="ARpage_South_Parade_Pier.html" rel="external" class="ui-btn ui-corner-all" id="scan_qr_south_parade_pier">COLLECT POINTS</a>
-
-							<p>The South Parade Pier is a pier in Portsmouth, England. It is one of two piers in the city, the other being Clarence Pier. The pier once had a long hall down its centre which housed a seating area and a small restaurant. The outside of the hall is a promenade which runs the length of the pier.</p>
-						</div>
-						
-						<!-------------------HISTORIC DOCKYARD ------------------>
-						<div id="portsmouth_qr3_iphone" class="ui-body-d ui-content">
-							<h2>Historic Dockyard</h2>
-							
-							<p><img src="assets/images/icon_diamond.png" height="24" width="28"> 50pts</p>
-
-							<img src="assets/images/Historic_Dockyard.png" alt="Historic Dockyard">
-			
-							<a href="ARpage_Historic_Dockyard.html" rel="external" class="ui-btn ui-corner-all" id="scan_qr_historic_dockyard">COLLECT POINTS</a>
-
-							<p>Portsmouth Historic Dockyard is an area of HM Naval Base Portsmouth which is open to the public; it contains several historic buildings and ships. It is managed by the National Museum of the Royal Navy as an umbrella organization representing many  charities such as: the Portsmouth Naval Base Property Trust, and the HMS Victory Preservation Company.</p>
+					</div>
+				</div>
+				<!-------------------PORTSMOUTH------------------------->
+				<div data-role="page" id="qr_iphone_portsmouth">
+					<div data-role="header">
+						<div data-role="controlgroup" data-type="horizontal">
+							<a href="#te_homepage" class="ui-btn ui-corner-all"><img src="assets/images/te_logo.png" height="52" width="42"></a>
+							<a href="#te_animDiamond" class="ui-btn ui-corner-all"><i class="far fa-user fa-2x"></i><br><br>PROFILE</a>
+							<a href="#te_animDiamond" class="ui-btn ui-corner-all ui-btn-right"><i class="far fa-gem fa-2x"></i><br><br><span id="incText15">0</span></a>
 						</div>
 					</div>
-	</div>
-	
-	<div data-role="footer" data-position="fixed">
-		<div data-role="navbar">
-			<ul>
-				<li><a href="#te_stationmap" ><i class="far fa-map fa-2x"></i><br><br>
-					<span class="font-size-change">STATION  MAP</span></a></li>
-				<li><a href="#te_favourites"><i class="far fa-heart fa-2x"></i><br><br>
-					<span class="font-size-change">FAVOURITES</span></a></li>
-				<li><a href="#te_booking"><i class="fas fa-ticket-alt fa-2x"></i><br><br>
-					<span class="font-size-change">BOOK  TICKETS</span></a></li>
-				<li><a href="#te_scanQR" class="ui-btn-active"><i class="fas fa-qrcode fa-2x"></i><br><br>
-					<span class="font-size-change" >COLLECT POINTS</span></a></li>
-			</ul>
-		</div>
-	</div>
-</div>
-	
-	
-	
+					<div role="main" class="ui-content">
+						<h1>PORTSMOUTH</h1>
 
-	
+						<div data-role="tabs">
+										<div data-role="navbar">
+											<ul>
+												<li><a href="#portsmouth_qr1_iphone" data-ajax="true">Spinnaker Tower</a></li>
+												<li><a href="#portsmouth_qr2_iphone" data-ajax="false">South Parade Pier</a></li>
+												<li><a href="#portsmouth_qr3_iphone" data-ajax="false">Historic Dockyard</a></li>
+											</ul>
+										</div>
+										<!-------------------Spinnaker Tower----------------->
+										<div id="portsmouth_qr1_iphone" class="ui-body-d ui-content">
+											<h2>Spinnaker Tower</h2>
+
+											<p><img src="assets/images/icon_diamond.png" height="24" width="28"> 25pts</p>
+
+											<img src="assets/images/Spinnaker_Tower.png" alt="Spinnaker Tower">
+
+											<a href="ARpage_Spinnaker_Tower.html" rel="external" class="ui-btn ui-corner-all" id="scan_qr_spinnaker_tower">COLLECT POINTS</a>
+
+											<p>The Spinnaker Tower is a 170 metres landmark observation tower in Portsmouth, England. It is the centrepiece of the redevelopment of Portsmouth Harbour, which was supported by a National Lottery grant.</p>
+
+										</div>
+
+										<!-------------------South Parade Pier ------------------>
+										<div id="portsmouth_qr2_iphone" class="ui-body-d ui-content">
+											<h2>South Parade Pier</h2>
+
+											<p><img src="assets/images/icon_diamond.png" height="24" width="28"> 25pts</p>
+
+											<img src="assets/images/South_Parade_Pier.png" alt="South Parade Pier">
+
+											<a href="ARpage_South_Parade_Pier.html" rel="external" class="ui-btn ui-corner-all" id="scan_qr_south_parade_pier">COLLECT POINTS</a>
+
+											<p>The South Parade Pier is a pier in Portsmouth, England. It is one of two piers in the city, the other being Clarence Pier. The pier once had a long hall down its centre which housed a seating area and a small restaurant. The outside of the hall is a promenade which runs the length of the pier.</p>
+										</div>
+
+										<!-------------------HISTORIC DOCKYARD ------------------>
+										<div id="portsmouth_qr3_iphone" class="ui-body-d ui-content">
+											<h2>Historic Dockyard</h2>
+
+											<p><img src="assets/images/icon_diamond.png" height="24" width="28"> 50pts</p>
+
+											<img src="assets/images/Historic_Dockyard.png" alt="Historic Dockyard">
+
+											<a href="ARpage_Historic_Dockyard.html" rel="external" class="ui-btn ui-corner-all" id="scan_qr_historic_dockyard">COLLECT POINTS</a>
+
+											<p>Portsmouth Historic Dockyard is an area of HM Naval Base Portsmouth which is open to the public; it contains several historic buildings and ships. It is managed by the National Museum of the Royal Navy as an umbrella organization representing many  charities such as: the Portsmouth Naval Base Property Trust, and the HMS Victory Preservation Company.</p>
+										</div>
+									</div>
+					</div>
+
+					<div data-role="footer" data-position="fixed">
+						<div data-role="navbar">
+							<ul>
+								<li><a href="#te_stationmap" ><i class="far fa-map fa-2x"></i><br><br>
+									<span class="font-size-change">STATION  MAP</span></a></li>
+								<li><a href="#te_favourites"><i class="far fa-heart fa-2x"></i><br><br>
+									<span class="font-size-change">FAVOURITES</span></a></li>
+								<li><a href="#te_booking"><i class="fas fa-ticket-alt fa-2x"></i><br><br>
+									<span class="font-size-change">BOOK  TICKETS</span></a></li>
+								<li><a href="#te_scanQR" class="ui-btn-active"><i class="fas fa-qrcode fa-2x"></i><br><br>
+									<span class="font-size-change" >COLLECT POINTS</span></a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+
 <!-------------------------------------------------------------------------------------------------------------------->	
 <!----------------------------------------------- Animated Diamond Page ---------------------------------------------->
 <div data-role="page" id="te_animDiamond">
@@ -2809,9 +2821,6 @@ function ValidateEmail(inputText)
 		<div class="centered"><h1 id = "incrementText">0</h1><h3> pts</h3></div>
 			<img src="assets/images/Diamond.png" alt="Diamond">
    </div>
-
-
-
 <div data-role="footer" data-position="fixed">
 	<div data-role="navbar">
 		<ul>
@@ -2827,37 +2836,5 @@ function ValidateEmail(inputText)
 	</div>
 	</div>
 </div>
-<script>
-	
-	
-	
-	
-	var favPoiNames=[];
-	var text="";
-	
-	document.getElementById("fav_london_dungeon").onclick=
-		function addToFavs(){
-			var poiName="London Dungeon";
-			favPoiNames.push(poiName);
-			showSavedPoiNames()
-		}
-		
-	document.getElementById("fav_london_eye").onclick=
-	function addToFavs(){
-		var poiName="London Eye";
-		favPoiNames.push(poiName);
-		showSavedPoiNames()
-	}
-	
-	function showSavedPoiNames(){
-		var len = favPoiNames.length;
-		for (let i = 0; i < len; i++) {
-			text= text + " ";
-		}
-		alert(text);
-	}
-	
-	
-</script>
 </body>
 </html>
