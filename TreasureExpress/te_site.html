@@ -74,7 +74,7 @@
 			color: #777777;
 		}
 		.rating-star span.star {
-			display: inline-block;
+			/* display: inline-block; */
 			font-family: FontAwesome;
 			font-style: normal;
 			font-weight: normal;
@@ -383,59 +383,185 @@
 
 							<a href="https://goo.gl/maps/tDgZvkzYHbQk8d5P6" data-role="button" target="_blank">GET DIRECTIONS</a>
 							
-							<form id="FormName" action="(EmptyReference!)" method="get" name="FormName">
-									<fieldset data-role="controlgroup">
-										<legend>Do you want to add a review:</legend>
-											<label for="radio-choice-1">Yes</label>
-											<input type="radio" name="radiogroup" id="radio-choice-1">
-											<label for="radio-choice-2">No</label>
-											<input type="radio" name="radiogroup" id="radio-choice-2" checked>
-									</fieldset>
+					
+							<div class="UserRatings">
+								<span class="heading">The London Dungeon</span>
+								<p>The Queen's Walk, London</p>
+								<span class="fa fa-star checked"></span>
+								<span class="fa fa-star checked"></span>
+								<span class="fa fa-star checked"></span>
+								<span class="fa fa-star checked"></span>
+								<span class="fa fa-star"></span>
+								<p>4.1 average based on 14, 475 reviews.</p>
+								<hr style="border:3px solid #f1f1f1">
 
-									<fieldset id="hiddenFieldset">
-										<div class="ui-field-contain">
-											<label for="inputBox">Add your comment:</label>
-											<input type="text" name="inputBox" id="inputBox" placeholder="Text input" value="">
-										</div>	
-										<button id="add" type="button">Add</button>
-										<div id="listBox">
-										</div>
-									</fieldset>
+								<div class="row">
+								<div class="side">
+									<div>5 star</div>
+								</div>
+								<div class="middle">
+									<div class="bar-container">
+									<div class="bar-5"></div>
+									</div>
+								</div>
+								<div class="side right">
+									<div>150</div>
+								</div>
+								<div class="side">
+									<div>4 star</div>
+								</div>
+								<div class="middle">
+									<div class="bar-container">
+									<div class="bar-4"></div>
+									</div>
+								</div>
+								<div class="side right">
+									<div>63</div>
+								</div>
+								<div class="side">
+									<div>3 star</div>
+								</div>
+								<div class="middle">
+									<div class="bar-container">
+									<div class="bar-3"></div>
+									</div>
+								</div>
+								<div class="side right">
+									<div>15</div>
+								</div>
+								<div class="side">
+									<div>2 star</div>
+								</div>
+								<div class="middle">
+									<div class="bar-container">
+									<div class="bar-2"></div>
+									</div>
+								</div>
+								<div class="side right">
+									<div>6</div>
+								</div>
+								<div class="side">
+									<div>1 star</div>
+								</div>
+								<div class="middle">
+									<div class="bar-container">
+									<div class="bar-1"></div>
+									</div>
+								</div>
+								<div class="side right">
+									<div>20</div>
+								</div>
+								</div>
+							</div>
 
 
+						<!-----------ADD COMMENT--------->
+						<form id="FormName" action="(EmptyReference!)" method="get" name="FormName">
+	
+							<fieldset id="hiddenFieldset">
+								<div class="ui-field-contain">
+									<label for="inputBox">Add your comment:</label>
+									<input type="text" name="inputBox" id="inputBox" placeholder="Text input" value="">									
+								</div>	
+								<button id="add" type="button">Add</button>
+								
+							</fieldset>
+							
+							
+							
+							<!---------- STARS ------------->
+							<body>
+								<div class="mainStars">
+								<form id="rating-form">
+							<span class="rating-star">
+							<input type="radio" name="rating" value="5"><span class="star"></span>
+								<input type="radio" name="rating" value="4"><span class="star"></span>
+								<input type="radio" name="rating" value="3"><span class="star"></span>
+								<input type="radio" name="rating" value="2"><span class="star"></span>
+								<input type="radio" name="rating" value="1"><span class="star"></span>
+							</span>
 							</form>
+								<p>Thanks For Giving <span id="selected-rating" class="selected-rating" >0</span> Stars.</p>
+								</div>	
+								
+								<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>  
+								  
+								<script src="function.js" type="text/javascript">
+									$('#rating-form').on('change','[name="rating"]',function(){
+										$('#selected-rating').text($('[name="rating"]:checked').val());
+									});
+								</script>
 
-							<script type="text/javascript">
-										function addOption() {
-											listBox.appendChild(new Option(inputBox.value,inputBox.value));
-											inputBox.value = "";
-										}
 
-										function removeOption() {
-											listBox.options[listBox.selectedIndex] = null;
-										}
+							<!----------SHOWS COMMENTS ------------->
 
-										window.onload = function() {
-											hiddenFieldset = document.getElementById("hiddenFieldset");
-											inputBox = document.FormName.inputBox;
-											listBox = document.getElementById("listBox");
+							<div id="listBox">
+								
+								<i class="far fa-user-circle fa-2x"></i><h2><b>Faye </b></h2><div class="rating">
+								<span class="fa fa-star checked"></span>
+								<span class="fa fa-star checked"></span>
+								<span class="fa fa-star checked"></span>
+								<span class="fa fa-star checked"></span>
+								<span class="fa fa-star"></span>
+							</div>	
+							<br>
+							<p>We had a great time at the London Dungeons, highly recommended. The actors were brilliant, both spooky and comical! Two rides there, one is height restricted. Little gift shop at the end with a bar.</p>
+							<br>
+								<a target="_blank" href="assets/thumbnails/Thumbnail_London_Dungeon_1.jpg">
+								<img class="imgRating" src="assets/thumbnails/Thumbnail_London_Dungeon_1.jpg" alt="London Dungeon"></a>
 
-											document.FormName.radiogroup[0].onclick = function() {
-												hiddenFieldset.style.display = "block";
-											}
-											document.FormName.radiogroup[1].onclick = function() {
-												hiddenFieldset.style.display = "none";
-											}
+								<a target="_blank" href="assets/thumbnails/Thumbnail_London_Dungeon_2.jpg">
+								<img class="imgRating" src="assets/thumbnails/Thumbnail_London_Dungeon_2.jpg" alt="London Dungeon"></a>
+							<hr>
+							<br> 
 
-											hiddenFieldset.style.display = "none";
-											document.getElementById("add").onclick = addOption;
-											document.getElementById("remove").onclick = removeOption;
-										}
+							<i class="far fa-user-circle fa-2x"></i><h2><b>Gracie</b></h2><div class="rating">
+								<span class="fa fa-star checked"></span>
+								<span class="fa fa-star checked"></span>
+								<span class="fa fa-star checked"></span>
+								<span class="fa fa-star checked"></span>
+								<span class="fa fa-star checked"></span>
+							</div> 
+							<p>Excellent attraction you need to book in advance. Small acted out snippets of the grimier side of London history very audience interactive. I have to say the quality of acting is a high standard. My favorite part was  Sweeney Todd whoever was playing Mrs Lovett had an amazing intensity. A pity two of the attractions were not working but didn't really spoil it at all still over an hour and a half long. Gift shop was not over priced and sold good quality items. There is a bar incorporated at the end of the shop would recommend.</p>
+								<br>
+								<a target="_blank" href="assets/thumbnails/Thumbnail_London_Dungeon_3.jpg">
+								<img class="imgRating" src="assets/thumbnails/Thumbnail_London_Dungeon_3.jpg" alt="London Dungeon"></a>
 
-							</script>
+								<a target="_blank" href="assets/thumbnails/Thumbnail_London_Dungeon_4.jpg">
+								<img class="imgRating" src="assets/thumbnails/Thumbnail_London_Dungeon_4.jpg" alt="London Dungeon"></a>
+
+
+
+							<hr>
+							</div>
+						</form>
+					</div>
+					
+						<script type="text/javascript">
+							function addOption() {
+								listBox.appendChild(new Option(inputBox.value,inputBox.value));
+								inputBox.value = "";
+							}
+				
+							function removeOption() {
+								listBox.options[listBox.selectedIndex] = null;
+							}
+				
+							window.onload = function() {
+								hiddenFieldset = document.getElementById("hiddenFieldset");
+								inputBox = document.FormName.inputBox;
+								listBox = document.getElementById("listBox");
+				
+								document.getElementById("add").onclick = addOption;
+								document.getElementById("remove").onclick = removeOption;
+							}
 							
-							
-						</div>
+						</script>
+
+						
+
+
+
 						<!-------------------LONDON EYE ------------------>
 						<div id="waterloo_poi2_ipad" class="ui-body-d ui-content">
 							<h2 class="potitles">LONDON EYE</h2>
