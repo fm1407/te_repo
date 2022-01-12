@@ -366,6 +366,8 @@
 						<div id="waterloo_poi1_ipad" class="ui-body-d ui-content">
 							<h2 style="text-align: center;">LONDON DUNGEON</h2>
 							
+							
+							
 							<img src="assets/images/London_Dungeon.png" width="100%" alt="London Dungeon">
 							
 							<p style="text-align: right;"><img src="assets/images/icon_diamond.png" height="24" width="28"> 25pts</p>
@@ -375,13 +377,64 @@
 									<label for="waterloo_poi1_ipad_fav"><span class="ui-icon-heart ui-btn-icon-left">Add to favourites</span></label>
 							</fieldset>
 							
-							
 							<p>The London Dungeon is a uniquely thrilling attraction that will whisk you way back to the capital's most perilous past. See, hear, feel and (ahem!) smell the chillingly amusing characters of the 'bad old days' as they come to life before you.</p>
 
 							<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2483.5834089341956!2d-0.12095148423020245!3d51.50251187963433!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487604c70bc8d293%3A0x39108cb6fa0e39d9!2sThe%20Dungeons%20London!5e0!3m2!1sen!2suk!4v1641865409370!5m2!1sen!2suk" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
 
 							<a href="https://goo.gl/maps/tDgZvkzYHbQk8d5P6" data-role="button" target="_blank">GET DIRECTIONS</a>
+							
+							<form id="FormName" action="(EmptyReference!)" method="get" name="FormName">
+									<fieldset data-role="controlgroup">
+										<legend>Do you want to add a review:</legend>
+											<label for="radio-choice-1">Yes</label>
+											<input type="radio" name="radiogroup" id="radio-choice-1">
+											<label for="radio-choice-2">No</label>
+											<input type="radio" name="radiogroup" id="radio-choice-2" checked>
+									</fieldset>
 
+									<fieldset id="hiddenFieldset">
+										<div class="ui-field-contain">
+											<label for="inputBox">Add your comment:</label>
+											<input type="text" name="inputBox" id="inputBox" placeholder="Text input" value="">
+										</div>	
+										<button id="add" type="button">Add</button>
+										<div id="listBox">
+										</div>
+									</fieldset>
+
+
+							</form>
+
+							<script type="text/javascript">
+										function addOption() {
+											listBox.appendChild(new Option(inputBox.value,inputBox.value));
+											inputBox.value = "";
+										}
+
+										function removeOption() {
+											listBox.options[listBox.selectedIndex] = null;
+										}
+
+										window.onload = function() {
+											hiddenFieldset = document.getElementById("hiddenFieldset");
+											inputBox = document.FormName.inputBox;
+											listBox = document.getElementById("listBox");
+
+											document.FormName.radiogroup[0].onclick = function() {
+												hiddenFieldset.style.display = "block";
+											}
+											document.FormName.radiogroup[1].onclick = function() {
+												hiddenFieldset.style.display = "none";
+											}
+
+											hiddenFieldset.style.display = "none";
+											document.getElementById("add").onclick = addOption;
+											document.getElementById("remove").onclick = removeOption;
+										}
+
+							</script>
+							
+							
 						</div>
 						<!-------------------LONDON EYE ------------------>
 						<div id="waterloo_poi2_ipad" class="ui-body-d ui-content">
@@ -843,393 +896,393 @@
 		</div>
 	</div>
 </div>
-	<!-------------------WIMBELDON------------------------->
-	<div data-role="page" id="poi_iphone_wimbledon">
-		<div data-role="header" data-position="fixed">
-			<div data-role="controlgroup" data-type="horizontal">
-				<a href="#te_homepage" class="ui-btn ui-corner-all"><img src="assets/images/te_logo.png" height="52" width="42"></a>
-				<a href="#te_animDiamond" class="ui-btn ui-corner-all"><i class="far fa-user fa-2x"></i><br><br>PROFILE</a>
-				<a href="#te_animDiamond" class="ui-btn ui-corner-all ui-btn-right"><i class="far fa-gem fa-2x"></i><br><br><span id="incText4">0</span></a>
+<!-------------------WIMBELDON------------------------->
+<div data-role="page" id="poi_iphone_wimbledon">
+	<div data-role="header" data-position="fixed">
+		<div data-role="controlgroup" data-type="horizontal">
+			<a href="#te_homepage" class="ui-btn ui-corner-all"><img src="assets/images/te_logo.png" height="52" width="42"></a>
+			<a href="#te_animDiamond" class="ui-btn ui-corner-all"><i class="far fa-user fa-2x"></i><br><br>PROFILE</a>
+			<a href="#te_animDiamond" class="ui-btn ui-corner-all ui-btn-right"><i class="far fa-gem fa-2x"></i><br><br><span id="incText4">0</span></a>
+		</div>
+	</div>
+	<div role="main" class="ui-content">
+		<h1 style="text-align: center;">WIMBLEDON</h1>
+
+		<div data-role="tabs">
+			<div data-role="navbar">
+				<ul>
+					<li><a href="#wimbledon_poi1_iphone" class="ui-btn-active" data-ajax="true">Wimbledon Centre Court</a></li>
+					<li><a href="#wimbledon_poi2_iphone" data-ajax="false">New Wimbledon Theatre</a></li>
+					<li><a href="#wimbledon_poi3_iphone" data-ajax="false">Buddhapadipa Temple</a></li>
+				</ul>
+			</div>
+			<!-------------------Wimbledon Centre Court ------------------>
+			<div id="wimbledon_poi1_iphone" class="ui-body-d ui-content">
+				<h2 style="text-align: center;">Wimbledon Centre Court</h2>
+
+				<img src="assets/images/Wimbledon_Centre_Court.png" alt="Wimbledon Centre Court">
+
+				<p style="text-align: right;"><img src="assets/images/icon_diamond.png" height="24" width="28"> 25pts</p>
+
+				<fieldset data-role="controlgroup" data-type="horizontal">
+					<input type="checkbox" name="wimbledon_poi1_iphone_fav" id="wimbledon_poi1_iphone_fav" class="custom">
+					<label for="wimbledon_poi1_iphone_fav"><span class="ui-icon-heart ui-btn-icon-left">Add to favourites</span></label>
+				</fieldset>
+
+				<p>Wimbledon Centre Court is the main court at The Championships, Wimbledon, the third annual Grand Slam event of the tennis calendar. It is considered the world's most famous tennis court.It incorporates the clubhouse of the All England Lawn Tennis and Croquet Club. Its only regular use for play is during the two weeks a year that the Championships take place.</p>
+
+				<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d19901.06929669603!2d-0.2265792!3d51.4281558!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48760f52612050a5%3A0xeaee595f26abedbd!2sCentre%20Court%20%7C%20Wimbledon!5e0!3m2!1sen!2suk!4v1641868869863!5m2!1sen!2suk" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+
+				<a href="https://goo.gl/maps/CSvMngnsHmnZ9NwB7" data-role="button" target="_blank">GET DIRECTIONS</a>
+			</div>
+
+			<!-------------------New Wimbledon Theatre ------------------>
+			<div id="wimbledon_poi2_iphone" class="ui-body-d ui-content">
+				<h2 style="text-align: center;">New Wimbledon Theatre</h2>
+
+				<img src="assets/images/New_Wimbledon_Theatre.png" alt="New Wimbledon Theatre">
+
+				<p style="text-align: right;"><img src="assets/images/icon_diamond.png" height="24" width="28"> 25pts</p>
+
+				<fieldset data-role="controlgroup" data-type="horizontal">
+					<input type="checkbox" name="wimbledon_poi2_iphone_fav" id="wimbledon_poi2_iphone_fav" class="custom">
+					<label for="wimbledon_poi2_iphone_fav"><span class="ui-icon-heart ui-btn-icon-left">Add to favourites</span></label>
+				</fieldset>
+
+				<p>A 108 year-old theatre in SW London presenting an eclectic mix of musicals, drama, comedy, dance and pantomime. An Ambassador Theatre Group venue.</p>
+
+				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2488.1203414156685!2d-0.2036700842332582!3d51.419215979620745!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487608ba9818e711%3A0xd7dd5b682dbaa2bc!2sNew%20Wimbledon%20Theatre!5e0!3m2!1sen!2suk!4v1641870113691!5m2!1sen!2suk" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+				<a href="https://g.page/NewWimbTheatre?share" data-role="button" target="_blank">GET DIRECTIONS</a>
+			</div>
+
+			<!-------------------Buddhapadipa Temple ------------------>
+			<div id="wimbledon_poi3_iphone" class="ui-body-d ui-content">
+				<h2 style="text-align: center;">Buddhapadipa Temple</h2>
+
+				<img src="assets/images/Buddhapadipa_Temple.png" alt="Buddhapadipa Temple">
+
+				<p style="text-align: right;"><img src="assets/images/icon_diamond.png" height="24" width="28"> 50pts</p>
+
+				<fieldset data-role="controlgroup" data-type="horizontal">
+					<input type="checkbox" name="wimbledon_poi3_iphone_fav" id="wimbledon_poi3_iphone_fav" class="custom">
+					<label for="wimbledon_poi3_iphone_fav"><span class="ui-icon-heart ui-btn-icon-left">Add to favourites</span></label>
+				</fieldset>
+
+				<p>The Buddhapadipa Temple is the first Thai Theravada Buddhist Temple ever built outside Asia. It is the centre of meditation, Buddhist education and Thai culture.</p>
+
+				<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d9949.970152557895!2d-0.2205011!3d51.4307479!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xd7af17706959dfab!2sBuddhapadipa%20Temple!5e0!3m2!1sen!2suk!4v1641870205252!5m2!1sen!2suk" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+
+				<a href="https://goo.gl/maps/sM4z2KCn9dYzKtFb8" data-role="button" target="_blank">GET DIRECTIONS</a>
 			</div>
 		</div>
-		<div role="main" class="ui-content">
-			<h1 style="text-align: center;">WIMBLEDON</h1>
+	</div>
 
+	<div data-role="footer" data-position="fixed">
+		<div data-role="navbar">
+			<ul>
+				<li><a href="#te_stationmap" class="ui-btn-active"><i class="far fa-map fa-2x"></i><br><br>
+					<span class="font-size-change">STATION  MAP</span></a></li>
+				<li><a href="#te_favourites"><i class="far fa-heart fa-2x"></i><br><br>
+					<span class="font-size-change">FAVOURITES</span></a></li>
+				<li><a href="#te_booking"><i class="fas fa-ticket-alt fa-2x"></i><br><br>
+					<span class="font-size-change">BOOK  TICKETS</span></a></li>
+				<li><a href="#te_scanQR"><i class="fas fa-qrcode fa-2x"></i><br><br>
+					<span class="font-size-change">SCAN QR</span></a></li>
+			</ul>
+		</div>
+	</div>
+</div>
+<!-------------------WOKING------------------------->
+<div data-role="page" id="poi_iphone_woking">
+	<div data-role="header" data-position="fixed">
+		<div data-role="controlgroup" data-type="horizontal">
+			<a href="#te_homepage" class="ui-btn ui-corner-all"><img src="assets/images/te_logo.png" height="52" width="42"></a>
+			<a href="#te_animDiamond" class="ui-btn ui-corner-all"><i class="far fa-user fa-2x"></i><br><br>PROFILE</a>
+			<a href="#te_animDiamond" class="ui-btn ui-corner-all ui-btn-right"><i class="far fa-gem fa-2x"></i><br><br><span id="incText5">0</span></a>
+		</div>
+	</div>
+	<div role="main" class="ui-content">
+		<h1 style="text-align: center;">WOKING</h1>
 			<div data-role="tabs">
 				<div data-role="navbar">
 					<ul>
-						<li><a href="#wimbledon_poi1_iphone" class="ui-btn-active" data-ajax="true">Wimbledon Centre Court</a></li>
-						<li><a href="#wimbledon_poi2_iphone" data-ajax="false">New Wimbledon Theatre</a></li>
-						<li><a href="#wimbledon_poi3_iphone" data-ajax="false">Buddhapadipa Temple</a></li>
+						<li><a href="#woking_poi1_iphone" class="ui-btn-active" data-ajax="true">The Lightbox</a></li>
+						<li><a href="#woking_poi2_iphone" data-ajax="false">RHS Garden</a></li>
+						<li><a href="#woking_poi3_iphone" data-ajax="false">Mercedes Benz World</a></li>
 					</ul>
 				</div>
-				<!-------------------Wimbledon Centre Court ------------------>
-				<div id="wimbledon_poi1_iphone" class="ui-body-d ui-content">
-					<h2 style="text-align: center;">Wimbledon Centre Court</h2>
+				<!-------------------The Lightbox ------------------>
+				<div id="woking_poi1_iphone" class="ui-body-d ui-content">
+					<h2 style="text-align: center;">The Lightbox</h2>
 
-					<img src="assets/images/Wimbledon_Centre_Court.png" alt="Wimbledon Centre Court">
-
-					<p style="text-align: right;"><img src="assets/images/icon_diamond.png" height="24" width="28"> 25pts</p>
-
-					<fieldset data-role="controlgroup" data-type="horizontal">
-						<input type="checkbox" name="wimbledon_poi1_iphone_fav" id="wimbledon_poi1_iphone_fav" class="custom">
-						<label for="wimbledon_poi1_iphone_fav"><span class="ui-icon-heart ui-btn-icon-left">Add to favourites</span></label>
-					</fieldset>
-
-					<p>Wimbledon Centre Court is the main court at The Championships, Wimbledon, the third annual Grand Slam event of the tennis calendar. It is considered the world's most famous tennis court.It incorporates the clubhouse of the All England Lawn Tennis and Croquet Club. Its only regular use for play is during the two weeks a year that the Championships take place.</p>
-
-					<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d19901.06929669603!2d-0.2265792!3d51.4281558!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48760f52612050a5%3A0xeaee595f26abedbd!2sCentre%20Court%20%7C%20Wimbledon!5e0!3m2!1sen!2suk!4v1641868869863!5m2!1sen!2suk" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-
-					<a href="https://goo.gl/maps/CSvMngnsHmnZ9NwB7" data-role="button" target="_blank">GET DIRECTIONS</a>
-				</div>
-
-				<!-------------------New Wimbledon Theatre ------------------>
-				<div id="wimbledon_poi2_iphone" class="ui-body-d ui-content">
-					<h2 style="text-align: center;">New Wimbledon Theatre</h2>
-
-					<img src="assets/images/New_Wimbledon_Theatre.png" alt="New Wimbledon Theatre">
+					<img src="assets/images/The_Lightbox.png" alt="The Lightbox">
 
 					<p style="text-align: right;"><img src="assets/images/icon_diamond.png" height="24" width="28"> 25pts</p>
 
 					<fieldset data-role="controlgroup" data-type="horizontal">
-						<input type="checkbox" name="wimbledon_poi2_iphone_fav" id="wimbledon_poi2_iphone_fav" class="custom">
-						<label for="wimbledon_poi2_iphone_fav"><span class="ui-icon-heart ui-btn-icon-left">Add to favourites</span></label>
+						<input type="checkbox" name="woking_poi1_iphone_fav" id="woking_poi1_iphone_fav" class="custom">
+						<label for="woking_poi1_iphone_fav"><span class="ui-icon-heart ui-btn-icon-left">Add to favourites</span></label>
 					</fieldset>
 
-					<p>A 108 year-old theatre in SW London presenting an eclectic mix of musicals, drama, comedy, dance and pantomime. An Ambassador Theatre Group venue.</p>
+					<p>The Lightbox is an award-winning charitable arts and heritage organisation with a social purpose to improve the wellbeing and quality of life of its community.</p>
 
-					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2488.1203414156685!2d-0.2036700842332582!3d51.419215979620745!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487608ba9818e711%3A0xd7dd5b682dbaa2bc!2sNew%20Wimbledon%20Theatre!5e0!3m2!1sen!2suk!4v1641870113691!5m2!1sen!2suk" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-					<a href="https://g.page/NewWimbTheatre?share" data-role="button" target="_blank">GET DIRECTIONS</a>
+					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2493.4280623981467!2d-0.5609946842368508!3d51.32164597960514!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4875d821058554df%3A0xe6f5e7e07f010c5c!2sThe%20Lightbox!5e0!3m2!1sen!2suk!4v1641869142430!5m2!1sen!2suk" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+
+					<a href="https://g.page/thelightboxwoking?share" data-role="button" target="_blank">GET DIRECTIONS</a>
 				</div>
 
-				<!-------------------Buddhapadipa Temple ------------------>
-				<div id="wimbledon_poi3_iphone" class="ui-body-d ui-content">
-					<h2 style="text-align: center;">Buddhapadipa Temple</h2>
+				<!-------------------RHS Garden ------------------>
+				<div id="woking_poi2_iphone" class="ui-body-d ui-content">
+					<h2 style="text-align: center;">RHS Garden</h2>
 
-					<img src="assets/images/Buddhapadipa_Temple.png" alt="Buddhapadipa Temple">
+					<img src="assets/images/RHS_Garden.png" alt="RHS Garden">
+
+					<p style="text-align: right;"><img src="assets/images/icon_diamond.png" height="24" width="28"> 25pts</p>
+
+					<fieldset data-role="controlgroup" data-type="horizontal">
+						<input type="checkbox" name="woking_poi2_iphone_fav" id="woking_poi2_iphone_fav" class="custom">
+						<label for="woking_poi2_iphone_fav"><span class="ui-icon-heart ui-btn-icon-left">Add to favourites</span></label>
+					</fieldset>
+
+					<p>RHS Garden Wisley is a garden run by the Royal Horticultural Society in the English county of Surrey, south of London. It is one of five gardens run by the society, the others being Harlow Carr, Hyde Hall, Rosemoor, and Bridgewater (which opened on 18 May 2021).Wisley is the second most visited paid entry garden in the United Kingdom after the Royal Botanic Gardens.</p>
+
+					<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d9975.353502017964!2d-0.4784703!3d51.3140978!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4875d8c95f478985%3A0xfaeb103984a2a6a9!2sRHS%20Wisley%20Garden%20Centre!5e0!3m2!1sen!2suk!4v1641868571399!5m2!1sen!2suk" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+
+					<a href="https://goo.gl/maps/dML37NxustytFqc37" data-role="button" target="_blank">GET DIRECTIONS</a>
+				</div>
+
+				<!-------------------Mercedes Benz World ------------------>
+				<div id="woking_poi3_iphone" class="ui-body-d ui-content">
+					<h2 style="text-align: center;">Mercedes Benz World </h2>
+
+					<img src="assets/images/Mercedes_Benz_World.png" alt="Mercedes-Benz World">
 
 					<p style="text-align: right;"><img src="assets/images/icon_diamond.png" height="24" width="28"> 50pts</p>
 
 					<fieldset data-role="controlgroup" data-type="horizontal">
-						<input type="checkbox" name="wimbledon_poi3_iphone_fav" id="wimbledon_poi3_iphone_fav" class="custom">
-						<label for="wimbledon_poi3_iphone_fav"><span class="ui-icon-heart ui-btn-icon-left">Add to favourites</span></label>
+						<input type="checkbox" name="woking_poi3_iphone_fav" id="woking_poi3_iphone_fav" class="custom">
+						<label for="woking_poi3_iphone_fav"><span class="ui-icon-heart ui-btn-icon-left">Add to favourites</span></label>
 					</fieldset>
 
-					<p>The Buddhapadipa Temple is the first Thai Theravada Buddhist Temple ever built outside Asia. It is the centre of meditation, Buddhist education and Thai culture.</p>
+					<p>Next to the Brooklands Museum is Mercedes-Benz World, where the luxury car brand owns a series of training tracks and runs the AMG Driving Academy. Some champion drivers have used these courses, like Lewis Hamilton, Mika Häkkinen, Nico Rosberg and Stirling Moss.</p>
 
-					<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d9949.970152557895!2d-0.2205011!3d51.4307479!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xd7af17706959dfab!2sBuddhapadipa%20Temple!5e0!3m2!1sen!2suk!4v1641870205252!5m2!1sen!2suk" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2491.620935598655!2d-0.47023948423561934!3d51.354880679610446!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48767601ba5f4785%3A0xb5d2da6f5ea950de!2sMercedes-Benz%20World!5e0!3m2!1sen!2suk!4v1641868472761!5m2!1sen!2suk" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
 
-					<a href="https://goo.gl/maps/sM4z2KCn9dYzKtFb8" data-role="button" target="_blank">GET DIRECTIONS</a>
+					<a href="https://goo.gl/maps/FPCiFx6n6WLaThscA" data-role="button" target="_blank">GET DIRECTIONS</a>
 				</div>
-			</div>
-		</div>
-
-		<div data-role="footer" data-position="fixed">
-			<div data-role="navbar">
-				<ul>
-					<li><a href="#te_stationmap" class="ui-btn-active"><i class="far fa-map fa-2x"></i><br><br>
-						<span class="font-size-change">STATION  MAP</span></a></li>
-					<li><a href="#te_favourites"><i class="far fa-heart fa-2x"></i><br><br>
-						<span class="font-size-change">FAVOURITES</span></a></li>
-					<li><a href="#te_booking"><i class="fas fa-ticket-alt fa-2x"></i><br><br>
-						<span class="font-size-change">BOOK  TICKETS</span></a></li>
-					<li><a href="#te_scanQR"><i class="fas fa-qrcode fa-2x"></i><br><br>
-						<span class="font-size-change">SCAN QR</span></a></li>
-				</ul>
-			</div>
 		</div>
 	</div>
-	<!-------------------WOKING------------------------->
-	<div data-role="page" id="poi_iphone_woking">
-		<div data-role="header" data-position="fixed">
-			<div data-role="controlgroup" data-type="horizontal">
-				<a href="#te_homepage" class="ui-btn ui-corner-all"><img src="assets/images/te_logo.png" height="52" width="42"></a>
-				<a href="#te_animDiamond" class="ui-btn ui-corner-all"><i class="far fa-user fa-2x"></i><br><br>PROFILE</a>
-				<a href="#te_animDiamond" class="ui-btn ui-corner-all ui-btn-right"><i class="far fa-gem fa-2x"></i><br><br><span id="incText5">0</span></a>
-			</div>
-		</div>
-		<div role="main" class="ui-content">
-			<h1 style="text-align: center;">WOKING</h1>
-				<div data-role="tabs">
-					<div data-role="navbar">
-						<ul>
-							<li><a href="#woking_poi1_iphone" class="ui-btn-active" data-ajax="true">The Lightbox</a></li>
-							<li><a href="#woking_poi2_iphone" data-ajax="false">RHS Garden</a></li>
-							<li><a href="#woking_poi3_iphone" data-ajax="false">Mercedes Benz World</a></li>
-						</ul>
-					</div>
-					<!-------------------The Lightbox ------------------>
-					<div id="woking_poi1_iphone" class="ui-body-d ui-content">
-						<h2 style="text-align: center;">The Lightbox</h2>
 
-						<img src="assets/images/The_Lightbox.png" alt="The Lightbox">
-
-						<p style="text-align: right;"><img src="assets/images/icon_diamond.png" height="24" width="28"> 25pts</p>
-
-						<fieldset data-role="controlgroup" data-type="horizontal">
-							<input type="checkbox" name="woking_poi1_iphone_fav" id="woking_poi1_iphone_fav" class="custom">
-							<label for="woking_poi1_iphone_fav"><span class="ui-icon-heart ui-btn-icon-left">Add to favourites</span></label>
-						</fieldset>
-
-						<p>The Lightbox is an award-winning charitable arts and heritage organisation with a social purpose to improve the wellbeing and quality of life of its community.</p>
-
-						<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2493.4280623981467!2d-0.5609946842368508!3d51.32164597960514!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4875d821058554df%3A0xe6f5e7e07f010c5c!2sThe%20Lightbox!5e0!3m2!1sen!2suk!4v1641869142430!5m2!1sen!2suk" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-
-						<a href="https://g.page/thelightboxwoking?share" data-role="button" target="_blank">GET DIRECTIONS</a>
-					</div>
-
-					<!-------------------RHS Garden ------------------>
-					<div id="woking_poi2_iphone" class="ui-body-d ui-content">
-						<h2 style="text-align: center;">RHS Garden</h2>
-
-						<img src="assets/images/RHS_Garden.png" alt="RHS Garden">
-
-						<p style="text-align: right;"><img src="assets/images/icon_diamond.png" height="24" width="28"> 25pts</p>
-
-						<fieldset data-role="controlgroup" data-type="horizontal">
-							<input type="checkbox" name="woking_poi2_iphone_fav" id="woking_poi2_iphone_fav" class="custom">
-							<label for="woking_poi2_iphone_fav"><span class="ui-icon-heart ui-btn-icon-left">Add to favourites</span></label>
-						</fieldset>
-
-						<p>RHS Garden Wisley is a garden run by the Royal Horticultural Society in the English county of Surrey, south of London. It is one of five gardens run by the society, the others being Harlow Carr, Hyde Hall, Rosemoor, and Bridgewater (which opened on 18 May 2021).Wisley is the second most visited paid entry garden in the United Kingdom after the Royal Botanic Gardens.</p>
-
-						<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d9975.353502017964!2d-0.4784703!3d51.3140978!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4875d8c95f478985%3A0xfaeb103984a2a6a9!2sRHS%20Wisley%20Garden%20Centre!5e0!3m2!1sen!2suk!4v1641868571399!5m2!1sen!2suk" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-
-						<a href="https://goo.gl/maps/dML37NxustytFqc37" data-role="button" target="_blank">GET DIRECTIONS</a>
-					</div>
-
-					<!-------------------Mercedes Benz World ------------------>
-					<div id="woking_poi3_iphone" class="ui-body-d ui-content">
-						<h2 style="text-align: center;">Mercedes Benz World </h2>
-
-						<img src="assets/images/Mercedes_Benz_World.png" alt="Mercedes-Benz World">
-
-						<p style="text-align: right;"><img src="assets/images/icon_diamond.png" height="24" width="28"> 50pts</p>
-
-						<fieldset data-role="controlgroup" data-type="horizontal">
-							<input type="checkbox" name="woking_poi3_iphone_fav" id="woking_poi3_iphone_fav" class="custom">
-							<label for="woking_poi3_iphone_fav"><span class="ui-icon-heart ui-btn-icon-left">Add to favourites</span></label>
-						</fieldset>
-
-						<p>Next to the Brooklands Museum is Mercedes-Benz World, where the luxury car brand owns a series of training tracks and runs the AMG Driving Academy. Some champion drivers have used these courses, like Lewis Hamilton, Mika Häkkinen, Nico Rosberg and Stirling Moss.</p>
-
-						<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2491.620935598655!2d-0.47023948423561934!3d51.354880679610446!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48767601ba5f4785%3A0xb5d2da6f5ea950de!2sMercedes-Benz%20World!5e0!3m2!1sen!2suk!4v1641868472761!5m2!1sen!2suk" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-
-						<a href="https://goo.gl/maps/FPCiFx6n6WLaThscA" data-role="button" target="_blank">GET DIRECTIONS</a>
-					</div>
-			</div>
-		</div>
-
-		<div data-role="footer" data-position="fixed">
-			<div data-role="navbar">
-				<ul>
-					<li><a href="#te_stationmap" class="ui-btn-active"><i class="far fa-map fa-2x"></i><br><br>
-						<span class="font-size-change">STATION  MAP</span></a></li>
-					<li><a href="#te_favourites"><i class="far fa-heart fa-2x"></i><br><br>
-						<span class="font-size-change">FAVOURITES</span></a></li>
-					<li><a href="#te_booking"><i class="fas fa-ticket-alt fa-2x"></i><br><br>
-						<span class="font-size-change">BOOK  TICKETS</span></a></li>
-					<li><a href="#te_scanQR"><i class="fas fa-qrcode fa-2x"></i><br><br>
-						<span class="font-size-change">SCAN QR</span></a></li>
-				</ul>
-			</div>
+	<div data-role="footer" data-position="fixed">
+		<div data-role="navbar">
+			<ul>
+				<li><a href="#te_stationmap" class="ui-btn-active"><i class="far fa-map fa-2x"></i><br><br>
+					<span class="font-size-change">STATION  MAP</span></a></li>
+				<li><a href="#te_favourites"><i class="far fa-heart fa-2x"></i><br><br>
+					<span class="font-size-change">FAVOURITES</span></a></li>
+				<li><a href="#te_booking"><i class="fas fa-ticket-alt fa-2x"></i><br><br>
+					<span class="font-size-change">BOOK  TICKETS</span></a></li>
+				<li><a href="#te_scanQR"><i class="fas fa-qrcode fa-2x"></i><br><br>
+					<span class="font-size-change">SCAN QR</span></a></li>
+			</ul>
 		</div>
 	</div>
-	<!-------------------GUILDFORD------------------------->
-	<div data-role="page" id="poi_iphone_guildford">
-		<div data-role="header" data-position="fixed">
-			<div data-role="controlgroup" data-type="horizontal">
-				<a href="#te_homepage" class="ui-btn ui-corner-all"><img src="assets/images/te_logo.png" height="52" width="42"></a>
-				<a href="#te_animDiamond" class="ui-btn ui-corner-all"><i class="far fa-user fa-2x"></i><br><br>PROFILE</a>
-				<a href="#te_animDiamond" class="ui-btn ui-corner-all ui-btn-right"><i class="far fa-gem fa-2x"></i><br><br><span id="incText6">0</span></a>
-			</div>
+</div>
+<!-------------------GUILDFORD------------------------->
+<div data-role="page" id="poi_iphone_guildford">
+	<div data-role="header" data-position="fixed">
+		<div data-role="controlgroup" data-type="horizontal">
+			<a href="#te_homepage" class="ui-btn ui-corner-all"><img src="assets/images/te_logo.png" height="52" width="42"></a>
+			<a href="#te_animDiamond" class="ui-btn ui-corner-all"><i class="far fa-user fa-2x"></i><br><br>PROFILE</a>
+			<a href="#te_animDiamond" class="ui-btn ui-corner-all ui-btn-right"><i class="far fa-gem fa-2x"></i><br><br><span id="incText6">0</span></a>
 		</div>
-		<div role="main" class="ui-content">
-			<h1 style="text-align: center;">GUILDFORD</h1>
+	</div>
+	<div role="main" class="ui-content">
+		<h1 style="text-align: center;">GUILDFORD</h1>
 
-						<div data-role="tabs">
-							<div data-role="navbar">
-								<ul>
-									<li><a href="#guildford_poi1_iphone" class="ui-btn-active" data-ajax="true">Guildford Castle</a></li>
-									<li><a href="#guildford_poi2_iphone" data-ajax="false">Guildford Museum</a></li>
-									<li><a href="#guildford_poi3_iphone" data-ajax="false">Stoke Park</a></li>
-								</ul>
-							</div>
-							<!-------------------Guildford Castle ------------------>
-							<div id="guildford_poi1_iphone" class="ui-body-d ui-content">
-								<h2 style="text-align: center;">Guildford Castle</h2>
-
-								<img src="assets/images/Guildford_Castle.png" alt="Guildford Castle">
-
-								<p style="text-align: right;"><img src="assets/images/icon_diamond.png" height="24" width="28"> 25pts</p>
-
-								<fieldset data-role="controlgroup" data-type="horizontal">
-									<input type="checkbox" name="guildford_poi1_iphone_fav" id="guildford_poi1_iphone_fav" class="custom">
-									<label for="guildford_poi1_iphone_fav"><span class="ui-icon-heart ui-btn-icon-left">Add to favourites</span></label>
-								</fieldset>
-
-								<p>After the Battle of Hastings in 1066 William led his army to Canterbury and then sacked towns along the Pilgrims' Way, including Guildford. Later William, or one of his barons, built Guildford Castle. There is no record of it in the Domesday Book so construction probably started after 1086.</p>
-
-								<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d110467.20738910705!2d-0.647585217643782!3d51.21847209257998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4875d09a4f5d7cf5%3A0xaeda5777b4246720!2sGuildford%20Castle!5e0!3m2!1sen!2suk!4v1641870435052!5m2!1sen!2suk" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-
-								<a href="https://goo.gl/maps/aVJMZxEi36Z4wRAdA" data-role="button" target="_blank">GET DIRECTIONS</a>
-							</div>
-
-							<!-------------------Guildford Museum ------------------>
-							<div id="guildford_poi2_iphone" class="ui-body-d ui-content">
-								<h2 style="text-align: center;">Guildford Museum</h2>
-
-								<img src="assets/images/Guildford_Museum.png" alt="Guildford Museum">
-
-								<p style="text-align: right;"><img src="assets/images/icon_diamond.png" height="24" width="28"> 25pts</p>
-
-								<fieldset data-role="controlgroup" data-type="horizontal">
-									<input type="checkbox" name="guildford_poi2_iphone_fav" id="guildford_poi2_iphone_fav" class="custom">
-									<label for="guildford_poi2_iphone_fav"><span class="ui-icon-heart ui-btn-icon-left">Add to favourites</span></label>
-								</fieldset>
-
-								<p>Guildford Museum is the main museum is in the town of Guildford, Surrey, England. The museum is on Quarry Street, a narrow road lined by pre-1900 cottages running just off the pedestrianised High Street. This main site of the museum forms the gatehouse and annex of Guildford Castle, which the staff help to run.</p>
-
-								<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d39967.30939802454!2d-0.6101798!3d51.2382898!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4875d090906e947f%3A0x43eeea8c8df8cbd5!2sGuildford%20Museum!5e0!3m2!1sen!2suk!4v1641870343394!5m2!1sen!2suk" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-
-								<a href="https://goo.gl/maps/g7vfsx3BRmiGcMQS6" data-role="button" target="_blank">GET DIRECTIONS</a>
-							</div>
-
-							<!-------------------Stoke Park ------------------>
-							<div id="guildford_poi3_iphone" class="ui-body-d ui-content">
-								<h2 style="text-align: center;">Stoke Park</h2>
-
-								<img src="assets/images/Stoke_Park.png" alt="Stoke Park">
-
-								<p style="text-align: right;"><img src="assets/images/icon_diamond.png" height="24" width="28"> 50pts</p>
-
-								<fieldset data-role="controlgroup" data-type="horizontal">
-									<input type="checkbox" name="guildford_poi3_iphone_fav" id="guildford_poi3_iphone_fav" class="custom">
-									<label for="guildford_poi3_iphone_fav"><span class="ui-icon-heart ui-btn-icon-left">Add to favourites</span></label>
-								</fieldset>
-
-								<p>Stoke Park is a private sporting and leisure estate in Stoke Poges, Buckinghamshire. The mansion building (designed by James Wyatt in 1788) is located in the middle of 300 acres (1.2 km2) of parkland, lakes, gardens and monuments. In 1908, it became the first country club in the UK.</p>
-
-								<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2497.585515254846!2d-0.5616976842396485!3d51.24512797959288!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4875da09792f4b5d%3A0x9fd218d64760b341!2sStoke%20Park%2C%20London%20Rd%2C%20Guildford%20GU1%201TU!5e0!3m2!1sen!2suk!4v1641868046980!5m2!1sen!2suk" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-
-								<a href="https://goo.gl/maps/Nh4rMNThAqt6AKaF6" data-role="button" target="_blank">GET DIRECTIONS</a>
-							</div>
+					<div data-role="tabs">
+						<div data-role="navbar">
+							<ul>
+								<li><a href="#guildford_poi1_iphone" class="ui-btn-active" data-ajax="true">Guildford Castle</a></li>
+								<li><a href="#guildford_poi2_iphone" data-ajax="false">Guildford Museum</a></li>
+								<li><a href="#guildford_poi3_iphone" data-ajax="false">Stoke Park</a></li>
+							</ul>
 						</div>
-		</div>
+						<!-------------------Guildford Castle ------------------>
+						<div id="guildford_poi1_iphone" class="ui-body-d ui-content">
+							<h2 style="text-align: center;">Guildford Castle</h2>
 
-		<div data-role="footer" data-position="fixed">
-			<div data-role="navbar">
-				<ul>
-					<li><a href="#te_stationmap" class="ui-btn-active"><i class="far fa-map fa-2x"></i><br><br>
-						<span class="font-size-change">STATION  MAP</span></a></li>
-					<li><a href="#te_favourites"><i class="far fa-heart fa-2x"></i><br><br>
-						<span class="font-size-change">FAVOURITES</span></a></li>
-					<li><a href="#te_booking"><i class="fas fa-ticket-alt fa-2x"></i><br><br>
-						<span class="font-size-change">BOOK  TICKETS</span></a></li>
-					<li><a href="#te_scanQR"><i class="fas fa-qrcode fa-2x"></i><br><br>
-						<span class="font-size-change">SCAN QR</span></a></li>
-				</ul>
-			</div>
-		</div>
-	</div>
-	<!-------------------PORTSMOUTH------------------------->
-	<div data-role="page" id="poi_iphone_portsmouth">
-		<div data-role="header" data-position="fixed">
-			<div data-role="controlgroup" data-type="horizontal">
-				<a href="#te_homepage" class="ui-btn ui-corner-all"><img src="assets/images/te_logo.png" height="52" width="42"></a>
-				<a href="#te_animDiamond" class="ui-btn ui-corner-all"><i class="far fa-user fa-2x"></i><br><br>PROFILE</a>
-				<a href="#te_animDiamond" class="ui-btn ui-corner-all ui-btn-right"><i class="far fa-gem fa-2x"></i><br><br><span id="incText7">0</span></a>
-			</div>
-		</div>
-		<div role="main" class="ui-content">
-			<h1 style="text-align: center;">PORTSMOUTH</h1>
+							<img src="assets/images/Guildford_Castle.png" alt="Guildford Castle">
 
-			<div data-role="tabs">
-							<div data-role="navbar">
-								<ul>
-									<li><a href="#portsmouth_poi1_iphone" class="ui-btn-active" data-ajax="true">Spinnaker Tower</a></li>
-									<li><a href="#portsmouth_poi2_iphone" data-ajax="false">South Parade Pier</a></li>
-									<li><a href="#portsmouth_poi3_iphone" data-ajax="false">Historic Dockyard</a></li>
-								</ul>
-							</div>
-							<!-------------------Spinnaker Tower----------------->
-							<div id="portsmouth_poi1_iphone" class="ui-body-d ui-content">
-								<h2 style="text-align: center;">Spinnaker Tower</h2>
+							<p style="text-align: right;"><img src="assets/images/icon_diamond.png" height="24" width="28"> 25pts</p>
 
-								<img src="assets/images/Spinnaker_Tower.png" alt="Spinnaker Tower">
+							<fieldset data-role="controlgroup" data-type="horizontal">
+								<input type="checkbox" name="guildford_poi1_iphone_fav" id="guildford_poi1_iphone_fav" class="custom">
+								<label for="guildford_poi1_iphone_fav"><span class="ui-icon-heart ui-btn-icon-left">Add to favourites</span></label>
+							</fieldset>
 
-								<p style="text-align: right;"><img src="assets/images/icon_diamond.png" height="24" width="28"> 25pts</p>
+							<p>After the Battle of Hastings in 1066 William led his army to Canterbury and then sacked towns along the Pilgrims' Way, including Guildford. Later William, or one of his barons, built Guildford Castle. There is no record of it in the Domesday Book so construction probably started after 1086.</p>
 
-								<fieldset data-role="controlgroup" data-type="horizontal">
-									<input type="checkbox" name="portsmouth_poi1_iphone_fav" id="portsmouth_poi1_iphone_fav" class="custom">
-									<label for="portsmouth_poi1_iphone_fav"><span class="ui-icon-heart ui-btn-icon-left">Add to favourites</span></label>
-								</fieldset>
+							<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d110467.20738910705!2d-0.647585217643782!3d51.21847209257998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4875d09a4f5d7cf5%3A0xaeda5777b4246720!2sGuildford%20Castle!5e0!3m2!1sen!2suk!4v1641870435052!5m2!1sen!2suk" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
 
-								<p>The Spinnaker Tower is a 170 metres landmark observation tower in Portsmouth, England. It is the centrepiece of the redevelopment of Portsmouth Harbour, which was supported by a National Lottery grant.</p>
-
-								<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2521.92086258008!2d-1.110705784256087!3d50.79557517952439!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48745d81407073e3%3A0x58939dec9d61be4d!2sSpinnaker%20Tower!5e0!3m2!1sen!2suk!4v1641867804568!5m2!1sen!2suk" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-
-								<a href="https://goo.gl/maps/2WmCBQir7UTWn4RHA" data-role="button" target="_blank">GET DIRECTIONS</a>
-							</div>
-
-							<!-------------------South Parade Pier ------------------>
-							<div id="portsmouth_poi2_iphone" class="ui-body-d ui-content">
-								<h2 style="text-align: center;">South Parade Pier</h2>
-
-								<img src="assets/images/South_Parade_Pier.png" alt="South Parade Pier">
-
-								<p style="text-align: right;"><img src="assets/images/icon_diamond.png" height="24" width="28"> 25pts</p>
-
-								<fieldset data-role="controlgroup" data-type="horizontal">
-									<input type="checkbox" name="portsmouth_poi2_iphone_fav" id="portsmouth_poi2_iphone_fav" class="custom">
-									<label for="portsmouth_poi2_iphone_fav"><span class="ui-icon-heart ui-btn-icon-left">Add to favourites</span></label>
-								</fieldset>
-
-								<p>The South Parade Pier is a pier in Portsmouth, England. It is one of two piers in the city, the other being Clarence Pier. The pier once had a long hall down its centre which housed a seating area and a small restaurant. The outside of the hall is a promenade which runs the length of the pier.</p>
-
-								<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2522.8029717483914!2d-1.078566084256685!3d50.7792258795221!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48745d8e4fd4f383%3A0x4f4ba2dd6757bd1e!2sSouth%20Parade%20Pier!5e0!3m2!1sen!2suk!4v1641867650152!5m2!1sen!2suk" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-
-								<a href="https://goo.gl/maps/UjRjnTbddJHMCkud8" data-role="button" target="_blank">GET DIRECTIONS</a>
-							</div>
-
-							<!-------------------HISTORIC DOCKYARD ------------------>
-							<div id="portsmouth_poi3_iphone" class="ui-body-d ui-content">
-								<h2 style="text-align: center;">Historic Dockyard</h2>
-
-								<img src="assets/images/Historic_Dockyard.png" alt="Historic Dockyard">
-
-								<p style="text-align: right;"><img src="assets/images/icon_diamond.png" height="24" width="28"> 50pts</p>
-
-								<fieldset data-role="controlgroup" data-type="horizontal">
-									<input type="checkbox" name="portsmouth_poi3_iphone_fav" id="portsmouth_poi3_iphone_fav" class="custom">
-									<label for="portsmouth_poi3_iphone_fav"><span class="ui-icon-heart ui-btn-icon-left">Add to favourites</span></label>
-								</fieldset>
-
-								<p>Portsmouth Historic Dockyard is an area of HM Naval Base Portsmouth which is open to the public; it contains several historic buildings and ships. It is managed by the National Museum of the Royal Navy as an umbrella organization representing many  charities such as: the Portsmouth Naval Base Property Trust, and the HMS Victory Preservation Company.</p>
-
-								<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2521.6534370799063!2d-1.1116545842558934!3d50.80053097952506!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48745d81d4cec0c3%3A0x7bbcaa5658711999!2sPortsmouth%20Historic%20Dockyard!5e0!3m2!1sen!2suk!4v1641867372385!5m2!1sen!2suk" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-
-								<a href="https://g.page/historicdockyard?share" data-role="button" target="_blank">GET DIRECTIONS</a>
-							</div>
+							<a href="https://goo.gl/maps/aVJMZxEi36Z4wRAdA" data-role="button" target="_blank">GET DIRECTIONS</a>
 						</div>
 
-		</div>
+						<!-------------------Guildford Museum ------------------>
+						<div id="guildford_poi2_iphone" class="ui-body-d ui-content">
+							<h2 style="text-align: center;">Guildford Museum</h2>
 
-		<div data-role="footer" data-position="fixed">
-			<div data-role="navbar">
-				<ul>
-					<li><a href="#te_stationmap" class="ui-btn-active"><i class="far fa-map fa-2x"></i><br><br>
-						<span class="font-size-change">STATION  MAP</span></a></li>
-					<li><a href="#te_favourites"><i class="far fa-heart fa-2x"></i><br><br>
-						<span class="font-size-change">FAVOURITES</span></a></li>
-					<li><a href="#te_booking"><i class="fas fa-ticket-alt fa-2x"></i><br><br>
-						<span class="font-size-change">BOOK  TICKETS</span></a></li>
-					<li><a href="#te_scanQR"><i class="fas fa-qrcode fa-2x"></i><br><br>
-						<span class="font-size-change">SCAN QR</span></a></li>
-				</ul>
-			</div>
+							<img src="assets/images/Guildford_Museum.png" alt="Guildford Museum">
+
+							<p style="text-align: right;"><img src="assets/images/icon_diamond.png" height="24" width="28"> 25pts</p>
+
+							<fieldset data-role="controlgroup" data-type="horizontal">
+								<input type="checkbox" name="guildford_poi2_iphone_fav" id="guildford_poi2_iphone_fav" class="custom">
+								<label for="guildford_poi2_iphone_fav"><span class="ui-icon-heart ui-btn-icon-left">Add to favourites</span></label>
+							</fieldset>
+
+							<p>Guildford Museum is the main museum is in the town of Guildford, Surrey, England. The museum is on Quarry Street, a narrow road lined by pre-1900 cottages running just off the pedestrianised High Street. This main site of the museum forms the gatehouse and annex of Guildford Castle, which the staff help to run.</p>
+
+							<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d39967.30939802454!2d-0.6101798!3d51.2382898!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4875d090906e947f%3A0x43eeea8c8df8cbd5!2sGuildford%20Museum!5e0!3m2!1sen!2suk!4v1641870343394!5m2!1sen!2suk" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+
+							<a href="https://goo.gl/maps/g7vfsx3BRmiGcMQS6" data-role="button" target="_blank">GET DIRECTIONS</a>
+						</div>
+
+						<!-------------------Stoke Park ------------------>
+						<div id="guildford_poi3_iphone" class="ui-body-d ui-content">
+							<h2 style="text-align: center;">Stoke Park</h2>
+
+							<img src="assets/images/Stoke_Park.png" alt="Stoke Park">
+
+							<p style="text-align: right;"><img src="assets/images/icon_diamond.png" height="24" width="28"> 50pts</p>
+
+							<fieldset data-role="controlgroup" data-type="horizontal">
+								<input type="checkbox" name="guildford_poi3_iphone_fav" id="guildford_poi3_iphone_fav" class="custom">
+								<label for="guildford_poi3_iphone_fav"><span class="ui-icon-heart ui-btn-icon-left">Add to favourites</span></label>
+							</fieldset>
+
+							<p>Stoke Park is a private sporting and leisure estate in Stoke Poges, Buckinghamshire. The mansion building (designed by James Wyatt in 1788) is located in the middle of 300 acres (1.2 km2) of parkland, lakes, gardens and monuments. In 1908, it became the first country club in the UK.</p>
+
+							<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2497.585515254846!2d-0.5616976842396485!3d51.24512797959288!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4875da09792f4b5d%3A0x9fd218d64760b341!2sStoke%20Park%2C%20London%20Rd%2C%20Guildford%20GU1%201TU!5e0!3m2!1sen!2suk!4v1641868046980!5m2!1sen!2suk" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+
+							<a href="https://goo.gl/maps/Nh4rMNThAqt6AKaF6" data-role="button" target="_blank">GET DIRECTIONS</a>
+						</div>
+					</div>
+	</div>
+
+	<div data-role="footer" data-position="fixed">
+		<div data-role="navbar">
+			<ul>
+				<li><a href="#te_stationmap" class="ui-btn-active"><i class="far fa-map fa-2x"></i><br><br>
+					<span class="font-size-change">STATION  MAP</span></a></li>
+				<li><a href="#te_favourites"><i class="far fa-heart fa-2x"></i><br><br>
+					<span class="font-size-change">FAVOURITES</span></a></li>
+				<li><a href="#te_booking"><i class="fas fa-ticket-alt fa-2x"></i><br><br>
+					<span class="font-size-change">BOOK  TICKETS</span></a></li>
+				<li><a href="#te_scanQR"><i class="fas fa-qrcode fa-2x"></i><br><br>
+					<span class="font-size-change">SCAN QR</span></a></li>
+			</ul>
 		</div>
 	</div>
+</div>
+<!-------------------PORTSMOUTH------------------------->
+<div data-role="page" id="poi_iphone_portsmouth">
+	<div data-role="header" data-position="fixed">
+		<div data-role="controlgroup" data-type="horizontal">
+			<a href="#te_homepage" class="ui-btn ui-corner-all"><img src="assets/images/te_logo.png" height="52" width="42"></a>
+			<a href="#te_animDiamond" class="ui-btn ui-corner-all"><i class="far fa-user fa-2x"></i><br><br>PROFILE</a>
+			<a href="#te_animDiamond" class="ui-btn ui-corner-all ui-btn-right"><i class="far fa-gem fa-2x"></i><br><br><span id="incText7">0</span></a>
+		</div>
+	</div>
+	<div role="main" class="ui-content">
+		<h1 style="text-align: center;">PORTSMOUTH</h1>
+
+		<div data-role="tabs">
+						<div data-role="navbar">
+							<ul>
+								<li><a href="#portsmouth_poi1_iphone" class="ui-btn-active" data-ajax="true">Spinnaker Tower</a></li>
+								<li><a href="#portsmouth_poi2_iphone" data-ajax="false">South Parade Pier</a></li>
+								<li><a href="#portsmouth_poi3_iphone" data-ajax="false">Historic Dockyard</a></li>
+							</ul>
+						</div>
+						<!-------------------Spinnaker Tower----------------->
+						<div id="portsmouth_poi1_iphone" class="ui-body-d ui-content">
+							<h2 style="text-align: center;">Spinnaker Tower</h2>
+
+							<img src="assets/images/Spinnaker_Tower.png" alt="Spinnaker Tower">
+
+							<p style="text-align: right;"><img src="assets/images/icon_diamond.png" height="24" width="28"> 25pts</p>
+
+							<fieldset data-role="controlgroup" data-type="horizontal">
+								<input type="checkbox" name="portsmouth_poi1_iphone_fav" id="portsmouth_poi1_iphone_fav" class="custom">
+								<label for="portsmouth_poi1_iphone_fav"><span class="ui-icon-heart ui-btn-icon-left">Add to favourites</span></label>
+							</fieldset>
+
+							<p>The Spinnaker Tower is a 170 metres landmark observation tower in Portsmouth, England. It is the centrepiece of the redevelopment of Portsmouth Harbour, which was supported by a National Lottery grant.</p>
+
+							<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2521.92086258008!2d-1.110705784256087!3d50.79557517952439!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48745d81407073e3%3A0x58939dec9d61be4d!2sSpinnaker%20Tower!5e0!3m2!1sen!2suk!4v1641867804568!5m2!1sen!2suk" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+
+							<a href="https://goo.gl/maps/2WmCBQir7UTWn4RHA" data-role="button" target="_blank">GET DIRECTIONS</a>
+						</div>
+
+						<!-------------------South Parade Pier ------------------>
+						<div id="portsmouth_poi2_iphone" class="ui-body-d ui-content">
+							<h2 style="text-align: center;">South Parade Pier</h2>
+
+							<img src="assets/images/South_Parade_Pier.png" alt="South Parade Pier">
+
+							<p style="text-align: right;"><img src="assets/images/icon_diamond.png" height="24" width="28"> 25pts</p>
+
+							<fieldset data-role="controlgroup" data-type="horizontal">
+								<input type="checkbox" name="portsmouth_poi2_iphone_fav" id="portsmouth_poi2_iphone_fav" class="custom">
+								<label for="portsmouth_poi2_iphone_fav"><span class="ui-icon-heart ui-btn-icon-left">Add to favourites</span></label>
+							</fieldset>
+
+							<p>The South Parade Pier is a pier in Portsmouth, England. It is one of two piers in the city, the other being Clarence Pier. The pier once had a long hall down its centre which housed a seating area and a small restaurant. The outside of the hall is a promenade which runs the length of the pier.</p>
+
+							<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2522.8029717483914!2d-1.078566084256685!3d50.7792258795221!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48745d8e4fd4f383%3A0x4f4ba2dd6757bd1e!2sSouth%20Parade%20Pier!5e0!3m2!1sen!2suk!4v1641867650152!5m2!1sen!2suk" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+
+							<a href="https://goo.gl/maps/UjRjnTbddJHMCkud8" data-role="button" target="_blank">GET DIRECTIONS</a>
+						</div>
+
+						<!-------------------HISTORIC DOCKYARD ------------------>
+						<div id="portsmouth_poi3_iphone" class="ui-body-d ui-content">
+							<h2 style="text-align: center;">Historic Dockyard</h2>
+
+							<img src="assets/images/Historic_Dockyard.png" alt="Historic Dockyard">
+
+							<p style="text-align: right;"><img src="assets/images/icon_diamond.png" height="24" width="28"> 50pts</p>
+
+							<fieldset data-role="controlgroup" data-type="horizontal">
+								<input type="checkbox" name="portsmouth_poi3_iphone_fav" id="portsmouth_poi3_iphone_fav" class="custom">
+								<label for="portsmouth_poi3_iphone_fav"><span class="ui-icon-heart ui-btn-icon-left">Add to favourites</span></label>
+							</fieldset>
+
+							<p>Portsmouth Historic Dockyard is an area of HM Naval Base Portsmouth which is open to the public; it contains several historic buildings and ships. It is managed by the National Museum of the Royal Navy as an umbrella organization representing many  charities such as: the Portsmouth Naval Base Property Trust, and the HMS Victory Preservation Company.</p>
+
+							<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2521.6534370799063!2d-1.1116545842558934!3d50.80053097952506!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48745d81d4cec0c3%3A0x7bbcaa5658711999!2sPortsmouth%20Historic%20Dockyard!5e0!3m2!1sen!2suk!4v1641867372385!5m2!1sen!2suk" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+
+							<a href="https://g.page/historicdockyard?share" data-role="button" target="_blank">GET DIRECTIONS</a>
+						</div>
+					</div>
+
+	</div>
+
+	<div data-role="footer" data-position="fixed">
+		<div data-role="navbar">
+			<ul>
+				<li><a href="#te_stationmap" class="ui-btn-active"><i class="far fa-map fa-2x"></i><br><br>
+					<span class="font-size-change">STATION  MAP</span></a></li>
+				<li><a href="#te_favourites"><i class="far fa-heart fa-2x"></i><br><br>
+					<span class="font-size-change">FAVOURITES</span></a></li>
+				<li><a href="#te_booking"><i class="fas fa-ticket-alt fa-2x"></i><br><br>
+					<span class="font-size-change">BOOK  TICKETS</span></a></li>
+				<li><a href="#te_scanQR"><i class="fas fa-qrcode fa-2x"></i><br><br>
+					<span class="font-size-change">SCAN QR</span></a></li>
+			</ul>
+		</div>
+	</div>
+</div>
 
 
 <!-------------------------------------------------------------------------------------------------------------------->	
