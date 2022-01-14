@@ -1466,7 +1466,22 @@
 		</form>
 		<button style="background-color:#EE3939;" onClick="clearAll()">Clear All Favourites</button>
 		<ul data-filter="true" data-input="#filterBasic-input" id="favourite-content">
-			
+			<li>
+				<div class="ui-grid-a">
+					<div class="ui-block-a"><img src="assets/images/London_Dungeon.png" alt="London Dungeon"><h3>London Dungeon</h3></div>
+					<div class="ui-block-b">
+						<p>The London Dungeon is a uniquely thrilling attraction that will whisk you way back to the capital's most perilous past. See, hear, feel and (ahem!) smell the chillingly amusing characters of the 'bad old days' as they come to life before you.</p>
+					</div>
+				</div>
+			</li>
+			<li>
+				<div class="ui-grid-a">
+					<div class="ui-block-a"><img src="assets/images/Spinnaker_Tower.png" alt="Spinnaker Tower"><h3>Spinnaker Tower</h3></div>
+					<div class="ui-block-b">
+						<p>The Spinnaker Tower is a 170 metres landmark observation tower in Portsmouth, England. It is the centrepiece of the redevelopment of Portsmouth Harbour, which was supported by a National Lottery grant</p>
+					</div>
+				</div>
+			</li>
 		</ul>
 
 	</div>
@@ -1504,9 +1519,9 @@
 			}
 			
 			
-			$(document).on( 'pagecontainerbeforehide', 'body', function( event, ui){
+			$(document).on( "pagecontainerbeforehide", "body", function( event, ui){
 			  //do something
-			  if ( ui.nextPage.attr('id')== "te_favourites") {
+			  if ( ui.nextPage.attr("id")== "te_favourites"){
 				
 				$("#favourite-content").html("");		  
 				  
