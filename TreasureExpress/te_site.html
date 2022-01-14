@@ -1454,9 +1454,10 @@
 <h1 style="text-align:center;">FAVOURITES </h1>
 	
 	<div class="mail">	
-		<form name="email"> 
+		<form name="email" method="post"> 
 			<label for="email">Enter your email:</label><input type="text" name="text1">
-			<input type="submit" name="submit" value="Submit" id="favListSubmit" onclick="ValidateEmail(document.email.text1)">
+			<input type="submit" name="submit" value="Submit" id="favListSubmit" onclick="ValidateEmail(document.email.text1);">
+			
 		</form>
 	</div>
 	<div class="favList">
@@ -1496,6 +1497,7 @@
 
 						alert("Valid email address!");
 						document.email.text1.focus();
+						sendEmail();
 					return true;
 					}
 					else
@@ -1505,6 +1507,22 @@
 					return false;
 					}
 			}
+			/*----------Send email ----------*/
+			function sendEmail() {
+			Email.send({
+				Host: "smtp.gmail.com",
+				Username : "<carloshmego@gmail.com>",
+				Password : "<Carlinhos2001>",
+				To : '<w1727783@my.westminster.ac.uk>',
+				From : "<carloshmego@gmail.com>",
+				Subject : "<email subject>",
+				Body : "<email hello>",
+			})
+			.then(function(message){
+				alert("mail sent successfully")
+				
+			});
+		}
 				
 			/*----------CLEAR FAV LIST-----------*/
 			function clearAll(){
